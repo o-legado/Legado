@@ -259,7 +259,7 @@ const criarTabela = {
     },
     mudarNomeSeason(nomeSeason) {
         const season = document.querySelector("#rankingSeason")
-        season.innerHTML = `SEASON ${nomeSeason.slice(-1)}`
+        season.innerHTML = `TREINO ${nomeSeason.slice(-1)}`
     }
 
 }
