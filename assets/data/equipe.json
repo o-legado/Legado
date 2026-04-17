@@ -99,5 +99,106 @@
             ]
         }
     ]
+    },
+    "treino2": {
+    "data": "16/04/2026",
+    "equipes": [
+        {
+            "equipe": "RED FOX KILERS",
+            "detalhes": [
+                { "queda": 1, "kills": 9, "posicao": 4 },
+                { "queda": 2, "kills": 23, "posicao": 1 },
+                { "queda": 3, "kills": 20, "posicao": 1 }
+            ]
+        },
+        {
+            "equipe": "META GAMING",
+            "detalhes": [
+                { "queda": 1, "kills": 2, "posicao": 3 },
+                { "queda": 2, "kills": 7, "posicao": 3 },
+                { "queda": 3, "kills": 14, "posicao": 2 }
+            ]
+        },
+        {
+            "equipe": "TURQUIA ELITE",
+            "detalhes": [
+                { "queda": 1, "kills": 15, "posicao": 2 },
+                { "queda": 2, "kills": 6, "posicao": 2 },
+                { "queda": 3, "kills": 12, "posicao": 3 }
+            ]
+        },
+        {
+            "equipe": "CHERRY",
+            "detalhes": [
+                { "queda": 1, "kills": 2, "posicao": 5 },
+                { "queda": 2, "kills": 0, "posicao": 8 },
+                { "queda": 3, "kills": 2, "posicao": 4 }
+            ]
+        },
+        {
+            "equipe": "RAZE FOX",
+            "detalhes": [
+                { "queda": 1, "kills": 5, "posicao": 6 },
+                { "queda": 2, "kills": 7, "posicao": 5 },
+                { "queda": 3, "kills": 2, "posicao": 5 }
+            ]
+        },
+        {
+            "equipe": "SS GAMING",
+            "detalhes": [
+                { "queda": 1, "kills": 3, "posicao": 8 },
+                { "queda": 2, "kills": 3, "posicao": 4 },
+                { "queda": 3, "kills": 4, "posicao": 6 }
+            ]
+        },
+        {
+            "equipe": "NORDESTE-PI",
+            "detalhes": [
+                { "queda": 1, "kills": 2, "posicao": 7 },
+                { "queda": 2, "kills": 0, "posicao": 9 },
+                { "queda": 3, "kills": 1, "posicao": 7 }
+            ]
+        },
+        {
+            "equipe": "AGONIADOS",
+            "detalhes": [
+                { "queda": 1, "kills": 15, "posicao": 1 },
+                { "queda": 2, "kills": 1, "posicao": 6 },
+                { "queda": 3, "kills": 0, "posicao": 8 }
+            ]
+        },
+        {
+            "equipe": "X LEGENDS",
+            "detalhes": [
+                { "queda": 1, "kills": 0, "posicao": 9 },
+                { "queda": 2, "kills": 1, "posicao": 7 },
+                { "queda": 3, "kills": 0, "posicao": 13 }
+            ]
+        },
+        {
+            "equipe": "LINE SEVEN",
+            "detalhes": [
+                { "queda": 1, "kills": 0, "posicao": 13 },
+                { "queda": 2, "kills": 0, "posicao": 13 },
+                { "queda": 3, "kills": 0, "posicao": 13 }
+            ]
+        },
+        {
+            "equipe": "WOLF ELITE",
+            "detalhes": [
+                { "queda": 1, "kills": 0, "posicao": 13 },
+                { "queda": 2, "kills": 0, "posicao": 13 },
+                { "queda": 3, "kills": 0, "posicao": 13 }
+            ]
+        },
+        {
+            "equipe": "LYCAN NFX",
+            "detalhes": [
+                { "queda": 1, "kills": 0, "posicao": 13 },
+                { "queda": 2, "kills": 0, "posicao": 13 },
+                { "queda": 3, "kills": 0, "posicao": 13 }
+            ]
+        }
+    ]
 }
 }

@@ -91,5 +91,67 @@
             "RR HS": [null, null, null]
         }
     }
+    },
+    "treino2": {
+    "data": "16/04/2026",
+    "equipes": {
+        "SS GAMING": {
+            "SS DUQUE": [1, 0, 1],
+            "SS NBW'7": [0, 0, 2],
+            "SS SHEIK.awp": [1, 3, null],
+            "SS soares7": [1, 0, 1]
+        },
+        "AGONIADOS": {
+            "celinhaffxj": [7, 1, 0],
+            "《ŁÐ》PATOLINO": [8, 0, null],
+            "꧁༺LA CRU": [null, 0, 0]
+        },
+        "TURQUIA ELITE": {
+            "KDO LUÍS9": [0, 1, 3],
+            "cirino9292": [5, 4, 2],
+            "-Tc Tiakar†": [null, 0, null],
+            ".I'm vitinホ": [6, 0, 6],
+            "i a k a r ⸸": [4, 1, 1]
+        },
+        "RED FOX KILERS": {
+            "NFX BIEL⁷": [7, 14, 14],
+            "FR PATRÃO": [0, 2, 0],
+            "DM VITOR": [1, 2, 2],
+            "Flay9f7x2T9p": [1, 5, 4]
+        },
+        "X LEGENDS": {
+            "not jonn 愛": [0, 1, null],
+            "愛 JHOWW⁷⁷⁷": [0, 0, null],
+            "NTY DONA": [0, null, null]
+        },
+        "LINE SEVEN": {},
+        "META GAMING": {
+            "yeshuafé": [1, 5, 4],
+            "LIDERANÇA !7": [1, 1, 6],
+            "mlkpurezaa": [0, 0, 0],
+            "ª!SHOTZX 愛 8": [0, 1, 4]
+        },
+        "RAZE FOX": {
+            "B⁹ Six9ump愛": [0, 1, 1],
+            "NFX THEBEST愛": [1, 2, 0],
+            "♪ N F X M Ø R": [0, 2, 1],
+            "AɴJOGoD": [4, 2, null],
+            "Liz7c2Q2#0b": [null, null, 0]
+        },
+        "WOLF ELITE": {},
+        "LYCAN NFX": {},
+        "NORDESTE-PI": {
+            "EDZIN VENCEU": [0, 0, 0],
+            "!Nescau.777": [1, 0, 0],
+            "Eo Japonês ☂": [1, 0, 0],
+            "INFC JAPONÊS": [0, 0, 1]
+        },
+        "CHERRY": {
+            "mt Steffany": [1, 0, 0],
+            "mt CARLA TTK": [0, 0, 1],
+            "ピアストリ": [0, 0, 0],
+            "kx Gessyk\"": [1, 0, 1]
+        }
+    }
 }
 }
