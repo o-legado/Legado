@@ -631,6 +631,22 @@ main{
             position: relative;
             flex: 1 1 calc((100%/3) - 2rem);
             transition: transform 0.2s;
+            gap: 1rem;
+        }
+        .btnPlayer{
+            background-color: #262626;
+            border: 1px solid #444;
+            color: white;
+            text-align: center;
+            padding: 0.3rem 0.7rem;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease-in-out;
+        }
+        .btnPlayer:hover{
+            cursor: pointer;
+            background-color: #b91c1c;
+            border-color: #b91c1c;
+            transform: scale(1.1);
         }
 
         .kill_card:hover {

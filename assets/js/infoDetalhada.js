@@ -1,3 +1,4 @@
+
 let season;
 let jogadores;
 
@@ -9,7 +10,7 @@ async function carregarDados() {
         const resposta2 = await fetch("../data/jogadores.json");
         jogadores = await resposta2.json();
 
-        console.log("Dados carregados com sucesso!");
+        
     } catch (error) {
         console.error("Erro ao carregar JSON:", error);
     }
@@ -50,10 +51,10 @@ document.addEventListener("click", (event) => {
     }
 });
 
+//aq forma os dados das equipes
 const dados = {
     start(tr, click, index) {
         const select = document.querySelector(".container_select").value;
-        console.log(select)
         this.processarEquipe(select, tr, click, index);
     },
 
@@ -67,7 +68,7 @@ const dados = {
             // Verifica se o nome da equipe bate com a classe da linha clicada
             if (tr.className === equipe.equipe) {
                 // ENVIAMOS OS DETALHES COMPLETOS (O ARRAY)
-                informaçãoDealhada.exibir(tr, index, equipe.detalhes, equipe.equipe);
+                informaçãoDealhadaa.exibir(tr, index, equipe.detalhes, equipe.equipe);
 
 
             }
@@ -80,82 +81,161 @@ const dados = {
     }
 };
 
-const informaçãoDealhada = {
-    exibir(tr, i, listaDetalhes, nomeEquipe) {
-        // Verifica se a linha de detalhes já existe para fechar (Toggle)
-        const idLinhaInfo = `detalhe_linha_${i}`;
-        const linhaExistente = document.getElementById(idLinhaInfo);
-        if (linhaExistente) {
-            linhaExistente.remove();
-            return;
+//aq ira criar o html de info detalhado
+const informaçãoDealhadaa = {
+    exibir(tr, index, listaDetalhes, nomeEquipe){
+
+        //se existir o tr, clicando no btn ira remover
+        const trExistente = document.querySelector(`#detalhe_linha_${index}`)
+        if(trExistente){
+            trExistente.remove()
+            return
         }
 
-        // Cria a estrutura principal uma única vez
-        const createTr = document.createElement("tr");
-        createTr.id = idLinhaInfo;
+        //se n tiver ira criar
+        const trInfo = this.criaTr(tr, index)
+        const tdInfo = this.criaTd(trInfo)
+        const divDesempenhoDetalhado = this.divDesempenhoDetalhado(tdInfo)
+        this.criarH2(divDesempenhoDetalhado, nomeEquipe)
+        const divDesempenhoDetalhadoQuedas = this.divDesempenhoDetalhadoQuedas(divDesempenhoDetalhado)
 
-        const createTd = document.createElement("td");
-        createTd.setAttribute("colspan", "7");
-        createTd.className = "td_infoPartida";
-
-        const divPrincipal = document.createElement("div");
-        divPrincipal.className = "desempenhoDetalhado";
-
-        // Cria o Cabeçalho (H2)
-        const h2 = document.createElement("h2");
-        h2.innerHTML = `📊 Desempenho Detalhado - <span>${nomeEquipe}</span>`;
-        divPrincipal.appendChild(h2);
-
-        // Container para os cards das quedas
-        const divQuedas = document.createElement("div");
-        divQuedas.className = "desempenhoDetalhado_quedas";
-
-        // LOOP INTERNO: Cria os 5 cards dentro do container
-        listaDetalhes.forEach(partida => {
-            const ptsPos = dados.ptsPosição(partida.posicao);
-            const totalPartida = partida.kills + ptsPos;
-
-            const card = this.criarCardPartida(partida, ptsPos, totalPartida);
-            divQuedas.appendChild(card);
+        let totalQueda = 0
+        let totalPartida = 0
+        //ira criar todas as divs das partidas
+        listaDetalhes.forEach(queda => {
+            //aq pega os pts de cada posição
+            const ptsPos = dados.ptsPosição(queda.posicao);
+            //aq pega os pts total somando kill e pos, de cada partida
+            totalQueda = queda.kills + ptsPos;
+            //aq pega a pontuação total
+            totalPartida += totalQueda
+            
+            const divDesempenhoPartida = this.criardivDesempenhoPartida(divDesempenhoDetalhadoQuedas, queda.queda, queda.posicao, queda.kills, ptsPos, totalPartida)
+            divDesempenhoDetalhadoQuedas.appendChild(divDesempenhoPartida)
         });
-
-        divPrincipal.appendChild(divQuedas);
-        createTd.appendChild(divPrincipal);
-        createTr.appendChild(createTd);
-
-        // Adiciona a linha detalhada logo após a linha do time
-        tr.after(createTr);
+        //criar a punição das equipes
+        
+        
+        
+    },
+    //tr e td quando clica no btn
+    criaTr(tr, index){
+        //cria o tr, e add dps da tr principal
+        const trInfo = document.createElement("tr")
+        trInfo.setAttribute("id",`detalhe_linha_${index}`)
+        tr.after(trInfo)
+        return trInfo
+    },
+    criaTd(trInfo){
+        const tdInfo = document.createElement("td")
+        tdInfo.setAttribute("class", "td_infoPartida")
+        tdInfo.colSpan = 7
+        trInfo.appendChild(tdInfo)
+        return tdInfo
     },
 
-    criarCardPartida(partida, ptsPos, total) {
-        const divCadaPartida = document.createElement("div");
-        divCadaPartida.className = "desempenhoDetalhado_quedas_partida";
+    //primeira div na tr
+    divDesempenhoDetalhado(tdInfo){
+        const div = document.createElement("div")
+        div.setAttribute("class", "desempenhoDetalhado")
+        tdInfo.appendChild(div)
+        return div
+    },
+    criarH2(divDesempenhoDetalhado, nomeEquipe){
+        const h2 = document.createElement("h2")
+        const span = document.createElement("span")
+        span.textContent = nomeEquipe
+        h2.textContent = `📊 Desempenho Detalhado - `
+        h2.appendChild(span)
+        divDesempenhoDetalhado.appendChild(h2)
+        return
+    },
+    divDesempenhoDetalhadoQuedas(divDesempenhoDetalhado){
+        const div = document.createElement("div")
+        div.setAttribute("class", "desempenhoDetalhado_quedas")
+        divDesempenhoDetalhado.appendChild(div)
+        return div
+    },
 
+    //ira criar a div de cada partida, e as coisas dentro
+    criardivDesempenhoPartida(divDesempenhoDetalhadoQuedas, index, posição, kills, ptsPos, totalPts){
+        const div = document.createElement("div")
+        div.setAttribute("class", "desempenhoDetalhado_quedas_partida")
+        divDesempenhoDetalhadoQuedas.appendChild(div)
+
+        const h3 = this.criarH3(index)
+        const pPosição = this.criarP_posição(posição)
+        const pKilss = this.criarP_Kilss(kills)
+        const pPtsPos = this.criarP_ptsPos(ptsPos)
+        const pPtsKills = this.criarPKills(kills)
+        const pPtsTotal = this.criarPTotal(totalPts)
+        div.appendChild(h3)
+        div.appendChild(pPosição)
+        div.appendChild(pKilss)
+        div.appendChild(pPtsPos)
+        div.appendChild(pPtsKills)
+        div.appendChild(pPtsTotal)
+        return div
+    },
+    criarH3(index){
+        const h3 = document.createElement("h3")
+        const span = document.createElement("span")
+        span.textContent = index
+        h3.textContent = `Partida `
+        h3.appendChild(span)
+        return h3
+    },
+    criarP_posição(posição){
+        const p = document.createElement("p")
+        const span = document.createElement("span")
+        span.textContent = posição
+        p.setAttribute("class", "desempenhoDetalhado_quedas_partida_posição")
+        p.textContent = "posição:"
+        p.appendChild(span)
+        return p
+
+    },
+    criarP_Kilss(kills){
+        const p = document.createElement("p")
+        const span = document.createElement("span")
+        span.textContent = kills
+        p.setAttribute("class", "desempenhoDetalhado_quedas_partida_kills")
+        p.textContent = "kills:"
+        p.appendChild(span)
+        return p
+
+    },
+    criarP_ptsPos(ptsPos){
+        const p = document.createElement("p")
+        const span = document.createElement("span")
+        span.textContent = ptsPos
+        p.setAttribute("class", "desempenhoDetalhado_quedas_ptsPosição")
+        p.textContent = "Pts posição:"
+        p.appendChild(span)
+        return p
+
+    },
+    criarPKills(kills){
+        const p = document.createElement("p")
+        const span = document.createElement("span")
+        span.textContent = kills
+        p.setAttribute("class", "desempenhoDetalhado_quedas_ptsKills")
+        p.textContent = "Pts kills:"
+        p.appendChild(span)
+        return p
+
+    },
+    criarPTotal(totalPartida){
+        const p = document.createElement("p")
+        const span = document.createElement("span")
+        const soma = totalPartida
+        span.textContent = soma
+        p.setAttribute("class", "desempenhoDetalhado_quedas_total")
+        p.textContent = "Total: "
+        p.appendChild(span)
         
-        if (partida.posicao === 13) {
-            divCadaPartida.innerHTML = `
-                <h3>Partida <span>${partida.queda}</span></h3>
-                <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>Não jogou</span></p>
-                <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>Não jogou</span></p>
-                <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>${ptsPos}</span></p>
-                <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>${partida.kills}</span></p>
-                <hr>
-                <p class="desempenhoDetalhado_quedas_total">Total: <span>${total}</span></p>
-            `;
-        } else {
-            // Usando Template String para o HTML ficar limpo e fácil de ler
-            divCadaPartida.innerHTML = `
-                    <h3>Partida <span>${partida.queda}</span></h3>
-                    <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>${partida.posicao}º</span></p>
-                    <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>${partida.kills}</span></p>
-                    <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>${ptsPos}</span></p>
-                    <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>${partida.kills}</span></p>
-                    <hr>
-                    <p class="desempenhoDetalhado_quedas_total">Total: <span>${total}</span></p>`;
-        }
+        return p
 
+    },
+}
 
-
-        return divCadaPartida;
-    }
-};

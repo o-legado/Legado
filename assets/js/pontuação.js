@@ -371,6 +371,7 @@ const criarRankJogador = {
     criaContainerJogador(posicao, nomeJogador, kill, equipe) {
         const top_kills_grid = document.querySelector(".top_kills_grid")
         const containerJogador = document.createElement("div")
+        containerJogador.setAttribute("id", posicao)
         containerJogador.setAttribute("class", "kill_card")
         if (posicao == 1) {
             containerJogador.setAttribute("class", "kill_card rank-1")
@@ -421,6 +422,14 @@ const criarRankJogador = {
         kills.textContent = kill
         divKill.appendChild(kills)
 
+        this.criarBtn(containerJogador, posicao)
+    },
+    criarBtn(containerJogador, posicao){
+        const btn = document.createElement("button")
+        btn.setAttribute("class", "btnPlayer")
+        btn.setAttribute("id", `playerInfo${posicao}`)
+        btn.textContent = "📋"
+        containerJogador.appendChild(btn)
     }
 }
 

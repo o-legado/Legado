@@ -560,6 +560,22 @@ main {
   position: relative;
   flex: 1 1 calc(33.3333333333% - 2rem);
   transition: transform 0.2s;
+  gap: 1rem;
+}
+.container .top_kills_wrapper .btnPlayer {
+  background-color: #262626;
+  border: 1px solid #444;
+  color: white;
+  text-align: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.container .top_kills_wrapper .btnPlayer:hover {
+  cursor: pointer;
+  background-color: #b91c1c;
+  border-color: #b91c1c;
+  transform: scale(1.1);
 }
 .container .top_kills_wrapper .kill_card:hover {
   transform: translateY(-5px);
