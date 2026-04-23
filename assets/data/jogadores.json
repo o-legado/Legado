@@ -1,202 +1,202 @@
 {
-    "treino1": {
+  "treino1": {
     "data": "14/04/2026",
     "equipes": {
-        "NORDESTE-PI": {
-            "EDzin VENCEU": [2, 1, 0],
-            "!Nescau.777": [1, 1, 0],
-            "Eo Japones": [1, 0, 0],
-            "GABO.XT": [null, null, null],
-            "HERICK.ZN": [null, null, null],
-            "infcmobile": [0, 0, 0]
-        },
-        "AGONIADOS": {
-            "《ŁÐ》SOCAFOFO": [1, 5, 1],
-            "《ŁÐ》PATOLINO": [2, 6, 0],
-            "CLEITON": [0, 0, 0],
-            "BEBETO": [null, null, null],
-            "NEYMAR JR": [null, null, null],
-            "NATALINA": [null, 4, 0]
-        },
-        "ROCKS PIRATES": {
-            "R lopes": [3, 0, 0],
-            "R loiroxz": [1, 0, 0],
-            "RuivoYu3832K": [2, 0, 0],
-            "LYTORODE4": [4, 1, 0],
-            "@timbosz": [null, null, 1],
-            "R duartz": [null, null, null]
-        },
-        "SEM COVARDIA": {
-            "ANA CLARA": [null, null, null],
-            "MOSTARDA": [null, null, null],
-            "SHUSHI": [null, null, null],
-            "《ŁÐ》.JV.": [null, null, null],
-            "MARCOS": [null, null, null]
-        },
-        "FRANÇA": {
-            "FR JRzin": [0, 0, 2],
-            "FR LUCIFER": [0, 4, 7],
-            "FR VOLGZ": [0, 2, 3],
-            "FR MELIODAS": [0, 1, 2]
-        },
-        "XIT 8": {
-            "the king": [null, null, null],
-            "ZEUS": [null, null, null],
-            "Gs Angelo": [null, null, null],
-            "Black": [null, null, null]
-        },
-        "REVENGERS": {
-            "Tk7 noah": [null, null, null],
-            "Tk7 davi": [null, null, null],
-            "sagaz": [null, null, null],
-            "M7 ayoria": [null, null, null],
-            "tk7 bruxo": [null, null, null],
-            "vitor": [null, null, null]
-        },
-        "PHOENIX NR ELITE": {
-            "PIT NATOX": [null, null, 0],
-            "PAIN knzin": [1, 1, 2],
-            "KZYN_TK UG": [2, 4, 1],
-            "ᴍᴇɴᴏ》ᵗʳᵉᵐ": [1, 1, 0],
-            "PAIN JC": [2, 2, 2]
-        },
-        "WOLF ELITE": {
-           "Gs7": [0,0,0],
-           "cabeça cheia": [0,0,0],
-           "claudinho": [0,0,0],
-           "VIP OTAZU": [0,0,0]
-        },
-        "SS CEIFADORES": {
-            "SS DUQUE": [2, 0, 0],
-            "SS NBW7": [3, 0, 0],
-            "SS AKAZA": [null, null, null],
-            "SS SHEIKawp": [null, null, null],
-            "SS SOARES": [1, 0, 2],
-            "SS KINGx": [null, null, null],
-            "SS PH愛": [1, 0, 2]
-        },
-        "TURKIA ELITE": {
-            "tc tiakar": [4, 4, 3],
-            "vitin": [4, 8, 4],
-            "cerino": [5, 6, 4],
-            "bnd": [null, null, null],
-            "Paquetá": [null, null, null],
-            "KDO LUÍS9": [6, 1, 3]
-        },
-        "IW7 ESPORTS": {
-            "IW7 Joena7": [null, null, null],
-            "EASYWIN": [null, null, null],
-            "ENT BRENO": [null, null, null],
-            "ENT GOUENJI": [null, null, null],
-            "RR HS": [null, null, null]
-        }
+      "NORDESTE-PI": {
+        "EDzin VENCEU": [2, 1, 0],
+        "Nescau 777": [1, 1, 0],
+        "Eo Japones": [1, 0, 0],
+        "GABO XT": [null, null, null],
+        "HERICK ZN": [null, null, null],
+        "infcmobile": [0, 0, 0]
+      },
+      "AGONIADOS": {
+        "LD SOCAFOFO": [1, 5, 1],
+        "LD PATOLINO": [2, 6, 0],
+        "CLEITON": [0, 0, 0],
+        "BEBETO": [null, null, null],
+        "NEYMAR JR": [null, null, null],
+        "NATALINA": [null, 4, 0]
+      },
+      "ROCKS PIRATES": {
+        "R lopes": [3, 0, 0],
+        "R loiroxz": [1, 0, 0],
+        "RuivoYu3832K": [2, 0, 0],
+        "LYTORODE4": [4, 1, 0],
+        "timbosz": [null, null, 1],
+        "R duartz": [null, null, null]
+      },
+      "SEM COVARDIA": {
+        "ANA CLARA": [null, null, null],
+        "MOSTARDA": [null, null, null],
+        "SHUSHI": [null, null, null],
+        "LD JV": [null, null, null],
+        "MARCOS": [null, null, null]
+      },
+      "FRANCA": {
+        "FR JRzin": [0, 0, 2],
+        "FR LUCIFER": [0, 4, 7],
+        "FR VOLGZ": [0, 2, 3],
+        "FR MELIODAS": [0, 1, 2]
+      },
+      "XIT 8": {
+        "the king": [null, null, null],
+        "ZEUS": [null, null, null],
+        "Gs Angelo": [null, null, null],
+        "Black": [null, null, null]
+      },
+      "REVENGERS": {
+        "Tk7 noah": [null, null, null],
+        "Tk7 davi": [null, null, null],
+        "sagaz": [null, null, null],
+        "M7 ayoria": [null, null, null],
+        "tk7 bruxo": [null, null, null],
+        "vitor": [null, null, null]
+      },
+      "PHOENIX NR ELITE": {
+        "PIT NATOX": [null, null, 0],
+        "PAIN knzin": [1, 1, 2],
+        "KZYN TK UG": [2, 4, 1],
+        "MENO trem": [1, 1, 0],
+        "PAIN JC": [2, 2, 2]
+      },
+      "WOLF ELITE": {
+        "Gs7": [0, 0, 0],
+        "cabeca cheia": [0, 0, 0],
+        "claudinho": [0, 0, 0],
+        "VIP OTAZU": [0, 0, 0]
+      },
+      "SS CEIFADORES": {
+        "SS DUQUE": [2, 0, 0],
+        "SS NBW7": [3, 0, 0],
+        "SS AKAZA": [null, null, null],
+        "SS SHEIKawp": [null, null, null],
+        "SS SOARES": [1, 0, 2],
+        "SS KINGx": [null, null, null],
+        "SS PH": [1, 0, 2]
+      },
+      "TURKIA ELITE": {
+        "tc tiakar": [4, 4, 3],
+        "vitin": [4, 8, 4],
+        "cerino": [5, 6, 4],
+        "bnd": [null, null, null],
+        "Paqueta": [null, null, null],
+        "KDO LUIS9": [6, 1, 3]
+      },
+      "IW7 ESPORTS": {
+        "IW7 Joena7": [null, null, null],
+        "EASYWIN": [null, null, null],
+        "ENT BRENO": [null, null, null],
+        "ENT GOUENJI": [null, null, null],
+        "RR HS": [null, null, null]
+      }
     }
-    },
-    "treino2": {
+  },
+  "treino2": {
     "data": "16/04/2026",
     "equipes": {
-        "SS GAMING": {
-            "SS DUQUE": [1, 0, 1],
-            "SS NBW'7": [0, 0, 2],
-            "SS SHEIK.awp": [1, 3, null],
-            "SS soares7": [1, 0, 1]
-        },
-        "AGONIADOS": {
-            "celinhaffxj": [7, 1, 0],
-            "《ŁÐ》PATOLINO": [8, 0, null],
-            "꧁༺LA CRU": [null, 0, 0]
-        },
-        "TURQUIA ELITE": {
-            "KDO LUÍS9": [0, 1, 3],
-            "cirino9292": [5, 4, 2],
-            "-Tc Tiakar†": [null, 0, null],
-            ".I'm vitinホ": [6, 0, 6],
-            "i a k a r ⸸": [4, 1, 1]
-        },
-        "RED FOX KILERS": {
-            "NFX BIEL⁷": [7, 14, 14],
-            "FR PATRÃO": [0, 2, 0],
-            "DM VITOR": [1, 2, 2],
-            "Flay9f7x2T9p": [1, 5, 4]
-        },
-        "X LEGENDS": {
-            "not jonn 愛": [0, 1, null],
-            "愛 JHOWW⁷⁷⁷": [0, 0, null],
-            "NTY DONA": [0, null, null]
-        },
-        "LINE SEVEN": {},
-        "META GAMING": {
-            "yeshuafé": [1, 5, 4],
-            "LIDERANÇA !7": [1, 1, 6],
-            "mlkpurezaa": [0, 0, 0],
-            "ª!SHOTZX 愛 8": [0, 1, 4]
-        },
-        "RAZE FOX": {
-            "B⁹ Six9ump愛": [0, 1, 1],
-            "NFX THEBEST愛": [1, 2, 0],
-            "♪ N F X M Ø R": [0, 2, 1],
-            "AɴJOGoD": [4, 2, null],
-            "Liz7c2Q2#0b": [null, null, 0]
-        },
-        "WOLF ELITE": {},
-        "LYCAN NFX": {},
-        "NORDESTE-PI": {
-            "EDZIN VENCEU": [0, 0, 0],
-            "!Nescau.777": [1, 0, 0],
-            "Eo Japonês ☂": [1, 0, 0],
-            "INFC JAPONÊS": [0, 0, 1]
-        },
-        "CHERRY": {
-            "mt Steffany": [1, 0, 0],
-            "mt CARLA TTK": [0, 0, 1],
-            "ピアストリ": [0, 0, 0],
-            "kx Gessyk\"": [1, 0, 1]
-        }
+      "SS GAMING": {
+        "SS DUQUE": [1, 0, 1],
+        "SS NBW 7": [0, 0, 2],
+        "SS SHEIK awp": [1, 3, null],
+        "SS soares7": [1, 0, 1]
+      },
+      "AGONIADOS": {
+        "celinhaffxj": [7, 1, 0],
+        "LD PATOLINO": [8, 0, null],
+        "LA CRU": [null, 0, 0]
+      },
+      "TURQUIA ELITE": {
+        "KDO LUIS9": [0, 1, 3],
+        "cirino9292": [5, 4, 2],
+        "Tc Tiakar": [null, 0, null],
+        "Im vitin": [6, 0, 6],
+        "i a k a r": [4, 1, 1]
+      },
+      "RED FOX KILERS": {
+        "NFX BIEL 7": [7, 14, 14],
+        "FR PATRAO": [0, 2, 0],
+        "DM VITOR": [1, 2, 2],
+        "Flay9f7x2T9p": [1, 5, 4]
+      },
+      "X LEGENDS": {
+        "not jonn": [0, 1, null],
+        "JHOWW 777": [0, 0, null],
+        "NTY DONA": [0, null, null]
+      },
+      "LINE SEVEN": {},
+      "META GAMING": {
+        "yeshuafe": [1, 5, 4],
+        "LIDERANCA 7": [1, 1, 6],
+        "mlkpurezaa": [0, 0, 0],
+        "SHOTZX 8": [0, 1, 4]
+      },
+      "RAZE FOX": {
+        "B9 Six9ump": [0, 1, 1],
+        "NFX THEBEST": [1, 2, 0],
+        "N F X M O R": [0, 2, 1],
+        "ANJOGOD": [4, 2, null],
+        "Liz7c2Q2 0b": [null, null, 0]
+      },
+      "WOLF ELITE": {},
+      "LYCAN NFX": {},
+      "NORDESTE-PI": {
+        "EDZIN VENCEU": [0, 0, 0],
+        "Nescau 777": [1, 0, 0],
+        "Eo Japones": [1, 0, 0],
+        "INFC JAPONES": [0, 0, 1]
+      },
+      "CHERRY": {
+        "mt Steffany": [1, 0, 0],
+        "mt CARLA TTK": [0, 0, 1],
+        "PIASTRI": [0, 0, 0],
+        "kx Gessyk": [1, 0, 1]
+      }
     }
-    },
-    "treino3": {
+  },
+  "treino3": {
     "data": "21/04/2026",
     "equipes": {
       "RAZE FOX": {
-        "RB TW07!": [4, 0, 0],
-        "JNFX MORENO™": [5, 1, 0],
+        "RB TW07": [4, 0, 0],
+        "JNFX MORENO": [5, 1, 0],
         "ANJ0G0d": [4, 0, 0],
-        "LIZ7C2Q2#0B": [2, 0, 0]
+        "LIZ7C2Q2 0B": [2, 0, 0]
       },
       "SS GAMING": {
         "SS DUQUE": [0, 2, 0],
         "SS LUIS9": [0, 1, 0],
-        "CPX JERRY¹⁵⁷": [0, 0, 0],
-        "SS NBW'7": [0, 1, null],
+        "CPX JERRY 157": [0, 0, 0],
+        "SS NBW 7": [0, 1, null],
         "SS KINGX": [null, null, 0]
       },
       "META GAMING": {
         "AUSENTE": [0, 0, 0]
       },
-      "BL4ZE SPORT'S": {
-        "†siℓNA 007": [2, 0, null],
-        "BRUXO✍️": [1, 1, 0],
+      "BL4ZE SPORTS": {
+        "siLNA 007": [2, 0, null],
+        "BRUXO": [1, 1, 0],
         "NOX FREITAS": [0, 0, 2],
         "NOX AMGN": [1, 0, 1],
-        "u xerec⁴": [null, null, 0]
+        "u xerec 4": [null, null, 0]
       },
       "ALPHA TEAM": {
-        "✿ C O V I D 1 9 么": [1, 0, 0],
-        "YKS MITO❂": [0, 0, 0],
-        "@DAFURIA 333": [0, 0, 0],
+        "C O V I D 1 9": [1, 0, 0],
+        "YKS MITO": [0, 0, 0],
+        "DAFURIA 333": [0, 0, 0],
         "IDLETEDYOU": [0, 0, 0]
       },
       "XKZ LOBOS": {
-        "XKZ WILTZIN あ": [3, 0, 2],
+        "XKZ WILTZIN": [3, 0, 2],
         "XKZ FERNANDA": [5, 2, 2],
-        "VZWATZADA⁴⁴⁴": [0, 2, 2],
-        "XKZ VINIあ": [2, 1, 2]
+        "VZWATZADA 444": [0, 2, 2],
+        "XKZ VINI": [2, 1, 2]
       },
       "BLACKSTAR": {
-        "LS★MARECHAL": [5, 3, 1],
+        "LS MARECHAL": [5, 3, 1],
         "BLD TEUS": [3, 4, 2],
-        "WINBLESSED!": [2, 0, 0],
-        "..宇智波斑..": [1, 1, 1]
+        "WINBLESSED": [2, 0, 0],
+        "Uchiha Madara": [1, 1, 1]
       },
       "ONE LEGACY": {
         "AUSENTE": [0, 0, 0]
@@ -205,24 +205,23 @@
         "CTP HYCK": [1, 5, 5],
         "CTP PITOCO": [4, 4, 4],
         "FORESTZADAA7": [1, 2, 4],
-        "DAPENHA~": [3, 3, 5]
+        "DAPENHA": [3, 3, 5]
       },
       "FLAMENGO CRF": {
-        "†FLA MANDELA": [0, null, null],
-        "FLA @RAIZINN": [0, null, null],
+        "FLA MANDELA": [0, null, null],
+        "FLA RAIZINN": [0, null, null],
         "FLA 105K": [0, null, null],
         "THOR": [null, 5, 3],
         "PEIXE": [null, 3, 3],
-        "JJOTA_FXP": [null, 2, 2],
+        "JJOTA FXP": [null, 2, 2],
         "FLA TRURZIN": [null, 1, 2]
       },
-      "FRANÇA": {
+      "FRANCA": {
         "FLAY9F7X2T9P": [0, 0, 0],
         "DM VITOR": [0, 1, 0],
         "FR LUCIFER": [0, 4, 0],
-        "NFX BIEL⁷": [0, 2, 0]
+        "NFX BIEL 7": [0, 2, 0]
       }
     }
-    }
-
+  }
 }

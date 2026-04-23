@@ -140,7 +140,6 @@ const tabela = {
 
             //pega todos os seasons um por um
             for (let seasons in seasonJson) {
-                console.log(dados)
                 //se as seasons do json for igual a que foi selecionada faz isso
                 if (seasons == seasonSelecionada) {
                     const dados = pegarDados.start(seasonSelecionada)
@@ -356,45 +355,51 @@ const formarDadosJogadores = {
 //aq com os dados eles pegam os dados e coloca na tela
 const criarRankJogador = {
     start(objJogadores) {
-
         const div = document.querySelector(".top_kills_grid")
         div.textContent = ""
 
-        //aq ira percorrer cada cada chave do objeto dos joagdores
         objJogadores.forEach(players => {
-            //aq ira enviar os dados para criar o rank na tela
             this.criaContainerJogador(players.posição, players.jogador, players.pts, players.equipe)
-
         })
-        // this.criaContainerJogador(posicao, nomeJogadores, somaKills, nomeEquipe)
     },
+
     criaContainerJogador(posicao, nomeJogador, kill, equipe) {
         const top_kills_grid = document.querySelector(".top_kills_grid")
+        
+        // 1. DIV PRINCIPAL (O card externo)
         const containerJogador = document.createElement("div")
-        containerJogador.setAttribute("id", posicao)
-        containerJogador.setAttribute("class", "kill_card")
-        if (posicao == 1) {
-            containerJogador.setAttribute("class", "kill_card rank-1")
-        } if (posicao == 2) {
-            containerJogador.setAttribute("class", "kill_card rank-2")
-        } if (posicao == 3) {
-            containerJogador.setAttribute("class", "kill_card rank-3")
-        }
+        containerJogador.setAttribute("name", `playerInfo${posicao}`)
+        
+        // Lógica de classes de rank mantida
+        let classeRank = "kill_card"
+        if (posicao == 1) classeRank += " rank-1"
+        else if (posicao == 2) classeRank += " rank-2"
+        else if (posicao == 3) classeRank += " rank-3"
+        containerJogador.setAttribute("class", classeRank)
+
+        // 2. NOVA DIV INTERNA (Onde as informações realmente ficarão)
+        const cardContent = document.createElement("div")
+        cardContent.setAttribute("class", "card_content") // Você pode estilizar essa classe no CSS
+        
+        containerJogador.appendChild(cardContent)
         top_kills_grid.appendChild(containerJogador)
-        this.criaPosição(containerJogador, posicao, nomeJogador, kill, equipe)
+
+        // Chamamos as próximas funções passando a DIV INTERNA (cardContent) em vez da principal
+        this.criaPosição(cardContent, posicao, nomeJogador, kill, equipe)
     },
-    criaPosição(containerJogador, posicao, nomeJogador, kill, equipe) {
+
+    criaPosição(cardContent, posicao, nomeJogador, kill, equipe) {
         const p = document.createElement("p")
         p.setAttribute("class", "badge")
         p.textContent = posicao
-        containerJogador.appendChild(p)
-        this.criarNomeEquipe(containerJogador, posicao, nomeJogador, kill, equipe)
+        cardContent.appendChild(p)
+        this.criarNomeEquipe(cardContent, posicao, nomeJogador, kill, equipe)
     },
-    criarNomeEquipe(containerJogador, posicao, nomeJogador, kill, equipe) {
+
+    criarNomeEquipe(cardContent, posicao, nomeJogador, kill, equipe) {
         const divPlayerInfo = document.createElement("div")
         divPlayerInfo.setAttribute("class", "player_info")
-        containerJogador.appendChild(divPlayerInfo)
-
+        cardContent.appendChild(divPlayerInfo)
 
         const nick = document.createElement("h4")
         nick.textContent = nomeJogador
@@ -404,13 +409,13 @@ const criarRankJogador = {
         nomeEquipe.textContent = equipe
         divPlayerInfo.appendChild(nomeEquipe)
 
-        this.criarKill(containerJogador, posicao, nomeJogador, kill, equipe)
+        this.criarKill(cardContent, posicao, nomeJogador, kill, equipe)
     },
-    criarKill(containerJogador, posicao, nomeJogador, kill, equipe) {
+
+    criarKill(cardContent, posicao, nomeJogador, kill, equipe) {
         const divKill = document.createElement("div")
         divKill.setAttribute("class", "kill_stats")
-        containerJogador.appendChild(divKill)
-
+        cardContent.appendChild(divKill)
 
         const nomeKills = document.createElement("span")
         nomeKills.setAttribute("class", "lbl")
@@ -422,17 +427,22 @@ const criarRankJogador = {
         kills.textContent = kill
         divKill.appendChild(kills)
 
-        this.criarBtn(containerJogador, posicao)
+        this.criarBtn(cardContent, posicao, nomeJogador, equipe)
     },
-    criarBtn(containerJogador, posicao){
+
+    criarBtn(cardContent, posicao, nomeJogador, equipe){
         const btn = document.createElement("button")
         btn.setAttribute("class", "btnPlayer")
         btn.setAttribute("id", `playerInfo${posicao}`)
+
+        // Mantendo o dataset para o info detalhado funcionar
+        btn.dataset.jogador = nomeJogador;
+        btn.dataset.equipe = equipe;
+
         btn.textContent = "📋"
-        containerJogador.appendChild(btn)
+        cardContent.appendChild(btn)
     }
 }
-
 
 
 

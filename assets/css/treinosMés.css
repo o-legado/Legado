@@ -555,12 +555,65 @@ main {
   border: 1px solid #262626;
   border-radius: 1.2rem;
   padding: 2rem;
-  display: flex;
-  align-items: center;
   position: relative;
   flex: 1 1 calc(33.3333333333% - 2rem);
   transition: transform 0.2s;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container .top_kills_wrapper .card_content {
+  display: flex;
+  align-items: center;
   gap: 1rem;
+  width: 100%;
+}
+.container .top_kills_wrapper .card_infoPlayer {
+  margin-top: 1rem;
+}
+.container .top_kills_wrapper .card_infoPlayer h2 {
+  color: #ef4444;
+  font-weight: bolder;
+  font-size: 1.6em;
+}
+.container .top_kills_wrapper .card_infoPlayer h2 > span {
+  color: white;
+  font-size: 1.8rem;
+}
+.container .top_kills_wrapper .desempenhoDetalhado_player {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+}
+.container .top_kills_wrapper .desempenhoDetalhado_player_partida {
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 1px solid #262626;
+  flex: 1 1 0;
+}
+.container .top_kills_wrapper .desempenhoDetalhado_player_partida h3 {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  background-color: #262626;
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 1rem;
+}
+.container .top_kills_wrapper .killInfoPlayer {
+  color: #ccc;
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .top_kills_wrapper .killInfoPlayer > span {
+  color: #ef4444;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  margin-left: 2rem;
 }
 .container .top_kills_wrapper .btnPlayer {
   background-color: #262626;
@@ -617,7 +670,6 @@ main {
 }
 .container .top_kills_wrapper .player_info {
   flex-grow: 1;
-  margin-left: 1rem;
 }
 .container .top_kills_wrapper .player_info h4 {
   font-size: 1.8rem;
@@ -716,5 +768,13 @@ main {
   }
   .kill_card {
     flex: 1 1 calc(100% - 2rem) !important;
+  }
+  .desempenhoDetalhado_player_partida {
+    flex: 1 1 calc(33.3333333333% - 2rem) !important;
+  }
+}
+@media (min-width: 769px) {
+  .desempenhoDetalhado_player_partida {
+    flex: 1 1 calc(33.3333333333% - 2rem) !important;
   }
 }/*# sourceMappingURL=treinosMés.css.map */

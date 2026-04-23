@@ -9,19 +9,17 @@ async function carregarDados() {
 
         const resposta2 = await fetch("../data/jogadores.json");
         jogadores = await resposta2.json();
-
+        
         
     } catch (error) {
-        console.error("Erro ao carregar JSON:", error);
+        // console.error("Erro ao carregar JSON:", error);
     }
 }
 
 async function iniciarApp() {
     await carregarDados();
 }
-
 iniciarApp();
-
 const classificação = [
     { posição: 1, pts: 12 },
     { posição: 2, pts: 9 },
@@ -38,18 +36,140 @@ const classificação = [
     { posição: 13, pts: 0 }
 ];
 
+// Processa e busca os dados do jogador no JSON
+const dadosPlayer = {
+    start(divCard, nomeJogador, nomeEquipe) {
+        let select = document.querySelector(".container_select").value;
+        if (select == "treinoSelecionado" || select === "") {
+            select = "treino1";
+        }
+        
+        // Caminho exato no seu JSON: jogadores -> treinoX -> equipes -> NomeEquipe -> NomeJogador
+        const killsArray = jogadores[select].equipes[nomeEquipe][nomeJogador];
+
+        // Manda o array de kills para ser construído no HTML
+        criarTrPlayer.start(divCard, nomeJogador, killsArray);
+    }
+}
+
+// Cria o HTML detalhado dentro do card
+const criarTrPlayer = {
+    start(divCard, nomeJogador, killsArray){
+        const nomeJogadorSemEspaço = nomeJogador.replace(/[^\w]/g, "");
+        
+        const divExistente = document.querySelector(`#${nomeJogadorSemEspaço}`)
+        console.log(nomeJogador)
+        if(divExistente){
+            divExistente.remove()
+            return
+        }
+        const div = document.createElement("div")
+        div.setAttribute("class", "card_infoPlayer")
+        div.setAttribute("id", nomeJogadorSemEspaço)
+
+        const h2 = this.criarH2(nomeJogador)
+        div.appendChild(h2)
+
+        const divContainerCard = this.divContainerCard()
+        div.appendChild(divContainerCard)
+
+        // Envia para a criação das colunas de partidas
+        this.divDesempenhoDetalhado(divContainerCard, killsArray)
+        
+        divCard.appendChild(div)
+    },
+
+    criarH2(nomeJogador){
+        const h2 = document.createElement("h2")
+        const span = document.createElement("span")
+        span.textContent = nomeJogador
+        h2.textContent = "📊 Desempenho de "
+        h2.appendChild(span)
+        return h2
+    },
+
+    divContainerCard(){
+        const div = document.createElement("div")
+        div.setAttribute("class", "desempenhoDetalhado_player")
+        return div
+    },
+
+    divDesempenhoDetalhado(divContainerCard, killsArray){
+        // Loop baseado no número de partidas (tamanho do array)
+        killsArray.forEach((killDaPartida, index) => {
+            const divPartida = document.createElement("div")
+            divPartida.setAttribute("class", "desempenhoDetalhado_player_partida")
+            
+            // index + 1 para a Partida começar em 1 e não em 0
+            const h3 = this.criarH3(index + 1)
+            divPartida.appendChild(h3)
+            
+            // CORREÇÃO: Passamos apenas o valor daquela partida específica
+            this.criarPKill(killDaPartida, divPartida)
+
+            divContainerCard.appendChild(divPartida)
+        })
+    },
+
+    criarH3(numberPartida){
+        const h3 = document.createElement("h3")
+        h3.textContent = `Partida ${numberPartida}`
+        return h3
+    },
+
+    // Agora recebe o valor individual da kill, não o array
+    criarPKill(valorKill, divPartida){
+        const p = document.createElement("p")
+        
+        p.setAttribute("class", "killInfoPlayer")
+        p.textContent = "Kills: "
+
+        const span = document.createElement("span")
+        span.textContent = valorKill ?? 0
+
+        p.appendChild(span)
+        divPartida.appendChild(p)
+    }
+}
+    
+
+
+
+
+
+
 // ESCUTADOR DE EVENTOS ÚNICO
 document.addEventListener("click", (event) => {
     for (let i = 1; i <= 12; i++) {
         if (event.target.id === `info${i}`) {
             const tr = document.querySelector(`#tr${i}`);
             if (tr) {
-                
                 dados.start(tr, event.target, i);
             }
         }
     }
+
+    const btn = event.target;
+    if (btn.classList.contains("btnPlayer")) {
+        // Pega os dados que escondemos no botão
+        const jogador = btn.dataset.jogador;
+        const equipe = btn.dataset.equipe;
+        
+        // Pega a div do card correspondente ao botão clicado
+        const divCard = btn.closest(".kill_card"); 
+        
+        if (divCard) {
+            dadosPlayer.start(divCard, jogador, equipe);
+        }
+    }
 });
+
+
+
+
+
+
+
 
 //aq forma os dados das equipes
 const dados = {
@@ -84,7 +204,6 @@ const dados = {
 //aq ira criar o html de info detalhado
 const informaçãoDealhadaa = {
     exibir(tr, index, listaDetalhes, nomeEquipe){
-
         //se existir o tr, clicando no btn ira remover
         const trExistente = document.querySelector(`#detalhe_linha_${index}`)
         if(trExistente){

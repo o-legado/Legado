@@ -626,13 +626,69 @@ main{
             border: 1px solid #262626;
             border-radius: 1.2rem;
             padding: 2rem;
-            display: flex;
-            align-items: center;
             position: relative;
             flex: 1 1 calc((100%/3) - 2rem);
             transition: transform 0.2s;
-            gap: 1rem;
+            height: fit-content;
         }
+        .card_content{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        //card do infoPlayer
+        .card_infoPlayer{
+            margin-top: 1rem;
+        }
+        .card_infoPlayer h2{
+            color: #ef4444; // Vermelho mais equilibrado
+            font-weight: bolder;
+            font-size: 1.6em;
+        }
+        .card_infoPlayer h2 > span{
+            color: white;
+            font-size: 1.8rem;
+        }
+        .desempenhoDetalhado_player{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 1rem;
+        }
+        .desempenhoDetalhado_player_partida{
+            background-color: #111;
+            padding: 1.5rem;
+            border-radius: 2rem;
+            border: 1px solid #262626;
+            flex: 1 1 0;
+        }
+        .desempenhoDetalhado_player_partida h3{
+            padding: 0.5rem 1rem;
+            text-align: center;
+            border-radius: 2rem;
+            background-color: #262626;
+            font-size: 1.5em;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .killInfoPlayer{
+            color: #ccc;
+            font-size: 1.3em;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .killInfoPlayer > span{
+            color: #ef4444;
+            font-weight: bolder;
+            font-size: 1.8rem;
+            margin-left: 2rem;
+        }
+
+
         .btnPlayer{
             background-color: #262626;
             border: 1px solid #444;
@@ -697,7 +753,6 @@ main{
 
         .player_info {
             flex-grow: 1;
-            margin-left: 1rem;
         }
 
         .player_info h4 {
@@ -817,5 +872,13 @@ main{
 
         flex: 1 1 calc((100%/1) - 2rem) !important;
     }
+    .desempenhoDetalhado_player_partida{
+        flex: 1 1 calc((100% / 3) - 2rem) !important;
+    }
 }
 
+@media (min-width: 769px){
+    .desempenhoDetalhado_player_partida{
+        flex: 1 1 calc((100% / 3) - 2rem) !important;
+    }
+}
