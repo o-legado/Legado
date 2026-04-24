@@ -287,7 +287,8 @@ const informaçãoDealhadaa = {
         const pKilss = this.criarP_Kilss(kills)
         const pPtsPos = this.criarP_ptsPos(ptsPos)
         const pPtsKills = this.criarPKills(kills)
-        const pPtsTotal = this.criarPTotal(totalPts)
+        const totalPartida = ptsPos + kills
+        const pPtsTotal = this.criarPTotal(totalPartida)
         div.appendChild(h3)
         div.appendChild(pPosição)
         div.appendChild(pKilss)
@@ -316,7 +317,6 @@ const informaçãoDealhadaa = {
         if(posição === 13){
             span.textContent = "não jogou"
         }
-        console.log(p)
         return p
 
     },
@@ -351,6 +351,7 @@ const informaçãoDealhadaa = {
 
     },
     criarPTotal(totalPartida){
+        console.log(totalPartida)
         const p = document.createElement("p")
         const span = document.createElement("span")
         const soma = totalPartida
