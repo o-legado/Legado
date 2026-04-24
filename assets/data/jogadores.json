@@ -223,5 +223,72 @@
         "NFX BIEL 7": [0, 2, 0]
       }
     }
+  },
+  "treino4": {
+        "data": "23/04/2026",
+        "equipes": {
+            "VINGADORES": {
+                "VNG THOR+": [2, 4, 0],
+                "VNG HULK": [0, 1, 0],
+                "VNG_X BATMAN X": [1, 1, 0],
+                "YKZ DS": [0, 1, null]
+            },
+            "SS GAMING": {
+                "SS DUQUE": [3, 3, 4],
+                "SS NBW'7": [4, 3, 2],
+                "SS KINGX": [0, 2, 3],
+                "SS Luis9": [2, 3, 3]
+            },
+            "META GAMING": {
+                "YESHUA": [4, 2, 0],
+                "jordanpcxis": [10, 3, 1],
+                "WHITER": [7, 2, 0],
+                "JPZIN!": [4, 0, 0]
+            },
+            "FAIXA PRETA": {
+                "crazyboy": [1, 3, 0],
+                "PATOLINO": [0, 0, 0],
+                "cleitonxit": [0, 1, 0],
+                "BRISCH": [0, 0, 0]
+            },
+            "THE SLAYERS": {
+                "TS MT": [0, 2, 1],
+                "TS LZZ": [0, 4, 1],
+                "TS DG BLACK": [1, 1, 6],
+                "TS Mah": [0, 0, 1]
+            },
+            "FAC NEXUS": {
+                "RD Nunes": [2, 1, 1],
+                "RD Caos": [0, 2, 3],
+                "RD Daemon": [0, 1, 0],
+                "tr_sants¹⁵⁷": [null, null, 5]
+            },
+            "VILÕES": {
+                "TNY MAFIOSO": [5, 0, 3],
+                "PD ystevohz7": [1, 0, 0],
+                "RLZ Ryanhzz7": [1, 0, 1],
+                "macakinha": [1, 0, 0]
+            },
+            "LSD": {
+                "LSD CHEFÃO": [0, null, null],
+                "LSDkauaXIT": [1, null, null],
+                "portal GB": [0, null, null],
+                "LSD calyna": [0, null, null]
+            },
+            "TORRE": {
+                "WOD THEUSx7": [4, null, null],
+                "the dallmore": [0, 0, null],
+                "LPFF TORRE": [2, 0, null],
+                "fp46s": [1, 1, null]
+            },
+            "FAC SPORTS": {
+                "KING ump": [0, 1, 0],
+                "FAC STOKIO": [4, 0, 1],
+                "FAC Almeida": [2, 1, 2],
+                "FAC NEGÃO32": [6, 4, 5]
+            }
+            
+        }
   }
+
 }

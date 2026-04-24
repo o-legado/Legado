@@ -305,12 +305,18 @@ const informaçãoDealhadaa = {
         return h3
     },
     criarP_posição(posição){
-        const p = document.createElement("p")
-        const span = document.createElement("span")
+        let p = document.createElement("p")
+        let span = document.createElement("span")
         span.textContent = posição
         p.setAttribute("class", "desempenhoDetalhado_quedas_partida_posição")
+        
         p.textContent = "posição:"
+        
         p.appendChild(span)
+        if(posição === 13){
+            span.textContent = "não jogou"
+        }
+        console.log(p)
         return p
 
     },
