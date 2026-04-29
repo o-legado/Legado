@@ -289,6 +289,76 @@
             }
             
         }
-  }
+  },
+   "treino5": {
+        "data": "28/04/2026",
+        "equipes": {
+            "META GAMING": {
+                "Nicollas": [2, 0, null],
+                "YESHUA": [1, 2, 1],
+                "puzapaz": [0, 0, 0],
+                "WHITER": [2, 3, 0],
+                "jordanpcxis": [null, null, 0]
+            },
+            "SK LIVERPOOL": {
+                "k rezein": [null, 1, 2],
+                "sk JEMO": [null, 2, 0],
+                "THALLE": [null, 1, null],
+                "draxzin rs": [null, 4, 0]
+            },
+            "SS GAMING": {
+                "SHEIK awp": [3, 0, 0],
+                "URSO PA": [2, 0, 1],
+                "HOKAGE": [1, 0, 0],
+                "SS DUQUE": [null, 1, 0]
+            },
+            "FAIXA PRETA": {
+                "crazyboy": [4, 2, 6],
+                "cleiton xit": [1, 1, 2],
+                "MEMPHIS10yt": [null, 0, null],
+                "GS AGNELO": [5, 1, 1],
+                "AURA EGO": [null, null, 1]
+            },
+            "FAC NEXUS": {
+                "Nunnes": [6, 4, 3],
+                "EXIT COROLLA": [3, 1, 2],
+                "PRINC3 999": [0, 1, 0],
+                "PBM BOB LEE": [4, 2, 1]
+            },
+            "O TERROR DO SUL": {
+                "DANONE 33": [1, 5, 1],
+                "nbzzin ff": [5, 1, 0],
+                "CLST 1V6": [1, 1, 0],
+                "Apostoloxz": [2, 4, null]
+            },
+            "BAD INFINITY": {
+                "pablinn": [5, 1, 2],
+                "SAGAZ": [3, 0, 0],
+                "dafe mvp": [3, 3, 0],
+                "Gelatino": [2, null, null],
+                "iei4ndind": [null, 2, 1]
+            },
+            "TNY VILÕES": {
+                "MAFIOSO": [0, 0, 0],
+                "RX ARVORE": [0, 0, 0],
+                "clone": [0, 1, 0],
+                "Uzumaki w10": [0, 0, 0]
+            },
+            "BLACKSTAR": {
+                "BLD TEUS": [null, 4, 2],
+                "Uchiha Madara": [0, 3, 0],
+                "santzwx": [0, 6, 0],
+                "LS MARECHAL": [1, 2, 1]
+            },
+            "H7z SPORTS": {
+                "k9 JONAS": [0, 0, 3],
+                "Kauannx": [2, 0, 1],
+                "MENOR PAZ": [4, 4, 7],
+                "lz JR": [0, 1, 2]
+            }
+        }
+    }
+
+  
 
 }
