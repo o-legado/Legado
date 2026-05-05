@@ -16,10 +16,10 @@ if (mesSelecionado) {
 let season
 let jogadores
 async function carregarDados() {
-    const resposta = await fetch("../../../assets/data/xtreinoMensal/equipe.json")
+    const resposta = await fetch("/../../assets/data/xtreinoMensal/equipe.json")
     season = await resposta.json()
 
-    const resposta2 = await fetch("../../../assets/data/xtreinoMensal/jogadores.json")
+    const resposta2 = await fetch("/../../assets/data/xtreinoMensal/jogadores.json")
     jogadores = await resposta2.json()
 }
 //o js para e espera pegar todos os dados no json
