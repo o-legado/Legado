@@ -11,7 +11,7 @@ if (mesSelecionado) {
     // Aqui você chama suas funções de carregar dados baseadas no mês
     // carregarDados(mesSelecionado);
 }
-
+//aa
 // pega os dados do json
 let season
 let jogadores
