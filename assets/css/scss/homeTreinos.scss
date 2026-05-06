@@ -5,14 +5,14 @@
 }
 html {
     font-size: 62.5%;
-    min-height: 100%;
+    overflow-x: hidden;
 }
 body{
-    font-family: "Poppins", sans-serif;
     min-height: 100dvh;
+    background-color: #0A0A0A;
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
     position: relative;
-    background-color: #0A0A0A;
 }
 
 
