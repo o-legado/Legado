@@ -10,7 +10,7 @@ html {
 body{
     font-family: "Poppins", sans-serif;
     min-height: 100dvh;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #0A0A0A;
 }
 
@@ -194,11 +194,12 @@ main{
 .container_divsDates{
     display: flex;
     flex-wrap: wrap;
+    // flex-direction: column;
     gap: 2rem;
 }
 
 .container_divsDates_divDate{
-    flex: 1 1 calc((100% / 3) - 2rem);
+    flex: 1 1 calc((100% / 1) - 2rem);
     max-width: 35rem;
     padding: 2rem;
     background-color: #1A1A1A;
