@@ -84,11 +84,11 @@ body {
   top: 0;
   right: -100%;
   width: 300px;
-  min-height: 100%;
+  min-height: 100dvh;
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #111827;
+  background-color: #050505;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
   transition-duration: 0.25s;
 }
@@ -151,7 +151,6 @@ body {
 main {
   background-color: #0A0A0A;
   padding: 2rem;
-  min-height: 100vh;
 }
 
 .container h2 {

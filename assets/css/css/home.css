@@ -12,7 +12,7 @@ html {
 
 body {
   min-height: 100dvh;
-  background-color: blue;
+  background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -27,7 +27,9 @@ body {
   background: transparent;
   backdrop-filter: blur(0.5rem);
   border-bottom: 1px solid rgba(255, 0, 0, 0.205);
-  position: sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
   z-index: 99;
 }
@@ -86,11 +88,11 @@ body {
   top: 0;
   right: -100%;
   width: 300px;
-  min-height: 100%;
+  min-height: 100dvh;
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #111827;
+  background-color: #050505;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
   transition-duration: 0.25s;
 }
@@ -123,6 +125,7 @@ body {
 main {
   /* Background Geral da página (conforme o min-h-screen do React) */
   background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
+  margin-top: 10.5rem;
 }
 main .introdução {
   padding: 2rem;
