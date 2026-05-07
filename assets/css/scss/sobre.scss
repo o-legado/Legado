@@ -11,7 +11,8 @@ html {
 
 body {
     min-height: 100dvh;
-    background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
+    background-color: #000000;
+    // background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
     position: relative
@@ -151,5 +152,73 @@ body {
 }
 
 main{
-    
+    margin-top: 11rem !important;
+    background: linear-gradient(135deg, #000000 0%, #111827 50%);
+    .quemSomos{
+        text-align: center;
+        .quemSomos_container p:nth-child(1){
+            font-size: 1.6em;
+            display: inline-block;
+            width: fit-content;
+            color: #FCA5A5;
+            background-color: #2D1117;
+            border: 1px solid #831A1E;
+            padding: 0.5rem 1.5rem;
+            border-radius: 3rem;
+            font-weight: bolder;
+        }
+        .quemSomos_container h1{
+            color: #D83333;
+            font-size: 4em;
+        }
+        .quemSomos_container p:nth-child(2){
+            color: blue;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    //hamburguer menu
+    #menu__toggle {
+        display: none !important;
+    }
+
+    .menu__btn {
+        display: none !important;
+    }
+
+    .menu__box {
+        position: static !important;
+        display: flex !important;
+        padding: 0 !important;
+        width: auto !important;
+        min-height: auto !important;
+        background-color: inherit !important;
+        box-shadow: none !important;
+    }
+
+    .menu__box a {
+        font-size: 1.6em !important;
+        padding: 1rem !important;
+        color: rgba(255, 255, 255, 0.658) !important;
+    }
+
+    .menu__box li {
+        margin-left: 1rem !important;
+    }
+
+    .menu__box a:hover {
+        transform: scale(1.1) !important;
+        background-color: transparent !important;
+        color: #ff1a1ab6 !important;
+    }
+    //hamburguer menu
+
 }
