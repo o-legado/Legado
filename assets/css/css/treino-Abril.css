@@ -340,14 +340,14 @@ main {
   transform: scale(1.1);
 }
 .container .table_wrapper .container_table td {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   text-align: center;
   font-size: 1.4rem;
   color: white;
 }
 .container .table_wrapper .posicao p {
   background-color: #262626;
-  width: 2.5rem;
+  width: 3.5rem;
   height: 3.5rem;
   margin: 0 auto;
   display: flex;

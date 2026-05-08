@@ -154,6 +154,7 @@ body {
 main{
     margin-top: 11rem !important;
     background: linear-gradient(135deg, #000000 0%, #111827 50%);
+    padding: 2rem;
     .quemSomos{
         text-align: center;
         .quemSomos_container p:nth-child(1){
@@ -170,9 +171,29 @@ main{
         .quemSomos_container h1{
             color: #D83333;
             font-size: 4em;
+            margin: 1.5rem 0;
         }
-        .quemSomos_container p:nth-child(2){
-            color: blue;
+        .quemSomos_container p:nth-child(3){
+            color: #D1D5CF;
+            font-size: 1.6em;
+            font-weight: 500;
+            word-spacing: 4px;
+        }
+        .quemSomos_container p:nth-child(3) span:nth-child(1){
+            color: #EF4444;
+            font-weight: bold;
+        }
+        .quemSomos_container p:nth-child(3) span:nth-child(2){
+            color: #FACC15;
+            font-weight: bold;
+        }
+        .quemSomos_container p:nth-child(3) span:nth-child(3){
+            color: #C084FC;
+            font-weight: bold;
+        }
+        .quemSomos_container p:nth-child(3) span:nth-child(4){
+            color: #4ADE80;
+            font-weight: bold;
         }
     }
 }

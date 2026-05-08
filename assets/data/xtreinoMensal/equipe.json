@@ -624,8 +624,8 @@
                         { "queda": 1, "kills": 21, "posicao": 1 },
                         { "queda": 2, "kills": 17, "posicao": 2 },
                         { "queda": 3, "kills": 10, "posicao": 2 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/O TERROR DO SUL.jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "UNIVERSO 7",
@@ -633,8 +633,8 @@
                         { "queda": 1, "kills": 5, "posicao": 2 },
                         { "queda": 2, "kills": 15, "posicao": 1 },
                         { "queda": 3, "kills": 10, "posicao": 3 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/universo 7.jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "META GAMING",
@@ -642,8 +642,8 @@
                         { "queda": 1, "kills": 0, "posicao": 9 },
                         { "queda": 2, "kills": 0, "posicao": 10 },
                         { "queda": 3, "kills": 9, "posicao": 1 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/META GAMING.jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "DARKWOLVES",
@@ -651,8 +651,8 @@
                         { "queda": 1, "kills": 1, "posicao": 6 },
                         { "queda": 2, "kills": 6, "posicao": 4 },
                         { "queda": 3, "kills": 6, "posicao": 4 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/DARKWOLVES.jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "BRAZINO 777",
@@ -660,8 +660,8 @@
                         { "queda": 1, "kills": 4, "posicao": 7 },
                         { "queda": 2, "kills": 8, "posicao": 3 },
                         { "queda": 3, "kills": 8, "posicao": 5 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/brazino 777.jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "SS GAMING (S11)",
@@ -669,8 +669,8 @@
                         { "queda": 1, "kills": 7, "posicao": 4 },
                         { "queda": 2, "kills": 0, "posicao": 5 },
                         { "queda": 3, "kills": 2, "posicao": 6 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/ss gaming (s11).jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "FAIXA PRETA",
@@ -678,8 +678,8 @@
                         { "queda": 1, "kills": 0, "posicao": 10 },
                         { "queda": 2, "kills": 2, "posicao": 8 },
                         { "queda": 3, "kills": 1, "posicao": 7 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/FAIXA PRETA.jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "TAXA 0%",
@@ -687,8 +687,8 @@
                         { "queda": 1, "kills": 0, "posicao": 8 },
                         { "queda": 2, "kills": 1, "posicao": 6 },
                         { "queda": 3, "kills": 1, "posicao": 8 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/TAXA 0%.jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "SS GAMING (S05)",
@@ -696,8 +696,8 @@
                         { "queda": 1, "kills": 4, "posicao": 3 },
                         { "queda": 2, "kills": 3, "posicao": 9 },
                         { "queda": 3, "kills": 0, "posicao": 9 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/ss gaming (s05).jpg"
+                    ]
+                    
                 },
                 {
                     "equipe": "SG COMBOIO",
@@ -705,8 +705,7 @@
                         { "queda": 1, "kills": 4, "posicao": 5 },
                         { "queda": 2, "kills": 0, "posicao": 7 },
                         { "queda": 3, "kills": 0, "posicao": 13 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/sg comboio.jpg"
+                    ]
                 },
                 {
                     "equipe": "TROVAO BR",
@@ -714,8 +713,7 @@
                         { "queda": 1, "kills": 0, "posicao": 13 },
                         { "queda": 2, "kills": 0, "posicao": 13 },
                         { "queda": 3, "kills": 0, "posicao": 13 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/trova br.jpg"
+                    ]
                 },
                 {
                     "equipe": "SWORTERROR",
@@ -723,11 +721,116 @@
                         { "queda": 1, "kills": 0, "posicao": 13 },
                         { "queda": 2, "kills": 0, "posicao": 13 },
                         { "queda": 3, "kills": 0, "posicao": 13 }
-                    ],
-                    "logo": "../../assets/img/xtreinos/maio/05.05.2026/swrterror.jpg"
+                    ]
+                    
                 }
             ]
+        },
+        
+        "treino2": {
+
+            "data": "07/05/2026",
+             "equipes": [
+        {
+          "equipe": "KING OF ALL",
+          "detalhes": [
+            { "queda": 1, "kills": 6, "posicao": 6 },
+            { "queda": 2, "kills": 4, "posicao": 7 },
+            { "queda": 3, "kills": 26, "posicao": 1 }
+          ]
+        },
+        {
+          "equipe": "TNY IMPERIAL",
+          "detalhes": [
+            { "queda": 1, "kills": 7, "posicao": 12 },
+            { "queda": 2, "kills": 15, "posicao": 2 },
+            { "queda": 3, "kills": 11, "posicao": 2 }
+          ]
+        },
+        {
+          "equipe": "RELOUD",
+          "detalhes": [
+            { "queda": 1, "kills": 6, "posicao": 9 },
+            { "queda": 2, "kills": 1, "posicao": 3 },
+            { "queda": 3, "kills": 8, "posicao": 3 }
+          ]
+        },
+        {
+          "equipe": "THUNDER BOY S",
+          "detalhes": [
+            { "queda": 1, "kills": 10, "posicao": 1 },
+            { "queda": 2, "kills": 1, "posicao": 11 },
+            { "queda": 3, "kills": 16, "posicao": 4 }
+          ]
+        },
+        {
+          "equipe": "BLACK DRAGON",
+          "detalhes": [
+            { "queda": 1, "kills": 10, "posicao": 8 },
+            { "queda": 2, "kills": 1, "posicao": 8 },
+            { "queda": 3, "kills": 6, "posicao": 5 }
+          ]
+        },
+        {
+          "equipe": "O TERROR DO SUL 2",
+          "detalhes": [
+            { "queda": 1, "kills": 0, "posicao": 10 },
+            { "queda": 2, "kills": 1, "posicao": 6 },
+            { "queda": 3, "kills": 2, "posicao": 6 }
+          ]
+        },
+        {
+          "equipe": "SS GAMING",
+          "detalhes": [
+            { "queda": 1, "kills": 1, "posicao": 11 },
+            { "queda": 2, "kills": 0, "posicao": 10 },
+            { "queda": 3, "kills": 3, "posicao": 7 }
+          ]
+        },
+        {
+          "equipe": "FAIXA PRETA",
+          "detalhes": [
+            { "queda": 1, "kills": 0, "posicao": 7 },
+            { "queda": 2, "kills": 10, "posicao": 5 },
+            { "queda": 3, "kills": 13, "posicao": 8 }
+          ]
+        },
+        {
+          "equipe": "META GAMING",
+          "detalhes": [
+            { "queda": 1, "kills": 8, "posicao": 3 },
+            { "queda": 2, "kills": 24, "posicao": 1 },
+            { "queda": 3, "kills": 0, "posicao": 9 }
+          ]
+        },
+        {
+          "equipe": "DARKWOLVES",
+          "detalhes": [
+            { "queda": 1, "kills": 6, "posicao": 5 },
+            { "queda": 2, "kills": 4, "posicao": 4 },
+            { "queda": 3, "kills": 2, "posicao": 10 }
+          ]
+        },
+        {
+          "equipe": "TEMPEST X",
+          "detalhes": [
+            { "queda": 1, "kills": 5, "posicao": 4 },
+            { "queda": 2, "kills": 2, "posicao": 9 },
+            { "queda": 3, "kills": 1, "posicao": 11 }
+          ]
+        },
+        {
+          "equipe": "O TERROR DO SUL 1",
+          "detalhes": [
+            { "queda": 1, "kills": 0, "posicao": 13 },
+            { "queda": 2, "kills": 0, "posicao": 13 },
+            { "queda": 3, "kills": 0, "posicao": 13 }
+          ]
         }
+            ]
+        }
+        
+
     
     }
 }   

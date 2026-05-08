@@ -498,7 +498,86 @@
                 "J8 puma7": [3, 0, null]
             }
         }
+    },
+
+    "treino2": {
+    "data": "07/05/2026",
+    "equipes": {
+        "META GAMING": {
+            "WOD Mael": [2, 8, 0],
+            "naodoutela": [0, 4, 0],
+            "YESHUA": [3, 8, 0],
+            "unknown": [3, 4, 0]
+        },
+        "DARKWOLVES": {
+            "Dks OREIA": [0, 2, null],
+            "Dks RL": [2, 0, null],
+            "Dks MENORGAS": [2, 0, 2],
+            "Dks maumau": [2, 2, 0],
+            "Dks fuck": [null, null, 0]
+        },
+        "FAIXA PRETA": {
+            "BZ LczinhooX": [0, 1, 1],
+            "WHITER": [0, 1, 0],
+            "jordanpcxis": [0, 7, 6],
+            "SANTOS": [0, 1, 3]
+        },
+        "SS GAMING": {
+            "SS DUQUE": [1, 0, 1],
+            "SS URSO PA": [0, 0, 0],
+            "SS SHEIK1": [0, 0, 0],
+            "SS HOKAGE": [0, 0, 0],
+            "SS JERRY": [null, null, 2],
+            "BEATRIZ": [null, null, 0]
+        },
+        "TEMPEST X": {
+            "TOM": [0, 0, 0],
+            "HF frostxz7": [3, 1, 1],
+            "RGK MTZin": [2, 1, 0],
+            "RZ tora veia": [0, 0, 0]
+        },
+        "O TERROR DO SUL 2": {
+            "TS GASPAZIN": [0, 0, 2],
+            "TS sou nada": [0, 1, 0],
+            "TS PROZIN": [0, 0, 0],
+            "TS Rai": [0, 0, 0]
+        },
+        "KING OF ALL": {
+            "AMG KRATO": [2, 1, 13],
+            "MEC NINOcpt": [3, 1, 4],
+            "EQP URIEL": [0, 1, 4],
+            "AMG PESADELO": [1, 1, 5]
+        },
+        "RELOUD": {
+            "YKS mito": [1, 0, 1],
+            "RL p diddy": [2, 0, 0],
+            "RL ego7": [0, 0, 4],
+            "RL xEPSTEIN7": [3, 1, 3]
+        },
+        "THUNDER BOY S": {
+            "KF LENDA": [2, 0, 0],
+            "KAKASHI": [3, 1, 2],
+            "NTS X-Force": [1, 0, 5],
+            "NTS Mattos": [4, 0, 3],
+            "Juninho": [null, null, 6]
+        },
+        "BLACK DRAGON": {
+            "GMT GOTAO": [1, 1, 1],
+            "YAGOZIINXS": [2, 0, 1],
+            "Bessk7x": [2, 0, 2],
+            "CRY EDZINN": [5, 0, 2]
+        },
+        "TNY IMPERIAL": {
+            "TNY davinnz": [null, 6, 4],
+            "d7 MADARA": [1, 4, 1],
+            "BALOTELEV": [4, 3, 4],
+            "BAIANO": [1, 2, 2]
+        },
+        "O TERROR DO SUL 1": {
+            "JOGADOR": [null, null, null]
+        }
     }
+}
 
   }
 }
