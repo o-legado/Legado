@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -220,7 +221,7 @@ main .jornada .jornada_title {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 1.5rem;
   text-align: center;
 }
 main .jornada .timeline {
@@ -267,21 +268,73 @@ main .jornada .timeline .timeline_item .timeline_content .year {
   background-color: #891D1D;
   padding: 3px 10px;
   border-radius: 5px;
-  font-size: 0.75rem;
+  font-size: 1.4em;
   font-weight: bold;
   display: inline-block;
   margin-bottom: 8px;
 }
 main .jornada .timeline .timeline_item .timeline_content h3 {
-  font-size: 1.6em;
+  font-size: 1.8em;
   margin: 0 0 8px 0;
   color: #fff;
 }
 main .jornada .timeline .timeline_item .timeline_content p {
   color: rgba(255, 255, 255, 0.7);
-  font-size: 1.3em;
+  font-size: 1.4em;
   line-height: 1.4;
   margin: 0;
+}
+main .liderença {
+  text-align: center;
+}
+main .liderença .liderença_title {
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+main .liderença .liderença_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .liderença .liderença_container .liderença_container_content {
+  padding: 1.5rem;
+  border: 1px solid #3B240F;
+  border-radius: 1rem;
+  background: linear-gradient(140deg, #101624, #05070a);
+  height: 23.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .liderença .liderença_container .liderença_container_content img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border: 2px solid #38240f;
+  margin-bottom: 1rem;
+}
+main .liderença .liderença_container .liderença_container_content h3 {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+}
+main .liderença .liderença_container .cargo {
+  color: #EACC15;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+main .liderença .liderença_container .responsavel {
+  color: rgba(255, 255, 255, 0.39);
+  font-size: 1.2em;
 }
 
 @media (min-width: 768px) {
