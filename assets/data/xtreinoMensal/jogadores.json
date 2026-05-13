@@ -433,6 +433,7 @@
           }
     }
   },
+  
   "maio":{
     "treino1": {
         "data": "05/05/2026",
@@ -577,7 +578,81 @@
             "JOGADOR": [null, null, null]
         }
     }
-}
+    },
+
+    "treino3": {
+        "data": "12/05/2026",
+        "equipes": {
+            "META GAMING": {
+                "YESHUA": [2, null, 6],
+                "puzapaz": [1, 0, 2],
+                "WOD Mael": [1, 2, 6],
+                "naodoutela": [null, null, 7]
+            },
+            "TNY IMPERIAL": {
+                "TNY davinnz": [1, 0, 1],
+                "BALOTELI": [3, 0, 5],
+                "washington 9": [0, 0, 0],
+                "two9": [5, 0, 1]
+            },
+            "FAIXA PRETA": {
+                "crazyboy": [4, 2, 2],
+                "LczinhooX": [0, 0, 0],
+                "ANJO": [0, 1, 5],
+                "SANTOS": [4, 0, 1]
+            },
+            "SS GAMING": {
+                "SS DUQUE": [1, 0, 1],
+                "SAGAZZ": [0, 2, 1],
+                "URSO PA": [1, 1, 0],
+                "SS SHEIK": [1, 0, 2]
+            },
+            "BG BULLDOGS": {
+                "pede bença": [2, 1, 1],
+                "tô com menos": [5, 1, 6],
+                "just cheast": [7, 3, 4],
+                "lgzz sagaz": [3, 2, 3]
+            },
+            "FCB E-SPORTS": {
+                "VICIADA": [null, null, 0],
+                "sub yuri": [2, 6, 3],
+                "jordanpcxis": [0, 1, 4],
+                "WHITER": [2, 2, 1]
+            },
+            "TEAM STRESSED": {
+                "JRzin": [0, 2, 2],
+                "JV": [0, 2, 1],
+                "RUSSO 7": [0, 2, 0],
+                "Bn op": [null, 5, 0]
+            },
+            "THUNDER BOY'S": {
+                "KAKASHI": [4, 3, 0],
+                "Juninho": [5, 5, 1],
+                "X Force": [2, 1, 0],
+                "gustavox7": [null, null, 1]
+            },
+            "BG RED SKULL": {
+                "BG JINX": [0, 0, 0],
+                "WHISKY": [0, 0, 0],
+                "DESERT7x": [0, 2, 0],
+                "BG yass": [0, 3, 0]
+            },
+            "TERROR DO SUL": {
+                "SEM NOME": [null, null, null]
+            },
+            "BLACKSTAR": {
+                "winblessed": [0, 1, null],
+                "LS MARECHAL": [0, 0, null],
+                "BLD TEUS": [0, 0, null]
+            },
+            "NEXUS": {
+                "FAC Nunnes": [1, 0, 0],
+                "SEM POSTURA": [0, 0, 0],
+                "XXXX B00T": [0, 3, 1]
+            }
+        }
+    }
+
 
   }
 }
