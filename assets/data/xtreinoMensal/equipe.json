@@ -930,7 +930,110 @@
                     ]
                 }
             ]
+        },
+
+        "treino4": {
+      "data": "14/05/2026",
+      "equipes": [
+        {
+          "equipe": "META GAMING",
+          "detalhes": [
+            { "queda": 1, "kills": 20, "posicao": 1 },
+            { "queda": 2, "kills": 20, "posicao": 5 },
+            { "queda": 3, "kills": 7, "posicao": 4 }
+          ]
+        },
+        {
+          "equipe": "FCB ESPORTS",
+          "detalhes": [
+            { "queda": 1, "kills": 11, "posicao": 2 },
+            { "queda": 2, "kills": 2, "posicao": 11 },
+            { "queda": 3, "kills": 8, "posicao": 2 }
+          ]
+        },
+        {
+          "equipe": "QL 1000",
+          "detalhes": [
+            { "queda": 1, "kills": 6, "posicao": 3 },
+            { "queda": 2, "kills": 15, "posicao": 3 },
+            { "queda": 3, "kills": 9, "posicao": 3 }
+          ]
+        },
+        {
+          "equipe": "REAL BALA",
+          "detalhes": [
+            { "queda": 1, "kills": 1, "posicao": 4 },
+            { "queda": 2, "kills": 0, "posicao": 9 },
+            { "queda": 3, "kills": 0, "posicao": 7 }
+          ]
+        },
+        {
+          "equipe": "PHOENIX BDX",
+          "detalhes": [
+            { "queda": 1, "kills": 6, "posicao": 5 },
+            { "queda": 2, "kills": 4, "posicao": 10 },
+            { "queda": 3, "kills": 5, "posicao": 8 }
+          ]
+        },
+        {
+          "equipe": "ENERGYX",
+          "detalhes": [
+            { "queda": 1, "kills": 3, "posicao": 6 },
+            { "queda": 2, "kills": 2, "posicao": 12 },
+            { "queda": 3, "kills": 14, "posicao": 1 }
+          ]
+        },
+        {
+          "equipe": "SS GAMING",
+          "detalhes": [
+            { "queda": 1, "kills": 1, "posicao": 7 },
+            { "queda": 2, "kills": 13, "posicao": 1 },
+            { "queda": 3, "kills": 0, "posicao": 9 }
+          ]
+        },
+        {
+          "equipe": "DEATH WISH",
+          "detalhes": [
+            { "queda": 1, "kills": 0, "posicao": 8 },
+            { "queda": 2, "kills": 6, "posicao": 6 },
+            { "queda": 3, "kills": 0, "posicao": 11 }
+          ]
+        },
+        {
+          "equipe": "SOMBRA MA",
+          "detalhes": [
+            { "queda": 1, "kills": 0, "posicao": 9 },
+            { "queda": 2, "kills": 4, "posicao": 7 },
+            { "queda": 3, "kills": 0, "posicao": 5 }
+          ]
+        },
+        {
+          "equipe": "DRAGON GOLD",
+          "detalhes": [
+            { "queda": 1, "kills": 0, "posicao": 10 },
+            { "queda": 2, "kills": 0, "posicao": 13 },
+            { "queda": 3, "kills": 2, "posicao": 10 }
+          ]
+        },
+        {
+          "equipe": "FAIXA PRETA",
+          "detalhes": [
+            { "queda": 1, "kills": 0, "posicao": 11 },
+            { "queda": 2, "kills": 8, "posicao": 2 },
+            { "queda": 3, "kills": 0, "posicao": 13 }
+          ]
+        },
+        {
+          "equipe": "NOVA SETE",
+          "detalhes": [
+            { "queda": 1, "kills": 0, "posicao": 13 },
+            { "queda": 2, "kills": 4, "posicao": 4 },
+            { "queda": 3, "kills": 1, "posicao": 6 }
+          ]
         }
+      ]
+        }
+  
     
 
         

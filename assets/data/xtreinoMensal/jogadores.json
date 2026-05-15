@@ -651,7 +651,89 @@
                 "XXXX B00T": [0, 3, 1]
             }
         }
+    },
+    
+    "treino4": {
+      "data": "14/05/2026",
+      "equipes": {
+      "META GAMING": {
+        "YESHUA": [1, 6, 0],
+        "WOD Mael": [8, 7, 1],
+        "unknown*": [3, 3, 3],
+        "naodoutela": [8, 4, 3]
+      },
+      "DEATH WISH": {
+        "Miguel@PM": [0, 1, 0],
+        "R7 NOTE": [0, 1, 0],
+        "_2XAMIJ": [0, 0, 0],
+        "NE.PHZINX7": [0, 4, 0]
+      },
+      "FAIXA PRETA": {
+        "crazyboy": [0, 1, null],
+        "LczinhooX": [0, 3, null],
+        "VX JV7": [0, 2, null],
+        "puzapaz.": [0, 2, null]
+      },
+      "QL 1000": {
+        "souzaboyzao_": [3, 2, 2],
+        "QI\"VGZIIN\"": [2, 5, 5],
+        "QI CHATACO": [0, 4, 2],
+        "QI MENDES": [1, 4, 0]
+      },
+      "REAL BALA": {
+        "JRzin666": [0, 0, 0],
+        "Bn.op": [0, 0, null],
+        "JV.": [1, 0, null],
+        "kaciano004": [null, null, 0]
+      },
+      "FCB ESPORTS": {
+        "WHITER": [1, 1, 4],
+        "sub~~yuri": [9, 0, 1],
+        "*BLACKN444": [1, 1, 2],
+        "winpro7": [null, null, 1],
+        "PM__NEXT": [0, null, null]
+      },
+      "DRAGON GOLD": {
+        "bruxo": [0, null, 1],
+        "fantasma": [0, null, null],
+        "WESLLY|kings": [0, null, 1]
+      },
+      "PHOENIX BDX": {
+        "BAARTT": [3, 3, 2],
+        "REIZIN": [1, 0, 2],
+        "ANT4NIO": [2, 1, 0],
+        "Zago 09": [null, null, 1]
+      },
+      "NOVA SETE": {
+        "ineedmoneyh": [null, 1, 1],
+        "N7 MARLON": [null, 2, 2],
+        "N7 Julio": [null, 0, 0],
+        "N7 WL": [null, 1, 1]
+      },
+      "SS GAMING": {
+        "SS Luis9": [1, 0, 0],
+        "SS.NBW7": [0, 1, 0],
+        "SS.DUQUE": [0, 7, 0],
+        "SAGAZZ": [null, 5, 5],
+        "SS NAELZITO": [0, null, null]
+      },
+      "SOMBRA MA": {
+        "Mais novo": [0, 1, 0],
+        "Michelzinxx": [0, 0, 0],
+        "JOÃO": [0, 0, 0],
+        "@phznx.9": [0, 3, 0]
+      },
+      "ENERGYX": {
+        "RayoX": [1, 0, 3],
+        "Pedrin7x": [1, 1, 5],
+        "newflashboy": [1, 1, 1],
+        "SanjiX": [0, 1, 1],
+        "Gui7xis": [null, null, 5]
+      }
+      }
     }
+
+  
 
 
   }
