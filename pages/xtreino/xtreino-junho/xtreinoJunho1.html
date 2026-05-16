@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Treino Maio</title>
+    <link rel="stylesheet" href="../../../assets/css/css/treino-Abril.css">
+    <link rel="stylesheet" href="../../../assets/css/scss/treino-Abril.scss">
+
+    <!--FONTE-->
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--FONTE-->
+
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SW7Q9LH3LR');
+    </script> -->
+    <!-- Google tag (gtag.js) -->
+
+    <!--Incon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--Incon-->
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_content largura-definida">
+            <a href="../" class="voltar">
+                < Voltar</a>
+                    <figure><img src="../img/Logo.jpg" alt=""></figure>
+                    <div class="header_content_texts">
+                        <h1><span id="mes">Junho</span> 2026</h1>
+                    </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="container largura-definida">
+
+            <!--SISTEMA DE PONTUAÇÃO-->
+            <button class="btn-scoring-system">📊 Sistema de Pontuação <span>▼</span></button>
+            <div class="scoring-system">
+
+                <div class="scoring-system_pontosColocação">
+                    <h1>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#EAB308" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        Pontos por Colocação
+                    </h1>
+
+                    <ul>
+                        <li>🥇 Booyah (1º) <span>12 pts</span></li>
+                        <li>🥈 Top 2 <span>9 pts</span></li>
+                        <li>🥉 Top 3 <span>8 pts</span></li>
+                        <li>Top 4<span>7 pts</span></li>
+                        <li>Top 5<span>6 pts</span></li>
+                        <li>Top 6<span>5 pts</span></li>
+                        <li>Top 7<span>4 pts</span></li>
+                        <li>Top 8<span>3 pts</span></li>
+                        <li>Top 9<span>2 pts</span></li>
+                        <li>Top 10<span>1 pts</span></li>
+                        <li>Top 11-12<span>0 pts</span></li>
+                    </ul>
+                </div>
+
+                <div class="scoring-system_kill">
+                    <h1 class="scoring-system_kill_title">Pontos por Kills</h1>
+                    <div class="scoring-system_kill_kills">
+                        <h2>1</h2>
+                        <p>Ponto por Kill</p>
+                        <p>Cada abate conta 1 ponto para o total da equipe</p>
+                    </div>
+
+                    <div class="scoring-system_kill_exemplo">
+                        <h2>📝 Exemplo de Cálculo</h2>
+                        <p>1º Lugar (Booyah): <span>12 pts</span></p>
+                        <p>10 Kills: <span>10 pts</span></p>
+                        <p>Total: <span>22 pts</span></p>
+                    </div>
+                </div>
+            </div>
+            <!--SISTEMA DE PONTUAÇÃO-->
+
+
+            <div class="table_wrapper">
+
+                <!--TITLE RANKING-->
+                <div class="table_header">
+                    <h2>🏆 RANKING <span id="rankingSeason">Treino</span></h2>
+                    <p>📅 <span id="data"></span></p>
+                </div>
+                <!--TITLE RANKING-->
+
+
+                <table class="container_table">
+                    <thead>
+                        <tr>
+                            <th>POS</th>
+                            <th class="equipe_th">EQUIPE</th>
+                            <th>Q</th>
+                            <th>AB</th>
+                            <th>B!</th>
+                            <th>PTS</th>
+                            <th>INFO</th>
+                        </tr>
+                    </thead>
+                    <tbody class="container_table_tbody" id="tbody"></tbody>
+
+                </table>
+
+            </div>
+
+
+            <!--PLAYERS RANKING-->
+            <div class="top_kills_wrapper">
+                <div class="top_kills_header">
+                    <h2>🎯 TOP KILL - JOGADORES</h2>
+                </div>
+
+                <div class="top_kills_grid">
+                    <div>
+                        <p>111aaaaaaa</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--PLAYERS RANKING-->
+
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer_siga">Siga a guilda em todas as redes sociais!</p>
+        <div class="links">
+
+            <a href="https://www.instagram.com/lega_dooficial1?igsh=bmVueG4wdzU3eDM4" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com/@dieguinho916" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <!-- <a href=""><i class="fa-brands fa-whatsapp"></i></a> -->
+        </div>
+
+        <p class="copyright">© 2026 X-Treino Legado | Ranking Free Fire</p>
+    </footer>
+
+
+
+
+    <!-- <script src="../js/hallDaFamal.js" type="module"></script> -->
+
+    <script src="../../../assets/js/classificação/sistemaPontuação.js" type="module"></script>
+    <script src="../../../assets/js/classificaçãoNovoModelo/criarTabela.js" type="module"></script>
+    <script src="../../../assets/js/classificação/infoDetalhada.js" type="module"></script>
+    <script src="../../../assets/js/homeXtreino/selecionarMes.js" type="module"></script>
+
+</body>
+
+</html>
