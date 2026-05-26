@@ -13,6 +13,17 @@ async function carregarDados() {
 async function iniciarApp() {
     await carregarDados()
     organizarDados.start(equipes, jogadores)
+
+    const dataClicada = localStorage.getItem("dataDoXtreino");
+
+    if (dataClicada) {
+        console.log("A data recuperada da outra página é:", dataClicada);
+
+        // Agora você pode usar essa data para filtrar suas tabelas do torneio!
+        // organizarDados.start(equipes, jogadores, dataClicada);
+    } else {
+        console.log("Nenhuma data foi selecionada ainda.");
+    }
 }
 iniciarApp()
 
@@ -28,7 +39,8 @@ const organizarDados = {
 
             //com o mes selecionado no html e o mes percorrido, tem que ser o mesmo
             if (mesEquipes === mesDoHtmlSelecionado) {
-                
+                const mesSelecionadoJosn = equipes[mesEquipes]
+                console.log(equipes[mesEquipes])
             }
 
         }
