@@ -1032,7 +1032,116 @@
           ]
         }
       ]
+        },
+        
+        "treino5": {
+            "data": "26/05/2026",
+            "equipes": [
+      {
+        "equipe": "DARKWOLVES",
+        "detalhes": [
+          { "queda": 1, "kills": 17, "posicao": 1 },
+          { "queda": 2, "kills": 12, "posicao": 2 },
+          { "queda": 3, "kills": 5, "posicao": 2 }
+        ]
+      },
+      {
+        "equipe": "SS GAMING",
+        "detalhes": [
+          { "queda": 1, "kills": 13, "posicao": 2 },
+          { "queda": 2, "kills": 3, "posicao": 4 },
+          { "queda": 3, "kills": 3, "posicao": 3 }
+        ]
+      },
+      {
+        "equipe": "NOXUS GAMING",
+        "detalhes": [
+          { "queda": 1, "kills": 7, "posicao": 3 },
+          { "queda": 2, "kills": 2, "posicao": 8 },
+          { "queda": 3, "kills": 9, "posicao": 4 }
+        ]
+      },
+      {
+        "equipe": "LDR ELITE",
+        "detalhes": [
+          { "queda": 1, "kills": 19, "posicao": 4 },
+          { "queda": 2, "kills": 2, "posicao": 6 },
+          { "queda": 3, "kills": 10, "posicao": 8 }
+        ]
+      },
+      {
+        "equipe": "4K HOUSE 🇧🇷",
+        "detalhes": [
+          { "queda": 1, "kills": 6, "posicao": 5 },
+          { "queda": 2, "kills": 12, "posicao": 7 },
+          { "queda": 3, "kills": 7, "posicao": 7 }
+        ]
+      },
+      {
+        "equipe": "TROPA DO 7",
+        "detalhes": [
+          { "queda": 1, "kills": 4, "posicao": 6 },
+          { "queda": 2, "kills": 1, "posicao": 10 },
+          { "queda": 3, "kills": 12, "posicao": 5 }
+        ]
+      },
+      {
+        "equipe": "BLOODSTORM",
+        "detalhes": [
+          { "queda": 1, "kills": 4, "posicao": 7 },
+          { "queda": 2, "kills": 14, "posicao": 1 },
+          { "queda": 3, "kills": 6, "posicao": 9 }
+        ]
+      },
+      {
+        "equipe": "FCB E-SPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 2, "posicao": 8 },
+          { "queda": 2, "kills": 6, "posicao": 3 },
+          { "queda": 3, "kills": 4, "posicao": 6 }
+        ]
+      },
+      {
+        "equipe": "BG BULLDOGS",
+        "detalhes": [
+          { "queda": 1, "kills": 1, "posicao": 9 },
+          { "queda": 2, "kills": 13, "posicao": 5 },
+          { "queda": 3, "kills": 15, "posicao": 1 }
+        ]
+      },
+      {
+        "equipe": "SERROCITY",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 10 },
+          { "queda": 2, "kills": 1, "posicao": 9 },
+          { "queda": 3, "kills": 1, "posicao": 10 }
+        ]
+      },
+      {
+        "equipe": "META GAMING",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ]
+      },
+      {
+        "equipe": "VT7 ESPORTE",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ]
+      }
+            ]
         }
+
+
+        
+
+        
+        
+
   
     
 
