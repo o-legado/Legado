@@ -1255,7 +1255,11 @@
                         { "queda": 1, "kills": 21, "posicao": 1 },
                         { "queda": 2, "kills": 17, "posicao": 2 },
                         { "queda": 3, "kills": 10, "posicao": 2 }
-                    ]
+                    ],
+                    "logo": "../../img/logo-oficial.jpg",
+                    "puniçãoDescrição": "marcou no mapa",
+                    "puniçãoPontosAtual": 10 
+                    
                     
                 },
                 {
@@ -1359,6 +1363,7 @@
         },
         "treino2": {
             "data": "02/06/2026",
+
             "equipes": [
                 {
                     "equipe": "O TERRORISTA DO SUL",

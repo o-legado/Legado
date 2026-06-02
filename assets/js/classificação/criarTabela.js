@@ -468,3 +468,4 @@ const criarRankJogador = {
         cardContent.appendChild(btn)
     }
 }
+
