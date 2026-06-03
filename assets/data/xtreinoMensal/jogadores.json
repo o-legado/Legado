@@ -881,85 +881,80 @@
 
   },
   "junho":{
+    
     "treino1": {
-      "data": "01/06/2026",
-      "equipes": {
-      "META GAMING": {
-        "YESHUA": [1, 6, 0],
-        "WOD Mael": [8, 7, 1],
-        "unknown*": [3, 3, 3],
-        "naodoutela": [8, 4, 3]
-      },
-      "DEATH WISH": {
-        "Miguel@PM": [0, 1, 0],
-        "R7 NOTE": [0, 1, 0],
-        "_2XAMIJ": [0, 0, 0],
-        "NE.PHZINX7": [0, 4, 0]
-      },
-      "FAIXA PRETA": {
-        "crazyboy": [0, 1, null],
-        "LczinhooX": [0, 3, null],
-        "VX JV7": [0, 2, null],
-        "puzapaz.": [0, 2, null]
-      },
-      "QL 1000": {
-        "souzaboyzao_": [3, 2, 2],
-        "QI\"VGZIIN\"": [2, 5, 5],
-        "QI CHATACO": [0, 4, 2],
-        "QI MENDES": [1, 4, 0]
-      },
-      "REAL BALA": {
-        "JRzin666": [0, 0, 0],
-        "Bn.op": [0, 0, null],
-        "JV.": [1, 0, null],
-        "kaciano004": [null, null, 0]
-      },
-      "FCB ESPORTS": {
-        "WHITER": [1, 1, 4],
-        "sub~~yuri": [9, 0, 1],
-        "*BLACKN444": [1, 1, 2],
-        "winpro7": [null, null, 1],
-        "PM__NEXT": [0, null, null]
-      },
-      "DRAGON GOLD": {
-        "bruxo": [0, null, 1],
-        "fantasma": [0, null, null],
-        "WESLLY|kings": [0, null, 1]
-      },
-      "PHOENIX BDX": {
-        "BAARTT": [3, 3, 2],
-        "REIZIN": [1, 0, 2],
-        "ANT4NIO": [2, 1, 0],
-        "Zago 09": [null, null, 1]
-      },
-      "NOVA SETE": {
-        "ineedmoneyh": [null, 1, 1],
-        "N7 MARLON": [null, 2, 2],
-        "N7 Julio": [null, 0, 0],
-        "N7 WL": [null, 1, 1]
-      },
-      "SS GAMING": {
-        "SS Luis9": [1, 0, 0],
-        "SS.NBW7": [0, 1, 0],
-        "SS.DUQUE": [0, 7, 0],
-        "SAGAZZ": [null, 5, 5],
-        "SS NAELZITO": [0, null, null]
-      },
-      "SOMBRA MA": {
-        "Mais novo": [0, 1, 0],
-        "Michelzinxx": [0, 0, 0],
-        "JOÃO": [0, 0, 0],
-        "@phznx.9": [0, 3, 0]
-      },
-      "ENERGYX": {
-        "RayoX": [1, 0, 3],
-        "Pedrin7x": [1, 1, 5],
-        "newflashboy": [1, 1, 1],
-        "SanjiX": [0, 1, 1],
-        "Gui7xis": [null, null, 5]
-      }
-      }
+        "data": "02/06/2026",
+        "equipes": {
+            "FCB E-SPORTS": {
+                "《ŁĐ》WHITER™": [0, 0, 2],
+                "《ŁĐ》DG777": [0, 0, 1],
+                "TKX  NOBREmvp": [1, 1, 0],
+                "LD  JRzin⁶⁶⁶": [0, null, null],
+                "sub-~-yuri": [null, 1, 2]
+            },
+            "SERROCITY": {
+                "SRC  ZERO_7": [0, 0, null],
+                "SRC_Luciano☆": [1, 0, 0],
+                "SRC  CH": [0, 0, null],
+                "SRC FA'BRÍC10": [null, 4, null]
+            },
+            "META GAMING": {
+                "《ŁĐ》YESHUA": [0, 2, 0],
+                "《ŁĐ》Lking⁷": [0, 0, null],
+                "QI  SOUZA7": [2, 1, 0],
+                "B7  ENZINrlq": [3, 7, 1]
+            },
+            "REAL BALA": {
+                "JOGADOR_NAO_IDENTIFICADO": [null, null, null]
+            },
+            "RJ _ E SPORTE": {
+                "RJ  criminoso": [4, 4, 2],
+                "RJ  Lowzz⚔": [4, 1, 3],
+                "RJ  DOGX": [1, null, 3],
+                "inumaki'": [3, 0, null],
+                "galaxyjota7": [null, 5, 3]
+            },
+            "TEAM SX": {
+                "JOÃO  D7": [1, 4, 0],
+                "GH  itachiϟ": [2, 3, 0],
+                "yunk  vino`": [1, 0, 0],
+                "K11  Silva7": [3, 2, 0]
+            },
+            "007 DRAGONS": {
+                "《ŁĐ》Nunes7": [null, null, null]
+            },
+            "SS GAMING": {
+                "SS.DUQUE": [4, 0, 0],
+                "SS  VINNI.": [4, 0, 0],
+                "WOD  SAGAZZ  z": [1, 0, null],
+                "SS.JERRY¹⁵⁷": [0, 0, null],
+                "SS.SHEIK1": [null, null, 0]
+            },
+            "CPX GAMER BR": {
+                "CPX  SEREIA  †": [0, 1, 2],
+                "CPX  fada  ⁰⁸⁴": [0, 1, 1],
+                "CPX  RAXHA あ": [0, 4, 11],
+                "CPX  Ⓥ Z E U S ⬆": [0, 7, 6]
+            },
+            "CERES FC": {
+                "REYY77⊗♧": [0, 0, 0],
+                "@Henrique.  么": [0, 0, 0],
+                "i'm  ruim": [0, 1, 2],
+                "彡 ANGOLA  ╰_╯": [0, 0, 0]
+            },
+            "ALLIANCE": {
+                "《UN》jhon": [4, 1, 2],
+                "AC.Ligerimvp": [1, 0, 1],
+                "Gabrielzxkkk": [1, 0, 2],
+                "BRAINROT._♡♡": [2, 0, null],
+                "RX  ONE9": [null, null, 4]
+            },
+            "FURY MOBILE GG": {
+                "JOGADOR_NAO_IDENTIFICADO": [null, null, null]
+            }
+        }
     }
+
   }
 }
 

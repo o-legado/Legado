@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-Treino Abril</title>
-    <link rel="stylesheet" href="../../assets/css/scss/treino-Abril.scss">
+    <title>X-Treino Junho</title>
     <link rel="stylesheet" href="../../assets/css/css/treino-Abril.css">
+    <link rel="stylesheet" href="../../assets/css/scss/treino-Abril.scss">
 
     <!--FONTE-->
     <!--FONTE-->
@@ -33,29 +33,31 @@
 <body>
     <header class="header">
         <div class="header_content largura-definida">
-            <a href="./homeTreinos.html" class="voltar"> < Voltar</a>
-            <figure><img src="../../assets/img/logo-xtreino.jpg" alt=""></figure>
-            <div class="header_content_texts">
-                <h1><span>Abril</span> 2026</h1>
-                <p><span>6</span> dias de treino realizados</p>
-            </div>
+            <a href="../xtreino/homeTreinos.html" class="voltar">
+                < Voltar</a>
+                    <figure><img src="../img/Logo.jpg" alt=""></figure>
+                    <div class="header_content_texts">
+                        <h1><span>junho</span> 2026</h1>
+                        <p><span>1</span> dias de treino realizados</p>
+                    </div>
         </div>
     </header>
 
-    
+
     <main>
-    
+
         <section class="container largura-definida">
-    
+
             <!--SISTEMA DE PONTUAÇÃO-->
             <button class="btn-scoring-system">📊 Sistema de Pontuação <span>▼</span></button>
             <div class="scoring-system">
-    
+
                 <div class="scoring-system_pontosColocação">
                     <h1>
                         <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                stroke="#EAB308" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#EAB308" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
                                 <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
                                 <path d="M4 22h16" />
@@ -66,7 +68,7 @@
                         </span>
                         Pontos por Colocação
                     </h1>
-    
+
                     <ul>
                         <li>🥇 Booyah (1º) <span>12 pts</span></li>
                         <li>🥈 Top 2 <span>9 pts</span></li>
@@ -81,7 +83,7 @@
                         <li>Top 11-12<span>0 pts</span></li>
                     </ul>
                 </div>
-    
+
                 <div class="scoring-system_kill">
                     <h1 class="scoring-system_kill_title">Pontos por Kills</h1>
                     <div class="scoring-system_kill_kills">
@@ -89,7 +91,7 @@
                         <p>Ponto por Kill</p>
                         <p>Cada abate conta 1 ponto para o total da equipe</p>
                     </div>
-    
+
                     <div class="scoring-system_kill_exemplo">
                         <h2>📝 Exemplo de Cálculo</h2>
                         <p>1º Lugar (Booyah): <span>12 pts</span></p>
@@ -99,40 +101,33 @@
                 </div>
             </div>
             <!--SISTEMA DE PONTUAÇÃO-->
-    
+
             <!--Select-Seasons-->
             <div class="container_controls">
                 <div class="select_group">
                     <label class="container_title">📅 SELECIONE A SEASON</label>
                     <select class="container_select">
                         <option value="treinoSelecionado">SELECIONE O TREINO</option>
-                        <option value="treino1">TREINO 1 - 14/04/2026</option>
-                        <option value="treino2">TREINO 2 - 16/04/2026</option>
-                        <option value="treino3">TREINO 3 - 21/04/2026</option>
-                        <option value="treino4">TREINO 4 - 23/04/2026</option>
-                        <option value="treino5">TREINO 5 - 28/04/2026</option>
-                        <option value="treino6">TREINO 6 - 30/04/2026</option>
-                        
+                        <option value="treino1">TREINO 1 - 02/06/2026</option>
                     </select>
                 </div>
             </div>
             <!--Select-Seasons-->
-    
+
             <div class="table_wrapper">
-    
+
                 <!--TITLE RANKING-->
                 <div class="table_header">
                     <h2>🏆 RANKING <span id="rankingSeason">Treino</span></h2>
                     <p>📅 <span id="data"></span></p>
                 </div>
                 <!--TITLE RANKING-->
-    
-    
+
+
                 <table class="container_table">
                     <thead>
                         <tr>
                             <th>POS</th>
-                            <!-- <th>LOGO</th> -->
                             <th class="equipe_th">EQUIPE</th>
                             <th>Q</th>
                             <th>AB</th>
@@ -142,81 +137,29 @@
                         </tr>
                     </thead>
                     <tbody class="container_table_tbody" id="tbody"></tbody>
-    
+
                 </table>
-    
-                <!--Desempenho Detalhado-->
-                <!-- <div class="desempenhoDetalhado desativar">
-                        <h2>📊 Desemprenho Detalhado - <span>TREM BALA</span></h2>
-                        
-                        <div class="desempenhoDetalhado_quedas">
-                            <div class="desempenhoDetalhado_quedas_partida">
-                                <h3>Partida <span>1</span></h3>
-                                <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>1º</span></p>
-                                <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_total">Total: <span>24</span></p>
-                            </div>
-    
-                            <div class="desempenhoDetalhado_quedas_partida">
-                                <h3>Partida <span>1</span></h3>
-                                <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>🥇 1º</span></p>
-                                <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_total">Total: <span>24</span></p>
-                            </div>
-                            <div class="desempenhoDetalhado_quedas_partida">
-                                <h3>Partida <span>1</span></h3>
-                                <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>🥇 1º</span></p>
-                                <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_total">Total: <span>24</span></p>
-                            </div>
-                            <div class="desempenhoDetalhado_quedas_partida">
-                                <h3>Partida <span>1</span></h3>
-                                <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>🥇 1º</span></p>
-                                <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_total">Total: <span>24</span></p>
-                            </div>
-                            <div class="desempenhoDetalhado_quedas_partida">
-                                <h3>Partida <span>1</span></h3>
-                                <p class="desempenhoDetalhado_quedas_partida_posição">Posição: <span>🥇 1º</span></p>
-                                <p class="desempenhoDetalhado_quedas_partida_kills">Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsPosição">Pts Posição: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_ptsKills">Pts Kills: <span>12</span></p>
-                                <p class="desempenhoDetalhado_quedas_total">Total: <span>24</span></p>
-                            </div>
-                            
-                        </div>
-    
-                    </div> -->
-                <!--Desempenho Detalhado-->
-    
+
             </div>
-    
-    
+
+
             <!--PLAYERS RANKING-->
             <div class="top_kills_wrapper">
                 <div class="top_kills_header">
                     <h2>🎯 TOP KILL - JOGADORES</h2>
                 </div>
-    
+
                 <div class="top_kills_grid">
                     <div>
                         <p>111aaaaaaa</p>
                     </div>
-    
+
                 </div>
 
-                
+
             </div>
             <!--PLAYERS RANKING-->
-    
+
         </section>
     </main>
 
@@ -224,20 +167,25 @@
     <footer class="footer">
         <p class="footer_siga">Siga a guilda em todas as redes sociais!</p>
         <div class="links">
-    
+
             <a href="https://www.instagram.com/lega_dooficial1?igsh=bmVueG4wdzU3eDM4" target="_blank"><i
                     class="fa-brands fa-instagram"></i></a>
-            <a href="https://tiktok.com/@dieguinho916" target="_blank"><i
-                    class="fa-brands fa-tiktok"></i></a>
+            <a href="https://tiktok.com/@dieguinho916" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
             <!-- <a href=""><i class="fa-brands fa-whatsapp"></i></a> -->
         </div>
-    
+
         <p class="copyright">© 2026 X-Treino Legado | Ranking Free Fire</p>
     </footer>
+
+
+
+
+    <!-- <script src="../js/hallDaFamal.js" type="module"></script> -->
 
     <script src="../../assets/js/classificação/sistemaPontuação.js" type="module"></script>
     <script src="../../assets/js/classificação/criarTabela.js" type="module"></script>
     <script src="../../assets/js/classificação/infoDetalhada.js" type="module"></script>
+    <script src="../../assets/js/homeXtreino/selecionarMes.js" type="module"></script>
 
 </body>
 

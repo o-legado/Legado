@@ -1246,144 +1246,108 @@
     },
     "junho":{
         
-        "treino1": {
-            "data": "01/06/2026",
-            "equipes": [
-                {
-                    "equipe": "O TERRORISTA DO SUL",
-                    "detalhes": [
-                        { "queda": 1, "kills": 21, "posicao": 1 },
-                        { "queda": 2, "kills": 17, "posicao": 2 },
-                        { "queda": 3, "kills": 10, "posicao": 2 }
-                    ],
-                    "logo": "../../img/logo-oficial.jpg",
-                    "puniçãoDescrição": "marcou no mapa",
-                    "puniçãoPontosAtual": 10 
-                    
-                    
-                },
-                {
-                    "equipe": "UNIVERSO 7",
-                    "detalhes": [
-                        { "queda": 1, "kills": 5, "posicao": 2 },
-                        { "queda": 2, "kills": 15, "posicao": 1 },
-                        { "queda": 3, "kills": 10, "posicao": 3 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "META GAMING",
-                    "detalhes": [
-                        { "queda": 1, "kills": 0, "posicao": 9 },
-                        { "queda": 2, "kills": 0, "posicao": 10 },
-                        { "queda": 3, "kills": 9, "posicao": 1 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "DARKWOLVES",
-                    "detalhes": [
-                        { "queda": 1, "kills": 1, "posicao": 6 },
-                        { "queda": 2, "kills": 6, "posicao": 4 },
-                        { "queda": 3, "kills": 6, "posicao": 4 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "BRAZINO 777",
-                    "detalhes": [
-                        { "queda": 1, "kills": 4, "posicao": 7 },
-                        { "queda": 2, "kills": 8, "posicao": 3 },
-                        { "queda": 3, "kills": 8, "posicao": 5 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "SS GAMING (S11)",
-                    "detalhes": [
-                        { "queda": 1, "kills": 7, "posicao": 4 },
-                        { "queda": 2, "kills": 0, "posicao": 5 },
-                        { "queda": 3, "kills": 2, "posicao": 6 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "FAIXA PRETA",
-                    "detalhes": [
-                        { "queda": 1, "kills": 0, "posicao": 10 },
-                        { "queda": 2, "kills": 2, "posicao": 8 },
-                        { "queda": 3, "kills": 1, "posicao": 7 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "TAXA 0%",
-                    "detalhes": [
-                        { "queda": 1, "kills": 0, "posicao": 8 },
-                        { "queda": 2, "kills": 1, "posicao": 6 },
-                        { "queda": 3, "kills": 1, "posicao": 8 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "SS GAMING (S05)",
-                    "detalhes": [
-                        { "queda": 1, "kills": 4, "posicao": 3 },
-                        { "queda": 2, "kills": 3, "posicao": 9 },
-                        { "queda": 3, "kills": 0, "posicao": 9 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "SG COMBOIO",
-                    "detalhes": [
-                        { "queda": 1, "kills": 4, "posicao": 5 },
-                        { "queda": 2, "kills": 0, "posicao": 7 },
-                        { "queda": 3, "kills": 0, "posicao": 13 }
-                    ]
-                },
-                {
-                    "equipe": "TROVAO BR",
-                    "detalhes": [
-                        { "queda": 1, "kills": 0, "posicao": 13 },
-                        { "queda": 2, "kills": 0, "posicao": 13 },
-                        { "queda": 3, "kills": 0, "posicao": 13 }
-                    ]
-                },
-                {
-                    "equipe": "SWORTERROR",
-                    "detalhes": [
-                        { "queda": 1, "kills": 0, "posicao": 13 },
-                        { "queda": 2, "kills": 0, "posicao": 13 },
-                        { "queda": 3, "kills": 0, "posicao": 13 }
-                    ]
-                    
-                }
-            ]
-        },
-        "treino2": {
-            "data": "02/06/2026",
+    "treino1": {
+      "data": "02/06/2026",
+        "equipes": [
+            {
+                "equipe": "ALLIANCE",
+                "detalhes": [
+                    { "queda": 1, "kills": 8, "posicao": 1 },
+                    { "queda": 2, "kills": 1, "posicao": 8 },
+                    { "queda": 3, "kills": 9, "posicao": 6 }
+                ]
+            },
+            {
+                "equipe": "RJ _ E SPORTE",
+                "detalhes": [
+                    { "queda": 1, "kills": 12, "posicao": 2 },
+                    { "queda": 2, "kills": 10, "posicao": 2 },
+                    { "queda": 3, "kills": 11, "posicao": 2 }
+                ]
+            },
+            {
+                "equipe": "SS GAMING",
+                "detalhes": [
+                    { "queda": 1, "kills": 9, "posicao": 3 },
+                    { "queda": 2, "kills": 0, "posicao": 9 },
+                    { "queda": 3, "kills": 0, "posicao": 9 }
+                ]
+            },
+            {
+                "equipe": "SERROCITY",
+                "detalhes": [
+                    { "queda": 1, "kills": 1, "posicao": 4 },
+                    { "queda": 2, "kills": 4, "posicao": 7 },
+                    { "queda": 3, "kills": 0, "posicao": 8 }
+                ]
+            },
+            {
+                "equipe": "CPX GAMER BR",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 5 },
+                    { "queda": 2, "kills": 13, "posicao": 1 },
+                    { "queda": 3, "kills": 20, "posicao": 1 }
+                ]
+            },
+            {
+                "equipe": "TEAM SX",
+                "detalhes": [
+                    { "queda": 1, "kills": 7, "posicao": 6 },
+                    { "queda": 2, "kills": 9, "posicao": 3 },
+                    { "queda": 3, "kills": 0, "posicao": 5 }
+                ]
+            },
+            {
+                "equipe": "META GAMING",
+                "detalhes": [
+                    { "queda": 1, "kills": 5, "posicao": 7 },
+                    { "queda": 2, "kills": 10, "posicao": 4 },
+                    { "queda": 3, "kills": 1, "posicao": 7 }
+                ]
+            },
+            {
+                "equipe": "FCB E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 1, "posicao": 8 },
+                    { "queda": 2, "kills": 2, "posicao": 5 },
+                    { "queda": 3, "kills": 5, "posicao": 3 }
+                ]
+            },
+            {
+                "equipe": "CERES FC",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 9 },
+                    { "queda": 2, "kills": 1, "posicao": 6 },
+                    { "queda": 3, "kills": 2, "posicao": 4 }
+                ]
+            },
+            {
+                "equipe": "REAL BALA",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 13 },
+                    { "queda": 2, "kills": 0, "posicao": 13 },
+                    { "queda": 3, "kills": 0, "posicao": 13 }
+                ]
+            },
+            {
+                "equipe": "007 DRAGONS",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 13 },
+                    { "queda": 2, "kills": 0, "posicao": 13 },
+                    { "queda": 3, "kills": 0, "posicao": 13 }
+                ]
+            },
+            {
+                "equipe": "FURY MOBILE GG",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 13 },
+                    { "queda": 2, "kills": 0, "posicao": 13 },
+                    { "queda": 3, "kills": 0, "posicao": 13 }
+                ]
+            }
+        ]
+    }
 
-            "equipes": [
-                {
-                    "equipe": "O TERRORISTA DO SUL",
-                    "detalhes": [
-                        { "queda": 1, "kills": 21, "posicao": 1 },
-                        { "queda": 2, "kills": 17, "posicao": 2 },
-                        { "queda": 3, "kills": 10, "posicao": 2 }
-                    ]
-                    
-                },
-                {
-                    "equipe": "UNIVERSO 7",
-                    "detalhes": [
-                        { "queda": 1, "kills": 5, "posicao": 2 },
-                        { "queda": 2, "kills": 15, "posicao": 1 },
-                        { "queda": 3, "kills": 10, "posicao": 3 }
-                    ]
-                    
-                }
-            ]
-        }
+        
     }
 }   
