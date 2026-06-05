@@ -883,75 +883,70 @@
   "junho":{
     
     "treino1": {
-        "data": "02/06/2026",
-        "equipes": {
-            "FCB E-SPORTS": {
-                "《ŁĐ》WHITER™": [0, 0, 2],
-                "《ŁĐ》DG777": [0, 0, 1],
-                "TKX  NOBREmvp": [1, 1, 0],
-                "LD  JRzin⁶⁶⁶": [0, null, null],
-                "sub-~-yuri": [null, 1, 2]
-            },
-            "SERROCITY": {
-                "SRC  ZERO_7": [0, 0, null],
-                "SRC_Luciano☆": [1, 0, 0],
-                "SRC  CH": [0, 0, null],
-                "SRC FA'BRÍC10": [null, 4, null]
-            },
-            "META GAMING": {
-                "《ŁĐ》YESHUA": [0, 2, 0],
-                "《ŁĐ》Lking⁷": [0, 0, null],
-                "QI  SOUZA7": [2, 1, 0],
-                "B7  ENZINrlq": [3, 7, 1]
-            },
-            "REAL BALA": {
-                "JOGADOR_NAO_IDENTIFICADO": [null, null, null]
-            },
-            "RJ _ E SPORTE": {
-                "RJ  criminoso": [4, 4, 2],
-                "RJ  Lowzz⚔": [4, 1, 3],
-                "RJ  DOGX": [1, null, 3],
-                "inumaki'": [3, 0, null],
-                "galaxyjota7": [null, 5, 3]
-            },
-            "TEAM SX": {
-                "JOÃO  D7": [1, 4, 0],
-                "GH  itachiϟ": [2, 3, 0],
-                "yunk  vino`": [1, 0, 0],
-                "K11  Silva7": [3, 2, 0]
-            },
-            "007 DRAGONS": {
-                "《ŁĐ》Nunes7": [null, null, null]
-            },
-            "SS GAMING": {
-                "SS.DUQUE": [4, 0, 0],
-                "SS  VINNI.": [4, 0, 0],
-                "WOD  SAGAZZ  z": [1, 0, null],
-                "SS.JERRY¹⁵⁷": [0, 0, null],
-                "SS.SHEIK1": [null, null, 0]
-            },
-            "CPX GAMER BR": {
-                "CPX  SEREIA  †": [0, 1, 2],
-                "CPX  fada  ⁰⁸⁴": [0, 1, 1],
-                "CPX  RAXHA あ": [0, 4, 11],
-                "CPX  Ⓥ Z E U S ⬆": [0, 7, 6]
-            },
-            "CERES FC": {
-                "REYY77⊗♧": [0, 0, 0],
-                "@Henrique.  么": [0, 0, 0],
-                "i'm  ruim": [0, 1, 2],
-                "彡 ANGOLA  ╰_╯": [0, 0, 0]
-            },
-            "ALLIANCE": {
-                "《UN》jhon": [4, 1, 2],
-                "AC.Ligerimvp": [1, 0, 1],
-                "Gabrielzxkkk": [1, 0, 2],
-                "BRAINROT._♡♡": [2, 0, null],
-                "RX  ONE9": [null, null, 4]
-            },
-            "FURY MOBILE GG": {
-                "JOGADOR_NAO_IDENTIFICADO": [null, null, null]
-            }
+
+      "data": "02/06/2026",
+      "equipes": {
+        "FCB E-SPORTS": {
+          "《ŁĐ》WHITER™": [0, 0, 2],
+          "《ŁĐ》DG777": [0, 0, 1],
+          "TKX  NOBREmvp": [1, 1, 0],
+          "LD  JRzin⁶⁶⁶": [0, null, null],
+          "sub-~-yuri": [null, 1, 2]
+          },
+
+          "SERROCITY": {
+            "SRC  ZERO_7": [0, 0, null],
+            "SRC_Luciano☆": [1, 0, 0],
+            "SRC  CH": [0, 0, null],
+            "SRC FA'BRÍC10": [null, 4, null]
+          },
+          "META GAMING": {
+            "《ŁĐ》YESHUA": [0, 2, 0],
+            "《ŁĐ》Lking⁷": [0, 0, null],
+            "QI  SOUZA7": [2, 1, 0],
+            "B7  ENZINrlq": [3, 7, 1]
+          },
+          "RJ _ E SPORTE": {
+            "RJ  criminoso": [4, 4, 2],
+            "RJ  Lowzz⚔": [4, 1, 3],
+            "RJ  DOGX": [1, null, 3],
+            "inumaki'": [3, 0, null],
+            "galaxyjota7": [null, 5, 3]
+          },
+          "TEAM SX": {
+
+            "JOÃO  D7": [1, 4, 0],
+            "GH  itachiϟ": [2, 3, 0],
+            "yunk  vino`": [1, 0, 0],
+            "K11  Silva7": [3, 2, 0]
+          },
+
+          "SS GAMING": {
+            "SS.DUQUE": [4, 0, 0],
+            "SS  VINNI.": [4, 0, 0],
+            "WOD  SAGAZZ  z": [1, 0, null],
+            "SS.JERRY¹⁵⁷": [0, 0, null],
+            "SS.SHEIK1": [null, null, 0]
+          },
+          "CPX GAMER BR": {
+            "CPX  SEREIA  †": [0, 1, 2],
+            "CPX  fada  ⁰⁸⁴": [0, 1, 1],
+            "CPX  RAXHA あ": [0, 4, 11],
+            "CPX  Ⓥ Z E U S ⬆": [0, 7, 6]
+          },
+          "CERES FC": {
+            "REYY77⊗♧": [0, 0, 0],
+            "@Henrique.  么": [0, 0, 0],
+            "i'm  ruim": [0, 1, 2],
+            "彡 ANGOLA  ╰_╯": [0, 0, 0]
+          },
+          "ALLIANCE": {
+            "《UN》jhon": [4, 1, 2],
+            "AC.Ligerimvp": [1, 0, 1],
+            "Gabrielzxkkk": [1, 0, 2],
+            "BRAINROT._♡♡": [2, 0, null],
+            "RX  ONE9": [null, null, 4]
+          }
         }
     }
 

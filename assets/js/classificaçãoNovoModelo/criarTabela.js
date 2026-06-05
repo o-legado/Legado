@@ -246,7 +246,7 @@ const criarTabela = {
     criarBtn(tr, posição) {
         const td = document.createElement("td")
         const btn = document.createElement("button")
-        btn.setAttribute("id", `info${posição}`)
+        btn.setAttribute("id", `infoEquipe`)
         td.appendChild(btn)
         btn.textContent = "📋"
         tr.appendChild(td)
@@ -423,7 +423,7 @@ const criarRankJogador = {
     criarBtn(cardContent, posicao, nomeJogador, equipe) {
         const btn = document.createElement("button")
         btn.setAttribute("class", "btnPlayer")
-        btn.setAttribute("id", `playerInfo${posicao}`)
+        btn.setAttribute("id", `infoPlayer`)
 
         // Dataset para manter o modal ou informações detalhadas funcionando
         btn.dataset.jogador = nomeJogador;
