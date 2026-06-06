@@ -150,11 +150,17 @@ const criarHtmlEquipeInfo = {
         const criarH2 = this.criarH2(divDesempenhoDetalhado, equipe.equipe)
         const divDesempenhoDetalhadoQuedas = this.divDesempenhoDetalhadoQuedas(divDesempenhoDetalhado)
 
+        const ptsOriginal = this.organizarDadosEquipe(equipe, trEquipe, divDesempenhoDetalhadoQuedas)
+
+        // O .trim() remove espaços inúteis antes e depois do texto.
+        // Se a string for vazia, null ou undefined, o JS já avalia direto como falso.
+        if (equipe.puniçãoDescrição && equipe.puniçãoDescrição.trim() !== "") {
+            this.criarPenalidade(divDesempenhoDetalhadoQuedas, equipe.puniçãoDescrição, equipe.puniçãoPontos, ptsOriginal);
+        }
+
         //aq cria a div de penalidade
-        // this.criarPenalidade(divDesempenhoDetalhadoQuedas)
 
 
-        this.organizarDadosEquipe(equipe, trEquipe, divDesempenhoDetalhadoQuedas)
 
     },
     criaTd(trInfo){
@@ -191,20 +197,30 @@ const criarHtmlEquipeInfo = {
 
     //aq ira organizar os dados
     organizarDadosEquipe(equipe, trEquipe, divDesempenhoDetalhadoQuedas){
-        let queda;
-        let kills;
-        let posicao;
+        // Criamos os acumuladores começando em 0
+        let totalKills = 0;
+        let totalPtsPosicao = 0;
+
         equipe.detalhes.forEach(element => {
-            queda = element.queda
-            kills = element.kills
-            posicao = element.posicao
+            const queda = element.queda;
+            const kills = Number(element.kills) || 0; // Garante que seja número
+            const posicao = element.posicao;
 
-            //aq ira chama  a função para pegar os pts da posição
-            const ptsPosição = this.ptsPosição(posicao)
-            // const totalPosiçãoPts = this.ptsTotalPosição(ptsPosição)
+            // Pega os pontos da posição atual
+            const ptsPos = Number(this.ptsPosição(posicao)) || 0; 
 
-            this.criardivDesempenhoPartida(divDesempenhoDetalhadoQuedas, queda, posicao, kills, ptsPosição)
+            // Acumula os valores de cada partida
+            totalKills += kills;
+            totalPtsPosicao += ptsPos;
+
+            // Cria o card visual desta partida individualmente
+            this.criardivDesempenhoPartida(divDesempenhoDetalhadoQuedas, queda, posicao, kills, ptsPos);
         });
+
+        // Calcula a soma real de todas as quedas juntas
+        const ptsOriginalTotal = totalKills + totalPtsPosicao;
+        
+        return ptsOriginalTotal;
     },
     ptsPosição(posicao){
         let pontuação
@@ -218,12 +234,12 @@ const criarHtmlEquipeInfo = {
     // ptsTotalPosição(ptsPosição){
         
     //     ptsPosiçãoTotal += ptsPosição
-    //     console.log(ptsPosiçãoTotal)
+    //     return ptsPosiçãoTotal
     // },
 
 
     //aq ira criar cada div
-    criardivDesempenhoPartida(divDesempenhoDetalhadoQuedas, index, posição, kills, ptsPos, totalPts){
+    criardivDesempenhoPartida(divDesempenhoDetalhadoQuedas, index, posição, kills, ptsPos){
         const div = document.createElement("div")
         div.setAttribute("class", "desempenhoDetalhado_quedas_partida")
         divDesempenhoDetalhadoQuedas.appendChild(div)
@@ -311,26 +327,79 @@ const criarHtmlEquipeInfo = {
     },
 
     //aq ira criar a div penalidade
-    criarPenalidade(divCards){
+    criarPenalidade(divCards, puniçãoDescrição, puniçãoPontos, ptsTotal){
         const divPenalidade = document.createElement("div")
         divCards.after(divPenalidade)
 
         divPenalidade.setAttribute("class", "desempenhoDetalhado_penalidade")
         const h2 = this.criarH2Penalidade()
-        const pDescrição = this.criarPdescrição()
+        const pDescrição = this.criarPdescrição(puniçãoDescrição)
         divPenalidade.appendChild(h2)
         divPenalidade.appendChild(pDescrição)
+
+        //aq cria a div para ficar os pts
+        const divPts = this.criaDivPts()
+        
+
+        const pPtsOriginal = this.pPtsOriginal(ptsTotal)
+        const pPtsRedução = this.pPtsRedução(puniçãoPontos)
+        const pPtsFinal = this.pPtsFinal(ptsTotal, puniçãoPontos)
+        divPts.appendChild(pPtsOriginal)
+        divPts.appendChild(pPtsRedução)
+        divPts.appendChild(pPtsFinal)
+
+        divPenalidade.appendChild(divPts)
+
     },
     criarH2Penalidade(){
         const h2 = document.createElement("h2")
+        h2.setAttribute("class", "title_penalidade")
         h2.textContent = "⚠️Penalidade Aplicada"
         return h2
     },
-    criarPdescrição(){
+    criarPdescrição(puniçãoDescrição){
         const p = document.createElement("p")
         const span = document.createElement("span")
-        span.textContent = "ola mundo"
+        p.setAttribute("class", "penalidade_descrição")
+        span.setAttribute("class", "penalidade_motivo")
+        span.textContent = puniçãoDescrição
         p.textContent = "📋 Motivo: "
+        p.appendChild(span)
+        return p
+    },
+    criaDivPts(){
+        const div = document.createElement("div")
+        div.setAttribute("class", "contentPts")
+        return div
+    },
+    pPtsOriginal(ptsTotal){
+        const p = document.createElement("p")
+        p.setAttribute("class", "pPtsOriginal")
+        const span = document.createElement("span")
+        span.setAttribute("class", "spanPtsOriginal")
+        span.textContent = ptsTotal
+        p.textContent = `Pontuação Originais: `
+        p.appendChild(span)
+        return p
+    },
+    pPtsRedução(puniçãoPontos){
+        const p = document.createElement("p")
+        p.setAttribute("class", "pPtsRedução")
+        const span = document.createElement("span")
+        span.setAttribute("class", "spanPtsRedução")
+        span.textContent = `-${puniçãoPontos}`
+        p.textContent = "Redução: "
+        p.appendChild(span)
+        return p
+    },
+    pPtsFinal(ptsTotal, puniçãoPontos){
+        const p = document.createElement("p")
+        p.setAttribute("class", "pPtsFinal")
+        const span = document.createElement("span")
+        span.setAttribute("class", "spanPtsFinal")
+
+        span.textContent = ptsTotal - Number(puniçãoPontos)
+        p.textContent = "Pontuação Final: "
         p.appendChild(span)
         return p
     }
@@ -400,7 +469,6 @@ const criarHtmlJogadorInfo = {
 
         this.divDesempenhoDetalhado(divContainerCard, arrayKills);
 
-        console.log(div);
     },
 
     criarH2(nomeJogador){

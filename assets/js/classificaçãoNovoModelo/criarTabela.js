@@ -2,7 +2,7 @@
 let jogadores 
 let equipes 
 let dataClicada
-
+const resultadoFinal = [];
 async function carregarDados() {
     const resposta = await fetch("../../../assets/data/xtreinoMensal/equipe.json")
     equipes = await resposta.json()
@@ -64,13 +64,14 @@ const organizarDadosEquipe = {
 
     // Processa os dados, soma os pontos, ordena e define as posições reais da tabela
     pegarDadosDasEquipes(treinoEquipe) {
-        const resultadoFinal = [];
+        
         const equipes = treinoEquipe.equipes;
 
         equipes.forEach(infoEquipes => {
             let kill = 0;
             let posicaoPts = 0;
             let booyah = 0;
+            let equipePts;
 
             const nomeEquipe = infoEquipes.equipe;
             const arrayQuedas = infoEquipes.detalhes;
@@ -78,7 +79,7 @@ const organizarDadosEquipe = {
 
             // BLINDAGEM: Pega a punição do seu JSON mesmo se estiver escrita com ou sem acento
             const punicaoDescricao = infoEquipes.puniçãoDescrição
-            const punicaoPontosAtual = Number(infoEquipes.puniçãoPontosAtual );
+            const punicaoPontosAtual = infoEquipes.puniçãoPontos
 
             // Calcula abates, pontos por posição e booyahs de todas as quedas
             arrayQuedas.forEach(objQuedas => {
@@ -94,7 +95,11 @@ const organizarDadosEquipe = {
             });
 
             // Total de pontos: (Soma dos Abates + Soma dos Pontos de Posição) - Punição aplicada
-            let equipePts = (kill + posicaoPts)
+            if(punicaoPontosAtual !== "" && punicaoPontosAtual !== null && punicaoPontosAtual !== undefined){
+                equipePts = (kill + posicaoPts - punicaoPontosAtual)
+            }else{
+                equipePts = (kill + posicaoPts)
+            }
 
             resultadoFinal.push({
                 posicao: 0, // Será definida logo abaixo após a ordenação decrescente
@@ -105,7 +110,6 @@ const organizarDadosEquipe = {
                 pts: equipePts,
                 data: treinoEquipe.data,
                 logo: logo,
-                punicaoDescricao: punicaoDescricao,
                 punicaoPontosAtual: punicaoPontosAtual
             });
         });
@@ -146,7 +150,6 @@ const organizarDadosEquipe = {
 //aq ira enviar os dados para fazer a tabela organizado
 const enviarDadosTabela = {
     start(classificação) {
-
         //aq ira perccorer o array da classificação
         classificação.forEach(objEquipe => {
             const posição = objEquipe.posicao
@@ -157,8 +160,8 @@ const enviarDadosTabela = {
             const pts = objEquipe.pts
             const data = objEquipe.data
             const logo = objEquipe.logo
-            const punicaoDescricao = objEquipe.punicaoDescricao
             const punicaoPontosAtual = objEquipe.punicaoPontosAtual
+
             criarTabela.start(posição, equipe, quedas, abate, booyah, pts, data, logo)
            
         });
@@ -260,7 +263,7 @@ const criarTabela = {
 }
 
 
-
+let ranking = []
 
 const formarDadosJogadores = {
     
@@ -286,7 +289,7 @@ const formarDadosJogadores = {
 
     },
     pegarDadosDosJogadores(treinoJogadores) {
-        this.ranking = []
+        // ranking = []
     
         // Percorre os nomes das equipes
         for (let nomeEquipe in treinoJogadores.equipes) {
@@ -314,15 +317,15 @@ const formarDadosJogadores = {
         }
     
         // Ordena quem tem mais pontos (abates)
-        this.ranking.sort((a, b) => b.pts - a.pts)
+        ranking.sort((a, b) => b.pts - a.pts)
     
         // Aplica as posições de cada jogador baseado no index
-        this.ranking.forEach((jogador, index) => {
+        ranking.forEach((jogador, index) => {
             jogador.posição = index + 1
         })
     
         // Envia o ranking pronto para renderizar na tela
-        criarRankJogador.start(this.ranking)
+        criarRankJogador.start(ranking)
         
     },
 
@@ -333,7 +336,7 @@ const formarDadosJogadores = {
             kills: jogadoresPartidaKillArray,
             pts: somaKills
         }
-        this.ranking.push(infoJogador)
+        ranking.push(infoJogador)
     }
 }
 
@@ -435,3 +438,5 @@ const criarRankJogador = {
 }
 
 
+console.log(resultadoFinal)
+console.log(ranking)

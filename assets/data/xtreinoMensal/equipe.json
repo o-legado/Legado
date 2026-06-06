@@ -3028,7 +3028,10 @@
                             "kills": 20,
                             "posicao": 1
                         }
-                    ]
+                    ],
+                    "logo": "assets/img/logo-oficial.jpg",
+                    "puniçãoDescrição": "Marcou na lojinha",
+                    "puniçãoPontos": 10
                 },
                 {
                     "equipe": "TEAM SX",
