@@ -16,13 +16,13 @@
     <!--FONTE-->
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-SW7Q9LH3LR');
-    </script>
+    </script> -->
     <!-- Google tag (gtag.js) -->
 
     <!--Incon-->
@@ -147,29 +147,28 @@
                 <div class="brilho-foco"></div>
 
                 <div class="card-conteudo">
-                    <span class="temporada-tag">Season 1 • 15/01/2026</span>
 
                     <h2 class="campeao-title">CAMPEÃO</h2>
 
                     <div class="equipe-logo-container">
-                        <div class="equipe-logo-placeholder">Logo</div>
+                        <img class="equipe-logo-placeholder" src="" alt="">
                     </div>
 
-                    <p class="campeao-equipe">Trem Bala</p>
+                    <p class="campeao-equipe"></p>
 
                     <div class="stats-container">
                         <div class="stat-box pontos">
-                            <p class="stat-numero">91</p>
+                            <p class="stat-numero" id="pts"></p>
                             <span class="stat-label">PONTOS</span>
                         </div>
 
                         <div class="stat-box kills">
-                            <p class="stat-numero">50</p>
+                            <p class="stat-numero" id="kills"></p>
                             <span class="stat-label">KILLS</span>
                         </div>
 
                         <div class="stat-box booyah">
-                            <p class="stat-numero">1</p>
+                            <p class="stat-numero" id="booyah"></p>
                             <span class="stat-label">BOOYAH</span>
                         </div>
                     </div>
@@ -202,16 +201,16 @@
 
                         <div class="mvp-info">
                             <span class="mvp-tag">MVP DE KILLS • </span>
-                            <h3 class="mvp-nick">RUSSO_KING</h3>
+                            <h3 class="mvp-nick"></h3>
                             <p class="mvp-equipe">
-                                <span class="detalhe-seta">▶</span> EQUIPE RUSSO 1
+                                <span class="detalhe-seta">▶</span>
                             </p>
                         </div>
                     </div>
 
                     <!-- Lado Direito: Contador de Kills Gigante -->
                     <div class="mvp-score">
-                        <span class="score-numero">18</span>
+                        <span class="score-numero"></span>
                         <span class="score-label">KILLS</span>
                     </div>
                 </div>
@@ -395,6 +394,7 @@
     <script src="../../../assets/js/classificação/sistemaPontuação.js" type="module"></script>
     <script src="../../../assets/js/classificaçãoNovoModelo/criarTabela.js" type="module"></script>
     <script src="../../../assets/js/classificaçãoNovoModelo/infoDetalhada.js" type="module"></script>
+    <script src="../../../assets/js/classificaçãoNovoModelo/hallDaFama.js" type="module"></script>
 
     <!-- <script src="../../../assets/js/classificação/infoDetalhada.js" type="module"></script> -->
 

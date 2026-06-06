@@ -263,9 +263,9 @@ const criarHtmlEquipeInfo = {
     criarH3(index){
         const h3 = document.createElement("h3")
         const span = document.createElement("span")
-        span.textContent = index
-        h3.textContent = `Partida `
+        span.textContent = `${index}°`
         h3.appendChild(span)
+        h3.textContent += ` Queda`
         return h3
     },
     criarP_posição(posição){
@@ -512,7 +512,7 @@ const criarHtmlJogadorInfo = {
 
     criarH3(numberPartida){
         const h3 = document.createElement("h3");
-        h3.textContent = `Partida ${numberPartida}`;
+        h3.textContent = `${numberPartida}° Queda`;
 
         return h3;
     },

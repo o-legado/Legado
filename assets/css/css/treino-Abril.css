@@ -760,8 +760,8 @@ main .container .card-campeao {
   /* Moldura Azul brilhante idêntica ao print */
 }
 main .container .card-campeao .equipe-logo-placeholder {
-  width: 100px;
-  height: 100px;
+  width: 12rem;
+  height: 12rem;
   background: linear-gradient(135deg, #1d4ed8, #1e40af);
   border: 3px solid #ef4444;
   border-radius: 8px;

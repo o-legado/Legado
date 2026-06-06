@@ -19,6 +19,12 @@ async function iniciarApp() {
     organizarDadosEquipe.start(equipes)
     formarDadosJogadores.start(jogadores)
 
+    // 🔥 ADICIONE ISSO AQUI:
+    // Agora sim! Avisa que TUDO (equipes e ranking) está 100% pronto.
+    setTimeout(() => {
+        window.dispatchEvent(new CustomEvent("dadosProntos"));
+    }, 50);
+
 }
 iniciarApp()
 
@@ -122,6 +128,8 @@ const organizarDadosEquipe = {
         resultadoFinal.forEach((item, index) => {
             item.posicao = index + 1;
         });
+
+       
 
         // Envia os dados ordenados e com pontos de posição computados para a tabela
         enviarDadosTabela.start(resultadoFinal);
@@ -437,6 +445,7 @@ const criarRankJogador = {
     }
 }
 
+export {resultadoFinal, ranking}
 
-console.log(resultadoFinal)
-console.log(ranking)
+// console.log(resultadoFinal)
+// console.log(ranking)
