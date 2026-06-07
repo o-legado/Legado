@@ -2946,7 +2946,7 @@
                             "posicao": 6
                         }
                     ],
-                    "logo": "assets/img/logo-oficial.jpg",
+                    "logo": "../../../assets/img/logosXtreinoEquipes/junho/(1.3)alliance.jpg",
                     "puniçãoDescrição": "",
                     "puniçãoPontos": ""
                 },
@@ -2968,7 +2968,10 @@
                             "kills": 11,
                             "posicao": 2
                         }
-                    ]
+                    ],
+                    "logo": "../../../assets/img/logosXtreinoEquipes/junho/(1.2)rj_e sport.jpg",
+                    "puniçãoDescrição": "",
+                    "puniçãoPontos": ""
                 },
                 {
                     "equipe": "SS GAMING",

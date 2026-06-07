@@ -298,6 +298,7 @@ const formarDadosJogadores = {
     },
     pegarDadosDosJogadores(treinoJogadores) {
         // ranking = []
+        
     
         // Percorre os nomes das equipes
         for (let nomeEquipe in treinoJogadores.equipes) {
@@ -311,8 +312,10 @@ const formarDadosJogadores = {
                 // Armazena a soma total de cada jogador
                 let somaKills = 0
     
+                let logoPlayer = jogadoresEquipe[nomeJogador].logo
+
                 // Armazena as partidas de cada jogador (array de kills)
-                let jogadoresPartidaKillArray = jogadoresEquipe[nomeJogador]
+                let jogadoresPartidaKillArray = jogadoresEquipe[nomeJogador].dados
     
                 // Percorre cada kill que o jogador fez
                 for (let i = 0; i < jogadoresPartidaKillArray.length; i++) {
@@ -320,7 +323,7 @@ const formarDadosJogadores = {
                     somaKills += jogadoresPartidaKillArray[i]
                 }
     
-                this.ordemDoRanking(nomeEquipe, nomeJogador, jogadoresPartidaKillArray, somaKills)
+                this.ordemDoRanking(nomeEquipe, nomeJogador, jogadoresPartidaKillArray, somaKills, logoPlayer)
             }
         }
     
@@ -337,12 +340,13 @@ const formarDadosJogadores = {
         
     },
 
-    ordemDoRanking(nomeEquipe, nomeJogador, jogadoresPartidaKillArray, somaKills) {
+    ordemDoRanking(nomeEquipe, nomeJogador, jogadoresPartidaKillArray, somaKills, logoPlayer) {
         const infoJogador = {
             equipe: nomeEquipe,
             jogador: nomeJogador,
             kills: jogadoresPartidaKillArray,
-            pts: somaKills
+            pts: somaKills,
+            logoPlayer: logoPlayer
         }
         ranking.push(infoJogador)
     }

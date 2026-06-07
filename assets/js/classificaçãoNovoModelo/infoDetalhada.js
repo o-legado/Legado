@@ -465,7 +465,7 @@ const criarHtmlJogadorInfo = {
 
         // Seleciona o array das kills do player
         const equipes = treinoPlayer.equipes;
-        const arrayKills = equipes[namePLayerEquipe][namePlayer];
+        const arrayKills = equipes[namePLayerEquipe][namePlayer].dados;
 
         this.divDesempenhoDetalhado(divContainerCard, arrayKills);
 
@@ -524,7 +524,12 @@ const criarHtmlJogadorInfo = {
         p.textContent = "Kills: ";
 
         const span = document.createElement("span");
-        span.textContent = valorKill ?? 0;
+        if(valorKill == null){
+            span.textContent = "Não jogou";
+            p.textContent = ""
+        }else{
+            span.textContent = valorKill ?? 0;
+        }
 
         p.appendChild(span);
         divPartida.appendChild(p);
