@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #06070a;
+  background-image: radial-gradient(ellipse at top, #160707 0%, #06070a 70%);
+  color: #f3f4f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(6, 7, 10, 0.7);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header .header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.header .btn-back {
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.header .btn-back span {
+  font-size: 1.2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header .btn-back:hover {
+  color: #f3f4f6;
+  border-color: rgba(239, 68, 68, 0.3);
+}
+.header .btn-back:hover span {
+  transform: translateX(-2px);
+}
+.header .btn-back:active {
+  transform: scale(0.95);
+}
+.header .logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header .logo-area .logo-badge {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #ef4444, #f59e0b);
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+.header .logo-area .logo-text {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.header .logo-area .logo-text .accent {
+  color: #ef4444;
+  font-weight: 500;
+}
+.header .main-nav {
+  display: flex;
+  gap: 32px;
+  margin-left: auto;
+}
+.header .main-nav .nav-item {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header .main-nav .nav-item span {
+  font-size: 1.1rem;
+}
+.header .main-nav .nav-item:hover {
+  color: #f3f4f6;
+}
+.header .main-nav .nav-item.active {
+  color: #ef4444;
+  border-bottom: 2px solid #ef4444;
+}
+
+.main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 24px;
+  flex-grow: 1;
+}
+.main .main_historico {
+  margin-bottom: 48px;
+}
+.main .main_historico .badge-category {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+.main .main_historico .page-title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 12px;
+  letter-spacing: -0.5px;
+}
+.main .main_historico .page-subtitle {
+  color: #9ca3af;
+  margin-top: 8px;
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+.main .seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.main .seasons-grid .season-card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main .seasons-grid .season-card .card-glow {
+  position: absolute;
+  top: -32px;
+  right: -32px;
+  width: 96px;
+  height: 96px;
+  border-radius: 50px;
+  filter: blur(32px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main .seasons-grid .season-card:hover {
+  transform: translateY(-4px);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.main .seasons-grid .season-card:hover .card-btn span {
+  transform: translateX(4px);
+}
+.main .seasons-grid .season-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.main .seasons-grid .season-card .card-header .status-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.main .seasons-grid .season-card .card-header .date-badge {
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.main .seasons-grid .season-card .card-body .season-title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.main .seasons-grid .season-card .card-body .season-desc {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+.main .seasons-grid .season-card .season-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.main .seasons-grid .season-card .season-stats .stat-item {
+  display: flex;
+  flex-direction: column;
+}
+.main .seasons-grid .season-card .season-stats .stat-item .stat-label {
+  font-size: 0.65rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.main .seasons-grid .season-card .season-stats .stat-item .stat-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.main .seasons-grid .season-card .season-stats .stat-item .stat-value.prize {
+  color: #f59e0b;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.1rem;
+}
+.main .seasons-grid .season-card .podium-rewards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 16px 0 24px 0;
+}
+.main .seasons-grid .season-card .podium-rewards .podium-item {
+  display: flex;
+  flex-direction: column;
+}
+.main .seasons-grid .season-card .podium-rewards .podium-item .podium-label {
+  font-size: 0.65rem;
+  color: #9ca3af;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.main .seasons-grid .season-card .podium-rewards .podium-item .podium-label .trophy-gold {
+  font-size: 0.85rem;
+  color: #fcd34d;
+}
+.main .seasons-grid .season-card .podium-rewards .podium-item .podium-value {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #f3f4f6;
+  margin-top: 1px;
+}
+.main .seasons-grid .season-card .podium-rewards .podium-item.top-1 .podium-value {
+  color: #fcd34d;
+}
+.main .seasons-grid .season-card .card-btn {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main .seasons-grid .season-card .card-btn span {
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main .seasons-grid .season-card.ongoing {
+  border-hover: 1px solid rgba(239, 68, 68, 0.3);
+}
+.main .seasons-grid .season-card.ongoing .card-glow {
+  background-color: rgba(239, 68, 68, 0.08);
+}
+.main .seasons-grid .season-card.ongoing:hover .card-glow {
+  background-color: rgba(239, 68, 68, 0.15);
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.2);
+}
+.main .seasons-grid .season-card.ongoing .status-badge {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+.main .seasons-grid .season-card.ongoing .status-badge .pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+}
+.main .seasons-grid .season-card.ongoing .btn-primary {
+  background-color: #ef4444;
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+}
+.main .seasons-grid .season-card.ongoing .btn-primary:hover {
+  background-color: #dc2626;
+}
+.main .seasons-grid .season-card.ongoing .btn-primary:active {
+  transform: scale(0.98);
+}
+.main .seasons-grid .season-card.upcoming {
+  border-hover: 1px solid rgba(245, 158, 11, 0.3);
+}
+.main .seasons-grid .season-card.upcoming .card-glow {
+  background-color: rgba(245, 158, 11, 0.04);
+}
+.main .seasons-grid .season-card.upcoming .status-badge {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+.main .seasons-grid .season-card.upcoming .btn-disabled {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #6b7280;
+  cursor: not-allowed;
+}
+.main .seasons-grid .season-card.finished {
+  opacity: 0.75;
+}
+.main .seasons-grid .season-card.finished:hover {
+  opacity: 1;
+}
+.main .seasons-grid .season-card.finished .status-badge {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #9ca3af;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main .seasons-grid .season-card.finished .btn-secondary {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f3f4f6;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.main .seasons-grid .season-card.finished .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: rgba(6, 7, 10, 0.4);
+  padding: 24px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+}
+@media (max-width: 640px) {
+  .main-header .header-container {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+    gap: 12px;
+  }
+  .content-header .page-title {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=homeLiga.css.map */

@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+$font-body: 'Space Grotesk', sans-serif;
+$font-title: 'Rajdhani', sans-serif;
+
+// Paleta de Cores Premium (eSports)
+$bg-main: #06070a;
+$bg-gradient-top: #160707;
+$bg-card: rgba(255, 255, 255, 0.02);
+$border-color: rgba(255, 255, 255, 0.05);
+
+$color-primary: #ef4444; // Vermelho Crimson
+$color-primary-hover: #dc2626;
+$color-text-white: #f3f4f6;
+$color-text-gray: #9ca3af;
+$color-text-muted: #6b7280;
+
+$color-emerald: #10b981;
+$color-amber: #f59e0b;
+
+// Mixins úteis para economizar código
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// ==========================================
+// ESTILOS GERAIS DA PÁGINA
+// ==========================================
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-body;
+    background-color: $bg-main;
+    background-image: radial-gradient(ellipse at top, $bg-gradient-top 0%, $bg-main 70%);
+    color: $color-text-white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// ==========================================
+// HEADER & NAVEGAÇÃO
+// ==========================================
+.header {
+    border-bottom: 1px solid $border-color; // Corrigido de border-b para border-bottom
+    background-color: rgba(6, 7, 10, 0.7);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; // Alterado para alinhar tudo à esquerda
+        gap: 20px; // Espaçamento entre o botão de voltar e a logo
+    }
+
+    // Estilo do Botão de Voltar
+    .btn-back {
+        color: $color-text-gray;
+        @include flex-center;
+        @include transition-smooth;
+        cursor: pointer;
+
+        span {
+            font-size: 1.2rem;
+            @include transition-smooth;
+        }
+
+        &:hover {
+            color: $color-text-white;
+            border-color: rgba($color-primary, 0.3); // Dá um leve brilho vermelho ao passar o mouse
+
+            span {
+                transform: translateX(-2px); // Animação sutil da seta indo para trás
+            }
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+    .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .logo-badge {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, $color-primary, $color-amber);
+            font-family: $font-title;
+            font-weight: 700;
+            font-size: 1.25rem;
+            @include flex-center;
+            box-shadow: 0 4px 15px rgba($color-primary, 0.3);
+        }
+
+        .logo-text {
+            font-family: $font-title;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+
+            .accent {
+                color: $color-primary;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .main-nav {
+        display: flex;
+        gap: 32px;
+        margin-left: auto; // Empurra os outros itens de menu (se houver) para o canto direito
+
+        .nav-item {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: $color-text-gray;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding-bottom: 4px;
+            @include transition-smooth;
+
+            span {
+                font-size: 1.1rem;
+            }
+
+            &:hover {
+                color: $color-text-white;
+            }
+
+            &.active {
+                color: $color-primary;
+                border-bottom: 2px solid $color-primary;
+            }
+        }
+    }
+}
+
+// ==========================================
+// CONTEÚDO E GRID
+// ==========================================
+.main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 24px;
+    flex-grow: 1;
+
+    //primeira section
+    .main_historico {
+        margin-bottom: 48px;
+
+        .badge-category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: $color-primary;
+            background-color: rgba($color-primary, 0.1);
+            padding: 4px 12px;
+            border-radius: 100px;
+            border: 1px solid rgba($color-primary, 0.2);
+        }
+
+        .page-title {
+            font-family: $font-title;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-top: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-subtitle {
+            color: $color-text-gray;
+            margin-top: 8px;
+            font-size: 1rem;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+    }
+
+    //cars das ligas
+    .seasons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 24px;
+
+        // CARD COMPONENT
+        .season-card {
+            background-color: $bg-card;
+            border: 1px solid $border-color;
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(4px);
+            @include transition-smooth;
+
+            .card-glow {
+                position: absolute;
+                top: -32px;
+                right: -32px;
+                width: 96px;
+                height: 96px;
+                border-radius: 50px;
+                filter: blur(32px);
+                @include transition-smooth;
+            }
+
+            &:hover {
+                transform: translateY(-4px);
+                background-color: rgba(255, 255, 255, 0.04);
+
+                .card-btn span {
+                    transform: translateX(4px);
+                }
+            }
+
+            // Header do Card
+            .card-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 24px;
+
+                .status-badge {
+                    font-size: 0.75rem;
+                    font-weight: 700;
+                    padding: 2px 10px;
+                    border-radius: 6px;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                }
+
+                .date-badge {
+                    color: $color-text-muted;
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                }
+            }
+
+            // Corpo do Card
+            .card-body {
+                .season-title {
+                    font-family: $font-title;
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                }
+
+                .season-desc {
+                    color: $color-text-gray;
+                    font-size: 0.85rem;
+                    margin-top: 4px;
+                    line-height: 1.4;
+                }
+            }
+
+            // Seção de Stats (Tabela interna)
+            // Seção de Stats (Mudado para suportar os 4 itens alinhados)
+            .season-stats {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px 12px;
+                margin-top: 20px;
+                padding-top: 16px;
+                border-top: 1px solid $border-color;
+
+                .stat-item {
+                    display: flex;
+                    flex-direction: column;
+
+                    .stat-label {
+                        font-size: 0.65rem;
+                        color: $color-text-muted;
+                        text-transform: uppercase;
+                        letter-spacing: 0.5px;
+                    }
+
+                    .stat-value {
+                        font-size: 0.9rem;
+                        font-weight: 600;
+                        margin-top: 2px;
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+
+                        &.prize {
+                            color: $color-amber;
+                            font-family: $font-title;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+
+            // Nova seção para a divisão de prêmios por colocação
+            .podium-rewards {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.01);
+                border: 1px solid rgba(255, 255, 255, 0.03);
+                border-radius: 8px;
+                padding: 10px 14px;
+                margin: 16px 0 24px 0;
+
+                .podium-item {
+                    display: flex;
+                    flex-direction: column;
+
+                    .podium-label {
+                        font-size: 0.65rem;
+                        color: $color-text-gray;
+                        display: flex;
+                        align-items: center;
+                        gap: 2px;
+
+                        .trophy-gold {
+                            font-size: 0.85rem;
+                            color: #fcd34d; // Dourado metálico para o primeiro lugar
+                        }
+                    }
+
+                    .podium-value {
+                        font-size: 0.8rem;
+                        font-weight: 700;
+                        color: $color-text-white;
+                        margin-top: 1px;
+                    }
+
+                    // Destaque sutil no valor do campeão
+                    &.top-1 .podium-value {
+                        color: #fcd34d;
+                    }
+                }
+            }
+
+            // Botões dos Cards
+            .card-btn {
+                width: 100%;
+                border: none;
+                border-radius: 12px;
+                padding: 14px;
+                font-size: 0.875rem;
+                font-weight: 700;
+                @include flex-center;
+                gap: 8px;
+                cursor: pointer;
+                @include transition-smooth;
+
+                span {
+                    font-size: 1rem;
+                    @include transition-smooth;
+                }
+            }
+
+            // ==========================================
+            // MODIFICADORES DE ESTADO (COMPETIÇÕES)
+            // ==========================================
+            &.ongoing {
+                border-hover: 1px solid rgba($color-primary, 0.3);
+
+                .card-glow {
+                    background-color: rgba($color-primary, 0.08);
+                }
+
+                &:hover .card-glow {
+                    background-color: rgba($color-primary, 0.15);
+                    box-shadow: 0 0 30px rgba($color-primary, 0.2);
+                }
+
+                .status-badge {
+                    background-color: rgba($color-emerald, 0.1);
+                    color: $color-emerald;
+                    border: 1px solid rgba($color-emerald, 0.2);
+
+                    .pulse-dot {
+                        width: 6px;
+                        height: 6px;
+                        background-color: $color-emerald;
+                        border-radius: 50%;
+                        animation: pulse 1.5s infinite;
+                    }
+                }
+
+                .btn-primary {
+                    background-color: $color-primary;
+                    color: white;
+                    box-shadow: 0 4px 12px rgba($color-primary, 0.15);
+
+                    &:hover {
+                        background-color: $color-primary-hover;
+                    }
+
+                    &:active {
+                        transform: scale(0.98);
+                    }
+                }
+            }
+
+            &.upcoming {
+                border-hover: 1px solid rgba($color-amber, 0.3);
+
+                .card-glow {
+                    background-color: rgba($color-amber, 0.04);
+                }
+
+                .status-badge {
+                    background-color: rgba($color-amber, 0.1);
+                    color: $color-amber;
+                    border: 1px solid rgba($color-amber, 0.2);
+                }
+
+                .btn-disabled {
+                    background-color: rgba(255, 255, 255, 0.05);
+                    color: $color-text-muted;
+                    cursor: not-allowed;
+                }
+            }
+
+            &.finished {
+                opacity: 0.75;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                .status-badge {
+                    background-color: rgba(255, 255, 255, 0.08);
+                    color: $color-text-gray;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                }
+
+                .btn-secondary {
+                    background-color: rgba(255, 255, 255, 0.05);
+                    color: $color-text-white;
+                    border: 1px solid $border-color;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER & ANIMAÇÃO
+.footer {
+    border-top: 1px solid $border-color;
+    background-color: rgba(6, 7, 10, 0.4);
+    padding: 24px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: $color-text-muted;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.6;
+    }
+}
+
+// Responsividade para Menus
+@media (max-width: 640px) {
+    .main-header .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .content-header .page-title {
+        font-size: 2rem;
+    }
+}
