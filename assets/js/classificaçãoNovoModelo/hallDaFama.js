@@ -81,6 +81,36 @@ const selecionarDadosTop3 ={
     },
     criarTop3Player(ranking){
         console.log(ranking)
+
+        //top 1
+        const name1 = document.querySelector("#top1KillName")
+        const kill1 = document.querySelector("#top1Killkills")
+        const nameEquipe1 = document.querySelector("#top1killEquipe")
+        const img1 = document.querySelector(".avatar-ouro")
+        img1.setAttribute("src", ranking[0].logoPlayer)
+        name1.textContent = ranking[0].jogador
+        kill1.textContent = ranking[0].pts
+        nameEquipe1.textContent = ranking[0].equipe
+
+        //top 2
+        const name2 = document.querySelector("#top2KillName")
+        const kill2 = document.querySelector("#top2Killkills")
+        const nameEquipe2 = document.querySelector("#top2killEquipe")
+        const img2 = document.querySelector(".avatar-prata")
+        img2.setAttribute("src", ranking[1].logoPlayer)
+        name2.textContent = ranking[1].jogador
+        kill2.textContent = ranking[1].pts
+        nameEquipe2.textContent = ranking[1].equipe
+
+         //top 3
+        const name3 = document.querySelector("#top3KillName")
+        const kill3 = document.querySelector("#top3Killkills")
+        const nameEquipe3 = document.querySelector("#top3killEquipe")
+        const img3 = document.querySelector(".avatar-bronze")
+        img3.setAttribute("src", ranking[2].logoPlayer)
+        name3.textContent = ranking[2].jogador
+        kill3.textContent = ranking[2].pts
+        nameEquipe3.textContent = ranking[2].equipe
     }
 }
 

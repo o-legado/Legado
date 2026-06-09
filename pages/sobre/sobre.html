@@ -34,22 +34,29 @@
     <header class="header">
         <nav class="header_nav largura-definida">
             <figure>
-                <a href="sobre.html"><img src="../../assets/img/logo-oficial.jpg" alt="" class="img"></a>
+                <a href="teste.html"><img src="../../assets/img/logo-oficial.jpg" alt="" class="img"></a>
             </figure>
-            <div class="hamburger-menu">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
-    
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="../../index.html"><i class="fas fa-home"></i> Início</a></li>
+
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="navHamburguer" id="nav">
+                    <ul>
+                        <li><a class="menu__item" href="../../index.html"><i class="fas fa-home"></i> Início</a></li>
                     <li><a class="menu__item" href="sobre.html"><i class="fas fa-users"></i> Sobre Nós</a></li>
-                    <li><a class="menu__item" href="../xtreino/homeTreinos.html"><i class="fas fa-trophy"></i>X-Treino</a></li>
+                    <li><a class="menu__item" href="../xtreino/homeTreinos.html"><i class="fas fa-trophy"></i> X-Treino</a></li>
                     <li><a class="menu__item" href="../ligaPontosCorridos/homeLiga.html"><i class="fa-solid fa-shield-halved"></i> Liga</a></li>
-                </ul>
+                    </ul>
+                </nav>
             </div>
+
+            <div class="menu-bg" id="menu-bg"></div>
+            
         </nav>
+
     </header>
 
     <main>
@@ -200,6 +207,7 @@
     
         <p class="copyright">© 2026 X-Treino Legado | Ranking Free Fire</p>
     </footer>
+    <script src="../../assets/js/menuHamburguer/menu.js"></script>
     
 </body>
 </html>
