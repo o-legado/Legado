@@ -26,6 +26,9 @@ const selecionarDadosCampeãos = {
         const name = document.querySelector(".mvp-nick")
         const kills = document.querySelector(".score-numero")
         const nameEquipe = document.querySelector(".detalhe-seta")
+        const img = document.querySelector(".avatar-container")
+        
+        img.setAttribute("src", ranking[0].logoPlayer)
         if (name && ranking[0]) {
             name.textContent = ranking[0].jogador; // Exemplo para preencher o nick do MVP na tela
             kills.textContent = ranking[0].pts

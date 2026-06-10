@@ -1067,6 +1067,87 @@
           }
         }
       }
+    },
+    "treino2": {
+    "data": "09/06/2026",
+    "equipes": {
+        "SS GAMING": {
+            "SS.DUQUE": { "logo": "", "dados": [2, 1, 3] },
+            "SS.SHEIK": { "logo": "", "dados": [1, 3, 1] },
+            "SS.SOUZZA": { "logo": "", "dados": [3, 2, 3] },
+            "SS.SAGAZZmvp": { "logo": "", "dados": [4, 0, 4] }
+        },
+        "RENEGADOS": {
+            "Cernunnos": { "logo": "", "dados": [0, 1, 1] },
+            "WAR  MAFIOSOツ": { "logo": "", "dados": [3, 1, 1] },
+            "WAR  ⁰⁸⁵Zeus": { "logo": "", "dados": [0, 0, 0] },
+            "Colic  PSICO": { "logo": "", "dados": [0, 0, 0] }
+        },
+        "RJ E-SPORTS": {
+            "LK最Lu.Kisak": { "logo": "", "dados": [1, 1, null] },
+            "RJ     DOGX": { "logo": "", "dados": [0, 0, null] },
+            "RJ     TH": { "logo": "", "dados": [2, 1, 4] },
+            "•APELA   모": { "logo": "", "dados": [2, 0, 1] },
+            "RJ  Lcszinn": { "logo": "", "dados": [null, null, 2] },
+            "NEW  MARLON": { "logo": "", "dados": [null, null, 0] }
+        },
+        "REAL BALA": {
+            "《ŁĐ》Nunes7": { "logo": "", "dados": [0, 0, 0] },
+            "BZ  LczinhooX": { "logo": "", "dados": [null, 3, 3] },
+            "KTX  Godx": { "logo": "", "dados": [0, 1, 0] },
+            "*BLACKN444": { "logo": "", "dados": [null, null, 0] }
+        },
+        "TEAM WOLVES BASE": {
+            "eca\"  TN   ××": { "logo": "", "dados": [1, null, null] },
+            "¹⁵⁷hs": { "logo": "", "dados": [0, 0, null] },
+            "TW.YGZINNO1": { "logo": "", "dados": [0, 0, null] },
+            "TW.JH²": { "logo": "", "dados": [0, 0, null] }
+        },
+        "FCB E-SPORTS": {
+            "Biel  Mvp.exe": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(2.3) biel.jpg", "dados": [3, 2, 6] },
+            "sub~~yuri": { "logo": "", "dados": [1, 2, 3] },
+            "《ŁĐ》WHITER™": { "logo": "", "dados": [5, 1, 1] },
+            "TEAM  POGBA10": { "logo": "", "dados": [0, 1, 4] }
+        },
+        "FAMÍLIA PIT": {
+            "FP  PATRÃOx": { "logo": "", "dados": [0, 2, 1] },
+            "LL  PITBULL": { "logo": "", "dados": [4, 1, 1] },
+            "Ti  LYPE  +⁷⁷⁷": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(2.2)Ti LYPE +⁷⁷⁷.jpg", "dados": [6, 2, 4] },
+            "FP  GUSTAx": { "logo": "", "dados": [5, 1, 2] }
+        },
+        "MANAUS FC": {
+            "WOD    TUBARÃO": { "logo": "", "dados": [0, 2, 0] },
+            "Luca  wanted": { "logo": "", "dados": [0, 3, null] },
+            "earteasy⇡": { "logo": "", "dados": [0, 1, null] },
+            "₩CORTEZ$": { "logo": "", "dados": [0, 2, 0] }
+        },
+        "GAME OVER": {
+            "GO  THUR⁷": { "logo": "", "dados": [1, 2, 5] },
+            "GO  M!D⁷": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(2.1)GO M!D⁷.jpg", "dados": [3, 6, 5] },
+            "GO  CARLOS♧": { "logo": "", "dados": [1, 6, 1] },
+            "GO  TH7  †": { "logo": "", "dados": [2, null, null] },
+            "GO  BIGxucru⁷": { "logo": "", "dados": [null, 3, 3] }
+        },
+        "LINE GENESIS": {
+            "iamfromgod'": { "logo": "", "dados": [2, 0, null] },
+            "QI  CHATACO": { "logo": "", "dados": [1, 0, null] },
+            "!.jokerzin ツ": { "logo": "", "dados": [1, 0, null] },
+            "Bubbaloo": { "logo": "", "dados": [1, 0, null] }
+        },
+        "ZENI'N": {
+            "VSK  KAUAN⁰⁷": { "logo": "", "dados": [1, 5, 1] },
+            "VKS  MARIN ⚖": { "logo": "", "dados": [0, 0, 0] },
+            "TB  SASHA'": { "logo": "", "dados": [2, 1, 5] },
+            "TB  wan": { "logo": "", "dados": [1, 0, null] },
+            "Lili  cz": { "logo": "", "dados": [null, null, 0] }
+        },
+        "TEAM 007": {
+            "VKS  BKZIN⁰⁰⁷": { "logo": "", "dados": [1, 0, 1] },
+            "TB   LUCIFER": { "logo": "", "dados": [0, 1, 3] },
+            "VKS  ⌥𓆃NÍNJA𓆃⌥": { "logo": "", "dados": [0, 0, 0] },
+            "VKS TREVØR⁰⁷": { "logo": "", "dados": [0, 0, 4] }
+        }
+    }
     }
 
   }
