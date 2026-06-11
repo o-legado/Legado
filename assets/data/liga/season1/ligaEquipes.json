@@ -1,0 +1,139 @@
+{
+  "liga": {
+    "data": "10/06/2026",
+    "equipes": [
+      {
+        "equipe": "REAL BALA",
+        "detalhes": [
+          { "queda": 1, "kills": 8, "posicao": 1 },
+          { "queda": 2, "kills": 10, "posicao": 3 },
+          { "queda": 3, "kills": 7, "posicao": 6 }
+        ],
+        "logo": "../../../assets/img/liga/season1/real bala.jpg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "NOXUS GAMING",
+        "detalhes": [
+          { "queda": 1, "kills": 8, "posicao": 2 },
+          { "queda": 2, "kills": 3, "posicao": 10 },
+          { "queda": 3, "kills": 5, "posicao": 5 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "POSSESSED",
+        "detalhes": [
+          { "queda": 1, "kills": 9, "posicao": 3 },
+          { "queda": 2, "kills": 8, "posicao": 4 },
+          { "queda": 3, "kills": 5, "posicao": 8 }
+        ],
+        "logo": "../../../assets/img/liga/season1/possessed.jpg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "8B ESPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 6, "posicao": 4 },
+          { "queda": 2, "kills": 1, "posicao": 11 },
+          { "queda": 3, "kills": 8, "posicao": 7 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "FCB E-SPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 9, "posicao": 5 },
+          { "queda": 2, "kills": 1, "posicao": 8 },
+          { "queda": 3, "kills": 0, "posicao": 11 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "ALPHA TEAM",
+        "detalhes": [
+          { "queda": 1, "kills": 5, "posicao": 6 },
+          { "queda": 2, "kills": 7, "posicao": 2 },
+          { "queda": 3, "kills": 3, "posicao": 3 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "NEXUS",
+        "detalhes": [
+          { "queda": 1, "kills": 9, "posicao": 7 },
+          { "queda": 2, "kills": 2, "posicao": 9 },
+          { "queda": 3, "kills": 7, "posicao": 4 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "AURA+EGO",
+        "detalhes": [
+          { "queda": 1, "kills": 3, "posicao": 8 },
+          { "queda": 2, "kills": 1, "posicao": 5 },
+          { "queda": 3, "kills": 2, "posicao": 9 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "VOID E-SPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 1, "posicao": 9 },
+          { "queda": 2, "kills": 2, "posicao": 7 },
+          { "queda": 3, "kills": 0, "posicao": 10 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "FRANCE",
+        "detalhes": [
+          { "queda": 1, "kills": 2, "posicao": 10 },
+          { "queda": 2, "kills": 6, "posicao": 1 },
+          { "queda": 3, "kills": 11, "posicao": 1 }
+        ],
+        "logo": "../../../assets/img/liga/season1/France.jpg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "META GAMING",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 11 },
+          { "queda": 2, "kills": 9, "posicao": 6 },
+          { "queda": 3, "kills": 4, "posicao": 2 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "XIT 8",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "liga": {
+    "data": "10/06/2026",
+    "equipes": {
+      "NEXUS": {
+        "FA¢ ϟJNº¹": { "logo": "", "dados": [2, 0, 1] },
+        "FA¢ ϟNunes": { "logo": "", "dados": [2, 0, 3] },
+        "GL 👑": { "logo": "", "dados": [2, 1, 2] },
+        "NW Erick!": { "logo": "", "dados": [3, 1, 1] }
+      },
+      "VOID E-SPORTS": {
+        "melindawq達": { "logo": "", "dados": [1, 1, 0] },
+        "Davi lw": { "logo": "", "dados": [0, null, 0] },
+        "CNG.VIN7": { "logo": "", "dados": [0, 0, 0] },
+        "CNG.ENZO": { "logo": "", "dados": [0, 0, 0] },
+        "HS Dufar": { "logo": "", "dados": [null, 1, null] }
+      },
+      "META GAMING": {
+        "《ŁĐ》YESHUA": { "logo": "", "dados": [0, 2, 0] },
+        "ŁĐ JORDAN7": { "logo": "", "dados": [0, 2, 2] },
+        "puzapaz.": { "logo": "", "dados": [0, 3, 2] },
+        "《ŁĐ》Lking⁷": { "logo": "", "dados": [0, 2, 0] }
+      },
+      "FRANCE": {
+        "FR VITOR_": { "logo": "", "dados": [0, 1, 1] },
+        "FR LUCIFER": { "logo": "", "dados": [0, 2, 1] },
+        "FR Volgx7": { "logo": "", "dados": [0, 2, 4] },
+        "NFX BIEL⁷": { "logo": "../../../assets/img/liga/season1/kills/Nfx biel.jpg", "dados": [2, 1, 5] }
+      },
+      "FCB E-SPORTS": {
+        "《ŁĐ》WHITER™": { "logo": "", "dados": [3, 1, 0] },
+        "Biel Mvp.exe": { "logo": "", "dados": [2, 0, 0] },
+        "sub-~yuri": { "logo": "", "dados": [1, 0, 0] },
+        "《ŁĐ》DG777": { "logo": "", "dados": [3, 0, 0] }
+      },
+      "8B ESPORTS": {
+        "8B.VTX": { "logo": "", "dados": [2, 0, 0] },
+        "GDN HAWK9": { "logo": "", "dados": [3, 0, 4] },
+        "★Leal 7 ★": { "logo": "", "dados": [1, 0, 2] },
+        "愛MENORZINHO": { "logo": "", "dados": [0, 1, 2] }
+      },
+      "ALPHA TEAM": {
+        "OFC ROLUDO": { "logo": "", "dados": [1, 2, 0] },
+        "EO_KINHOOO": { "logo": "", "dados": [0, 3, 0] },
+        "OFC_ndzinn": { "logo": "", "dados": [2, 0, 2] },
+        "081_MAGO": { "logo": "", "dados": [2, 2, 1] }
+      },
+      "NOXUS GAMING": {
+        "ANT thurx7 x": { "logo": "", "dados": [1, 2, 1] },
+        "EXIT DEDEawp": { "logo": "", "dados": [3, 1, 1] },
+        "ANT ALEMÃO⚔": { "logo": "", "dados": [1, 0, 2] },
+        "NØX GOIABAO": { "logo": "", "dados": [3, 0, 1] }
+      },
+      "REAL BALA": {
+        "《ŁĐ》crazyboy": { "logo": "../../../assets/img/liderança-foto/vice-lider-lucas.jpg", "dados": [2, 4, 2] },
+        "《ŁĐ》Nunes7": { "logo": "", "dados": [1, 0, 0] },
+        "XTZ XANDE": { "logo": "", "dados": [2, 6, 4] },
+        "BZ LczinhooX": { "logo": "", "dados": [3, 0, 1] }
+      },
+      "AURA+EGO": {
+        "C R I M I N O S Oⁿ_√™": { "logo": "", "dados": [0, 1, 1] },
+        "B⁹ Six9ump愛": { "logo": "", "dados": [1, 0, 0] },
+        "purehearty'": { "logo": "", "dados": [0, null, null] },
+        "S h o x z Z XP": { "logo": "", "dados": [2, null, null] },
+        "1 o x z Z   X": { "logo": "", "dados": [null, 0, 1] }
+      },
+      "POSSESSED": {
+        "stg†mad": { "logo": "", "dados": [1, 4, 1] },
+        "NØX Th7x": { "logo": "", "dados": [1, 0, 0] },
+        "A&C.THUR⁶⁷": { "logo": "", "dados": [4, 1, 2] },
+        "NØX yBOOT 19": { "logo": "", "dados": [3, 3, 2] }
+      },
+      "XIT 8": {
+        
+      }
+    }
+  }
+}
