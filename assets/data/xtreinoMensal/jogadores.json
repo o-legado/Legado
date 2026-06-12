@@ -1148,7 +1148,234 @@
             "VKS TREVØR⁰⁷": { "logo": "", "dados": [0, 0, 4] }
         }
     }
+    },
+    
+    "treino3": {
+        "data": "11/06/2026",
+        "equipes": {
+            "ARGENTINA OFC": {
+                "B9 Six9ump愛": {
+                    "logo": "",
+                    "dados": [2, 0, 2]
+                },
+                "S h o x z Z    X P": {
+                    "logo": "",
+                    "dados": [1, 0, null]
+                },
+                "lucianomtv": {
+                    "logo": "",
+                    "dados": [8, 0, 0]
+                },
+                "x z Z    X P": {
+                    "logo": "",
+                    "dados": [null, null, 0]
+                },
+                "M I N O S O ⁿ": {
+                    "logo": "",
+                    "dados": [null, null, 1]
+                }
+            },
+            "FOX KILLERS": {
+                "FOX 班津  xit!⌤": {
+                    "logo": "",
+                    "dados": [0, 1, 0]
+                },
+                "FOX  ßT77ᴿᴺ": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "Starboy'": {
+                    "logo": "",
+                    "dados": [0, 2, 1]
+                },
+                "FOX  DUDUZN⌤": {
+                    "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(3.2) Fox duduzin.jpg",
+                    "dados": [2, 7, 4]
+                }
+            },
+            "RJ E-SPORTS": {
+                "RJ  Menorzzk7": {
+                    "logo": "",
+                    "dados": [3, null, null]
+                },
+                "RJ  ghost ╂": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "RJ      DOGX": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                },
+                "彡RJ  Connor彡": {
+                    "logo": "",
+                    "dados": [3, 0, 0]
+                },
+                "M T C A O S": {
+                    "logo": "",
+                    "dados": [null, null, 0]
+                }
+            },
+            "REAL BALA": {
+                "《ŁĐ》crazyboy": {
+                    "logo": "",
+                    "dados": [0, 2, 0]
+                },
+                "BZ  LczinhooX": {
+                    "logo": "",
+                    "dados": [2, 0, 0]
+                },
+                "KTX  Godx": {
+                    "logo": "",
+                    "dados": [2, 2, 0]
+                },
+                "XTZ XANDE": {
+                    "logo": "",
+                    "dados": [0, null, null]
+                },
+                "《ŁĐ》Nunes7": {
+                    "logo": "",
+                    "dados": [null, 4, 1]
+                }
+            },
+            "META GAMING": {
+                "《ŁĐ》YESHUA": {
+                    "logo": "",
+                    "dados": [0, 5, 0]
+                },
+                "puzapaz.": {
+                    "logo": "",
+                    "dados": [1, 1, 0]
+                },
+                "《ŁĐ》Lking⁷": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                }
+            },
+            "FCB E-SPORTS": {
+                "《ŁĐ》WHITER™": {
+                    "logo": "",
+                    "dados": [0, 3, 1]
+                },
+                "《ŁĐ》DG777": {
+                    "logo": "",
+                    "dados": [0, 2, 1]
+                },
+                "sub~~yuri": {
+                    "logo": "",
+                    "dados": [1, 2, 0]
+                },
+                "Biel  Mvp.exe": {
+                    "logo": "",
+                    "dados": [0, 4, 0]
+                }
+            },
+            "EDT E-SPORTS": {
+                "Ⓥ VILAO  ⚔★": {
+                    "logo": "",
+                    "dados": [5, 2, 0]
+                },
+                "GR KaykCold": {
+                    "logo": "",
+                    "dados": [2, 1, 0]
+                },
+                "RAFA  .x2": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                },
+                "BLACKN444": {
+                    "logo": "",
+                    "dados": [null, null, null]
+                },
+                "*BLACKN444": {
+                    "logo": "",
+                    "dados": [0, 1, 1]
+                }
+            },
+            "RED MAGIC": {
+                "7Thurzinn  !!": {
+                    "logo": "",
+                    "dados": [2, 0, 3]
+                },
+                "_mendes09": {
+                    "logo": "",
+                    "dados": [4, 0, 5]
+                },
+                "SMR.REDZIN": {
+                    "logo": "",
+                    "dados": [3, 0, 1]
+                },
+                "愛  I'm  king": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                }
+            },
+            "BETAS GOLDS": {
+                "silva k1ng": {
+                    "logo": "",
+                    "dados": [1, 0, 4]
+                },
+                "DTH  Mari  ✿": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "彡☠♡Queen☠♡彡": {
+                    "logo": "",
+                    "dados": [0, 3, 0]
+                },
+                "BGS  SOUZA  ☩炎": {
+                    "logo": "",
+                    "dados": [2, 0, 1]
+                }
+            },
+            "SS GAMING": {
+                "SS.DUQUE": {
+                    "logo": "",
+                    "dados": [6, 1, 0]
+                },
+                "SS.SOUZZA": {
+                    "logo": "",
+                    "dados": [3, 9, 1]
+                },
+                "JOKER7  .mvp": {
+                    "logo": "",
+                    "dados": [9, 1, 3]
+                },
+                "SS.SAGAZZmvp": {
+                    "logo": "",
+                    "dados": [4, 1, 2]
+                }
+            },
+            "VILÕES": {
+                "CPS  M A F I O S O": {
+                    "logo": "",
+                    "dados": [null, null, null]
+                },
+                "MAFIOSO": {
+                    "logo": "",
+                    "dados": [0, null, null]
+                }
+            },
+            "YAKUZA-SPORTS": {
+                "Ineedlove'": {
+                    "logo": "",
+                    "dados": [3, 2, 1]
+                },
+                "JB.MELIODAS7": {
+                    "logo": "",
+                    "dados": [0, 0, 3]
+                },
+                "love  tits 愛": {
+                    "logo": "",
+                    "dados": [2, 5, 6]
+                },
+                "JB.WIlawp7": {
+                    "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(3.1)JB.Wllawp7.jpg",
+                    "dados": [6, 9, 13]
+                }
+            }
+        }
     }
+
 
   }
 }

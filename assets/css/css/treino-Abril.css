@@ -875,8 +875,8 @@ main .container .card-mvp {
 }
 main .container .card-mvp .avatar-container {
   position: relative;
-  width: 70px;
-  height: 70px;
+  width: 9rem;
+  height: 9rem;
   background: radial-gradient(circle, #16a34a 0%, #14532d 100%);
   border: 3px solid #22c55e;
   border-radius: 50%;
@@ -1269,8 +1269,8 @@ main .container .secao-top3-kills .avatar-kill-container {
   margin-bottom: 15px;
 }
 main .container .secao-top3-kills .avatar-kill-placeholder {
-  width: 85px;
-  height: 85px;
+  width: 12rem;
+  height: 12rem;
   border-radius: 12px;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
