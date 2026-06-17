@@ -3452,7 +3452,147 @@
                 "puniçãoPontos": ""
             }
         ]
+        },
+
+        
+        "treino4": {
+        "data": "16/06/2026",
+        "equipes": [
+            {
+                "equipe": "LINE7",
+                "detalhes": [
+                    { "queda": 1, "kills": 9, "posicao": 1 },
+                    { "queda": 2, "kills": 8, "posicao": 5 },
+                    { "queda": 3, "kills": 0, "posicao": 11 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "FAMÍLIA PIT*",
+                "detalhes": [
+                    { "queda": 1, "kills": 15, "posicao": 2 },
+                    { "queda": 2, "kills": 4, "posicao": 7 },
+                    { "queda": 3, "kills": 11, "posicao": 1 }
+                ],
+                "logo": "../../../assets/img/logosXtreinoEquipes/junho/(4.2) familia pit.jpg",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "EDT E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 5, "posicao": 3 },
+                    { "queda": 2, "kills": 3, "posicao": 4 },
+                    { "queda": 3, "kills": 4, "posicao": 8 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "ARGENTINA OFC",
+                "detalhes": [
+                    { "queda": 1, "kills": 15, "posicao": 4 },
+                    { "queda": 2, "kills": 5, "posicao": 8 },
+                    { "queda": 3, "kills": 1, "posicao": 12 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "RJ E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 6, "posicao": 5 },
+                    { "queda": 2, "kills": 2, "posicao": 9 },
+                    { "queda": 3, "kills": 12, "posicao": 3 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "RXT E-SPORTs",
+                "detalhes": [
+                    { "queda": 1, "kills": 13, "posicao": 6 },
+                    { "queda": 2, "kills": 27, "posicao": 1 },
+                    { "queda": 3, "kills": 6, "posicao": 2 }
+                ],
+                "logo": "../../../assets/img/logosXtreinoEquipes/junho/(4.1) rtx.jpg",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "META GAMING",
+                "detalhes": [
+                    { "queda": 1, "kills": 5, "posicao": 7 },
+                    { "queda": 2, "kills": 3, "posicao": 3 },
+                    { "queda": 3, "kills": 8, "posicao": 9 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "FCB E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 6, "posicao": 8 },
+                    { "queda": 2, "kills": 15, "posicao": 2 },
+                    { "queda": 3, "kills": 8, "posicao": 7 }
+                ],
+                "logo": "../../../assets/img/logosXtreinoEquipes/junho/(4.3) fbc e-sports.jpg",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "LDS DEDE",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 9 },
+                    { "queda": 2, "kills": 2, "posicao": 12 },
+                    { "queda": 3, "kills": 7, "posicao": 10 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "AC MILAN",
+                "detalhes": [
+                    { "queda": 1, "kills": 1, "posicao": 10 },
+                    { "queda": 2, "kills": 7, "posicao": 6 },
+                    { "queda": 3, "kills": 3, "posicao": 5 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "REAL BALA",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 11 },
+                    { "queda": 2, "kills": 3, "posicao": 10 },
+                    { "queda": 3, "kills": 10, "posicao": 4 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "GAME OVER",
+                "detalhes": [
+                    { "queda": 1, "kills": 2, "posicao": 12 },
+                    { "queda": 2, "kills": 0, "posicao": 11 },
+                    { "queda": 3, "kills": 3, "posicao": 6 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            }
+        ]
         }
+
 
     }
 }

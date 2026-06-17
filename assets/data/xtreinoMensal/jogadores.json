@@ -1374,7 +1374,92 @@
                 }
             }
         }
+    },
+
+    
+    "treino4": {
+        "data": "16/06/2026",
+        "equipes": {
+            "ARGENTINA OFC": {
+                "LUCIANOMTV": { "logo": "", "dados": [1, 0, 1] },
+                "B9 SIX9ump愛": { "logo": "", "dados": [1, 0, 0] },
+                "TD7 HESS9": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(4.2) TD7 HESS9.jpg", "dados": [10, 5, 0] },
+                "S H O X Z Z    X P": { "logo": "", "dados": [3, 0, 0] }
+            },
+            "AC MILAN": {
+                "#k": { "logo": "", "dados": [0, null, null] },
+                "AC K.LIRIO": { "logo": "", "dados": [null, 3, 1] },
+                "CRD BHAWP愛": { "logo": "", "dados": [1, 3, 2] },
+                "AC FLASH 𝔲": { "logo": "", "dados": [0, 0, 0] },
+                "RED PHZZX⁷": { "logo": "", "dados": [0, 1, null] }
+            },
+            "RJ E-SPORTS": {
+                "RJ LCSZINN": { "logo": "", "dados": [3, 1, 4] },
+                "FDS PYCPAY⁴⁴": { "logo": "", "dados": [1, 0, 3] },
+                "VELHO 30HZ🪶": { "logo": "", "dados": [2, null, null] },
+                "RJ     DOGX": { "logo": "", "dados": [0, 0, null] },
+                "M T C A O S ⁵⁷": { "logo": "", "dados": [null, 1, 2] },
+                "RJ  Connor🦏": { "logo": "", "dados": [null, null, 3] }
+            },
+            "LINE7": {
+                "NXSJUNIOR!": { "logo": "", "dados": [0, 1, 0] },
+                "L7.$MAPIN7$": { "logo": "", "dados": [7, 5, 0] },
+                "👑 ONE LOKI 𝔲": { "logo": "", "dados": [0, 1, 0] },
+                "L7_HARIDADE": { "logo": "", "dados": [2, 1, 0] }
+            },
+            "META GAMING": {
+                "《ŁĐ》 YESHUA": { "logo": "", "dados": [1, 1, 2] },
+                "《ŁĐ》 LKING⁷": { "logo": "", "dados": [1, 0, 0] },
+                "ŁĐ JORDAN7": { "logo": "", "dados": [2, 2, 2] },
+                "PUZAPAZ.": { "logo": "", "dados": [1, 0, 4] }
+            },
+            "GAME OVER": {
+                "GO CARLOS♣": { "logo": "", "dados": [0, 0, 1] },
+                "GO 7⁷": { "logo": "", "dados": [2, 0, 0] },
+                "GO M!D⁷": { "logo": "", "dados": [0, 0, 2] },
+                "GO  J⁷": { "logo": "", "dados": [null, 0, null] },
+                "GO  BIGxucru⁷": { "logo": "", "dados": [null, null, 0] }
+            },
+            "EDT E-SPORTS": {
+                "CRZ KN7AWP": { "logo": "", "dados": [1, 1, 0] },
+                "RAFA .X2": { "logo": "", "dados": [2, 0, 2] },
+                "GR KAYKCOLD": { "logo": "", "dados": [1, 2, 2] },
+                "Ⓥ VILAO ⚔★": { "logo": "", "dados": [1, 0, 0] }
+            },
+            "FAMÍLIA PIT*": {
+                "ST SOUSA7": { "logo": "", "dados": [3, 1, 4] },
+                "FP PATRÃOX": { "logo": "", "dados": [1, 1, 4] },
+                "FP_LYPE +⁷⁷⁷": { "logo": "", "dados": [6, 0, 1] },
+                "vivodboa": { "logo": "", "dados": [5, 2, 2] }
+            },
+            "FCB E-SPORTS": {
+                "《ŁĐ》 WHITER™": { "logo": "", "dados": [2, 6, 3] },
+                "BIEL Mvp.EXE": { "logo": "", "dados": [2, 5, 2] },
+                "《ŁĐ》 DG777": { "logo": "", "dados": [0, 2, 2] },
+                "SUB~~YURI": { "logo": "", "dados": [2, 2, 1] }
+            },
+            "RXT E-SPORTs": {
+                "RXT MT7": { "logo": "", "dados": [1, 7, 0] },
+                "RXT GUSTAZX": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(4.1)  RXT GUSTAZX.jpg", "dados": [6, 13, 5] },
+                "RXT MARINS𝓿𝓷": { "logo": "", "dados": [4, 4, 0] },
+                "RXT LEVÍT": { "logo": "", "dados": [2, 3, 1] }
+            },
+            "REAL BALA": {
+                "BZ LCZINHOOX": { "logo": "", "dados": [0, 2, 7] },
+                "《ŁĐ》 CRAZYBOY": { "logo": "", "dados": [0, 0, 0] },
+                "《ŁĐ》 NUNES7": { "logo": "", "dados": [0, 0, 1] },
+                "YASMINIGNEZ": { "logo": "", "dados": [0, 1, 2] }
+            },
+            "LDS DEDE": {
+                "L 7 𝔲𝔲": { "logo": "", "dados": [0, 0, 2] },
+                "DDE 00": { "logo": "", "dados": [0, 0, 1] },
+                "✔ TH": { "logo": "", "dados": [0, null, null] },
+                "ANDREZK$": { "logo": "", "dados": [0, 2, 2] },
+                "ˇ   th": { "logo": "", "dados": [null, null, 2] }
+            }
+        }
     }
+
 
 
   }
