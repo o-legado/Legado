@@ -29,7 +29,7 @@
       "FRANCE": {
         "FR VITOR_": { "logo": "", "dados": [0, 1, 1, 2, 0, 2] },
         "FR LUCIFER": { "logo": "", "dados": [0, 2, 1, 3, 3, 1] },
-        "FR Volgx7": { "logo": "", "dados": [0, 2, 4, 3, 8, 5] },
+        "FR Volgx7": { "logo": "../../../assets/img/liga/season1/kills/FR Volgx7.jpg", "dados": [0, 2, 4, 3, 8, 5] },
         "NFX BIEL⁷": { "logo": "../../../assets/img/liga/season1/kills/Nfx biel.jpg", "dados": [2, 1, 5, 8, 9, 8] }
       },
       "FCB E-SPORTS": {
