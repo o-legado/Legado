@@ -1113,8 +1113,8 @@ main .container .card-mvp {
 }
 main .container .card-mvp .avatar-container {
   position: relative;
-  width: 70px;
-  height: 70px;
+  width: 15rem;
+  height: 15rem;
   background: radial-gradient(circle, #16a34a 0%, #14532d 100%);
   border: 3px solid #22c55e;
   border-radius: 50%;
