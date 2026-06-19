@@ -1376,7 +1376,6 @@
         }
     },
 
-    
     "treino4": {
         "data": "16/06/2026",
         "equipes": {
@@ -1458,7 +1457,72 @@
                 "ˇ   th": { "logo": "", "dados": [null, null, 2] }
             }
         }
+    },
+
+    
+    "treino5": {
+        "data": "18/06/2026",
+        "equipes": {
+            "ARGENTINA OFC": {
+                "B9 Sixgump愛": { "logo": "", "dados": [2, 0, 0] },
+                "ShoxzZ    XP": { "logo": "", "dados": [1, 1, 1] },
+                "C R I M I N O S Oⁿ√™": { "logo": "", "dados": [0, 0, null] },
+                "《ŁĐ》MARECHAL": { "logo": "", "dados": [1, 2, 1] }
+            },
+            "DΛRKREAPER": {},
+            "YAKUZA-SPORTS": {},
+            "OS PSICOS": {
+                "Drzin  影": { "logo": "", "dados": [0, 0, null] },
+                "DNPSICO  愛": { "logo": "", "dados": [4, 0, null] },
+                "EL•loko": { "logo": "", "dados": [1, 0, null] },
+                "MEGAN   FOX   愛": { "logo": "", "dados": [0, 0, null] }
+            },
+            "META GAMING": {
+                "☯RALF_777☯": { "logo": "", "dados": [0, 0, 0] },
+                "puzapaz.": { "logo": "", "dados": [1, 0, null] },
+                "《ŁĐ》YESHUA": { "logo": "", "dados": [2, 0, 0] }
+            },
+            "RJ WAVE": {
+                "RJ  VIEIRA⁰²¹": { "logo": "", "dados": [1, 4, 0] },
+                "RJ  KING7": { "logo": "", "dados": [0, 0, 1] },
+                "RJ  MITO.mpv": { "logo": "", "dados": [1, 2, 0] },
+                "RJ  ASTRO7": { "logo": "", "dados": [0, 2, 0] }
+            },
+            "EDT E-SPORTS": {
+                "RAFA  .x2": { "logo": "", "dados": [3, 1, 5] },
+                "NCRLQ  007": { "logo": "", "dados": [3, 1, 3] },
+                "GR KaykCold": { "logo": "", "dados": [2, 2, 2] },
+                "Ⓥ VILAO ⚔★": { "logo": "", "dados": [0, 0, 0] }
+            },
+            "ALPHA SPORT": {
+                "A§--THITOx7": { "logo": "", "dados": [3, 0, 1] },
+                "T3_MARCHAL01": { "logo": "", "dados": [2, 2, 1] },
+                "M⁷ EDUDry": { "logo": "", "dados": [1, 0, 0] },
+                "Im vilao,": { "logo": "", "dados": [5, 0, 3] }
+            },
+            "FCB E-SPORTS": {
+                "《ŁĐ》DG777": { "logo": "", "dados": [0, 0, null] },
+                "sub~~yuri": { "logo": "", "dados": [2, 0, 1] },
+                "《ŁĐ》Nobre7": { "logo": "", "dados": [1, 0, 0] },
+                "《ŁĐ》WHITER™": { "logo": "", "dados": [2, 2, 2] },
+                "Biel Mvp.exe": { "logo": "", "dados": [null, null, 1] }
+            },
+            "TOXIC E- CITY": {
+                "TXG.ayoshiXL": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(5.1)TXG.ayoshiXL.jpg", "dados": [5, 7, 0] },
+                "TF.RYUMA": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(5.2)TF.RYUMA.jpg", "dados": [3, 7, 0] },
+                "TXG.BlackXL": { "logo": "", "dados": [2, 4, 0] },
+                "TS.Stormzx7": { "logo": "", "dados": [8, 2, 0] }
+            },
+            "REAL BALA": {},
+            "EVOS SPORTING": {
+                "EVOS NICOLS": { "logo": "", "dados": [0, 0, 4] },
+                "EVOS.xitt⁰⁰⁷": { "logo": "", "dados": [0, null, 0] },
+                "EVOS-BELLION": { "logo": "", "dados": [0, 0, 4] },
+                "MIRAMAX ¹V⁴": { "logo": "", "dados": [1, 2, 3] }
+            }
+        }
     }
+
 
 
 
