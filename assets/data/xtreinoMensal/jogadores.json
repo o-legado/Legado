@@ -1521,7 +1521,83 @@
                 "MIRAMAX ¹V⁴": { "logo": "", "dados": [1, 2, 3] }
             }
         }
+    },
+
+    
+    "treino6": {
+    "data": "23/06/2026",
+    "equipes": {
+      "ARGENTINA": {
+        "《ŁĐ》 BRISADA": { "logo": "", "dados": [0, 0, 2] },
+        "shimura×_×": { "logo": "", "dados": [0, 0, 1] },
+        "!Kingd'movi友": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(6.1)!Kingd'movi友.jpg", "dados": [11, 7, null] },
+        "xk_vt": { "logo": "", "dados": [null, 2, null] }
+      },
+      "CRÂNIO DE ELITE": {
+        "Dkş.MENOR67": { "logo": "", "dados": [1, 2, 1] },
+        "Dkş.f'uck⁷'": { "logo": "", "dados": [5, 1, 0] },
+        "Dkş.absolut'": { "logo": "../../../assets/img/logosXtreinoEquipes/junho/mvp/(6.2)Dkş.absolut.jpg", "dados": [6, 6, 1] },
+        "Dkş.Maumau'": { "logo": "", "dados": [5, 4, 2] }
+      },
+      "FCB E-SPORTS": {
+        "《ŁĐ》 WHITER™": { "logo": "", "dados": [0, 1, 2] },
+        "ŁĐ JORDAN7": { "logo": "", "dados": [1, 0, 4] },
+        "《ŁĐ》 Nobre7": { "logo": "", "dados": [3, 1, 1] },
+        "sub~~yuri": { "logo": "", "dados": [0, 1, 2] }
+      },
+      "RJ WAVE": {
+        "RJ VIEIRA⁰²¹": { "logo": "", "dados": [4, 0, 5] },
+        "CX MARIA": { "logo": "", "dados": [0, 2, 2] },
+        "RJ MITO.mpv": { "logo": "", "dados": [3, 0, 4] },
+        "RJ KING7": { "logo": "", "dados": [3, 0, 0] }
+      },
+      "EDT E-SPORTS": {
+        "NCRLQ 007": { "logo": "", "dados": [2, 7, 3] },
+        "《ŁĐ》 DG777": { "logo": "", "dados": [0, 1, 1] },
+        "GR KaykCold": { "logo": "", "dados": [0, 1, 0] },
+        "RAFA .x2": { "logo": "", "dados": [0, 3, 4] }
+      },
+      "NINJA Z": {
+        "NJZ Blinder": { "logo": "", "dados": [1, 1, null] },
+        "ALZ McLaren!": { "logo": "", "dados": [0, 0, null] },
+        "NJZ.th7": { "logo": "", "dados": [4, 2, null] },
+        "NJZ..GOD": { "logo": "", "dados": [2, 1, null] }
+      },
+      "TROPA DO 7": {
+        "big Mike⁷⁷⁷": { "logo": "", "dados": [1, 1, 0] },
+        "Dkş.lemesz⁰⁷": { "logo": "", "dados": [1, 3, 0] },
+        "Dkş.bigz⁰⁷": { "logo": "", "dados": [0, 2, 0] },
+        "Dkş.gølozo⁰⁷": { "logo": "", "dados": [0, 3, 0] }
+      },
+      "RED RENEGADOS": {},
+      "ITB SPORTS": {
+        "PGS HAK": { "logo": "", "dados": [1, null, null] },
+        "{pombal...}": { "logo": "", "dados": [0, null, null] },
+        "ITB MARCOS'H": { "logo": "", "dados": [1, null, null] },
+        "SNK DK": { "logo": "", "dados": [0, null, null] }
+      },
+      "QI 1000": {
+        "QI GALEGO": { "logo": "", "dados": [0, 0, 0] },
+        "QI Sky77": { "logo": "", "dados": [1, 2, 0] },
+        "QI dutra77'": { "logo": "", "dados": [1, 1, 0] },
+        "QI dg": { "logo": "", "dados": [0, 2, 0] }
+      },
+      "ARSENAL": {
+        ".FX mt7": { "logo": "", "dados": [0, null, null] },
+        "7Thurzinn !!": { "logo": "", "dados": [0, null, null] },
+        "_mendes09": { "logo": "", "dados": [0, null, null] },
+        "DR DYDA.awp": { "logo": "", "dados": [1, null, null] }
+      },
+      "VK STORM": {
+        "VK SUESA 🫶🏼": { "logo": "", "dados": [1, 3, 0] },
+        "Wadso.mobila": { "logo": "", "dados": [1, 3, 0] },
+        "pereiraml_01": { "logo": "", "dados": [4, 4, null] },
+        "愛PRETINHAღ": { "logo": "", "dados": [4, 1, 0] },
+        "'K jagUar⁷ 炎": { "logo": "", "dados": [null, null, 0] }
+      }
     }
+    }
+
 
 
 
