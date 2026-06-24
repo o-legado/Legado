@@ -630,8 +630,6 @@ main .container .table_wrapper .container_table td {
   font-size: 1.4rem;
   color: #e5e7eb;
   vertical-align: middle;
-  border-top: 1px solid #14161a;
-  border-bottom: 1px solid #14161a;
 }
 main .container .table_wrapper {
   /* Arredondamento individual das pontas de cada linha */
@@ -696,9 +694,6 @@ main .container .table_wrapper tbody tr:nth-child(3) .posicao p {
   color: #000;
 }
 main .container .table_wrapper .equipe {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
   text-align: left !important;
   font-weight: 700;
   color: white;
@@ -2081,6 +2076,12 @@ main .container .top_kills_wrapper {
     -webkit-overflow-scrolling: touch;
     /* Habilita o scroll nativo suave no iOS */
     width: 100%;
+  }
+  .container_table th {
+    padding: 1.8rem 0.5rem !important;
+  }
+  .equipe {
+    font-weight: normal;
   }
 }
 @media (min-width: 769px) {

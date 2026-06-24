@@ -733,8 +733,8 @@ main {
                 font-size: 1.4rem;
                 color: #e5e7eb;
                 vertical-align: middle;
-                border-top: 1px solid #14161a;
-                border-bottom: 1px solid #14161a;
+                // border-top: 1px solid #14161a;
+                // border-bottom: 1px solid #14161a;
             }
 
             /* Arredondamento individual das pontas de cada linha */
@@ -806,9 +806,9 @@ main {
             }
 
             .equipe {
-                display: flex;
-                align-items: center;
-                gap: 1.5rem;
+                // display: flex;
+                // align-items: center;
+                // gap: 1.5rem;
                 text-align: left !important;
                 font-weight: 700;
                 color: white;
@@ -2315,6 +2315,13 @@ main {
         width: 100%;
     }
 
+    .container_table th{
+        padding: 1.8rem 0.5rem !important;
+    }
+    .equipe{
+        font-weight: normal;
+    }
+
 }
 
 @media (min-width: 769px) {
@@ -2322,3 +2329,5 @@ main {
         flex: 1 1 calc((100% / 3) - 2rem) !important;
     }
 }
+
+
