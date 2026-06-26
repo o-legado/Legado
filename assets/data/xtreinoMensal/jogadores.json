@@ -1459,7 +1459,6 @@
         }
     },
 
-    
     "treino5": {
         "data": "18/06/2026",
         "equipes": {
@@ -1523,7 +1522,6 @@
         }
     },
 
-    
     "treino6": {
     "data": "23/06/2026",
     "equipes": {
@@ -1595,7 +1593,93 @@
         "'K jagUar⁷ 炎": { "logo": "", "dados": [null, null, 0] }
       }
     }
+    },
+
+    
+    "treino7": {
+        "data": "25/06/2026",
+        "equipes": {
+            "GAMER OVER": {
+                "GO  J⁷": { "logo": "", "dados": [2, 3, 1] },
+                "GO  M!D⁷": { "logo": "", "dados": [2, 0, 1] },
+                "GO  7⁷": { "logo": "", "dados": [0, 2, 0] },
+                "GO  CARLOS♣": { "logo": "", "dados": [4, 0, 0] }
+            },
+            "RJ E-SPORTS": {
+                "RJ  LCSZINN": { "logo": "", "dados": [0, 2, 0] },
+                "DK炎DY.K I S A K I": { "logo": "", "dados": [0, 7, 0] },
+                "REI•D•AWM": { "logo": "", "dados": [0, 0, null] },
+                "JONATHANgas": { "logo": "", "dados": [0, null, null] },
+                "ツzyяox εp2x彡": { "logo": "", "dados": [null, 1, null] },
+                "SBR  MORENO": { "logo": "", "dados": [null, null, 1] },
+                "RJ  DOGX": { "logo": "", "dados": [null, null, 0] }
+            },
+            "XF ESPORTS": {
+                "XF.MPKING9": { "logo": "", "dados": [1, 2, 0] },
+                "SILVAZW⁷⁷⁷  †": { "logo": "", "dados": [2, 4, 0] },
+                "RD  MITSUKI7": { "logo": "", "dados": [1, 2, 0] },
+                "XF..BRUNO": { "logo": "", "dados": [0, 1, 0] }
+            },
+            "LB UNITY": {
+                "LB  TOPIA  ⚥": { "logo": "", "dados": [2, 2, 0] },
+                "LB  LINDINHA❀": { "logo": "", "dados": [1, 1, 0] },
+                "LB  ŁENDARIA❀": { "logo": "", "dados": [0, 3, 1] },
+                "LB  $A₲AẔ": { "logo": "", "dados": [0, 1, 0] }
+            },
+            "ELITE 07": {
+                "E7.LIPE7": { "logo": "", "dados": [3, 1, 3] },
+                "GDN  MORENO⁷⭡": { "logo": "", "dados": [1, 3, 2] },
+                "JPCHINE7": { "logo": "", "dados": [2, 0, 2] },
+                "E7.YOUDEAD炎": { "logo": "", "dados": [3, 0, 1] }
+            },
+            "SÃO CAETANO": {
+                "DIFFERENT  愛": { "logo": "", "dados": [5, 4, null] },
+                "THE  KZZ愛": { "logo": "", "dados": [1, 0, null] },
+                "REEX  楽": { "logo": "", "dados": [4, 0, null] },
+                "SACIGÁS7!  $": { "logo": "", "dados": [3, 0, null] }
+            },
+            "FCB E-SPORTS": {
+                "𝄡𝄢  WUITCO™": { "logo": "", "dados": [5, 2, 3] },
+                "SUB~~YURI": { "logo": "", "dados": [9, 1, 2] },
+                "ŁĐ  JORDAN7": { "logo": "", "dados": [2, 0, 0] },
+                "𝄡𝄢  NOBRE7": { "logo": "", "dados": [1, 1, 0] }
+            },
+            "SG ELITE ALFA": {
+                "SG  LEGOSHI²⁶": { "logo": "", "dados": [0, 1, null] },
+                "SG  GORDIN⁷": { "logo": "", "dados": [2, 1, null] },
+                "DR_ORIGINAL": { "logo": "", "dados": [0, null, null] },
+                "TAJ  SANTANA": { "logo": "", "dados": [1, null, null] },
+                "SG ✞ESCANOR专": { "logo": "", "dados": [null, 2, null] },
+                "SG ALVES,awp": { "logo": "", "dados": [null, 0, null] }
+            },
+            "EDT E-SPORTS": {
+                "NCRLQ  007": { "logo": "", "dados": [3, 0, 1] },
+                "GR  KAYKCOLD": { "logo": "", "dados": [2, 0, 0] },
+                "RAFA  .X2": { "logo": "", "dados": [4, 0, 0] },
+                "Ⓥ  VILAO  ⚔★": { "logo": "", "dados": [8, 0, 0] }
+            },
+            "SG STORMX": {
+                "SG  W L  pSICO⁵⁷": { "logo": "", "dados": [4, 5, 8] },
+                "ODIO  DELESS": { "logo": "", "dados": [6, 5, 7] },
+                "KÉK.FAEL81": { "logo": "", "dados": [4, 5, 9] },
+                "AVONTS": { "logo": "", "dados": [1, 6, 4] }
+            },
+            "LA TRETA": {
+                "SAGAZ    -1,90": { "logo": "", "dados": [0, 1, null] },
+                "ROYALSALUT'": { "logo": "", "dados": [2, null, null] },
+                "SWT  ARCANJO07": { "logo": "", "dados": [1, 2, null] },
+                "I'M  DRADE333": { "logo": "", "dados": [0, 0, null] },
+                "N0fe66b51490": { "logo": "", "dados": [null, 1, null] }
+            },
+            "ALPHA TEAM": {
+                "OFC  R𝄡LUDO": { "logo": "", "dados": [0, 1, 0] },
+                "EO_KINHOOO": { "logo": "", "dados": [2, 3, 2] },
+                "VNZINN7": { "logo": "", "dados": [1, 1, 1] },
+                "081_MAGO": { "logo": "", "dados": [2, 0, 4] }
+            }
+        }
     }
+
 
 
 

@@ -78,10 +78,13 @@ const organizarDadosEquipe = {
             let posicaoPts = 0;
             let booyah = 0;
             let equipePts;
+            
 
             const nomeEquipe = infoEquipes.equipe;
             const arrayQuedas = infoEquipes.detalhes;
             const logo = infoEquipes.logo;
+            const punição = Number(infoEquipes.puniçãoPontos)
+            
 
             // BLINDAGEM: Pega a punição do seu JSON mesmo se estiver escrita com ou sem acento
             const punicaoDescricao = infoEquipes.puniçãoDescrição
@@ -116,7 +119,9 @@ const organizarDadosEquipe = {
                 pts: equipePts,
                 data: treinoEquipe.data,
                 logo: logo,
-                punicaoPontosAtual: punicaoPontosAtual
+                punicaoPontosAtual: punicaoPontosAtual,
+                puniçãoPontos: punição
+                
             });
         });
 
@@ -169,8 +174,9 @@ const enviarDadosTabela = {
             const data = objEquipe.data
             const logo = objEquipe.logo
             const punicaoPontosAtual = objEquipe.punicaoPontosAtual
+            const puniçãoPontos = objEquipe.puniçãoPontos
 
-            criarTabela.start(posição, equipe, quedas, abate, booyah, pts, data, logo)
+            criarTabela.start(posição, equipe, quedas, abate, booyah, pts, data, logo, puniçãoPontos)
            
         });
     }
@@ -179,7 +185,7 @@ const enviarDadosTabela = {
 //aq ira montar a tabela
 const criarTabela = {
 
-    start(posição, equipe, quedas, abate, booyah, pts, data, logo) {
+    start(posição, equipe, quedas, abate, booyah, pts, data, logo, puniçãoPontos) {
         this.posição = posição
         this.equipe = equipe
         this.quedas = quedas
@@ -190,10 +196,10 @@ const criarTabela = {
         this.data = data
         this.logo = logo
         const tbody = document.querySelector("#tbody")
-        this.criarTr(tbody, posição, equipe)
+        this.criarTr(tbody, posição, equipe, puniçãoPontos)
         this.mudarData(data)
     },
-    criarTr(tbody, posição, equipe) {
+    criarTr(tbody, posição, equipe, puniçãoPontos) {
         const createTr = document.createElement("tr")
         createTr.setAttribute("id", `tr${posição}`)
         createTr.setAttribute("name", `info${posição}`)
@@ -206,7 +212,7 @@ const criarTabela = {
         this.criarAbatesTd(tr)
         this.criarBooyahTd(tr)
         this.criarPtsTd(tr)
-        this.criarBtn(tr, posição)
+        this.criarBtn(tr, posição, puniçãoPontos)
     },
     criarPosiçãoTd(tr) {
         const td = document.createElement("td")
@@ -254,13 +260,28 @@ const criarTabela = {
         td.appendChild(strong)
         strong.innerHTML = `${this.pts}`
     },
-    criarBtn(tr, posição) {
-        const td = document.createElement("td")
-        const btn = document.createElement("button")
-        btn.setAttribute("id", `infoEquipe`)
-        td.appendChild(btn)
-        btn.textContent = "📋"
-        tr.appendChild(td)
+    criarBtn(tr, posição, puniçãoPontos) {
+        if(puniçãoPontos != 0){
+            const td = document.createElement("td")
+            const btn = document.createElement("button")
+            const span = document.createElement("span")
+            btn.setAttribute("id", `infoEquipe`)
+            span.setAttribute("class", "avisoPunição")
+            td.appendChild(span)
+            td.appendChild(btn)
+            span.textContent = "⚠️"
+
+            btn.textContent = "📋"
+            tr.appendChild(td)
+        }else{
+
+            const td = document.createElement("td")
+            const btn = document.createElement("button")
+            btn.setAttribute("id", `infoEquipe`)
+            td.appendChild(btn)
+            btn.textContent = "📋"
+            tr.appendChild(td)
+        }
 
     },
     mudarData(data) {

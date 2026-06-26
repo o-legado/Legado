@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+img{
+    font-size: 2rem;
+}
 html {
     font-size: 62.5%;
     min-height: 100%;
@@ -866,6 +868,9 @@ main {
                 border-right: 1px solid #14161a;
                 border-top-right-radius: 0.8rem;
                 border-bottom-right-radius: 0.8rem;
+            }
+            .avisoPunição{
+                font-size: 2rem;
             }
 
             .container_table td>button {

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+img {
+  font-size: 2rem;
+}
+
 html {
   font-size: 62.5%;
   min-height: 100%;
@@ -405,6 +409,9 @@ main .container .table_wrapper .container_table td:last-child {
   border-right: 1px solid #14161a;
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
+}
+main .container .table_wrapper .avisoPunição {
+  font-size: 2rem;
 }
 main .container .table_wrapper .container_table td > button {
   background-color: #14161a;

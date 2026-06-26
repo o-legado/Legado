@@ -3730,7 +3730,6 @@
         ]
         },
 
-        
         "treino6": {
     "data": "23/06/2026",
     "equipes": [
@@ -3867,7 +3866,147 @@
         "puniçãoPontos": ""
       }
     ]
+        },
+
+        
+        "treino7": {
+        "data": "25/06/2026",
+        "equipes": [
+            {
+                "equipe": "GAMER OVER",
+                "detalhes": [
+                    { "queda": 1, "kills": 8, "posicao": 8 },
+                    { "queda": 2, "kills": 5, "posicao": 6 },
+                    { "queda": 3, "kills": 2, "posicao": 9 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "RJ E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 12 },
+                    { "queda": 2, "kills": 10, "posicao": 4 },
+                    { "queda": 3, "kills": 1, "posicao": 8 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "XF ESPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 4, "posicao": 11 },
+                    { "queda": 2, "kills": 9, "posicao": 1 },
+                    { "queda": 3, "kills": 0, "posicao": 7 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "LB UNITY",
+                "detalhes": [
+                    { "queda": 1, "kills": 3, "posicao": 7 },
+                    { "queda": 2, "kills": 7, "posicao": 5 },
+                    { "queda": 3, "kills": 1, "posicao": 4 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "ELITE 07",
+                "detalhes": [
+                    { "queda": 1, "kills": 9, "posicao": 1 },
+                    { "queda": 2, "kills": 4, "posicao": 12 },
+                    { "queda": 3, "kills": 8, "posicao": 3 }
+                ],
+                "logo": "../../../assets/img/logosXtreinoEquipes/junho/(7.2)ELITE 07.jpg",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "SÃO CAETANO",
+                "detalhes": [
+                    { "queda": 1, "kills": 13, "posicao": 2 },
+                    { "queda": 2, "kills": 4, "posicao": 9 },
+                    { "queda": 3, "kills": 0, "posicao": 13 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "Abandonou o treino, não completou todas as quedas.",
+                "puniçãoPontos": "28"
+            },
+            {
+                "equipe": "FCB E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 17, "posicao": 6 },
+                    { "queda": 2, "kills": 4, "posicao": 10 },
+                    { "queda": 3, "kills": 5, "posicao": 6 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "SG ELITE ALFA",
+                "detalhes": [
+                    { "queda": 1, "kills": 3, "posicao": 9 },
+                    { "queda": 2, "kills": 4, "posicao": 7 },
+                    { "queda": 3, "kills": 0, "posicao": 13 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "Abandonou o treino, não completou todas as quedas.",
+                "puniçãoPontos": "13"
+            },
+            {
+                "equipe": "EDT E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 17, "posicao": 3 },
+                    { "queda": 2, "kills": 0, "posicao": 11 },
+                    { "queda": 3, "kills": 1, "posicao": 5 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "SG STORMX",
+                "detalhes": [
+                    { "queda": 1, "kills": 15, "posicao": 4 },
+                    { "queda": 2, "kills": 21, "posicao": 2 },
+                    { "queda": 3, "kills": 28, "posicao": 1 }
+                ],
+                "logo": "../../../assets/img/logosXtreinoEquipes/junho/(7.1)SG STORMX.jpg",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "LA TRETA",
+                "detalhes": [
+                    { "queda": 1, "kills": 3, "posicao": 10 },
+                    { "queda": 2, "kills": 4, "posicao": 8 },
+                    { "queda": 3, "kills": 0, "posicao": 13 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "Abandonou o treino, não completou todas as quedas.",
+                "puniçãoPontos": "11"
+            },
+            {
+                "equipe": "ALPHA TEAM",
+                "detalhes": [
+                    { "queda": 1, "kills": 5, "posicao": 5 },
+                    { "queda": 2, "kills": 5, "posicao": 3 },
+                    { "queda": 3, "kills": 7, "posicao": 2 }
+                ],
+                "logo": "../../../assets/img/logosXtreinoEquipes/junho/(7.3)ALPHA TEAM.jpg",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            }
+        ]
         }
+
 
 
 
