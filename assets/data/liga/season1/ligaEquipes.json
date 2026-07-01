@@ -10,7 +10,10 @@
           { "queda": 3, "kills": 7, "posicao": 6 },
           { "queda": 4, "kills": 17, "posicao": 6 },
           { "queda": 5, "kills": 11, "posicao": 6 },
-          { "queda": 6, "kills": 9, "posicao": 4 }
+          { "queda": 6, "kills": 9, "posicao": 4 },
+          { "queda": 7, "kills": 7, "posicao": 3 },
+          { "queda": 8, "kills": 9, "posicao": 1 },
+          { "queda": 9, "kills": 6, "posicao": 7 }
         ],
         "logo": "../../../assets/img/liga/season1/real bala.jpg",
         "puniçãoDescrição": "",
@@ -24,7 +27,10 @@
           { "queda": 3, "kills": 5, "posicao": 5 },
           { "queda": 4, "kills": 9, "posicao": 4 },
           { "queda": 5, "kills": 11, "posicao": 4 },
-          { "queda": 6, "kills": 2, "posicao": 10 }
+          { "queda": 6, "kills": 2, "posicao": 10 },
+          { "queda": 7, "kills": 4, "posicao": 7 },
+          { "queda": 8, "kills": 7, "posicao": 4 },
+          { "queda": 9, "kills": 11, "posicao": 5 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -38,7 +44,10 @@
           { "queda": 3, "kills": 5, "posicao": 8 },
           { "queda": 4, "kills": 5, "posicao": 2 },
           { "queda": 5, "kills": 2, "posicao": 10 },
-          { "queda": 6, "kills": 19, "posicao": 2 }
+          { "queda": 6, "kills": 19, "posicao": 2 },
+          { "queda": 7, "kills": 4, "posicao": 8 },
+          { "queda": 8, "kills": 1, "posicao": 10 },
+          { "queda": 9, "kills": 3, "posicao": 8 }
         ],
         "logo": "../../../assets/img/liga/season1/possessed.jpg",
         "puniçãoDescrição": "",
@@ -52,7 +61,10 @@
           { "queda": 3, "kills": 8, "posicao": 7 },
           { "queda": 4, "kills": 15, "posicao": 3 },
           { "queda": 5, "kills": 10, "posicao": 1 },
-          { "queda": 6, "kills": 1, "posicao": 5 }
+          { "queda": 6, "kills": 1, "posicao": 5 },
+          { "queda": 7, "kills": 2, "posicao": 9 },
+          { "queda": 8, "kills": 5, "posicao": 2 },
+          { "queda": 9, "kills": 6, "posicao": 2 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -66,7 +78,10 @@
           { "queda": 3, "kills": 0, "posicao": 11 },
           { "queda": 4, "kills": 5, "posicao": 10 },
           { "queda": 5, "kills": 4, "posicao": 2 },
-          { "queda": 6, "kills": 12, "posicao": 1 }
+          { "queda": 6, "kills": 12, "posicao": 1 },
+          { "queda": 7, "kills": 0, "posicao": 10 },
+          { "queda": 8, "kills": 1, "posicao": 8 },
+          { "queda": 9, "kills": 5, "posicao": 3 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -80,7 +95,10 @@
           { "queda": 3, "kills": 3, "posicao": 3 },
           { "queda": 4, "kills": 4, "posicao": 9 },
           { "queda": 5, "kills": 2, "posicao": 5 },
-          { "queda": 6, "kills": 2, "posicao": 6 }
+          { "queda": 6, "kills": 2, "posicao": 6 },
+          { "queda": 7, "kills": 6, "posicao": 1 },
+          { "queda": 8, "kills": 3, "posicao": 6 },
+          { "queda": 9, "kills": 0, "posicao": 6 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -94,7 +112,10 @@
           { "queda": 3, "kills": 7, "posicao": 4 },
           { "queda": 4, "kills": 0, "posicao": 11 },
           { "queda": 5, "kills": 0, "posicao": 11 },
-          { "queda": 6, "kills": 0, "posicao": 13 }
+          { "queda": 6, "kills": 0, "posicao": 13 },
+          { "queda": 7, "kills": 0, "posicao": 5 },
+          { "queda": 8, "kills": 2, "posicao": 9 },
+          { "queda": 9, "kills": 0, "posicao": 13 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -108,7 +129,10 @@
           { "queda": 3, "kills": 2, "posicao": 9 },
           { "queda": 4, "kills": 2, "posicao": 7 },
           { "queda": 5, "kills": 1, "posicao": 8 },
-          { "queda": 6, "kills": 3, "posicao": 8 }
+          { "queda": 6, "kills": 3, "posicao": 8 },
+          { "queda": 7, "kills": 0, "posicao": 13 },
+          { "queda": 8, "kills": 0, "posicao": 13 },
+          { "queda": 9, "kills": 0, "posicao": 13 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -122,7 +146,10 @@
           { "queda": 3, "kills": 0, "posicao": 10 },
           { "queda": 4, "kills": 0, "posicao": 13 },
           { "queda": 5, "kills": 0, "posicao": 13 },
-          { "queda": 6, "kills": 0, "posicao": 13 }
+          { "queda": 6, "kills": 0, "posicao": 13 },
+          { "queda": 7, "kills": 3, "posicao": 6 },
+          { "queda": 8, "kills": 8, "posicao": 5 },
+          { "queda": 9, "kills": 3, "posicao": 4 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -136,7 +163,10 @@
           { "queda": 3, "kills": 11, "posicao": 1 },
           { "queda": 4, "kills": 16, "posicao": 1 },
           { "queda": 5, "kills": 20, "posicao": 3 },
-          { "queda": 6, "kills": 16, "posicao": 3 }
+          { "queda": 6, "kills": 16, "posicao": 3 },
+          { "queda": 7, "kills": 14, "posicao": 2 },
+          { "queda": 8, "kills": 14, "posicao": 3 },
+          { "queda": 9, "kills": 19, "posicao": 1 }
         ],
         "logo": "../../../assets/img/liga/season1/France.jpg",
         "puniçãoDescrição": "",
@@ -150,7 +180,10 @@
           { "queda": 3, "kills": 4, "posicao": 2 },
           { "queda": 4, "kills": 4, "posicao": 8 },
           { "queda": 5, "kills": 2, "posicao": 9 },
-          { "queda": 6, "kills": 3, "posicao": 9 }
+          { "queda": 6, "kills": 3, "posicao": 9 },
+          { "queda": 7, "kills": 0, "posicao": 13 },
+          { "queda": 8, "kills": 0, "posicao": 13 },
+          { "queda": 9, "kills": 0, "posicao": 13 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -164,7 +197,10 @@
           { "queda": 3, "kills": 0, "posicao": 13 },
           { "queda": 4, "kills": 3, "posicao": 5 },
           { "queda": 5, "kills": 1, "posicao": 7 },
-          { "queda": 6, "kills": 1, "posicao": 7 }
+          { "queda": 6, "kills": 1, "posicao": 7 },
+          { "queda": 7, "kills": 10, "posicao": 4 },
+          { "queda": 8, "kills": 2, "posicao": 7 },
+          { "queda": 9, "kills": 1, "posicao": 9 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
