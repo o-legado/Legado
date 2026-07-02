@@ -126,7 +126,26 @@ const organizarDadosEquipe = {
         });
 
         // 1. ORDENAÇÃO DECRESCENTE (Quem somou mais pontos vai para o topo da tabela)
-        resultadoFinal.sort((a, b) => b.pts - a.pts);
+        resultadoFinal.sort((a, b) => {
+
+            // 1º critério: Pontos
+            if (b.pts !== a.pts) {
+                return b.pts - a.pts;
+            }
+
+            // 2º critério: Booyahs
+            if (b.booyah !== a.booyah) {
+                return b.booyah - a.booyah;
+            }
+
+            // 3º critério: Kills
+            if (b.abate !== a.abate) {
+                return b.abate - a.abate;
+            }
+
+            // Continua empatado
+            return 0;
+        });
 
         // 2. ATRIBUIÇÃO DA POSIÇÃO REAL DE CLASSIFICAÇÃO
         // O array já está ordenado. O primeiro (índice 0) vira 1º colocado, o segundo vira 2º, etc.
