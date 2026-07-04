@@ -4153,5 +4153,146 @@
 
 
 
+    },
+    "julho": {
+        
+        "treino1": {
+    "data": "02/07/2026",
+    "equipes": [
+      {
+        "equipe": "EDT E-SPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 7, "posicao": 6 },
+          { "queda": 2, "kills": 1, "posicao": 2 },
+          { "queda": 3, "kills": 0, "posicao": 10 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "VTX CASH",
+        "detalhes": [
+          { "queda": 1, "kills": 15, "posicao": 2 },
+          { "queda": 2, "kills": 1, "posicao": 10 },
+          { "queda": 3, "kills": 2, "posicao": 7 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "TOXIC E-ORIONX",
+        "detalhes": [
+          { "queda": 1, "kills": 9, "posicao": 4 },
+          { "queda": 2, "kills": 10, "posicao": 4 },
+          { "queda": 3, "kills": 0, "posicao": 9 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "FCB E-SPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 3, "posicao": 10 },
+          { "queda": 2, "kills": 2, "posicao": 5 },
+          { "queda": 3, "kills": 7, "posicao": 5 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "RED DRAGONS",
+        "detalhes": [
+          { "queda": 1, "kills": 17, "posicao": 8 },
+          { "queda": 2, "kills": 4, "posicao": 9 },
+          { "queda": 3, "kills": 14, "posicao": 8 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "REAL BALA",
+        "detalhes": [
+          { "queda": 1, "kills": 4, "posicao": 9 },
+          { "queda": 2, "kills": 7, "posicao": 8 },
+          { "queda": 3, "kills": 1, "posicao": 2 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "RN-IMPERIO",
+        "detalhes": [
+          { "queda": 1, "kills": 8, "posicao": 5 },
+          { "queda": 2, "kills": 6, "posicao": 3 },
+          { "queda": 3, "kills": 8, "posicao": 4 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "FX SQUARD",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "YAKUZA ALPHA",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "FOX KILLERS",
+        "detalhes": [
+          { "queda": 1, "kills": 4, "posicao": 3 },
+          { "queda": 2, "kills": 6, "posicao": 7 },
+          { "queda": 3, "kills": 0, "posicao": 6 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "BLACK WOLFS",
+        "detalhes": [
+          { "queda": 1, "kills": 12, "posicao": 1 },
+          { "queda": 2, "kills": 20, "posicao": 1 },
+          { "queda": 3, "kills": 14, "posicao": 1 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "ALPHA TEAM",
+        "detalhes": [
+          { "queda": 1, "kills": 1, "posicao": 7 },
+          { "queda": 2, "kills": 6, "posicao": 6 },
+          { "queda": 3, "kills": 12, "posicao": 3 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      }
+    ]
+        } 
+
     }
 }

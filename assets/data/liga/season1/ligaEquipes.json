@@ -23,7 +23,7 @@
         "puniçãoPontos": ""
       },
       {
-        "equipe": "NOXUS GAMING",
+        "equipe": "4K HOUSE",
         "detalhes": [
           { "queda": 1, "kills": 8, "posicao": 2 },
           { "queda": 2, "kills": 3, "posicao": 10 },
@@ -31,6 +31,7 @@
           { "queda": 4, "kills": 9, "posicao": 4 },
           { "queda": 5, "kills": 11, "posicao": 4 },
           { "queda": 6, "kills": 2, "posicao": 10 },
+          
           { "queda": 7, "kills": 4, "posicao": 7 },
           { "queda": 8, "kills": 7, "posicao": 4 },
           { "queda": 9, "kills": 11, "posicao": 5 },
@@ -203,7 +204,7 @@
         "puniçãoPontos": ""
       },
       {
-        "equipe": "META GAMING",
+        "equipe": "EDT E-SPORTS",
         "detalhes": [
           { "queda": 1, "kills": 0, "posicao": 11 },
           { "queda": 2, "kills": 9, "posicao": 6 },
@@ -211,6 +212,7 @@
           { "queda": 4, "kills": 4, "posicao": 8 },
           { "queda": 5, "kills": 2, "posicao": 9 },
           { "queda": 6, "kills": 3, "posicao": 9 },
+
           { "queda": 7, "kills": 0, "posicao": 13 },
           { "queda": 8, "kills": 0, "posicao": 13 },
           { "queda": 9, "kills": 0, "posicao": 13 },

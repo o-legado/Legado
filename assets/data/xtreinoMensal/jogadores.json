@@ -1680,9 +1680,6 @@
         }
     },
 
-
-    
-    
   "treino8": {
     "data": "30/06/2026",
     "equipes": {
@@ -1778,6 +1775,79 @@
 
 
 
+
+  },
+
+  "julho":{
+ 
+    "treino1": {
+    "data": "02/07/2026",
+    "equipes": {
+      "EDT E-SPORTS": {
+        "RAFA  .x2": { "logo": "", "dados": [1, 0, 0] },
+        "*BLACKN444": { "logo": "", "dados": [4, 0, null] },
+        "GR  KaykCold": { "logo": "", "dados": [1, 0, 0] },
+        "Ⓥ  VILAO  ⚔☠★": { "logo": "", "dados": [0, 1, 0] },
+        "《ŁĐ》 YESHUA": { "logo": "", "dados": [null, null, 0] }
+      },
+      "VTX CASH": {
+        "GMP  NOG10": { "logo": "", "dados": [4, 0, null] },
+        "AJAX  Dgx7": { "logo": "", "dados": [1, 0, 1] },
+        "BØSS⁷  †": { "logo": "", "dados": [4, 1, 1] },
+        "VTX  MUDINHO⁷": { "logo": "", "dados": [6, 0, null] }
+      },
+      "TOXIC E-ORIONX": {
+        "BW.GB7KING": { "logo": "", "dados": [0, 1, 0] },
+        "Iloveher win": { "logo": "", "dados": [1, 1, 0] },
+        "ATX  LKZIN7zk": { "logo": "", "dados": [2, 4, 0] },
+        "MARECHAL😀": { "logo": "", "dados": [6, 4, 0] }
+      },
+      "FCB E-SPORTS": {
+        "《ŁĐ》 WHITER™": { "logo": "", "dados": [1, 0, 1] },
+        "ŁĐ  JORDAN7": { "logo": "", "dados": [2, 1, 2] },
+        "sub~~yuri": { "logo": "", "dados": [0, 0, 3] },
+        "《ŁĐ》 Nobre7": { "logo": "", "dados": [0, 1, 1] }
+      },
+      "RED DRAGONS": {
+        "RDG  SONO": { "logo": "", "dados": [8, 0, 3] },
+        "RRGwd7": { "logo": "", "dados": [4, 2, 4] },
+        "RDG  Caik": { "logo": "", "dados": [2, 2, 3] },
+        "'wordlock": { "logo": "", "dados": [3, 0, 4] }
+      },
+      "REAL BALA": {
+        "《ŁĐ》 Prozin7": { "logo": "", "dados": [1, 2, 1] },
+        "PCDNETINHO  炎": { "logo": "", "dados": [2, 3, 0] },
+        "shimura×_×": { "logo": "", "dados": [1, 1, 0] },
+        "《ŁĐ》 vieirssz": { "logo": "", "dados": [null, 1, 0] }
+      },
+      "RN-IMPERIO": {
+        "RN²  GALEGO!": { "logo": "", "dados": [2, 0, 0] },
+        "Starboy'": { "logo": "", "dados": [2, 2, 4] },
+        "RN²  JJ": { "logo": "", "dados": [3, 1, 2] },
+        "RN²  betin.y": { "logo": "", "dados": [1, 3, 2] }
+      },
+      "FX SQUARD": {},
+      "YAKUZA ALPHA": {},
+      "FOX KILLERS": {
+        "FOX  班津  xit!☂": { "logo": "", "dados": [3, 1, 0] },
+        "FOX  BT77ᴿᴺ": { "logo": "", "dados": [0, 2, 0] },
+        "⁷⁷⁷desert_sx": { "logo": "", "dados": [0, 1, 0] },
+        "FOX  DUDUZN☂": { "logo": "", "dados": [1, 2, 0] }
+      },
+      "BLACK WOLFS": {
+        "BW.G00D⁰⁷": { "logo": "", "dados": [6, 5, 3] },
+        "BW.MNRZINNNN": { "logo": "", "dados": [3, 7, 7] },
+        "HYPE  veeni69": { "logo": "", "dados": [2, 2, 3] },
+        "BW.KIRITO炎": { "logo": "", "dados": [1, 6, 1] }
+      },
+      "ALPHA TEAM": {
+        "OFC  ROLUDO": { "logo": "", "dados": [0, 1, 0] },
+        "@swelit0n": { "logo": "", "dados": [1, 4, 4] },
+        "EO_KINHOOO": { "logo": "", "dados": [0, 1, 5] },
+        "OFC  MAYKON": { "logo": "", "dados": [null, 0, 3] }
+      }
+    }
+    }
 
   }
 }
