@@ -1847,7 +1847,91 @@
         "OFC  MAYKON": { "logo": "", "dados": [null, 0, 3] }
       }
     }
+    },
+    
+    "treino2": {
+    "data": "07/07/2026",
+    "equipes": {
+      "FCB E-SPORTS": {
+        "《ŁĐ》WHITER™": { "logo": "", "dados": [3, 0, 4] },
+        "sub~~yuri": { "logo": "", "dados": [1, 0, 6] },
+        "《ŁĐ》Nobre7": { "logo": "", "dados": [0, 0, 4] },
+        "ŁĐ JORDAN7": { "logo": "", "dados": [1, 0, 7] }
+      },
+      "6 LEGADOS": {
+        "SEM MEDO²⁴⁴": { "logo": "", "dados": [2, 0, 1] },
+        "KILØKURA": { "logo": "", "dados": [0, null, 0] },
+        "》♡♡(+_+)♡♡《": { "logo": "", "dados": [4, 0, 3] },
+        "❀ump Bossシ": { "logo": "", "dados": [2, 1, 2] }
+      },
+      "CJ CITY": {
+        "WOD SILVA!!": { "logo": "", "dados": [4, 1, 3] },
+        "2,90 ip!!": { "logo": "", "dados": [6, 1, 2] },
+        "G A B i @GABiff": { "logo": "", "dados": [2, 0, null] },
+        "unknownLIGHT": { "logo": "", "dados": [0, 2, 4] },
+        "刀 乇 乂 匕 乇 尺 ˥": { "logo": "", "dados": [null, null, 0] }
+      },
+      "FCB E-SPORTS 2.0": {
+        "Biel Mvp.exe": { "logo": "", "dados": [3, 2, 3] },
+        "《ŁĐ》skyfall™": { "logo": "", "dados": [0, 2, 1] },
+        "AS gbzinx7": { "logo": "", "dados": [0, 0, 3] },
+        "《ŁĐ》!Bn.op益": { "logo": "", "dados": [2, 0, 7] }
+      },
+      "NEW START TREM": {
+        "jn_pretoo": { "logo": "", "dados": [0, 4, 0] },
+        "BVBHércules": { "logo": "", "dados": [0, null, null] },
+        "W t r e m¹⁵": { "logo": "", "dados": [0, null, null] },
+        "faelw torre": { "logo": "", "dados": [0, null, 1] },
+        "Øx W trem¹⁵⁷": { "logo": "", "dados": [null, 1, 0] },
+        "s♨Hannah♨s": { "logo": "", "dados": [null, 0, null] }
+      },
+      "DREAM TEAM": {
+        "RED MØRD": { "logo": "", "dados": [1, 1, 1] },
+        "REV FACKx7™": { "logo": "", "dados": [3, 1, 2] },
+        "RED KHSss?": { "logo": "", "dados": [3, 1, 1] },
+        "RED PhzzX⁷": { "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(2.1)RED PhzzX⁷ (1).jpeg", "dados": [5, 7, 6] }
+      },
+      "IMPÉRIO 171": {
+        "D y . K i s a k i": { "logo": "", "dados": [2, 0, 0] },
+        "Lcszinn7 171": { "logo": "", "dados": [2, 2, 1] },
+        "!buk 7": { "logo": "", "dados": [0, 7, 0] },
+        "dvzinzx7": { "logo": "", "dados": [0, 0, 0] }
+      },
+      "EVOS SPORTING": {
+        "EVOS.SOUZAXS": { "logo": "", "dados": [0, 0, 3] },
+        "EVOS WSZIN 愛": { "logo": "", "dados": [0, 2, 2] },
+        "EVOS BELZEBU": { "logo": "", "dados": [2, 0, 2] },
+        "ONE Obito愛": { "logo": "", "dados": [0, null, null] },
+        "EVOS_Maurix": { "logo": "", "dados": [null, 0, 0] }
+      },
+      "TMZ ELITE CAOS": {
+        "s♨♡Queen♡♨s": { "logo": "", "dados": [0, 3, 3] },
+        "NOR.PH999": { "logo": "", "dados": [3, null, null] },
+        "FURY PKZINN7": { "logo": "", "dados": [1, 2, 6] },
+        "INT.MAGNATA": { "logo": "", "dados": [0, 8, 1] },
+        "s♨Hannah♨s": { "logo": "", "dados": [null, null, 0] }
+      },
+      "EVOS JEQUIÉ": {
+        "EVOS MACUMBA": { "logo": "", "dados": [3, 0, 1] },
+        "EVOS ™ C R 7": { "logo": "", "dados": [6, 0, 1] },
+        "JQ DSZIN ✞": { "logo": "", "dados": [4, 1, 0] },
+        "EVOS ScZin": { "logo": "", "dados": [3, 0, 0] }
+      },
+      "6 LEGADOS 0.2": {
+        "《ŁĐ》BRISADA": { "logo": "", "dados": [1, 1, 0] },
+        "《ŁĐ》Six9!.么": { "logo": "", "dados": [3, 0, 0] },
+        "R$2,00 reais": { "logo": "", "dados": [0, 0, 0] },
+        "Ⓜ™GENERAL !♛": { "logo": "", "dados": [0, 2, 0] }
+      },
+      "EVOS PHOENIX": {
+        "EVOS NICOLS": { "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(2.2)EVOS NICOLS.jpeg", "dados": [6, 5, 0] },
+        "EVOS BELLION": { "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(2.3)EVOS BELLION.jpeg", "dados": [7, 4, 0] },
+        "EVOS.xitt⁰⁰⁷": { "logo": "", "dados": [3, 2, 0] },
+        "U 尺 T 乃 ㄥ 尺 匚 K": { "logo": "", "dados": [0, 2, 2] }
+      }
     }
+    }
+
 
   }
 }

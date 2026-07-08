@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Treino Junho 07/07</title>
+    <link rel="stylesheet" href="../../../assets/css/css/treino-Abril.css">
+    <link rel="stylesheet" href="../../../assets/css/scss/treino-Abril.scss">
+
+
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--FONTE-->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SW7Q9LH3LR');
+    </script>
+    <!-- Google tag (gtag.js) -->
+
+    <!--Incon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--Incon-->
+</head>
+
+<body>
+    <header class="header">
+    <div class="header_container largura-definida">
+        
+        <!-- Botão Voltar posicionado de forma inteligente -->
+        <a href="../xtreino-Julho/xtreinoJulhoHome.html" class="btn_voltar">
+            <span class="seta">←</span> Voltar
+        </a>
+        
+        <!-- Conteúdo Centralizado (Logo + Título) -->
+        <div class="header_main_content">
+            <figure class="header_logo">
+                <img src="../../../assets/img/logo-xtreino.jpg" alt="Logo X-Treino Legado">
+            </figure>
+            
+            <div class="header_texts">
+                <h1><span>07</span> de <span id="mes">Julho</span> de 2026</h1>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+    <main>
+
+        <section class="container largura-definida">
+
+            <!--SISTEMA DE PONTUAÇÃO-->
+            <button class="btn-scoring-system">📊 Sistema de Pontuação <span>▼</span></button>
+            <div class="scoring-system">
+
+                <div class="scoring-system_pontosColocação">
+                    <h1>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#EAB308" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                        </span>
+                        Pontos por Colocação
+                    </h1>
+
+                    <ul>
+                        <li>🥇 Booyah (1º) <span>12 pts</span></li>
+                        <li>🥈 Top 2 <span>9 pts</span></li>
+                        <li>🥉 Top 3 <span>8 pts</span></li>
+                        <li>Top 4<span>7 pts</span></li>
+                        <li>Top 5<span>6 pts</span></li>
+                        <li>Top 6<span>5 pts</span></li>
+                        <li>Top 7<span>4 pts</span></li>
+                        <li>Top 8<span>3 pts</span></li>
+                        <li>Top 9<span>2 pts</span></li>
+                        <li>Top 10<span>1 pts</span></li>
+                        <li>Top 11-12<span>0 pts</span></li>
+                    </ul>
+                </div>
+
+                <div class="scoring-system_kill">
+                    <h1 class="scoring-system_kill_title">Pontos por Kills</h1>
+                    <div class="scoring-system_kill_kills">
+                        <h2>1</h2>
+                        <p>Ponto por Kill</p>
+                        <p>Cada abate conta 1 ponto para o total da equipe</p>
+                    </div>
+
+                    <div class="scoring-system_kill_exemplo">
+                        <h2>📝 Exemplo de Cálculo</h2>
+                        <p>1º Lugar (Booyah): <span>12 pts</span></p>
+                        <p>10 Kills: <span>10 pts</span></p>
+                        <p>Total: <span>22 pts</span></p>
+                    </div>
+                </div>
+            </div>
+            <!--SISTEMA DE PONTUAÇÃO-->
+
+            <!--Tabela-->
+            <div class="table_wrapper">
+
+                <!--TITLE RANKING-->
+                <div class="table_header">
+                    <h2>🏆 RANKING <span id="rankingSeason">Treino</span></h2>
+                    <p>📅 <span id="data"></span></p>
+                </div>
+                <!--TITLE RANKING-->
+
+
+                <table class="container_table">
+                    <thead>
+                        <tr>
+                            <th>POS</th>
+                            <th class="equipe_th">EQUIPE</th>
+                            <th>Q</th>
+                            <th>AB</th>
+                            <th>B!</th>
+                            <th>PTS</th>
+                            <th>INFO</th>
+                        </tr>
+                    </thead>
+                    <tbody class="container_table_tbody" id="tbody"></tbody>
+
+                </table>
+
+            </div>
+            <!--Tabela-->
+
+            <!--Campeão-->
+            <div class="card-campeao">
+                <div class="brilho-foco"></div>
+
+                <div class="card-conteudo">
+
+                    <h2 class="campeao-title">CAMPEÃO</h2>
+
+                    <div class="equipe-logo-container">
+                        <img class="equipe-logo-placeholder" src="" alt="">
+                    </div>
+
+                    <p class="campeao-equipe"></p>
+
+                    <div class="stats-container">
+                        <div class="stat-box pontos">
+                            <p class="stat-numero" id="pts"></p>
+                            <span class="stat-label">PONTOS</span>
+                        </div>
+
+                        <div class="stat-box kills">
+                            <p class="stat-numero" id="kills"></p>
+                            <span class="stat-label">KILLS</span>
+                        </div>
+
+                        <div class="stat-box booyah">
+                            <p class="stat-numero" id="booyah"></p>
+                            <span class="stat-label">BOOYAH</span>
+                        </div>
+                    </div>
+
+                    <p class="agradecimento">AGRADECEMOS A TODOS OS PARTICIPANTES DO X-TREINO!</p>
+                </div>
+            </div>
+            <!--Campeão-->
+
+            <!--MVP-->
+            <div class="card-mvp">
+                <!-- Efeito de luz verde centralizado no fundo -->
+                <div class="brilho-foco-mvp"></div>
+
+                <div class="card-mvp-conteudo">
+                    <!-- Lado Esquerdo: Ícone/Avatar + Info do Jogador -->
+                    <div class="mvp-perfil">
+                        <div class="avatar-container">
+                            <!-- Ícone de Alvo/Mira estilizado -->
+                            <div class="avatar-target">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="mvp-info">
+                            <span class="mvp-tag">MVP DE KILLS • </span>
+                            <h3 class="mvp-nick"></h3>
+                            <p class="mvp-equipe">
+                                <span class="detalhe-seta">▶</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Lado Direito: Contador de Kills Gigante -->
+                    <div class="mvp-score">
+                        <span class="score-numero"></span>
+                        <span class="score-label">KILLS</span>
+                    </div>
+                </div>
+            </div>
+            <!--MVP-->
+
+            <!--Top 3 equipe-->
+            <div class="secao-top3">
+                <!-- Efeito de luz de fundo para a seção -->
+                <div class="brilho-fundo-top3"></div>
+
+                <h2 class="top3-title">TOP 3</h2>
+
+                <div class="podio-container">
+
+                    <!-- 2º LUGAR (Esquerda) -->
+                    <div class="card-podio segundo-lugar">
+                        <div class="card-podio-interno">
+                            <div class="logo-equipe-container">
+                                <!-- Substitua pela imagem real da logo -->
+                                <img src="" alt="" class="logo-placeholder logo-segundo">
+                            </div>
+                            <h3 class="nome-equipe" id="top3-2"></h3>
+                            <p class="pontos-equipe" id="top3-2pts"><span>pts</span></p>
+                            <div class="badge-posicao">PARABÉNS - SEGUNDO</div>
+                        </div>
+                        <!-- Medalha flutuante embaixo -->
+                        <div class="medalha medalha-prata">🥈</div>
+                    </div>
+
+                    <!-- 1º LUGAR (Centro - Destacado) -->
+                    <div class="card-podio primeiro-lugar">
+                        <div class="card-podio-interno">
+                            <div class="logo-equipe-container">
+                                <!-- Substitua pela imagem real da logo -->
+                                <img src="" alt="" class="logo-placeholder logo-primeiro">
+                            </div>
+                            <h3 class="nome-equipe" id="top3-1"></h3>
+                            <p class="pontos-equipe" id="top3-pts"><span>pts</span></p>
+                            <div class="badge-posicao">PARABÉNS - PRIMEIRO</div>
+                        </div>
+                        <!-- Medalha flutuante embaixo -->
+                        <div class="medalha medalha-ouro">🥇</div>
+                    </div>
+
+                    <!-- 3º LUGAR (Direita) -->
+                    <div class="card-podio terceiro-lugar">
+                        <div class="card-podio-interno">
+                            <div class="logo-equipe-container">
+                                <!-- Substitua pela imagem real da logo -->
+                                <img src="" alt="" class="logo-placeholder logo-terceiro">
+                            </div>
+                            <h3 class="nome-equipe" id="top3-3"></h3>
+                            <p class="pontos-equipe" id="top3-3pts"><span>pts</span></p>
+                            <div class="badge-posicao">PARABÉNS - TERCEIRO</div>
+                        </div>
+                        <!-- Medalha flutuante embaixo -->
+                        <div class="medalha medalha-bronze">🥉</div>
+                    </div>
+
+                </div>
+
+                <p class="agradecimento-top3">AGRADECEMOS A TODOS OS PARTICIPANTES DO X-TREINO!</p>
+            </div>
+            <!--Top 3 equipe-->
+
+            <!--Top 3 Jogador-->
+            <div class="secao-top3-kills">
+                <!-- Luz verde de fundo focada na seção -->
+                <div class="brilho-fundo-kills"></div>
+
+                <!-- Título com ícone de alvo integrado -->
+                <h2 class="top3-kills-title">
+                    <span class="icon-alvo">🎯</span> TOP 3 KILLS
+                </h2>
+
+                <div class="podio-kills-container">
+
+                    <!-- 1º LUGAR (Esquerda) -->
+                    <div class="card-kill-podio kill-primeiro">
+                        <div class="medalha-topo">🥇</div>
+                        <div class="avatar-kill-container">
+                            <!-- Substitua pelo quadrado da logo ou avatar do jogador -->
+                            <img src="" alt="" class="avatar-kill-placeholder avatar-ouro">
+                        </div>
+                        <h3 class="player-nick" id="top1KillName"></h3>
+                        <p class="player-equipe" id="top1killEquipe">▶ </p>
+                        <div class="player-score">
+                            <span class="score-num" id="top1Killkills"></span>
+                            <span class="score-txt">KILLS</span>
+                        </div>
+                        <div class="faixa-posicao">1º LUGAR</div>
+                    </div>
+
+                    <!-- 2º LUGAR (Centro) -->
+                    <div class="card-kill-podio kill-segundo">
+                        <div class="medalha-topo">🥈</div>
+                        <div class="avatar-kill-container">
+                            
+                            <img src="" alt="" class="avatar-kill-placeholder avatar-prata">
+                        </div>
+                        <h3 class="player-nick" id="top2KillName"></h3>
+                        <p class="player-equipe" id="top2killEquipe">▶ </p>
+                        <div class="player-score">
+                            <span class="score-num" id="top2Killkills"></span>
+                            <span class="score-txt">KILLS</span>
+                        </div>
+                        <div class="faixa-posicao">2º LUGAR</div>
+                    </div>
+
+                    <!-- 3º LUGAR (Direita) -->
+                    <div class="card-kill-podio kill-terceiro">
+                        <div class="medalha-topo">🥉</div>
+                        <div class="avatar-kill-container">
+                            <img src="" alt="" class="avatar-kill-placeholder avatar-bronze">
+                        </div>
+                        <h3 class="player-nick" id="top3KillName"></h3>
+                        <p class="player-equipe" id="top3killEquipe">▶ </p>
+                        <div class="player-score">
+                            <span class="score-num" id="top3Killkills"></span>
+                            <span class="score-txt">KILLS</span>
+                        </div>
+                        <div class="faixa-posicao">3º LUGAR</div>
+                    </div>
+
+                </div>
+            </div>
+            <!--Top 3 Jogador-->
+
+            <!--PLAYERS RANKING-->
+            <div class="top_kills_wrapper">
+                <div class="top_kills_header">
+                    <h2>🎯 TOP KILL - JOGADORES</h2>
+                </div>
+
+                <div class="top_kills_grid">
+                    <div>
+                        <p>111aaaaaaa</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--PLAYERS RANKING-->
+
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer_container largura-definida">
+            <div class="footer_main">
+                <p class="footer_siga">Siga o Legado nas redes sociais</p>
+
+                <div class="links">
+                    <a href="https://www.instagram.com/lega_dooficial1?igsh=bmVueG4wdzU3eDM4" target="_blank"
+                        class="link-insta" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com/@dieguinho916" target="_blank" class="link-tiktok" aria-label="TikTok">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="footer_divider">
+
+            <div class="footer_bottom">
+                <p class="copyright">© 2026 X-Treino Legado. Todos os direitos reservados.</p>
+                <div class="footer_sublinks">
+                    <a href="#top">Voltar ao topo</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- <script src="../js/hallDaFamal.js" type="module"></script> -->
+
+    <script src="../../../assets/js/classificação/sistemaPontuação.js" type="module"></script>
+    <script src="../../../assets/js/classificaçãoNovoModelo/criarTabela.js" type="module"></script>
+    <script src="../../../assets/js/classificaçãoNovoModelo/infoDetalhada.js" type="module"></script>
+    <script src="../../../assets/js/classificaçãoNovoModelo/hallDaFama.js" type="module"></script>
+
+    <!-- <script src="../../../assets/js/classificação/infoDetalhada.js" type="module"></script> -->
+
+</body>
+
+</html>

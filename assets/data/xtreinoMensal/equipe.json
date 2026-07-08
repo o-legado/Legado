@@ -4292,7 +4292,148 @@
         "puniçãoPontos": ""
       }
     ]
-        } 
+        },
+
+
+        
+        "treino2": {
+    "data": "07/07/2026",
+    "equipes": [
+      {
+        "equipe": "FCB E-SPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 5, "posicao": 5 },
+          { "queda": 2, "kills": 0, "posicao": 12 },
+          { "queda": 3, "kills": 21, "posicao": 1 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "Jogador pediu GOO e atrapalhou o ADM da sala.",
+        "puniçãoPontos": "10"
+      },
+      {
+        "equipe": "6 LEGADOS",
+        "detalhes": [
+          { "queda": 1, "kills": 8, "posicao": 10 },
+          { "queda": 2, "kills": 1, "posicao": 9 },
+          { "queda": 3, "kills": 6, "posicao": 8 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "CJ CITY",
+        "detalhes": [
+          { "queda": 1, "kills": 12, "posicao": 4 },
+          { "queda": 2, "kills": 4, "posicao": 3 },
+          { "queda": 3, "kills": 9, "posicao": 7 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "Jogador pediu GOO e atrapalhou o ADM da sala.",
+        "puniçãoPontos": "10"
+      },
+      {
+        "equipe": "FCB E-SPORTS 2.0",
+        "detalhes": [
+          { "queda": 1, "kills": 5, "posicao": 8 },
+          { "queda": 2, "kills": 4, "posicao": 7 },
+          { "queda": 3, "kills": 14, "posicao": 2 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "NEW START TREM",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 12 },
+          { "queda": 2, "kills": 5, "posicao": 6 },
+          { "queda": 3, "kills": 1, "posicao": 12 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "Jogador pediu GOO e atrapalhou o ADM da sala",
+        "puniçãoPontos": "10"
+      },
+      {
+        "equipe": "DREAM TEAM",
+        "detalhes": [
+          { "queda": 1, "kills": 12, "posicao": 3 },
+          { "queda": 2, "kills": 10, "posicao": 2 },
+          { "queda": 3, "kills": 10, "posicao": 3 }
+        ],
+        "logo": "../../../assets/img/logosXtreinoEquipes/julho/(2.1)DREAM TEAM.jpg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "IMPÉRIO 171",
+        "detalhes": [
+          { "queda": 1, "kills": 4, "posicao": 11 },
+          { "queda": 2, "kills": 9, "posicao": 4 },
+          { "queda": 3, "kills": 1, "posicao": 11 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "EVOS SPORTING",
+        "detalhes": [
+          { "queda": 1, "kills": 2, "posicao": 9 },
+          { "queda": 2, "kills": 2, "posicao": 10 },
+          { "queda": 3, "kills": 7, "posicao": 4 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "TMZ ELITE CAOS",
+        "detalhes": [
+          { "queda": 1, "kills": 4, "posicao": 7 },
+          { "queda": 2, "kills": 13, "posicao": 5 },
+          { "queda": 3, "kills": 10, "posicao": 5 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "EVOS JEQUIÉ",
+        "detalhes": [
+          { "queda": 1, "kills": 16, "posicao": 1 },
+          { "queda": 2, "kills": 1, "posicao": 11 },
+          { "queda": 3, "kills": 2, "posicao": 6 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "Jogador pediu GOO e atrapalhou o ADM da sala.",
+        "puniçãoPontos": "10"
+      },
+      {
+        "equipe": "6 LEGADOS 0.2",
+        "detalhes": [
+          { "queda": 1, "kills": 4, "posicao": 6 },
+          { "queda": 2, "kills": 3, "posicao": 8 },
+          { "queda": 3, "kills": 0, "posicao": 9 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "EVOS PHOENIX",
+        "detalhes": [
+          { "queda": 1, "kills": 16, "posicao": 2 },
+          { "queda": 2, "kills": 13, "posicao": 1 },
+          { "queda": 3, "kills": 2, "posicao": 10 }
+        ],
+        "logo": "../../../assets/img/logosXtreinoEquipes/julho/(2.2)EVOS PHOENIX.jpeg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      }
+    ]
+        }
+
 
     }
 }
