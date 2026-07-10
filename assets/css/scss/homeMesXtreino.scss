@@ -1,0 +1,264 @@
+// ==========================================================================
+// VARIÁVEIS DO TEMA DARK PREMIUM
+// ==========================================================================
+$bg-dark: #0a0a0c;
+$primary: #e01b35;
+$primary-hover: #ff2e4d;
+$border: rgba(255, 255, 255, 0.06);
+$glass: rgba(15, 15, 18, 0.5);
+$text-main: #f4f4f5;
+$text-muted: #8f8f9e;
+
+// ==========================================================================
+// CONFIGURAÇÕES GLOBAIS E RESETS
+// ==========================================================================
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-dark;
+    color: $text-main;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+// Layout responsivo centralizado
+.largura-definida {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+// ==========================================================================
+// HEADER & NAVEGAÇÃO
+// ==========================================================================
+.header {
+    width: 100%;
+    border-bottom: 1px solid $border;
+    background: rgba(10, 10, 12, 0.8);
+    backdrop-filter: blur(1.2rem);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    &_nav {
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .voltar {
+            color: $text-muted;
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+
+            &:hover {
+                color: $primary-hover;
+                transform: translateX(-4px); // Sutil movimento para a esquerda
+            }
+        }
+
+        figure {
+            display: flex;
+            align-items: center;
+
+            .img {
+                height: 5rem;
+                width: 5rem;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 1px solid rgba($primary, 0.3);
+                box-shadow: 0 0 15px rgba($primary, 0.2);
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+                &:hover {
+                    transform: scale(1.05) rotate(5deg);
+                    border-color: $primary-hover;
+                }
+            }
+        }
+    }
+}
+
+// ==========================================================================
+// CONTEÚDO PRINCIPAL (MAIN & CONTAINER)
+// ==========================================================================
+main {
+    padding: 6rem 0;
+}
+
+.container {
+    h2 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: -0.05em;
+        margin-bottom: 0.8rem;
+        background: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: $text-muted;
+        margin-bottom: 4rem;
+    }
+
+    // Grid dos Cards de Datas
+    &_divsDates {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+        gap: 2.4rem;
+        width: 100%;
+
+        // Estilização individual do CARD
+        &_divDate {
+            background: $glass;
+            border: 1px solid $border;
+            border-radius: 1.6rem;
+            padding: 2.4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            position: relative;
+            overflow: hidden;
+            
+            // Ativa a animação de entrada fade-in-up automaticamente em ordem sequencial
+            opacity: 0;
+            animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                        border-color 0.4s ease, 
+                        box-shadow 0.4s ease;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), 
+                        inset 0 1px 1px rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(0.4rem);
+
+            // Título do Dia (Ex: Dia 02/07)
+            p:nth-of-type(1) {
+                font-size: 2.2rem;
+                font-weight: 700;
+                color: $text-main;
+                margin-bottom: 0;
+            }
+
+            // Descrição Interna do Card (Ex: Ver dias de treino)
+            p:nth-of-type(2) {
+                font-size: 1.4rem;
+                color: $text-muted;
+                margin-bottom: 0.8rem;
+            }
+
+            // Wrapper do Ícone do Calendário
+            &_icon {
+                background: rgba($primary, 0.06);
+                border: 1px solid rgba($primary, 0.15);
+                width: 4.4rem;
+                height: 4.4rem;
+                border-radius: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+
+                i {
+                    font-size: 2rem;
+                    color: $primary;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            // Botão "Acessar >"
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.6rem;
+                width: 100%;
+                background: linear-gradient(135deg, $primary, #ca142d);
+                color: #ffffff;
+                padding: 1.2rem;
+                border-radius: 1rem;
+                font-size: 1.4rem;
+                font-weight: 600;
+                text-decoration: none;
+                margin-top: auto; // Empurra o botão sempre para o rodapé do card
+                transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+                span {
+                    font-size: 1.3rem;
+                    display: inline-block;
+                    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+            }
+
+            // EFEITOS HOVER DO CARD
+            &:hover {
+                transform: translateY(-8px) scale(1.01);
+                border-color: rgba($primary, 0.4);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 
+                            0 0 25px rgba($primary, 0.1),
+                            inset 0 1px 1px rgba(255, 255, 255, 0.06);
+
+                .container_divsDates_divDate_icon {
+                    background: rgba($primary, 0.12);
+                    border-color: rgba($primary, 0.35);
+                    i {
+                        color: $primary-hover;
+                        transform: scale(1.08);
+                    }
+                }
+
+                a {
+                    background: linear-gradient(135deg, $primary-hover, #e01b35);
+                    box-shadow: 0 0 20px rgba($primary, 0.4);
+                    
+                    span {
+                        transform: translateX(5px); // Seta dá um pulinho pro lado
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ==========================================================================
+// ESCALONAMENTO DE TEMPO (DELAY) PARA CADA CARD APARECER EM SÉRIE
+// ==========================================================================
+.container_divsDates_divDate:nth-child(1) { animation-delay: 0.1s; }
+.container_divsDates_divDate:nth-child(2) { animation-delay: 0.2s; }
+.container_divsDates_divDate:nth-child(3) { animation-delay: 0.3s; }
+.container_divsDates_divDate:nth-child(4) { animation-delay: 0.4s; }
+.container_divsDates_divDate:nth-child(5) { animation-delay: 0.5s; }
+.container_divsDates_divDate:nth-child(6) { animation-delay: 0.6s; }
+
+// ==========================================================================
+// KEYFRAMES DA ANIMAÇÃO DE ENTRADA CINEMATOGRÁFICA
+// ==========================================================================
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+        filter: blur(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}

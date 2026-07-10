@@ -1785,7 +1785,6 @@ main .container .top_kills_wrapper {
     min-height: auto;
   }
   .header .btn_voltar {
-    position: relative;
     transform: none;
     top: 0;
     left: 0;
