@@ -1,46 +1,79 @@
+// ==========================================================================
+// TOKENS DE DESIGN & VARIÁVEIS PREMIUM (Vercel / Linear inspired)
+// ==========================================================================
+$background: #0b0b0d;
+$surface: #121216;
+$card: #18181d;
+$primary: #ff2b45;
+$primary-hover: #ff4d67;
+$text: #ffffff;
+$text-secondary: #a0a0b0;
+$border: rgba(255, 43, 69, 0.12);
+$border-hover: rgba(255, 43, 69, 0.35);
+$glow: rgba(255, 43, 69, 0.25);
+$glass: rgba(24, 24, 29, 0.7);
+
+// ==========================================================================
+// ESTILOS GLOBAIS E RESETS
+// ==========================================================================
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     min-height: 100dvh;
-    background-color: #0A0A0A;
+    background-color: $background;
+    color: $text;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
-
 
 .largura-definida {
     max-width: 120rem;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 2.4rem;
 }
 
-
+// ==========================================================================
+// HEADER (Estrutura e CSS preservados - Ajustes estritos de Cores e Altura)
+// ==========================================================================
 .header {
-    // background-color: rgb(81 53 53 / 30%);
-    // backdrop-filter: blur(12px); 
-    background: transparent;
-    backdrop-filter: blur(0.5rem);
-    border-bottom: 1px solid rgba(255, 0, 0, 0.205);
+    background: rgba($background, 0.75);
+    backdrop-filter: blur(1.6rem);
+    -webkit-backdrop-filter: blur(1.6rem);
+    border-bottom: 1px solid $border;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 99;
+    height: 9rem; // Ajuste suave de altura para respiro visual
+    display: flex;
+    align-items: center;
 
     .header_nav {
         display: flex;
-        padding: 1rem;
+        padding: 1rem 2.4rem;
         justify-content: space-between;
+        align-items: center; // Alinhamento vertical preciso dos itens
 
         figure {
-            width: 8rem;
+            width: 6.5rem; // Altura equilibrada ao novo design do cabeçalho
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.04);
+            }
 
             a {
                 display: inline-block;
@@ -50,12 +83,13 @@ body{
             .img {
                 width: 100%;
                 border-radius: 50%;
-                box-shadow: 0px 2px 10px 2px rgba(255, 0, 0, 0.281);
+                border: 2px solid rgba($primary, 0.4);
+                box-shadow: 0px 4px 20px rgba($primary, 0.25);
             }
         }
     }
 
-    //hamburguer
+    // Comportamento do Hamburguer (Mantido Intacto em Lógica e Classes)
     #menu {
         z-index: 2;
         display: flex;
@@ -69,75 +103,53 @@ body{
         #menu-bar {
             width: 4.5rem;
             height: 4rem;
-            margin: 3rem 2rem 0 0;
+            margin: 2.5rem 2.4rem 0 0;
             cursor: pointer;
         }
 
         .bar {
-            height: 0.5rem;
+            height: 0.4rem;
             width: 100%;
-            background-color: #dc052d;
+            background-color: $primary;
             display: block;
             border-radius: 0.5rem;
             transition: 0.3s ease;
         }
 
-        #bar1 {
-            transform: translateY(-4px);
-        }
-
-        #bar3 {
-            transform: translateY(4px);
-        }
+        #bar1 { transform: translateY(-4px); }
+        #bar3 { transform: translateY(4px); }
 
         .navHamburguer {
             transition: 0.3s ease;
             display: none;
             text-align: right;
 
-            ul {
-                padding: 0 2.2rem;
-            }
+            ul { padding: 0 2.2rem; }
 
             li {
                 list-style: none;
                 padding: 1.2rem 0;
 
                 a {
-                    color: white;
+                    color: $text;
                     font-size: 1.8em;
                     text-decoration: none;
                     transition: all 0.2s ease-in-out;
                     display: inline-block;
 
                     &:hover {
-
-
-                        transform: scale(1.1);
+                        color: $primary !important;
+                        transform: scale(1.05);
                     }
                 }
             }
         }
 
-        .change {
-            display: block;
-        }
-
-        .change .bar {
-            background-color: white;
-        }
-
-        .change #bar1 {
-            transform: translateY(4px) rotateZ(-45deg);
-        }
-
-        .change #bar2 {
-            opacity: 0;
-        }
-
-        .change #bar3 {
-            transform: translateY(-6px) rotateZ(45deg);
-        }
+        .change { display: block; }
+        .change .bar { background-color: $text; }
+        .change #bar1 { transform: translateY(4px) rotateZ(-45deg); }
+        .change #bar2 { opacity: 0; }
+        .change #bar3 { transform: translateY(-6px) rotateZ(45deg); }
     }
 
     .menu-bg {
@@ -145,161 +157,382 @@ body{
         right: 0;
         left: auto;
         position: absolute;
-
         z-index: 1;
         width: 0;
         height: 0;
         margin: 3rem 2rem 2rem 0;
-        background: radial-gradient(circle, #dc052d, #dc052d);
+        background: radial-gradient(circle, $primary, #990e20);
         border-radius: 50%;
         transition: 0.3s ease;
     }
-
     .change-bg {
         width: 52rem;
         height: 46rem;
         transform: translate(60%, -25%);
     }
-
-    //hamburguer
-
 }
 
-/* .header{
-    background-color: #0F0F0F;
-    padding: 2.5rem;
-    border-bottom: 1px solid rgba(255, 0, 0, 0.164);
-}
-.header_content{
-    display: flex;
-}
-.header_content figure img{
-    width: 100%;
-    border-radius: 1rem;
-}
-.header_content figure{
-    width: 8rem;
-    
-}
-.header_content_texts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1rem;
-}
-.header_content_texts h1{
-    font-size: 2em;
-    color: white;
-}
-.header_content_texts p{
-    color: rgba(255, 255, 255, 0.404);
-    font-size: 1.4em;
-} */
-
-
-
-main{
-    background-color: #0A0A0A;
-    padding: 2rem;
-    margin-top: 12rem;
-}
-.container h2{
-    color: white;
-    font-size: 2em;
-}
-.container > p{
-    color: rgba(255, 255, 255, 0.479);
-    font-size: 1.4em;
-    margin-bottom: 3rem;
+// ==========================================================================
+// MAIN CONTENT (Reestruturação Completa com Flexbox)
+// ==========================================================================
+.main-content {
+    flex: 1;
+    background-color: $background;
+    padding: 6rem 0;
+    margin-top: 9rem; // Perfeitamente casado com a altura do header fixo
 }
 
-.container_divsDates{
+.main-header_intro {
+    margin-bottom: 4.5rem;
+    animation: fadeInUp 0.6s ease forwards;
+
+    h2 {
+        color: $text;
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: -0.05rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(180deg, #ffffff 0%, #e0e0e0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    p {
+        color: $text-secondary;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}
+
+// Grid de Cards via Flexbox puro
+.container_divsDates {
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column;
-    gap: 2rem;
+    gap: 2.4rem;
+    justify-content: flex-start;
 }
 
-.container_divsDates_divDate{
-    flex: 1 1 calc((100% / 1) - 2rem);
-    max-width: 35rem;
-    padding: 2rem;
-    background-color: #1A1A1A;
-    border: 1px solid rgba(255, 0, 0, 0.199);
-    border-radius: 1rem;
-    text-decoration: none;
-}
-.container_divsDates_divDate_icon{
+// Cartão Premium individual
+.container_divsDates_divDate {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
-.container_divsDates_divDate > p:nth-child(2){
-    color: white;
-    font-size: 1.6em;
-    margin-top: 1rem;
-}
-.container_divsDates_divDate > p:nth-child(3){
-    color: rgba(255, 255, 255, 0.37);
-    font-size: 1.2em;
-    margin-bottom: 1rem;
-}
-.container_divsDates_divDate_icon i{
-    font-size: 2.5em;
-    padding: 1rem 1.2rem;
-    background-color: #301414;
-    border-radius: 0.5rem;
-    color: #A81E3A;
-}
-.container_divsDates_divDate_icon p{
-    color: #A81E3A;
-    background-color: #301414;
-    padding: 1rem 1.5rem;
-    border-radius: 5rem;
-    font-size: 1.4em;
-}
-.container_divsDates_divDate > a{
-    color: #A81E3A;
-    font-size: 1.4em;
-    text-decoration: none;
-}
-.container_divsDates_divDate > a > span{
-    transition: all 0.2s ease-in-out;
-}
-.container_divsDates_divDate > a:hover > span{
-    margin-left: 0.5rem;
-}
-
-
-@media (min-width: 768px) {
-
-
-    #menu-bar {
-        display: none;
+    
+    // Configuração responsiva inteligente via Flexbox
+    flex: 1 1 calc(100% - 2.4rem); // Mobile default
+    
+    @media (min-width: 600px) {
+        flex: 1 1 calc(50% - 2.4rem); // Tablets (2 por linha)
+    }
+    @media (min-width: 950px) {
+        flex: 1 1 calc(33.333% - 2.4rem); // Desktop Small (3 por linha)
+    }
+    @media (min-width: 1200px) {
+        flex: 0 1 calc(25% - 2.4rem); // Desktop Normal (Máximo 4 por linha fixos e elegantes)
     }
 
-    .navHamburguer {
-        display: block !important;
+    background: $glass;
+    border: 1px solid $border;
+    border-radius: 1.6rem;
+    padding: 2.4rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.4s ease, 
+                box-shadow 0.4s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), 
+                inset 0 1px 1px rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(0.4rem);
+
+    // Efeito sutil de background hover
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: radial-gradient(800px circle at var(--x, 0px) var(--y, 0px), rgba(255,43,69,0.06), transparent 40%);
+        border-radius: 1.6rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
     }
 
-    .navHamburguer ul {
-        display: flex;
-        gap: 2rem;
-    }
-    .navHamburguer a {
-        color: #A8A8A8 !important;
+    &:hover {
+        transform: translateY(-6px);
+        border-color: $border-hover;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6), 
+                    0 0 20px rgba($primary, 0.08),
+                    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+        
+        &::before { opacity: 1; }
 
-        &:hover {
+        .card-icon-wrapper i {
+            color: $primary-hover;
+            transform: scale(1.05);
+        }
 
-            color: #B61313 !important;
-            transform: scale(1.1);
+        .cta-card {
+            background: linear-gradient(135deg, $primary-hover, #e01b35);
+            box-shadow: 0 0 20px rgba($primary, 0.4);
+            
+            i {
+                transform: translateX(4px);
+            }
         }
     }
-    #menu{
-        position: relative !important;
-    }
-    .header_nav{
-        align-items: center;
-    }
-    
-    
 }
+
+// Elementos Internos do Card
+.container_divsDates_divDate_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.8rem;
+}
+
+.card-icon-wrapper {
+    background: rgba($primary, 0.08);
+    border: 1px solid rgba($primary, 0.15);
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 2.2rem;
+        color: $primary;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+}
+
+.badge-treinos {
+    color: $primary;
+    background: rgba($primary, 0.12);
+    border: 1px solid rgba($primary, 0.2);
+    padding: 0.6rem 1.4rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    span {
+        font-weight: 700;
+    }
+
+    &:hover {
+        background: rgba($primary, 0.2);
+        color: #fff;
+    }
+}
+
+.card-body {
+    margin-bottom: 2.4rem;
+
+    h3 {
+        color: $text;
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+    }
+
+    .card-subtitle {
+        color: $text-secondary;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+}
+
+// Botão CTA Premium (Estilo Vercel/Linear)
+.cta-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 100%;
+    background: linear-gradient(135deg, $primary, #ca142d);
+    color: #ffffff;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+
+    i {
+        font-size: 1.3rem;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+}
+
+// ==========================================================================
+// NEW FOOTER DESIGN (Visual Premium)
+// ==========================================================================
+.footer {
+    background-color: $surface;
+    border-top: 1px solid $border;
+    padding: 6rem 0 3rem 0;
+    margin-top: auto; // Garante o rodapé na base se houver pouco conteúdo
+
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    .footer_brand {
+        display: flex;
+        flex-direction: column;
+        max-width: 32rem;
+
+        .footer_logo {
+            width: 5.5rem;
+            border-radius: 50%;
+            margin-bottom: 1.6rem;
+            border: 1px solid rgba($primary, 0.2);
+        }
+
+        p {
+            color: $text-secondary;
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+    }
+
+    .footer_links-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        @media (min-width: 480px) {
+            gap: 6rem;
+        }
+    }
+
+    .footer_column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        h4 {
+            color: $text;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        a {
+            color: $text-secondary;
+            font-size: 1.4rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .footer_socials {
+        display: flex;
+        gap: 1.6rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.6rem;
+            height: 3.6rem;
+            background: rgba($text, 0.03);
+            border: 1px solid rgba($text, 0.08);
+            border-radius: 50%;
+            color: $text-secondary;
+            font-size: 1.6rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #fff;
+                background: $primary;
+                border-color: $primary;
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    .footer_bottom {
+        margin-top: 4.8rem;
+        padding-top: 2.4rem;
+        border-top: 1px solid rgba($text, 0.05);
+        text-align: center;
+
+        p {
+            color: rgba($text-secondary, 0.6);
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// ==========================================================================
+// RESPONSIVIDADE ADICIONAL E MENUS INTERNOS (Header Media Queries)
+// ==========================================================================
+@media (min-width: 768px) {
+    .header {
+        #menu-bar { display: none; }
+        .navHamburguer { display: block !important; }
+        .navHamburguer ul {
+            display: flex;
+            gap: 2.8rem;
+        }
+        .navHamburguer a {
+            color: $text-secondary !important;
+            font-size: 1.5rem !important;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+
+            i { font-size: 1.4rem; }
+
+            &:hover {
+                color: $primary !important;
+                transform: translateY(-1px) scale(1) !important;
+            }
+        }
+        #menu { position: relative !important; }
+    }
+}
+
+// ==========================================================================
+// ANIMAÇÕES FLUIDAS
+// ==========================================================================
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-animate {
+    opacity: 0;
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+// Aplicação de Delay Inteligente nos Cards via Seletores CSS
+.card-animate:nth-child(1) { animation-delay: 0.1s; }
+.card-animate:nth-child(2) { animation-delay: 0.2s; }
+.card-animate:nth-child(3) { animation-delay: 0.3s; }
+.card-animate:nth-child(4) { animation-delay: 0.4s; }

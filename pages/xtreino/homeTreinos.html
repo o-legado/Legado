@@ -35,7 +35,7 @@
     <header class="header">
         <nav class="header_nav largura-definida">
             <figure>
-                <a href="teste.html"><img src="../../assets/img/logo-oficial.jpg" alt="" class="img"></a>
+                <a href="teste.html"><img src="../../assets/img/logo-oficial.jpg" alt="Logo O Legado" class="img"></a>
             </figure>
 
             <div id="menu">
@@ -47,89 +47,129 @@
                 <nav class="navHamburguer" id="nav">
                     <ul>
                         <li><a class="menu__item" href="../../index.html"><i class="fas fa-home"></i> Início</a></li>
-                    <li><a class="menu__item" href="../sobre/sobre.html"><i class="fas fa-users"></i> Sobre Nós</a></li>
-                    <li><a class="menu__item" href="./homeTreinos.html"><i class="fas fa-trophy"></i> X-Treino</a></li>
-                    <li><a class="menu__item" href="../ligaPontosCorridos/homeLiga.html"><i class="fa-solid fa-shield-halved"></i> Liga</a></li>
+                        <li><a class="menu__item" href="../sobre/sobre.html"><i class="fas fa-users"></i> Sobre Nós</a></li>
+                        <li><a class="menu__item" href="./homeTreinos.html"><i class="fas fa-trophy"></i> X-Treino</a></li>
+                        <li><a class="menu__item" href="../ligaPontosCorridos/homeLiga.html"><i class="fa-solid fa-shield-halved"></i> Liga</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="menu-bg" id="menu-bg"></div>
-            
         </nav>
-
     </header>
 
-    <main>
+    <main class="main-content">
         <section class="container largura-definida">
-            <h2>Selecione o Mês</h2>
-            <p>Escolha um mês para visualizar os treinos realizados</p>
-
-            <div class="container_divsDates">
-
-
-                <!-- <div class="container_divsDates_divDate">
-                    <div class="container_divsDates_divDate_icon">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        <p><span>0</span> treinos</p>
-                    </div>
-                    <p>X-Treino Ponto Corrido 2026</p>
-                    <p>Ver dias de treino</p>
-                    <a href="../../pages/xtreino/xtreinoPontoCorrrido.html" data-value="maio">Acessar <span>></span></a>
-                </div> -->
-
-                
-                <div class="container_divsDates_divDate">
-                    <div class="container_divsDates_divDate_icon">
-                            <i class="fa-regular fa-calendar-check"></i>
-                            <p><span>6</span> treinos</p>
-                    </div>
-                    <p>Abril 2026</p>
-                    <p>Ver dias de treino</p>
-                    <a href="../../pages/xtreino/treino-Abril.html" data-value="abril">Acessar <span>></span></a>
-                </div>
-
-                <div class="container_divsDates_divDate">
-                    <div class="container_divsDates_divDate_icon">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        <p><span>6</span> treinos</p>
-                    </div>
-                    <p>Maio 2026</p>
-                    <p>Ver dias de treino</p>
-                    <a href="../../pages/xtreino/treino-maio.html" data-value="maio">Acessar <span>></span></a>
-                </div>
-
-                <div class="container_divsDates_divDate">
-                    <div class="container_divsDates_divDate_icon">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        <p><span>8</span> treinos</p>
-                    </div>
-                    <p>Junho 2026</p>
-                    <p>Ver dias de treino</p>
-                    <a href="../../pages/xtreino/xtreino-junho/xtreinoJunhoHome.html" data-value="maio">Acessar <span>></span></a>
-                </div>
-
-                <div class="container_divsDates_divDate">
-                    <div class="container_divsDates_divDate_icon">
-                        <i class="fa-regular fa-calendar-check"></i>
-                        <p><span>2</span> treinos</p>
-                    </div>
-                    <p>Julho 2026</p>
-                    <p>Ver dias de treino</p>
-                    <a href="../../pages/xtreino/xtreino-Julho/xtreinoJulhoHome.html" data-value="maio">Acessar <span>></span></a>
-                </div>
-
-
-                
-
-                
-                
-
+            <div class="main-header_intro">
+                <h2>Selecione o Mês</h2>
+                <p>Escolha um mês para visualizar os treinos realizados de forma detalhada</p>
             </div>
 
+            <div class="container_divsDates">
+                
+                <div class="container_divsDates_divDate card-animate">
+                    <div class="container_divsDates_divDate_header">
+                        <div class="card-icon-wrapper">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                        <span class="badge-treinos"><span>6</span> treinos</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Abril 2026</h3>
+                        <p class="card-subtitle">Ver dias de treino</p>
+                    </div>
+                    <a href="../../pages/xtreino/treino-Abril.html" data-value="abril" class="cta-card">
+                        <span>Acessar</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="container_divsDates_divDate card-animate">
+                    <div class="container_divsDates_divDate_header">
+                        <div class="card-icon-wrapper">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                        <span class="badge-treinos"><span>6</span> treinos</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Maio 2026</h3>
+                        <p class="card-subtitle">Ver dias de treino</p>
+                    </div>
+                    <a href="../../pages/xtreino/treino-maio.html" data-value="maio" class="cta-card">
+                        <span>Acessar</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="container_divsDates_divDate card-animate">
+                    <div class="container_divsDates_divDate_header">
+                        <div class="card-icon-wrapper">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                        <span class="badge-treinos"><span>8</span> treinos</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Junho 2026</h3>
+                        <p class="card-subtitle">Ver dias de treino</p>
+                    </div>
+                    <a href="../../pages/xtreino/xtreino-junho/xtreinoJunhoHome.html" data-value="maio" class="cta-card">
+                        <span>Acessar</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="container_divsDates_divDate card-animate">
+                    <div class="container_divsDates_divDate_header">
+                        <div class="card-icon-wrapper">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                        <span class="badge-treinos"><span>2</span> treinos</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Julho 2026</h3>
+                        <p class="card-subtitle">Ver dias de treino</p>
+                    </div>
+                    <a href="../../pages/xtreino/xtreino-Julho/xtreinoJulhoHome.html" data-value="maio" class="cta-card">
+                        <span>Acessar</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
         </section>
-        
     </main>
+
+    <footer class="footer">
+        <div class="footer_content largura-definida">
+            <div class="footer_brand">
+                <img src="../../assets/img/logo-oficial.jpg" alt="Logo O Legado" class="footer_logo">
+                <p>Acompanhe os resultados, estatísticas e a evolução dos seus treinos competitivos.</p>
+            </div>
+            <div class="footer_links-group">
+                <div class="footer_column">
+                    <h4>Navegação</h4>
+                    <a href="../../index.html">Início</a>
+                    <a href="../sobre/sobre.html">Sobre Nós</a>
+                </div>
+                <div class="footer_column">
+                    <h4>Campeonatos</h4>
+                    <a href="./homeTreinos.html">X-Treino</a>
+                    <a href="../ligaPontosCorridos/homeLiga.html">Liga Oficial</a>
+                </div>
+                <div class="footer_column">
+                    <h4>Social</h4>
+                    <div class="footer_socials">
+                        <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom largura-definida">
+            <p>&copy; 2026 O Legado. Todos os direitos reservados. Projetado para Alta Performance.</p>
+        </div>
+    </footer>
     
 
     <script src="../../assets/js/menuHamburguer/menu.js"></script>
