@@ -23,130 +23,6 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    // background-color: rgb(81 53 53 / 30%);
-    // backdrop-filter: blur(12px); 
-    background: transparent;
-    backdrop-filter: blur(0.5rem);
-    border-bottom: 1px solid rgba(255, 0, 0, 0.205);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 99;
-
-    .header_nav {
-        display: flex;
-        padding: 1rem;
-        justify-content: space-between;
-
-        //hamburguer menu
-        .hamburger-menu {
-
-            #menu__toggle {
-                opacity: 0;
-            }
-
-            #menu__toggle:checked+.menu__btn>span {
-                transform: rotate(45deg);
-            }
-
-            #menu__toggle:checked+.menu__btn>span::before {
-                top: 0;
-                transform: rotate(0deg);
-            }
-
-            #menu__toggle:checked+.menu__btn>span::after {
-                top: 0;
-                transform: rotate(90deg);
-            }
-
-            #menu__toggle:checked~.menu__box {
-                right: 0 !important;
-                // transform: translateX(0);
-            }
-
-            .menu__btn {
-                position: fixed;
-                top: 2rem;
-                right: 2rem;
-                width: 2.6rem;
-                height: 2.6rem;
-                cursor: pointer;
-                z-index: 1;
-            }
-
-            .menu__btn>span,
-            .menu__btn>span::before,
-            .menu__btn>span::after {
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 2px;
-                background-color: #616161;
-                transition-duration: .25s;
-            }
-
-            .menu__btn>span::before {
-                content: '';
-                top: -8px;
-            }
-
-            .menu__btn>span::after {
-                content: '';
-                top: 8px;
-            }
-
-            .menu__box {
-                display: block;
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 300px;
-                min-height: 100dvh;
-                margin: 0;
-                padding: 80px 0;
-                list-style: none;
-                background-color: #050505;
-                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
-                // background-color: #ECEFF1;
-                // box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-                transition-duration: .25s;
-            }
-
-            .menu__item {
-                display: block;
-                padding: 12px 24px;
-                color: white;
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                font-weight: 700;
-                text-decoration: none;
-                transition-duration: .25s;
-            }
-
-            .menu__item:hover {
-                background-color: rgba(185, 28, 28, 0.2);
-            }
-        }
-
-        figure {
-            width: 8rem;
-
-            a {
-                display: inline-block;
-                width: 100%;
-            }
-
-            .img {
-                width: 100%;
-                border-radius: 50%;
-                box-shadow: 0px 2px 10px 2px rgba(255, 0, 0, 0.281);
-            }
-        }
-    }
-}
-
 
 @media (min-width: 768px) {
 
@@ -190,4 +66,444 @@ body {
         //hamburguer menu
 
     }
+}
+
+
+
+main {
+
+  color: #ffffff;
+  padding: 2.4rem 1.6rem 4rem; // 24px 16px 40px -> layout geral, usa REM
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem; // 28px
+  position: relative;
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.6rem; // 16px
+
+    // Ícone "solto" (não está colado a nenhum texto ao lado) -> REM
+    &__icon {
+      width: 5.6rem;  // 56px
+      height: 5.6rem;
+      border-radius: 1.6rem; // 16px
+      background: rgba(34, 197, 94, 0.12);
+      border: 0.1rem solid rgba(34, 197, 94, 0.35); // 1px
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #22c55e;
+
+      svg {
+        width: 2.6rem; // 26px
+        height: 2.6rem;
+      }
+    }
+
+    &__title {
+      font-size: 2.6rem; // 26px
+      font-weight: 800;
+      line-height: 1.25; // unitless de propósito
+      letter-spacing: 0.05em; // EM: acompanha o tamanho DESSE texto
+    }
+
+    &__title-highlight {
+      display: block;
+      color: #22c55e;
+    }
+
+    &__subtitle {
+      font-size: 1.4rem; // 14px
+      color: #9aa4b2;
+      max-width: 32rem; // 320px -> limite de LAYOUT, então REM
+      line-height: 1.5;
+    }
+
+    &__badges {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; // 10px
+      width: 100%;
+      margin-top: 0.4rem; // 4px
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7em;              // ~8px (0.7 x 11px)
+      padding: 0.7em 1.4em;    // ~8px / ~16px
+      border-radius: 100em;    // valor bem alto = vira uma "pílula"
+      background: rgba(34, 197, 94, 0.08);
+      border: 0.1em solid rgba(34, 197, 94, 0.3); // ~1px
+      color: #4ade80;
+      font-size: 1.1rem; // 11px -> a "base" pra todos os em's aqui dentro
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+  
+      // 1.3em = 1.3 x 11px ≈ 14px
+      &__icon {
+        width: 1.3em;
+        height: 1.3em;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 0.1rem solid rgba(255, 255, 255, 0.06); // 1px
+    border-radius: 1.6rem; // 16px
+    padding: 2rem; // 20px
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; // 20px
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__heading {
+      display: flex;
+      align-items: center;
+      gap: 1rem; // 10px
+    }
+
+    &__icon {
+      width: 3.2rem;  // 32px
+      height: 3.2rem;
+      border-radius: 1rem; // 10px
+      background: rgba(34, 197, 94, 0.12);
+      color: #22c55e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        width: 1.8rem; // 18px
+        height: 1.8rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.5rem; // 15px
+      font-weight: 800;
+      letter-spacing: 0.05em;
+    }
+
+    &__step {
+      font-size: 1.2rem; // 12px
+      font-weight: 700;
+      color: #9aa4b2;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem; // 16px
+    }
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem; // 8px
+  
+      &__label {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;  // ~6px
+        font-size: 1.1rem; // 11px
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #cbd5e1;
+      }
+  
+      // Ícone colado ao texto do label -> EM
+      &__icon {
+        width: 1.3em;  // ~14px
+        height: 1.3em;
+        color: #4ade80;
+        flex-shrink: 0;
+      }
+  
+      &__required {
+        color: #4ade80;
+      }
+  
+      // O input tem seu próprio font-size (1.4rem = 14px)
+      &__input {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        border: 0.1em solid rgba(255, 255, 255, 0.1); // ~1px
+        border-radius: 1rem; // 10px -> forma da caixa, REM
+        padding: 0.86em 1em; // ~12px / ~14px
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 1.4rem; // 14px
+        outline: none;
+        transition: border-color 0.2s ease;
+  
+        &:focus {
+          border-color: #22c55e;
+        }
+  
+        &::placeholder {
+          color: #5b6472;
+        }
+      }
+    }
+  }
+
+
+ 
+}
+
+@media (min-width: 768px) {
+
+  .recruitment-main {
+    padding: 4rem 3.2rem 5.6rem; // 40px 32px 56px
+    gap: 3.6rem; // 36px
+  }
+
+  .hero__icon {
+    width: 6.4rem; // 64px
+    height: 6.4rem;
+  }
+
+  .hero__title {
+    font-size: 3.5rem; // 35px
+  }
+
+  .hero__subtitle {
+    max-width: 42rem; // 420px
+    font-size: 1.5rem; // 15px
+  }
+
+  // A partir do tablet, as 3 badges ficam lado a lado em vez de empilhadas
+  .hero__badges {
+    flex-direction: row !important;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    padding: 2.8rem; // 28px
+  }
+
+  // Os 2 campos do form passam a dividir a mesma linha
+  .card__form {
+    flex-direction: row;
+
+    .field {
+      flex: 1;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .recruitment-main {
+    max-width: 72rem; // 720px
+    margin: 0 auto;
+    padding: 5.6rem 0 7.2rem; // 56px 0 72px
+  }
+
+  .hero__title {
+    font-size: 4.2rem; // 42px
+  }
+
+  .card {
+    padding: 3.2rem; // 32px
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // 2 colunas no mobile
+  gap: 1rem; // 10px
+
+  &__item {
+    all: unset;               // remove TODO estilo nativo do button
+    box-sizing: border-box;   // "all: unset" também reseta isso, devolvemos
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem; // 6px
+    text-align: center;
+
+    padding: 1.4rem 0.8rem; // 14px 8px
+    border-radius: 1.2rem; // 12px
+    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: #9aa4b2;
+    font-size: 1.1rem; // 11px
+    font-weight: 700;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-color: rgba(34, 197, 94, 0.4);
+    }
+
+    // Estado selecionado (verde), igual ao "Primeiro Rush" do print
+    &--selected {
+      border-color: #22c55e;
+      background: rgba(34, 197, 94, 0.12);
+      color: #4ade80;
+    }
+  }
+
+  &__icon {
+    width: 2em;  // ~22px, relativo ao font-size do botão
+    height: 2em;
+  }
+}
+
+
+// ==========================================================================
+// SELECT ESTILIZADO (Tempo de experiência)
+// ==========================================================================
+.field__select-wrapper {
+  position: relative;
+}
+
+.field__select {
+  appearance: none;   // tira a setinha nativa feia do navegador
+  cursor: pointer;
+  padding-right: 3.2em; // abre espaço pra nossa seta customizada
+
+  &:invalid {
+    color: #5b6472; // deixa a cor de "placeholder" enquanto nada foi escolhido
+  }
+}
+
+.field__select-arrow {
+  position: absolute;
+  right: 1.4rem; // 14px
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.8rem; // 18px
+  height: 1.8rem;
+  color: #9aa4b2;
+  pointer-events: none; // o clique "atravessa" o ícone e cai no select
+}
+
+
+// ==========================================================================
+// TOGGLE SIM / NÃO (Possui Discord?)
+// ==========================================================================
+.toggle {
+  display: flex;
+  gap: 1rem; // 10px
+
+  &__button {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+
+    padding: 1.1em 1em;
+    border-radius: 1rem; // 10px
+    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: #9aa4b2;
+    font-size: 1.3rem; // 13px
+    font-weight: 700;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+  }
+
+  &__icon {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  &__button--yes.toggle__button--selected {
+    border-color: #22c55e;
+    background: rgba(34, 197, 94, 0.15);
+    color: #4ade80;
+  }
+
+  &__button--no.toggle__button--selected {
+    border-color: #f87171;
+    background: rgba(248, 113, 113, 0.15);
+    color: #f87171;
+  }
+}
+
+
+// ==========================================================================
+// SELETOR DE DIAS DA SEMANA (Disponibilidade)
+// ==========================================================================
+.day-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem; // 8px
+
+  &__day {
+    all: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    padding: 1em 1.2em;
+    border-radius: 1rem; // 10px
+    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+    color: #9aa4b2;
+    font-size: 1.2rem; // 12px
+    font-weight: 700;
+    text-align: center;
+    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-color: rgba(34, 197, 94, 0.4);
+    }
+
+    &--selected {
+      border-color: #22c55e;
+      background: rgba(34, 197, 94, 0.15);
+      color: #4ade80;
+    }
+  }
+}
+
+
+// ==========================================================================
+// TABLET - a partir de 768px
+// ==========================================================================
+@media (min-width: 768px) {
+
+  .role-grid {
+    grid-template-columns: repeat(4, 1fr); // vira 4 colunas
+  }
+
+  .day-picker {
+    flex-wrap: nowrap;
+
+    &__day {
+      flex: 1; // preenche a linha toda em vez de embolotar
+    }
+  }
 }
