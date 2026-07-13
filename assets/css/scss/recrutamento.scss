@@ -1,71 +1,72 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    overflow-x: hidden;
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
-    min-height: 100dvh;
-    background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
-    font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
-    position: relative
+  min-height: 100dvh;
+  background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  position: relative
 }
 
 
 .largura-definida {
-    max-width: 120rem;
-    margin: 0 auto;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
 
 @media (min-width: 768px) {
 
 
-    .header{
-        //hamburguer menu
-        #menu__toggle {
-            display: none !important;
-        }
-    
-        .menu__btn {
-            display: none !important;
-        }
-    
-        .menu__box {
-            position: static !important;
-            display: flex !important;
-            padding: 0 !important;
-            width: auto !important;
-            min-height: auto !important;
-            background-color: inherit !important;
-            box-shadow: none !important;
-        }
-    
-        .menu__box a {
-            font-size: 1.6em !important;
-            padding: 1rem !important;
-            color: rgba(255, 255, 255, 0.658) !important;
-        }
-    
-        .menu__box li {
-            margin-left: 1rem !important;
-        }
-    
-        .menu__box a:hover {
-            transform: scale(1.1) !important;
-            background-color: transparent !important;
-            color: #ff1a1ab6 !important;
-        }
-    
-        //hamburguer menu
+  .header {
 
+    //hamburguer menu
+    #menu__toggle {
+      display: none !important;
     }
+
+    .menu__btn {
+      display: none !important;
+    }
+
+    .menu__box {
+      position: static !important;
+      display: flex !important;
+      padding: 0 !important;
+      width: auto !important;
+      min-height: auto !important;
+      background-color: inherit !important;
+      box-shadow: none !important;
+    }
+
+    .menu__box a {
+      font-size: 1.6em !important;
+      padding: 1rem !important;
+      color: rgba(255, 255, 255, 0.658) !important;
+    }
+
+    .menu__box li {
+      margin-left: 1rem !important;
+    }
+
+    .menu__box a:hover {
+      transform: scale(1.1) !important;
+      background-color: transparent !important;
+      color: #ff1a1ab6 !important;
+    }
+
+    //hamburguer menu
+
+  }
 }
 
 
@@ -88,7 +89,7 @@ main {
 
     // Ícone "solto" (não está colado a nenhum texto ao lado) -> REM
     &__icon {
-      width: 5.6rem;  // 56px
+      width: 5.6rem; // 56px
       height: 5.6rem;
       border-radius: 1.6rem; // 16px
       background: rgba(34, 197, 94, 0.12);
@@ -131,12 +132,13 @@ main {
       width: 100%;
       margin-top: 0.4rem; // 4px
     }
+
     .badge {
       display: inline-flex;
       align-items: center;
-      gap: 0.7em;              // ~8px (0.7 x 11px)
-      padding: 0.7em 1.4em;    // ~8px / ~16px
-      border-radius: 100em;    // valor bem alto = vira uma "pílula"
+      gap: 0.7em; // ~8px (0.7 x 11px)
+      padding: 0.7em 1.4em; // ~8px / ~16px
+      border-radius: 100em; // valor bem alto = vira uma "pílula"
       background: rgba(34, 197, 94, 0.08);
       border: 0.1em solid rgba(34, 197, 94, 0.3); // ~1px
       color: #4ade80;
@@ -144,7 +146,7 @@ main {
       font-weight: 700;
       letter-spacing: 0.05em;
       white-space: nowrap;
-  
+
       // 1.3em = 1.3 x 11px ≈ 14px
       &__icon {
         width: 1.3em;
@@ -176,7 +178,7 @@ main {
     }
 
     &__icon {
-      width: 3.2rem;  // 32px
+      width: 3.2rem; // 32px
       height: 3.2rem;
       border-radius: 1rem; // 10px
       background: rgba(34, 197, 94, 0.12);
@@ -208,33 +210,34 @@ main {
       flex-direction: column;
       gap: 1.6rem; // 16px
     }
+
     .field {
       display: flex;
       flex-direction: column;
       gap: 0.8rem; // 8px
-  
+
       &__label {
         display: flex;
         align-items: center;
-        gap: 0.5em;  // ~6px
+        gap: 0.5em; // ~6px
         font-size: 1.1rem; // 11px
         font-weight: 700;
         letter-spacing: 0.05em;
         color: #cbd5e1;
       }
-  
+
       // Ícone colado ao texto do label -> EM
       &__icon {
-        width: 1.3em;  // ~14px
+        width: 1.3em; // ~14px
         height: 1.3em;
         color: #4ade80;
         flex-shrink: 0;
       }
-  
+
       &__required {
         color: #4ade80;
       }
-  
+
       // O input tem seu próprio font-size (1.4rem = 14px)
       &__input {
         width: 100%;
@@ -247,11 +250,11 @@ main {
         font-size: 1.4rem; // 14px
         outline: none;
         transition: border-color 0.2s ease;
-  
+
         &:focus {
           border-color: #22c55e;
         }
-  
+
         &::placeholder {
           color: #5b6472;
         }
@@ -260,7 +263,7 @@ main {
   }
 
 
- 
+
 }
 
 @media (min-width: 768px) {
@@ -333,16 +336,66 @@ main {
 
 
 
+// ========================================================================
+// NOVOS COMPONENTES - PERFIL COMPETITIVO + DISPONIBILIDADE
+// ========================================================================
+// Isso é ADICIONAL ao SCSS que já existe (.hero, .progress, .card,
+// .field base continuam iguais). Aqui entram: .visually-hidden,
+// .role-grid, .field__select-wrapper, .toggle e .day-picker.
+//
+// ------------------------------------------------------------------------
+// COMO A SELEÇÃO FUNCIONA (leia isso antes de tudo)
+// ------------------------------------------------------------------------
+// No HTML, cada opção é uma <label> que "embrulha" um <input type="radio">
+// ou <input type="checkbox"> ESCONDIDO (classe .visually-hidden) + o
+// conteúdo visível (ícone + texto).
+//
+// Quando o usuário CLICA em qualquer lugar da label, o navegador marca
+// o input escondido automaticamente (comportamento padrão de HTML:
+// clicar numa <label> ativa o input que está dentro dela).
+//
+// O CSS então usa o seletor :has() pra "olhar pra dentro" da label e
+// perguntar: "esse input aqui dentro está :checked?" Se sim, aplica o
+// visual verde. Ou seja: SEM JAVASCRIPT, o verde aparece e desaparece
+// sozinho, controlado 100% pelo estado real do formulário.
+//
+//   .role-grid__item:has(.role-grid__input:checked) { ...verde... }
+//
+// Como uso o mesmo "name" em todos os radios de um grupo, o próprio
+// navegador garante que só 1 opção fica marcada por vez (marcar uma
+// desmarca a anterior automaticamente). Já no day-picker uso checkbox
+// -> o usuário pode marcar VÁRIOS dias ao mesmo tempo, cada um
+// independente dos outros.
+// ========================================================================
+
+
+// Esconde o input VISUALMENTE, mas ele continua existindo pra leitores
+// de tela e pro teclado (Tab + Espaço funcionam). NUNCA use
+// "display: none" aqui - isso tiraria o input da navegação por teclado.
+.visually-hidden {
+  position: absolute;
+  width: 0.1rem;
+  height: 0.1rem;
+  padding: 0;
+  margin: -0.1rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+// ==========================================================================
+// GRID DE FUNÇÃO NO JOGO (Primeiro Rush, Suporte, CFT...)
+// ==========================================================================
 .role-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); // 2 colunas no mobile
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem; // 10px
 
   &__item {
-    all: unset;               // remove TODO estilo nativo do button
-    box-sizing: border-box;   // "all: unset" também reseta isso, devolvemos
+    flex: 1 1 0;
     cursor: pointer;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -352,7 +405,7 @@ main {
 
     padding: 1.4rem 0.8rem; // 14px 8px
     border-radius: 1.2rem; // 12px
-    border: 0.1rem solid rgba(255, 255, 255, 0.08);
+    border: 0.1rem solid rgba(255, 255, 255, 0.08); // 1px
     background: rgba(255, 255, 255, 0.02);
     color: #9aa4b2;
     font-size: 1.1rem; // 11px
@@ -363,17 +416,45 @@ main {
       border-color: rgba(34, 197, 94, 0.4);
     }
 
-    // Estado selecionado (verde), igual ao "Primeiro Rush" do print
-    &--selected {
+    // ESTADO SELECIONADO: só aparece quando o input radio escondido
+    // lá dentro está marcado. É isso que faz o verde ser DINÂMICO.
+    &:checked {
       border-color: #22c55e;
-      background: rgba(34, 197, 94, 0.12);
+      background: rgba(0, 255, 94, 0.12);
       color: #4ade80;
+    }
+
+    // Anel de foco visível quando o usuário navega via TAB (teclado)
+    &:has(.role-grid__input:focus-visible) {
+      outline: 0.2rem solid #22c55e;
+      outline-offset: 0.2rem;
     }
   }
 
   &__icon {
-    width: 2em;  // ~22px, relativo ao font-size do botão
+    width: 2em; // ~22px, relativo ao font-size do próprio item
     height: 2em;
+  }
+
+  #primeiroRush,
+  #segundoRush,
+  #suporte,
+  #granadeiro,
+  #cpt,
+  #curandeiro,
+  #fullGas {
+    display: none;
+  }
+
+  #primeiroRush:checked + .primeiroRush,
+  #segundoRush:checked+.segundoRush,
+  #suporte:checked+.suporte,
+  #granadeiro:checked+.granadeiro,
+  #cpt:checked+.cpt,
+  #curandeiro:checked+.curandeiro,
+  #fullGas:checked+.fullGas {
+    background-color: #0E3427;
+    border: 1px solid #1C9A4D;
   }
 }
 
@@ -386,12 +467,12 @@ main {
 }
 
 .field__select {
-  appearance: none;   // tira a setinha nativa feia do navegador
+  appearance: none;
   cursor: pointer;
-  padding-right: 3.2em; // abre espaço pra nossa seta customizada
+  padding-right: 3.2em;
 
   &:invalid {
-    color: #5b6472; // deixa a cor de "placeholder" enquanto nada foi escolhido
+    color: #5b6472;
   }
 }
 
@@ -403,7 +484,7 @@ main {
   width: 1.8rem; // 18px
   height: 1.8rem;
   color: #9aa4b2;
-  pointer-events: none; // o clique "atravessa" o ícone e cai no select
+  pointer-events: none;
 }
 
 
@@ -415,8 +496,6 @@ main {
   gap: 1rem; // 10px
 
   &__button {
-    all: unset;
-    box-sizing: border-box;
     cursor: pointer;
     flex: 1;
 
@@ -433,6 +512,10 @@ main {
     font-size: 1.3rem; // 13px
     font-weight: 700;
     transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-color: rgba(34, 197, 94, 0.4);
+    }
   }
 
   &__icon {
@@ -440,22 +523,29 @@ main {
     height: 1.3em;
   }
 
-  &__button--yes.toggle__button--selected {
+  // "Sim" fica VERDE quando o radio dele está marcado
+  &__button--yes:has(.toggle__input:checked) {
     border-color: #22c55e;
     background: rgba(34, 197, 94, 0.15);
     color: #4ade80;
   }
 
-  &__button--no.toggle__button--selected {
+  // "Não" fica VERMELHO quando o radio dele está marcado
+  &__button--no:has(.toggle__input:checked) {
     border-color: #f87171;
     background: rgba(248, 113, 113, 0.15);
     color: #f87171;
+  }
+
+  &__button:has(.toggle__input:focus-visible) {
+    outline: 0.2rem solid #22c55e;
+    outline-offset: 0.2rem;
   }
 }
 
 
 // ==========================================================================
-// SELETOR DE DIAS DA SEMANA (Disponibilidade)
+// SELETOR DE DIAS DA SEMANA (Disponibilidade) - checkbox, múltipla escolha
 // ==========================================================================
 .day-picker {
   display: flex;
@@ -463,10 +553,7 @@ main {
   gap: 0.8rem; // 8px
 
   &__day {
-    all: unset;
-    box-sizing: border-box;
     cursor: pointer;
-
     padding: 1em 1.2em;
     border-radius: 1rem; // 10px
     border: 0.1rem solid rgba(255, 255, 255, 0.08);
@@ -475,16 +562,24 @@ main {
     font-size: 1.2rem; // 12px
     font-weight: 700;
     text-align: center;
+    display: inline-block;
     transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 
     &:hover {
       border-color: rgba(34, 197, 94, 0.4);
     }
 
-    &--selected {
+    // Cada checkbox é independente - vários dias podem ficar verdes
+    // ao mesmo tempo, sem afetar os outros
+    &:has(.day-picker__input:checked) {
       border-color: #22c55e;
       background: rgba(34, 197, 94, 0.15);
       color: #4ade80;
+    }
+
+    &:has(.day-picker__input:focus-visible) {
+      outline: 0.2rem solid #22c55e;
+      outline-offset: 0.2rem;
     }
   }
 }
@@ -496,14 +591,14 @@ main {
 @media (min-width: 768px) {
 
   .role-grid {
-    grid-template-columns: repeat(4, 1fr); // vira 4 colunas
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .day-picker {
     flex-wrap: nowrap;
 
     &__day {
-      flex: 1; // preenche a linha toda em vez de embolotar
+      flex: 1;
     }
   }
 }
