@@ -3,7 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+$background: #0b0b0d;
+$surface: #121216;
+$card: #18181d;
+$primary: #ff2b45;
+$primary-hover: #ff4d67;
+$text: #ffffff;
+$text-secondary: #a0a0b0;
+$border: rgba(255, 43, 69, 0.12);
+$border-hover: rgba(255, 43, 69, 0.35);
+$glow: rgba(255, 43, 69, 0.25);
+$glass: rgba(24, 24, 29, 0.7);
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -525,77 +535,189 @@ main {
 }
 
 
+// .footer {
+//     background-color: #050505;
+//     background: linear-gradient(to right, #0A0E17, #010102);
+//     padding: 4rem 2rem;
+//     border-top: 1px solid rgba(128, 0, 128, 0.479);
+//     text-align: center;
+
+//     .footer_siga {
+//         color: #60A5FA;
+//         text-align: center;
+//         font-size: 1.8em;
+//         font-weight: bold;
+//     }
+
+//     .links a:nth-child(1) {
+//         color: white;
+//         text-align: center;
+//         font-size: 1.8em;
+//         background: linear-gradient(to right, #db2777, #9333ea);
+//         padding: 0.5rem 1rem;
+//         border-radius: 2rem;
+//         display: inline-block;
+//     }
+
+//     .links a:nth-child(1) {
+//         color: white;
+//         font-size: 1.8em;
+//         background: linear-gradient(to right, #db2777, #9333ea);
+//         padding: 0.5rem 1rem;
+//         border-radius: 2rem;
+//         display: inline-block;
+//         transition: all 0.2s ease-in-out;
+//     }
+
+//     .links a:nth-child(2) {
+//         color: white;
+//         font-size: 1.8em;
+//         background-color: black;
+//         padding: 0.5rem 1rem;
+//         border-radius: 2rem;
+//         display: inline-block;
+//         transition: all 0.2s ease-in-out;
+//     }
+
+//     .links a:nth-child(3) {
+//         color: white;
+//         font-size: 1.8em;
+//         background-color: #2BD46A;
+//         padding: 0.5rem 1rem;
+//         border-radius: 2rem;
+//         display: inline-block;
+//         transition: all 0.2s ease-in-out;
+//     }
+
+//     .links a:hover {
+//         transform: scale(1.1);
+//     }
+
+//     .links {
+//         margin-top: 2rem;
+//         display: flex;
+//         justify-content: center;
+//         gap: 2rem;
+//     }
+
+//     .copyright {
+//         font-size: 1.4em;
+//         color: #565B68;
+//         margin-top: 2rem;
+//     }
+// }
 .footer {
-    background-color: #050505;
-    background: linear-gradient(to right, #0A0E17, #010102);
-    padding: 4rem 2rem;
-    border-top: 1px solid rgba(128, 0, 128, 0.479);
-    text-align: center;
+    background-color: $surface;
+    border-top: 1px solid $border;
+    padding: 6rem 0 3rem 0;
+    margin-top: auto; // Garante o rodapé na base se houver pouco conteúdo
 
-    .footer_siga {
-        color: #60A5FA;
-        text-align: center;
-        font-size: 1.8em;
-        font-weight: bold;
-    }
-
-    .links a:nth-child(1) {
-        color: white;
-        text-align: center;
-        font-size: 1.8em;
-        background: linear-gradient(to right, #db2777, #9333ea);
-        padding: 0.5rem 1rem;
-        border-radius: 2rem;
-        display: inline-block;
-    }
-
-    .links a:nth-child(1) {
-        color: white;
-        font-size: 1.8em;
-        background: linear-gradient(to right, #db2777, #9333ea);
-        padding: 0.5rem 1rem;
-        border-radius: 2rem;
-        display: inline-block;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .links a:nth-child(2) {
-        color: white;
-        font-size: 1.8em;
-        background-color: black;
-        padding: 0.5rem 1rem;
-        border-radius: 2rem;
-        display: inline-block;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .links a:nth-child(3) {
-        color: white;
-        font-size: 1.8em;
-        background-color: #2BD46A;
-        padding: 0.5rem 1rem;
-        border-radius: 2rem;
-        display: inline-block;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .links a:hover {
-        transform: scale(1.1);
-    }
-
-    .links {
-        margin-top: 2rem;
+    .footer_content {
         display: flex;
-        justify-content: center;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 4rem;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
     }
 
-    .copyright {
-        font-size: 1.4em;
-        color: #565B68;
-        margin-top: 2rem;
+    .footer_brand {
+        display: flex;
+        flex-direction: column;
+        max-width: 32rem;
+
+        .footer_logo {
+            width: 5.5rem;
+            border-radius: 50%;
+            margin-bottom: 1.6rem;
+            border: 1px solid rgba($primary, 0.2);
+        }
+
+        p {
+            color: $text-secondary;
+            font-size: 1.4rem;
+            line-height: 1.6;
+        }
+    }
+
+    .footer_links-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        @media (min-width: 480px) {
+            gap: 6rem;
+        }
+    }
+
+    .footer_column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        h4 {
+            color: $text;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        a {
+            color: $text-secondary;
+            font-size: 1.4rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .footer_socials {
+        display: flex;
+        gap: 1.6rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.6rem;
+            height: 3.6rem;
+            background: rgba($text, 0.03);
+            border: 1px solid rgba($text, 0.08);
+            border-radius: 50%;
+            color: $text-secondary;
+            font-size: 1.6rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #fff;
+                background: $primary;
+                border-color: $primary;
+                transform: translateY(-2px);
+            }
+        }
+    }
+
+    .footer_bottom {
+        margin-top: 4.8rem;
+        padding-top: 2.4rem;
+        border-top: 1px solid rgba($text, 0.05);
+        text-align: center;
+
+        p {
+            color: rgba($text-secondary, 0.6);
+            font-size: 1.2rem;
+        }
     }
 }
+
 
 
 
@@ -644,3 +766,12 @@ main {
     
 
 }
+
+
+
+
+
+
+
+
+

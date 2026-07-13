@@ -23,54 +23,6 @@ body {
   margin: 0 auto;
 }
 
-
-@media (min-width: 768px) {
-
-
-  .header {
-
-    //hamburguer menu
-    #menu__toggle {
-      display: none !important;
-    }
-
-    .menu__btn {
-      display: none !important;
-    }
-
-    .menu__box {
-      position: static !important;
-      display: flex !important;
-      padding: 0 !important;
-      width: auto !important;
-      min-height: auto !important;
-      background-color: inherit !important;
-      box-shadow: none !important;
-    }
-
-    .menu__box a {
-      font-size: 1.6em !important;
-      padding: 1rem !important;
-      color: rgba(255, 255, 255, 0.658) !important;
-    }
-
-    .menu__box li {
-      margin-left: 1rem !important;
-    }
-
-    .menu__box a:hover {
-      transform: scale(1.1) !important;
-      background-color: transparent !important;
-      color: #ff1a1ab6 !important;
-    }
-
-    //hamburguer menu
-
-  }
-}
-
-
-
 main {
 
   color: #ffffff;
@@ -260,11 +212,330 @@ main {
         }
       }
     }
+
+    // GRID DE FUNÇÃO NO JOGO (Primeiro Rush, Suporte, CFT...)
+    // ==========================================================================
+    .role-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem; // 10px
+
+      &__item {
+        flex: 1 1 0;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem; // 6px
+        text-align: center;
+
+        padding: 1.4rem 0.8rem; // 14px 8px
+        border-radius: 1.2rem; // 12px
+        border: 0.1rem solid rgba(255, 255, 255, 0.08); // 1px
+        background: rgba(255, 255, 255, 0.02);
+        color: #9aa4b2;
+        font-size: 1.1rem; // 11px
+        font-weight: 700;
+        transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+
+        &:hover {
+          border-color: rgba(34, 197, 94, 0.4);
+        }
+
+        // ESTADO SELECIONADO: só aparece quando o input radio escondido
+        // lá dentro está marcado. É isso que faz o verde ser DINÂMICO.
+        &:checked {
+          border-color: #22c55e;
+          background: rgba(0, 255, 94, 0.12);
+          color: #4ade80;
+        }
+
+        // Anel de foco visível quando o usuário navega via TAB (teclado)
+        &:has(.role-grid__input:focus-visible) {
+          outline: 0.2rem solid #22c55e;
+          outline-offset: 0.2rem;
+        }
+      }
+
+      &__icon {
+        width: 2em; // ~22px, relativo ao font-size do próprio item
+        height: 2em;
+      }
+
+      #primeiroRush,
+      #segundoRush,
+      #suporte,
+      #granadeiro,
+      #cpt,
+      #curandeiro,
+      #fullGas {
+        display: none;
+      }
+
+      #primeiroRush:checked+.primeiroRush,
+      #segundoRush:checked+.segundoRush,
+      #suporte:checked+.suporte,
+      #granadeiro:checked+.granadeiro,
+      #cpt:checked+.cpt,
+      #curandeiro:checked+.curandeiro,
+      #fullGas:checked+.fullGas {
+        background-color: #0E3427;
+        border: 1px solid #1C9A4D;
+      }
+    }
+
+
+    // ==========================================================================
+    // SELECT ESTILIZADO (Tempo de experiência)
+    // ==========================================================================
+    .field__select-wrapper {
+      position: relative;
+    }
+
+    .field__select {
+      appearance: none;
+      cursor: pointer;
+      padding-right: 3.2em;
+
+      &:invalid {
+        color: #5b6472;
+      }
+    }
+
+    .field__select-arrow {
+      position: absolute;
+      right: 1.4rem; // 14px
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1.8rem; // 18px
+      height: 1.8rem;
+      color: #9aa4b2;
+      pointer-events: none;
+    }
+
+
+    // ==========================================================================
+    // TOGGLE SIM / NÃO (Possui Discord?)
+    // ==========================================================================
+    .toggle {
+      display: flex;
+      gap: 1rem; // 10px
+
+      &__button {
+        cursor: pointer;
+        flex: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6em;
+
+        padding: 1.1em 1em;
+        border-radius: 1rem; // 10px
+        border: 0.1rem solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+        color: #9aa4b2;
+        font-size: 1.3rem; // 13px
+        font-weight: 700;
+        transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+
+        &:hover {
+          border-color: rgba(34, 197, 94, 0.4);
+        }
+      }
+
+      &__icon {
+        width: 1.3em;
+        height: 1.3em;
+      }
+
+      &__button:has(.toggle__input:focus-visible) {
+        outline: 0.2rem solid #22c55e;
+        outline-offset: 0.2rem;
+      }
+
+      #discord_sim,
+      #discord_nao {
+        display: none;
+      }
+
+      #discord_sim:checked+.toggle__button--yes {
+        border-color: #22c55e;
+        background: rgba(34, 197, 94, 0.15);
+        color: #4ade80;
+      }
+
+      #discord_nao:checked+.toggle__button--no {
+        border-color: #f87171;
+        background: rgba(248, 113, 113, 0.15);
+        color: #f87171;
+      }
+    }
+
+
+    // ==========================================================================
+    // SELETOR DE DIAS DA SEMANA (Disponibilidade) - checkbox, múltipla escolha
+    // ==========================================================================
+    .day-picker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem; // 8px
+
+      & #segunda:checked+.day-picker__day,
+      #terça:checked+.day-picker__day,
+      #quarta:checked+.day-picker__day,
+      #quinta:checked+.day-picker__day,
+      #sexta:checked+.day-picker__day,
+      #sabado:checked+.day-picker__day,
+      #domingo:checked+.day-picker__day {
+        background-color: #0E3427;
+        border: 1px solid #1C9A4D;
+      }
+
+      & #segunda,
+      #terça,
+      #quarta,
+      #quinta,
+      #sexta,
+      #sabado,
+      #domingo {
+        display: none;
+      }
+
+      &__day {
+        cursor: pointer;
+        padding: 1em 1.2em;
+        border-radius: 1rem; // 10px
+        border: 0.1rem solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.02);
+        color: #9aa4b2;
+        font-size: 1.2rem; // 12px
+        font-weight: 700;
+        text-align: center;
+        display: inline-block;
+        transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+
+        &:hover {
+          border-color: rgba(34, 197, 94, 0.4);
+        }
+
+        // Cada checkbox é independente - vários dias podem ficar verdes
+        // ao mesmo tempo, sem afetar os outros
+        &:has(.day-picker__input:checked) {
+          border-color: #22c55e;
+          background: rgba(34, 197, 94, 0.15);
+          color: #4ade80;
+        }
+
+        &:has(.day-picker__input:focus-visible) {
+          outline: 0.2rem solid #22c55e;
+          outline-offset: 0.2rem;
+        }
+      }
+    }
+
+    // "opcional" ao lado do título do card - pílula neutra (cinza)
+    .card__optional-tag {
+      font-size: 1rem; // 10px
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #9aa4b2;
+      background: rgba(255, 255, 255, 0.06);
+      border: 0.1rem solid rgba(255, 255, 255, 0.1);
+      border-radius: 100em;
+      padding: 0.4em 1em;
+    }
+
+    // "(opcional)" dentro do label - mais discreto que o asterisco verde
+    .field__optional {
+      color: #6b7280;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+
+    // A textarea herda o visual do .field__input, só precisa de ajustes
+    // específicos de área de texto
+    .field__textarea {
+      resize: vertical; // só redimensiona na vertical
+      min-height: 9.6rem; // 96px, ~4 linhas
+      font-family: inherit;
+      line-height: 1.5;
+    }
+
+
+    // ==========================================================================
+    // SEÇÃO DE ENVIO (botão + texto de aviso)
+    // ==========================================================================
+
   }
 
+  .submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem; // 12px
+    text-align: center;
 
+
+    & .fa-whatsapp{
+      font-size: 1.6em;
+    }
+    &__button {
+      all: unset;
+      box-sizing: border-box;
+      cursor: pointer;
+
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+
+      padding: 1.6rem; // 16px
+      border-radius: 1.2rem; // 12px
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: #ffffff;
+      font-size: 1.4rem; // 14px
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-align: center;
+
+      transition: filter 0.2s ease, transform 0.15s ease;
+
+      &:hover {
+        filter: brightness(1.1);
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+
+      &:focus-visible {
+        outline: 0.2rem solid #4ade80;
+        outline-offset: 0.2rem;
+      }
+    }
+
+    &__icon {
+      width: 1.4em;
+      height: 1.4em;
+      flex-shrink: 0;
+    }
+
+    &__hint {
+      font-size: 1.2rem; // 12px
+      color: #6b7280;
+      max-width: 36rem; // 360px
+      line-height: 1.5;
+    }
+  }
 
 }
+
 
 @media (min-width: 768px) {
 
@@ -306,6 +577,24 @@ main {
       flex: 1;
     }
   }
+
+  .role-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .day-picker {
+    flex-wrap: nowrap;
+
+    &__day {
+      flex: 1;
+    }
+  }
+
+  .submit__button {
+    width: auto;
+    min-width: 32rem; // 320px
+    padding: 1.6rem 3.2rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -322,283 +611,5 @@ main {
 
   .card {
     padding: 3.2rem; // 32px
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-// ========================================================================
-// NOVOS COMPONENTES - PERFIL COMPETITIVO + DISPONIBILIDADE
-// ========================================================================
-// Isso é ADICIONAL ao SCSS que já existe (.hero, .progress, .card,
-// .field base continuam iguais). Aqui entram: .visually-hidden,
-// .role-grid, .field__select-wrapper, .toggle e .day-picker.
-//
-// ------------------------------------------------------------------------
-// COMO A SELEÇÃO FUNCIONA (leia isso antes de tudo)
-// ------------------------------------------------------------------------
-// No HTML, cada opção é uma <label> que "embrulha" um <input type="radio">
-// ou <input type="checkbox"> ESCONDIDO (classe .visually-hidden) + o
-// conteúdo visível (ícone + texto).
-//
-// Quando o usuário CLICA em qualquer lugar da label, o navegador marca
-// o input escondido automaticamente (comportamento padrão de HTML:
-// clicar numa <label> ativa o input que está dentro dela).
-//
-// O CSS então usa o seletor :has() pra "olhar pra dentro" da label e
-// perguntar: "esse input aqui dentro está :checked?" Se sim, aplica o
-// visual verde. Ou seja: SEM JAVASCRIPT, o verde aparece e desaparece
-// sozinho, controlado 100% pelo estado real do formulário.
-//
-//   .role-grid__item:has(.role-grid__input:checked) { ...verde... }
-//
-// Como uso o mesmo "name" em todos os radios de um grupo, o próprio
-// navegador garante que só 1 opção fica marcada por vez (marcar uma
-// desmarca a anterior automaticamente). Já no day-picker uso checkbox
-// -> o usuário pode marcar VÁRIOS dias ao mesmo tempo, cada um
-// independente dos outros.
-// ========================================================================
-
-
-// Esconde o input VISUALMENTE, mas ele continua existindo pra leitores
-// de tela e pro teclado (Tab + Espaço funcionam). NUNCA use
-// "display: none" aqui - isso tiraria o input da navegação por teclado.
-.visually-hidden {
-  position: absolute;
-  width: 0.1rem;
-  height: 0.1rem;
-  padding: 0;
-  margin: -0.1rem;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-
-// ==========================================================================
-// GRID DE FUNÇÃO NO JOGO (Primeiro Rush, Suporte, CFT...)
-// ==========================================================================
-.role-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; // 10px
-
-  &__item {
-    flex: 1 1 0;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6rem; // 6px
-    text-align: center;
-
-    padding: 1.4rem 0.8rem; // 14px 8px
-    border-radius: 1.2rem; // 12px
-    border: 0.1rem solid rgba(255, 255, 255, 0.08); // 1px
-    background: rgba(255, 255, 255, 0.02);
-    color: #9aa4b2;
-    font-size: 1.1rem; // 11px
-    font-weight: 700;
-    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
-
-    &:hover {
-      border-color: rgba(34, 197, 94, 0.4);
-    }
-
-    // ESTADO SELECIONADO: só aparece quando o input radio escondido
-    // lá dentro está marcado. É isso que faz o verde ser DINÂMICO.
-    &:checked {
-      border-color: #22c55e;
-      background: rgba(0, 255, 94, 0.12);
-      color: #4ade80;
-    }
-
-    // Anel de foco visível quando o usuário navega via TAB (teclado)
-    &:has(.role-grid__input:focus-visible) {
-      outline: 0.2rem solid #22c55e;
-      outline-offset: 0.2rem;
-    }
-  }
-
-  &__icon {
-    width: 2em; // ~22px, relativo ao font-size do próprio item
-    height: 2em;
-  }
-
-  #primeiroRush,
-  #segundoRush,
-  #suporte,
-  #granadeiro,
-  #cpt,
-  #curandeiro,
-  #fullGas {
-    display: none;
-  }
-
-  #primeiroRush:checked + .primeiroRush,
-  #segundoRush:checked+.segundoRush,
-  #suporte:checked+.suporte,
-  #granadeiro:checked+.granadeiro,
-  #cpt:checked+.cpt,
-  #curandeiro:checked+.curandeiro,
-  #fullGas:checked+.fullGas {
-    background-color: #0E3427;
-    border: 1px solid #1C9A4D;
-  }
-}
-
-
-// ==========================================================================
-// SELECT ESTILIZADO (Tempo de experiência)
-// ==========================================================================
-.field__select-wrapper {
-  position: relative;
-}
-
-.field__select {
-  appearance: none;
-  cursor: pointer;
-  padding-right: 3.2em;
-
-  &:invalid {
-    color: #5b6472;
-  }
-}
-
-.field__select-arrow {
-  position: absolute;
-  right: 1.4rem; // 14px
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.8rem; // 18px
-  height: 1.8rem;
-  color: #9aa4b2;
-  pointer-events: none;
-}
-
-
-// ==========================================================================
-// TOGGLE SIM / NÃO (Possui Discord?)
-// ==========================================================================
-.toggle {
-  display: flex;
-  gap: 1rem; // 10px
-
-  &__button {
-    cursor: pointer;
-    flex: 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.6em;
-
-    padding: 1.1em 1em;
-    border-radius: 1rem; // 10px
-    border: 0.1rem solid rgba(255, 255, 255, 0.08);
-    background: rgba(255, 255, 255, 0.02);
-    color: #9aa4b2;
-    font-size: 1.3rem; // 13px
-    font-weight: 700;
-    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
-
-    &:hover {
-      border-color: rgba(34, 197, 94, 0.4);
-    }
-  }
-
-  &__icon {
-    width: 1.3em;
-    height: 1.3em;
-  }
-
-  // "Sim" fica VERDE quando o radio dele está marcado
-  &__button--yes:has(.toggle__input:checked) {
-    border-color: #22c55e;
-    background: rgba(34, 197, 94, 0.15);
-    color: #4ade80;
-  }
-
-  // "Não" fica VERMELHO quando o radio dele está marcado
-  &__button--no:has(.toggle__input:checked) {
-    border-color: #f87171;
-    background: rgba(248, 113, 113, 0.15);
-    color: #f87171;
-  }
-
-  &__button:has(.toggle__input:focus-visible) {
-    outline: 0.2rem solid #22c55e;
-    outline-offset: 0.2rem;
-  }
-}
-
-
-// ==========================================================================
-// SELETOR DE DIAS DA SEMANA (Disponibilidade) - checkbox, múltipla escolha
-// ==========================================================================
-.day-picker {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem; // 8px
-
-  &__day {
-    cursor: pointer;
-    padding: 1em 1.2em;
-    border-radius: 1rem; // 10px
-    border: 0.1rem solid rgba(255, 255, 255, 0.08);
-    background: rgba(255, 255, 255, 0.02);
-    color: #9aa4b2;
-    font-size: 1.2rem; // 12px
-    font-weight: 700;
-    text-align: center;
-    display: inline-block;
-    transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
-
-    &:hover {
-      border-color: rgba(34, 197, 94, 0.4);
-    }
-
-    // Cada checkbox é independente - vários dias podem ficar verdes
-    // ao mesmo tempo, sem afetar os outros
-    &:has(.day-picker__input:checked) {
-      border-color: #22c55e;
-      background: rgba(34, 197, 94, 0.15);
-      color: #4ade80;
-    }
-
-    &:has(.day-picker__input:focus-visible) {
-      outline: 0.2rem solid #22c55e;
-      outline-offset: 0.2rem;
-    }
-  }
-}
-
-
-// ==========================================================================
-// TABLET - a partir de 768px
-// ==========================================================================
-@media (min-width: 768px) {
-
-  .role-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .day-picker {
-    flex-wrap: nowrap;
-
-    &__day {
-      flex: 1;
-    }
   }
 }
