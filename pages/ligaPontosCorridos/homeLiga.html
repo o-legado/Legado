@@ -7,34 +7,60 @@
     <title>Ligas</title>
     <link rel="stylesheet" href="../../assets/css/scss/homeLiga.scss">
     <link rel="stylesheet" href="../../assets/css/css/homeLiga.css">
-    
+
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--FONTE-->
+
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--icon-->
+
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-SW7Q9LH3LR');
-    </script>
+    </script> -->
     <!-- Google tag (gtag.js) -->
 </head>
 
 <body>
     <header class="header">
-        <div class="header-container">
+        <nav class="header_nav largura-definida">
+            <figure>
+                <a href="teste.html"><img src="../../assets/img/logo-oficial.jpg" alt="" class="img"></a>
+            </figure>
 
-            <a href="../../index.html" class="btn-back" title="Voltar">
-                Voltar
-            </a>
-
-            <nav class="main-nav">
-                <div class="logo-area">
-                    <img src="../../assets/img/logo-oficial.jpg" alt="" class="logo-badge">
-                    <span class="logo-text">O LEGADO <span class="accent">LIGA</span></span>
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
                 </div>
-            </nav>
+                <nav class="navHamburguer" id="nav">
+                    <ul>
+                        <li><a class="menu__item" href="../../index.html"><i class="fas fa-home"></i> Início</a></li>
+                        <li><a class="menu__item" href="../recrutamento/recrutamento.html"><i
+                                    class="fa-solid fa-user-plus"></i> Recrutamento</a></li>
+                        <li><a class="menu__item" href="sobre.html"><i class="fas fa-users"></i> Sobre Nós</a>
+                        </li>
+                        <li><a class="menu__item" href="../xtreino/homeTreinos.html"><i class="fas fa-trophy"></i>
+                                X-Treino</a></li>
+                        <li><a class="menu__item active" href="../ligaPontosCorridos/homeLiga.html"><i
+                                    class="fa-solid fa-shield-halved"></i> Liga</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-        </div>
+            <div class="menu-bg" id="menu-bg"></div>
+
+        </nav>
+
     </header>
 
     <main class="main">
@@ -162,8 +188,45 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 O Legado Treinos & Ligas. Todos os direitos reservados.</p>
+        <div class="footer_content largura-definida">
+            <div class="footer_brand">
+                <img src="../../assets/img/logo-oficial.jpg" alt="Logo O Legado" class="footer_logo">
+                <p>Acompanhe os resultados, estatísticas e a evolução dos seus treinos competitivos.</p>
+            </div>
+            <div class="footer_links-group">
+                <div class="footer_column">
+                    <h4>Navegação</h4>
+                    <a href="../../index.html">Início</a>
+                    <a href="../../pages/sobre/sobre.html">Sobre Nós</a>
+                    <a href="../../pages/recrutamento/recrutamento.html">Recrutamento</a>
+                </div>
+                <div class="footer_column">
+                    <h4>Campeonatos</h4>
+                    <a href="../../pages/ligaPontosCorridos/homeLiga.html">Liga Oficial</a>
+                </div>
+                <div class="footer_column">
+                    <h4>X-Treino</h4>
+                    <a href="../../pages/xtreino/homeTreinos.html">X-Treino</a>
+                </div>
+                <div class="footer_column">
+                    <h4>Social</h4>
+                    <div class="footer_socials">
+                        <!-- <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a> -->
+                        <a href="https://www.instagram.com/lega_dooficial1?igsh=bmVueG4wdzU3eDM4" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@dieguinho916" target="_blank"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                        <!-- <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom largura-definida">
+            <p>&copy; 2026 O Legado. Todos os direitos reservados. Projetado para Alta Performance.</p>
+        </div>
     </footer>
+
+    <script src="../../assets/js/menuHamburguer/menu.js"></script>
 
 </body>
 

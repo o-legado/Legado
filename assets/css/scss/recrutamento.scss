@@ -26,147 +26,186 @@ body {
 
 
 .header {
-    // background-color: rgb(81 53 53 / 30%);
-    // backdrop-filter: blur(12px); 
-    background: transparent;
-    backdrop-filter: blur(0.5rem);
-    border-bottom: 1px solid rgba(255, 0, 0, 0.205);
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 99;
+  // Fundo translúcido escuro (Glassmorphism) integrado ao tom do site
+  background-color: rgba(6, 6, 10, 0.75);
+  backdrop-filter: blur(1.2rem);
+  -webkit-backdrop-filter: blur(1.2rem); // Suporte para iOS/Safari
 
-    .header_nav {
-        display: flex;
-        padding: 1rem;
-        justify-content: space-between;
+  // Borda inferior sutil usando o verde oficial refinado
+  border-bottom: 1px solid rgba(37, 211, 102, 0.15); // Verde esmeralda suave
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 
-        figure {
-            width: 8rem;
+  .header_nav {
+    display: flex;
+    padding: 1.2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
 
-            a {
-                display: inline-block;
-                width: 100%;
-            }
+    figure {
+      width: 7rem;
+      margin: 0;
 
-            .img {
-                width: 100%;
-                border-radius: 50%;
-                box-shadow: 0px 2px 10px 2px rgba(255, 0, 0, 0.281);
-            }
-        }
-    }
+      a {
+        display: inline-block;
+        width: 100%;
+      }
 
-    //hamburguer
-    #menu {
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        top: 0;
-        right: 0;
-        left: auto;
-        position: absolute;
-
-        #menu-bar {
-            width: 4.5rem;
-            height: 4rem;
-            margin: 3rem 2rem 0 0;
-            cursor: pointer;
-        }
-
-        .bar {
-            height: 0.5rem;
-            width: 100%;
-            background-color: #dc052d;
-            display: block;
-            border-radius: 0.5rem;
-            transition: 0.3s ease;
-        }
-
-        #bar1 {
-            transform: translateY(-4px);
-        }
-
-        #bar3 {
-            transform: translateY(4px);
-        }
-
-        .navHamburguer {
-            transition: 0.3s ease;
-            display: none;
-            text-align: right;
-
-            ul {
-                padding: 0 2.2rem;
-            }
-
-            li {
-                list-style: none;
-                padding: 1.2rem 0;
-
-                a {
-                    color: white;
-                    font-size: 1.8em;
-                    text-decoration: none;
-                    transition: all 0.2s ease-in-out;
-                    display: inline-block;
-
-                    &:hover {
-
-
-                        transform: scale(1.1);
-                    }
-                }
-            }
-        }
-
-        .change {
-            display: block;
-        }
-
-        .change .bar {
-            background-color: white;
-        }
-
-        .change #bar1 {
-            transform: translateY(4px) rotateZ(-45deg);
-        }
-
-        .change #bar2 {
-            opacity: 0;
-        }
-
-        .change #bar3 {
-            transform: translateY(-6px) rotateZ(45deg);
-        }
-    }
-
-    .menu-bg {
-        top: 0;
-        right: 0;
-        left: auto;
-        position: absolute;
-
-        z-index: 1;
-        width: 0;
-        height: 0;
-        margin: 3rem 2rem 2rem 0;
-        background: radial-gradient(circle, #dc052d, #dc052d);
+      .img {
+        width: 100%;
         border-radius: 50%;
-        transition: 0.3s ease;
+        border: 2px solid rgba(37, 211, 102, 0.25); // Contorno verde discreto no logo
+        box-shadow: 0px 0px 15px rgba(37, 211, 102, 0.2); // Glow verde sutil
+        transition: all 0.3s ease;
+        object-fit: cover;
+
+        &:active {
+          transform: scale(0.95);
+          border-color: #25d366; // Verde vibrante ao clicar
+        }
+      }
+    }
+  }
+
+  // Hamburguer Menu
+  #menu {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    top: 0;
+    right: 0;
+    left: auto;
+    position: absolute;
+
+    #menu-bar {
+      width: 3.8rem;
+      height: 3.5rem;
+      margin: 3.2rem 2.4rem 0 0;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.5rem 0;
     }
 
-    .change-bg {
-        width: 52rem;
-        height: 46rem;
-        transform: translate(60%, -25%);
+    .bar {
+      height: 0.5rem;
+      width: 100%;
+      background-color: #25d366; // Verde oficial vibrante
+      display: block;
+      border-radius: 0.4rem;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      box-shadow: 0 0 8px rgba(37, 211, 102, 0.3); // Brilho verde nas barras
     }
 
-    //hamburguer
+    #bar1 {
+      transform: translateY(-2px);
+    }
 
+    #bar3 {
+      transform: translateY(2px);
+    }
+
+    // Navegação de Links dentro do Hamburguer
+    .navHamburguer {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      display: none;
+      text-align: right;
+      margin-top: 2rem;
+
+      ul {
+        padding: 0 2.4rem;
+        margin: 0;
+      }
+
+      li {
+        list-style: none;
+        padding: 1.4rem 0;
+
+        a {
+          color: #ffffff;
+          font-size: 2rem;
+          font-weight: 600;
+          text-decoration: none;
+          letter-spacing: 0.05rem;
+          transition: all 0.25s ease;
+          display: inline-block;
+
+          &:hover,
+          // Adicione isto junto com as regras do 'a' do mobile
+          &.active {
+            color: #25d366 !important; // Deixa o link verde fixo
+            font-weight: 700;
+
+            // Opcional: Adiciona um pequeno ponto verde antes do link ativo no mobile
+            &::before {
+              content: '•';
+              color: #25d366;
+              margin-right: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+
+    // Classe ativada por JS quando o menu abre
+    .change {
+      display: block;
+      animation: fadeIn 0.3s forwards;
+    }
+
+    .change .bar {
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+
+    .change #bar1 {
+      transform: translateY(11px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+      opacity: 0;
+    }
+
+    .change #bar3 {
+      transform: translateY(-11px) rotateZ(45deg);
+    }
+  }
+
+  // Fundo que se expande por trás do menu ao abrir
+  .menu-bg {
+    top: 0;
+    right: 0;
+    left: auto;
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 3rem 2rem 2rem 0;
+
+    // Substituído o vermelho por um degradê ultra escuro com glow verde nas bordas internas
+    background: radial-gradient(circle, rgba(12, 12, 16, 0.98) 30%, rgba(6, 6, 10, 0.99) 100%);
+    box-shadow: inset 0 0 40px rgba(37, 211, 102, 0.12);
+    border: 1px solid rgba(37, 211, 102, 0);
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  // Ativado por JS na abertura do menu
+  .change-bg {
+    width: 55rem;
+    height: 55rem;
+    border: 1px solid rgba(37, 211, 102, 0.2); // Borda verde discreta expandida
+    transform: translate(60%, -25%);
+  }
 }
+
+
 main {
 
   color: #ffffff;
@@ -176,6 +215,11 @@ main {
   gap: 2.8rem; // 28px
   position: relative;
   margin-top: 10rem;
+
+  section {
+    margin-bottom: 2rem;
+  }
+
 
   .hero {
     display: flex;
@@ -625,9 +669,10 @@ main {
     text-align: center;
 
 
-    & .fa-whatsapp{
+    & .fa-whatsapp {
       font-size: 1.6em;
     }
+
     &__button {
       all: unset;
       box-sizing: border-box;
@@ -683,145 +728,194 @@ main {
 
 
 .footer {
-    background-color: #121216;
-    border-top: 1px solid rgba(255, 43, 69, 0.12);
-    padding: 2rem;
-    margin-top: auto; // Garante o rodapé na base se houver pouco conteúdo
+  background-color: #121216;
+  border-top: 1px solid rgba(255, 43, 69, 0.12);
+  padding: 2rem;
+  margin-top: auto; // Garante o rodapé na base se houver pouco conteúdo
 
-    .footer_content {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
+  .footer_content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 
-        @media (min-width: 768px) {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-start;
-        }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .footer_brand {
+    display: flex;
+    flex-direction: column;
+    max-width: 32rem;
+
+    .footer_logo {
+      width: 8.5rem;
+      border-radius: 50%;
+      margin-bottom: 1.6rem;
+      border: 1px solid rgba(#ff2b45, 0.2);
     }
 
-    .footer_brand {
-        display: flex;
-        flex-direction: column;
-        max-width: 32rem;
+    p {
+      color: #a0a0b0;
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+  }
 
-        .footer_logo {
-            width: 8.5rem;
-            border-radius: 50%;
-            margin-bottom: 1.6rem;
-            border: 1px solid rgba(#ff2b45, 0.2);
-        }
+  .footer_links-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
 
-        p {
-            color: #a0a0b0;
-            font-size: 1.4rem;
-            line-height: 1.6;
-        }
+    @media (min-width: 480px) {
+      gap: 6rem;
+    }
+  }
+
+  .footer_column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    h4 {
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      margin-bottom: 0.4rem;
     }
 
-    .footer_links-group {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4rem;
+    a {
+      color: #a0a0b0;
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: color 0.2s ease;
 
-        @media (min-width: 480px) {
-            gap: 6rem;
-        }
+      &:hover {
+        color: #ff2b45;
+      }
     }
+  }
 
-    .footer_column {
-        display: flex;
-        flex-direction: column;
-        gap: 1.2rem;
+  .footer_socials {
+    display: flex;
+    gap: 1.6rem;
 
-        h4 {
-            color: #ffffff;
-            font-size: 1.4rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1rem;
-            margin-bottom: 0.4rem;
-        }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.6rem;
+      height: 3.6rem;
+      background: rgba(#ffffff, 0.03);
+      border: 1px solid rgba(#ffffff, 0.08);
+      border-radius: 50%;
+      color: #a0a0b0;
+      font-size: 1.6rem;
+      transition: all 0.3s ease;
 
-        a {
-            color: #a0a0b0;
-            font-size: 1.4rem;
-            text-decoration: none;
-            transition: color 0.2s ease;
-
-            &:hover {
-                color: #ff2b45;
-            }
-        }
+      &:hover {
+        color: #fff;
+        background: #ff2b45;
+        border-color: #ff2b45;
+        transform: translateY(-2px);
+      }
     }
+  }
 
-    .footer_socials {
-        display: flex;
-        gap: 1.6rem;
+  .footer_bottom {
+    margin-top: 4.8rem;
+    padding-top: 2.4rem;
+    border-top: 1px solid rgba(#ffffff, 0.05);
+    text-align: center;
 
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 3.6rem;
-            height: 3.6rem;
-            background: rgba(#ffffff, 0.03);
-            border: 1px solid rgba(#ffffff, 0.08);
-            border-radius: 50%;
-            color: #a0a0b0;
-            font-size: 1.6rem;
-            transition: all 0.3s ease;
-
-            &:hover {
-                color: #fff;
-                background: #ff2b45;
-                border-color: #ff2b45;
-                transform: translateY(-2px);
-            }
-        }
+    p {
+      color: rgba(#a0a0b0, 0.6);
+      font-size: 1.2rem;
     }
-
-    .footer_bottom {
-        margin-top: 4.8rem;
-        padding-top: 2.4rem;
-        border-top: 1px solid rgba(#ffffff, 0.05);
-        text-align: center;
-
-        p {
-            color: rgba(#a0a0b0, 0.6);
-            font-size: 1.2rem;
-        }
-    }
+  }
 }
 
 @media (min-width: 768px) {
-  .header{
+  .header {
     #menu-bar {
-        display: none;
+      display: none !important;
     }
 
     .navHamburguer {
-        display: block !important;
-    }
+      display: block !important;
+      margin-top: 0 !important;
 
-    .navHamburguer ul {
+      ul {
         display: flex;
-        gap: 2rem;
-    }
-    .navHamburguer a {
-        color: #A8A8A8 !important;
+        gap: 3rem; // Aumentado um pouco o espaçamento para melhor leitura no desktop
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        padding: 0; // Remove o padding vertical que era necessário no mobile
+      }
+
+      a {
+        color: #838396 !important; // Cinza azulado elegante (o mesmo do footer) para melhor contraste
+        font-size: 1.5rem !important; // Tamanho ideal para leitura em telas maiores
+        font-weight: 600;
+        position: relative;
+        padding: 0.5rem 0;
+        transition: color 0.3s ease;
+        transform: none !important; // Removemos o transform scale bruto do mobile para usar uma transição mais suave
+
+        // Efeito visual premium: Linha animada que surge por baixo do link no hover
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: #25d366; // Verde oficial
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.3s ease;
+          border-radius: 2px;
+        }
+
+        &.active {
+          color: #ffffff !important; // Mantém o texto em destaque
+
+          &::after {
+            transform: scaleX(1) !important; // Deixa a linha verde sempre visível
+            background-color: #25d366;
+          }
+        }
 
         &:hover {
+          color: #ffffff !important; // O texto fica branco ao passar o mouse para destacar bem
 
-            color: #B61313 !important;
-            transform: scale(1.1);
+          &::after {
+            transform: scaleX(1);
+            transform-origin: left;
+          }
         }
+      }
     }
-    #menu{
-        position: relative !important;
+
+    #menu {
+      position: relative !important;
+      top: auto;
+      right: auto;
+      left: auto;
     }
-    .header_nav{
-        align-items: center;
+
+    .header_nav {
+      align-items: center;
+      max-width: 120rem; // Alinha o container do header com o limite do conteúdo do footer
+      margin: 0 auto;
+      width: 100%;
     }
   }
 
@@ -887,7 +981,7 @@ main {
 
   .recruitment-main {
     max-width: 72rem; // 720px
-    margin: 0 auto;
+    margin: 10rem auto 0;
     padding: 5.6rem 0 7.2rem; // 56px 0 72px
   }
 
