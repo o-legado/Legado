@@ -36,6 +36,37 @@
 
 <body>
 
+  <header class="header">
+    <nav class="header_nav largura-definida">
+      <figure>
+        <a href="index.html"><img src="../../assets/img/logo-oficial.jpg" alt="" class="img"></a>
+      </figure>
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="navHamburguer" id="nav">
+          <ul>
+            <li><a class="menu__item" href="index.html"><i class="fas fa-home"></i> Início</a></li>
+            <li><a class="menu__item" href="pages/sobre/sobre.html"><i class="fas fa-users"></i>
+                SobreNós</a></li>
+            <li><a class="menu__item" href="./pages/xtreino/homeTreinos.html"><i class="fas fa-trophy"></i>
+                X-Treino</a></li>
+            <li><a class="menu__item" href="./pages/ligaPontosCorridos/homeLiga.html"><i
+                  class="fa-solid fa-shield-halved"></i> Liga</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-bg" id="menu-bg"></div>
+
+    </nav>
+
+  </header>
+
 
   <main class="recruitment-main">
 
@@ -471,6 +502,44 @@
 
   </main>
 
+  <footer class="footer">
+    <div class="footer_content largura-definida">
+      <div class="footer_brand">
+        <img src="../../assets/img/logo-oficial.jpg" alt="Logo O Legado" class="footer_logo">
+        <p>Acompanhe os resultados, estatísticas e a evolução dos seus treinos competitivos.</p>
+      </div>
+      <div class="footer_links-group">
+        <div class="footer_column">
+          <h4>Navegação</h4>
+          <a href="../../index.html">Início</a>
+          <a href="../sobre/sobre.html">Sobre Nós</a>
+        </div>
+        <div class="footer_column">
+          <h4>Campeonatos</h4>
+          <a href="../ligaPontosCorridos/homeLiga.html">Liga Oficial</a>
+        </div>
+        <div class="footer_column">
+          <h4>X-Treino</h4>
+          <a href="../xtreino/homeTreinos.html">X-Treino</a>
+        </div>
+        <div class="footer_column">
+          <h4>Social</h4>
+          <div class="footer_socials">
+            <!-- <a href="#" aria-label="Discord"><i class="fa-brands fa-discord"></i></a> -->
+            <a href="https://www.instagram.com/lega_dooficial1?igsh=bmVueG4wdzU3eDM4" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com/@dieguinho916" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <!-- <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom largura-definida">
+      <p>&copy; 2026 O Legado. Todos os direitos reservados. Projetado para Alta Performance.</p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/menuHamburguer/menu.js"></script>
 
 </body>
 

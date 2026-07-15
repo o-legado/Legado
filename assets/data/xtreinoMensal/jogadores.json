@@ -2014,7 +2014,248 @@
         "EVOS ANGEL 乂": { "logo": "", "dados": [null, null, 1] }
       }
     }
+  },
+
+
+  
+  "treino4": {
+    "data": "14/07/2026",
+    "equipes": {
+      "6 LEGADOS": {
+        "P2C naochora": {
+          "logo": "",
+          "dados": [1, 2, 2]
+        },
+        "KILθKURA": {
+          "logo": "",
+          "dados": [3, 0, 1]
+        },
+        "《ŁĐ》 BRISADA": {
+          "logo": "",
+          "dados": [2, 0, 1]
+        },
+        "《ŁĐ》 Six9!.么": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        }
+      },
+      "DREAM TEAM": {
+        "REV FACKx7™": {
+          "logo": "",
+          "dados": [1, 1, 5]
+        },
+        "RED PhzzX⁷": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(4.2)RED PhzzX⁷.jpg",
+          "dados": [3, 2, 6]
+        },
+        "RED MØRD": {
+          "logo": "",
+          "dados": [1, 4, 3]
+        },
+        "RED KHSss?": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        }
+      },
+      "TOXIC E- RAGE": {
+        "TS.RYUMAx⁷": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "Rick_zg4": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        },
+        "DK6 vitin ✿": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "TS.xRyuk7": {
+          "logo": "",
+          "dados": [2, 1, 2]
+        }
+      },
+      "BOPE ANGELS": {
+        "BP JOAO7": {
+          "logo": "",
+          "dados": [0, 0, 3]
+        },
+        "RV biel⁷": {
+          "logo": "",
+          "dados": [0, 0, 3]
+        },
+        "SouzaXGOAT": {
+          "logo": "",
+          "dados": [0, 0, 3]
+        },
+        "BP Greghi": {
+          "logo": "",
+          "dados": [1, 0, 5]
+        }
+      },
+      "ETD E-SPORTS": {
+        "VTX BADBOYx7": {
+          "logo": "",
+          "dados": [0, 0, 2]
+        },
+        "AJAX xKAUA7": {
+          "logo": "",
+          "dados": [3, null, null]
+        },
+        "VTX Seven'": {
+          "logo": "",
+          "dados": [3, null, null]
+        },
+        "VTX MUDINHO7": {
+          "logo": "",
+          "dados": [null, 0, null]
+        },
+        "Gi**sousa": {
+          "logo": "",
+          "dados": [null, 0, null]
+        },
+        "BØSS7 †": {
+          "logo": "",
+          "dados": [null, 0, 0]
+        },
+        "SAMlov": {
+          "logo": "",
+          "dados": [null, null, 2]
+        },
+        "FG' Mano kºº": {
+          "logo": "",
+          "dados": [null, null, 1]
+        }
+      },
+      "DRAGONS": {
+        "kakawzt": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "plugcinza": {
+          "logo": "",
+          "dados": [4, 3, null]
+        },
+        "fubuki¹¹": {
+          "logo": "",
+          "dados": [1, 1, null]
+        },
+        "RAFA .x2": {
+          "logo": "",
+          "dados": [null, 0, null]
+        }
+      },
+      "FCB E-SPORTS": {
+        "《ŁĐ》 WHITER™": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(3.1) ld whiter.jpg",
+          "dados": [6, 0, 4]
+        },
+        "sub~~yuri": {
+          "logo": "",
+          "dados": [2, 0, 4]
+        },
+        "ŁĐ JORDAN7": {
+          "logo": "",
+          "dados": [3, 1, 4]
+        },
+        "《ŁĐ》 Nobre7": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        }
+      },
+      "ARSENAL": {
+        "SMR.REDZIN": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "_mendes09": {
+          "logo": "",
+          "dados": [3, 2, 2]
+        },
+        "7Thurzinn !!": {
+          "logo": "",
+          "dados": [4, 3, 0]
+        },
+        ".FX mt7": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        }
+      },
+      "NEW IMPÉRIO": {
+        "BR_kevin$€": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "BR Murilo⚯": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "BR 011ŽÊ": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "《ŁĐ》 Prozin7": {
+          "logo": "",
+          "dados": [null, 2, 0]
+        }
+      },
+      "ETERNALITY": {
+        "贝德路": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(4.1) 贝德路.jpg",
+          "dados": [8, 6, 3]
+        },
+        "lombrado'": {
+          "logo": "",
+          "dados": [2, 4, 1]
+        },
+        "morango7.": {
+          "logo": "",
+          "dados": [2, 1, 1]
+        },
+        "LICW7": {
+          "logo": "",
+          "dados": [2, 7, 1]
+        }
+      },
+      "FCB E-SPORTS 2.0": {
+        "ŁĐ Bielzzk": {
+          "logo": "",
+          "dados": [3, 2, 3]
+        },
+        "MEMPHIS10yt": {
+          "logo": "",
+          "dados": [0, 3, 2]
+        },
+        "ŁĐ Meliodas": {
+          "logo": "",
+          "dados": [1, 1, 5]
+        },
+        "IFT.Luiz": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        }
+      },
+      "AMIGOS DO SUEDÃO": {
+        "T O N I N ✕": {
+          "logo": "",
+          "dados": [0, 0, 4]
+        },
+        "loboosx7": {
+          "logo": "",
+          "dados": [3, null, 5]
+        },
+        "AS marchi7!": {
+          "logo": "",
+          "dados": [0, null, 5]
+        },
+        "AS Pimenta7!": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      }
+    }
   }
+
 
 
 
