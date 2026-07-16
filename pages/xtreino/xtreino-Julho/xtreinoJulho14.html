@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../../assets/css/css/xtreinoDia.css">
     <link rel="stylesheet" href="../../../assets/css/scss/xtreinoDia.scss">
 
-    
+
     <!--FONTE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,26 +32,51 @@
 
 <body>
     <header class="header">
-    <div class="header_container largura-definida">
-        
-        <!-- Botão Voltar posicionado de forma inteligente -->
-        <a href="../xtreino-Julho/xtreinoJulhoHome.html" class="btn_voltar">
-            <span class="seta">←</span> Voltar
-        </a>
-        
-        <!-- Conteúdo Centralizado (Logo + Título) -->
-        <div class="header_main_content">
-            <figure class="header_logo">
-                <img src="../../../assets/img/logo-xtreino.jpg" alt="Logo X-Treino Legado">
-            </figure>
-            
-            <div class="header_texts">
-                <h1><span>11</span> de <span id="mes">Julho</span> de 2026</h1>
-            </div>
-        </div>
+        <!-- Linha de luz superior dinâmica -->
+        <div class="header_bar-glow"></div>
 
-    </div>
-</header>
+        <div class="header_container largura-definida">
+            <!-- LADO ESQUERDO: Botão de Voltar Integrado (Estilo Interface de Jogo) -->
+            <div class="header_left-group">
+                <a href="../xtreino-Julho/xtreinoJulhoHome.html" class="btn_back_modern">
+                    <span class="back-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="back-text">Painel</span>
+                </a>
+            </div>
+
+            <!-- CENTRO: Bloco HUD Futurista com Logo e Data Integradas -->
+            <div class="header_hud_display">
+                <!-- Moldura de Destaque da Logo -->
+                <div class="logo_hex_frame">
+                    <img src="../../../assets/img/logo-xtreino.jpg" alt="X-Treino" class="logo_img_hud">
+                    <span class="live-dot"></span>
+                </div>
+
+                <!-- Divisor Vertical Moderno -->
+                <div class="hud_divider"></div>
+
+                <!-- Bloco de Texto Estilizado -->
+                <div class="hud_content">
+                    <span class="hud_subtitle">Treino do Dia</span>
+                    <h1 class="hud_title">
+                        <span class="day">14</span>
+                        <span class="sep">/</span>
+                        <span class="month" id="mes">JULHO</span>
+                        <span class="sep">/</span>
+                        <span class="year">2026</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- LADO DIREITO: Espaço para manter a simetria visual perfeito -->
+            <div class="header_right_spacer"></div>
+        </div>
+    </header>
 
 
     <main>
@@ -186,8 +211,9 @@
                 <div class="card-mvp-conteudo">
                     <!-- Lado Esquerdo: Ícone/Avatar + Info do Jogador -->
                     <div class="mvp-perfil">
-                        <img src="../../../assets/img/logosXtreinoEquipes/junho/mvp/(2.1)GO M!D⁷.jpg" alt="Sem logo" class="avatar-container">
-                        
+                        <img src="../../../assets/img/logosXtreinoEquipes/junho/mvp/(2.1)GO M!D⁷.jpg" alt="Sem logo"
+                            class="avatar-container">
+
 
                         <div class="mvp-info">
                             <span class="mvp-tag">MVP DE KILLS • </span>
@@ -299,7 +325,7 @@
                     <div class="card-kill-podio kill-segundo">
                         <div class="medalha-topo">🥈</div>
                         <div class="avatar-kill-container">
-                            
+
                             <img src="" alt="Sem logo" class="avatar-kill-placeholder avatar-prata">
                         </div>
                         <h3 class="player-nick" id="top2KillName"></h3>
@@ -358,10 +384,11 @@
 
                 <div class="links">
                     <a href="https://www.instagram.com/lega_dooficial1?igsh=bmVueG4wdzU3eDM4" target="_blank"
-                        class="link-insta" aria-label="Instagram">
+                        class="link-social link-insta" aria-label="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://tiktok.com/@dieguinho916" target="_blank" class="link-tiktok" aria-label="TikTok">
+                    <a href="https://tiktok.com/@dieguinho916" target="_blank" class="link-social link-tiktok"
+                        aria-label="TikTok">
                         <i class="fa-brands fa-tiktok"></i>
                     </a>
                 </div>

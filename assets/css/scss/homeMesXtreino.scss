@@ -40,64 +40,102 @@ body {
     padding: 0 2.4rem;
 }
 
-// ==========================================================================
-// HEADER & NAVEGAÇÃO
-// ==========================================================================
+
 .header {
-    width: 100%;
-    border-bottom: 1px solid $border;
-    background: rgba(10, 10, 12, 0.8);
-    backdrop-filter: blur(1.2rem);
-    position: sticky;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000; // Aumentado para garantir que nada passe por cima
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); // Animação global suave
+
+  // Estilo "Modern Glassmorphism" (Efeito de Vidro Refinado)
+  &::before {
+    content: '';
+    position: absolute;
     top: 0;
-    z-index: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 18, 0.9); // Fundo escuro levemente transparente
+    backdrop-filter: blur(16px); // Blur mais pronunciado
+    -webkit-backdrop-filter: blur(16px);
+    z-index: -1; // Fica atrás do conteúdo
+  }
 
-    &_nav {
-        height: 8rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+  // Borda inferior sutil e moderna
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 
-        .voltar {
-            color: $text-muted;
-            font-size: 1.5rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: color 0.3s ease, transform 0.3s ease;
-            display: inline-flex;
-            align-items: center;
+  &_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 2.4rem; // Espaçamento interno mais generoso
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 
-            &:hover {
-                color: $primary-hover;
-                transform: translateX(-4px); // Sutil movimento para a esquerda
-            }
+    // BOTÃO DE VOLTAR - Estilo "App Action"
+    .voltar {
+      // Usamos a cor de destaque (ex: laranja neon) para o texto/ícone
+      color: #FF5A1F; // Cor de Destaque Neon (substitua $primary se preferir)
+      font-size: 1.4rem;
+      font-weight: 600; // Um pouco mais de peso
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem; // Espaço maior entre ícone e texto
+      padding: 0.8rem 1.6rem; // Transforma o link em um "pill" (pílula)
+      background: rgba(#FF5A1F, 0.08); // Fundo sutil com a cor de destaque
+      border-radius: 50px; // Forma de pílula
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      // Microinteração de hover (padrão)
+      &:hover {
+        background: rgba(#FF5A1F, 0.15); // Escurece levemente o fundo no hover
+
+        .seta {
+          transform: translateX(-5px); // Seta se move mais agressivamente
         }
+      }
 
-        figure {
-            display: flex;
-            align-items: center;
-
-            .img {
-                height: 5rem;
-                width: 5rem;
-                object-fit: cover;
-                border-radius: 50%;
-                border: 1px solid rgba($primary, 0.3);
-                box-shadow: 0 0 15px rgba($primary, 0.2);
-                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-
-                &:hover {
-                    transform: scale(1.05) rotate(5deg);
-                    border-color: $primary-hover;
-                }
-            }
-        }
+      .seta {
+        font-size: 2rem;
+        font-weight: 400; // Seta mais leve
+        line-height: 1;
+        transition: transform 0.3s ease;
+      }
     }
+
+    // LOGO CONTAINER - Foco em equilíbrio
+    .logo-container {
+      display: flex;
+      align-items: center;
+      margin: 0;
+
+      .img {
+        // Tamanho de app: Compacto e equilibrado
+        height: 7rem;
+        width: 7rem;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid rgba(#FF5A1F, 0.4); // Borda com a cor de destaque e transparência
+        box-shadow: 0 0 15px rgba(#FF5A1F, 0.2); // Brilho neon sutil
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+        // Sem rotação agressiva no mobile, foco na escala
+        &:hover {
+          transform: scale(1.08);
+          border-color: rgba(#FF5A1F, 1); // Borda acende no hover
+          box-shadow: 0 0 25px rgba(#FF5A1F, 0.3); // Brilho neon mais forte
+        }
+      }
+    }
+  }
 }
 
-// ==========================================================================
-// CONTEÚDO PRINCIPAL (MAIN & CONTAINER)
-// ==========================================================================
+
 main {
     padding: 6rem 0;
 }
@@ -261,4 +299,69 @@ main {
         transform: translateY(0);
         filter: blur(0);
     }
+}
+
+
+//tablet
+@media (min-width: 768px) {
+  .header {
+    &_nav {
+      padding: 1.8rem 3.5rem; // Aumenta a área de respiro
+
+      .voltar {
+        font-size: 1.5rem; // Escala a tipografia
+        gap: 1rem;
+        padding: 1rem 2rem; // "pill" maior
+
+        .seta {
+          font-size: 2.2rem;
+        }
+      }
+
+      .logo-container {
+        .img {
+          height: 6rem; // Logo cresce proporcionalmente
+          width: 6rem;
+        }
+      }
+    }
+  }
+}
+
+// 2. DESKTOP (mínimo de 1024px)
+@media (min-width: 1024px) {
+  .header {
+    &_nav {
+      padding: 2.2rem 4rem; // Espaçamento de desktop "premium"
+
+      .voltar {
+        font-size: 1.6rem;
+        // Interação de desktop mais rica
+        &:hover {
+          background: #FF5A1F; // O fundo preenche completamente com a cor neon no desktop
+          color: #fff; // Texto fica branco
+
+          .seta {
+            color: #fff; // Seta fica branca
+            transform: translateX(-5px);
+          }
+        }
+      }
+
+      .logo-container {
+        .img {
+          height: 7rem; // Tamanho final ideal para desktop
+          width: 7rem;
+          box-shadow: 0 0 20px rgba(#FF5A1F, 0.25);
+
+          // Animação de rotação sutil e premium apenas no desktop
+          &:hover {
+            transform: scale(1.1) rotate(3deg);
+            border-color: rgba(#FF5A1F, 1);
+            box-shadow: 0 0 35px rgba(#FF5A1F, 0.4); // Brilho neon máximo
+          }
+        }
+      }
+    }
+  }
 }

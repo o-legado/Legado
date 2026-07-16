@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-img{
+
+img {
     font-size: 2rem;
 }
+
 html {
     font-size: 62.5%;
     min-height: 100%;
@@ -28,117 +30,155 @@ body {
     width: 100%;
 }
 
+
 .header {
-    background-color: rgba(10, 10, 10, 0.75); // Vidro escuro (Glassmorphism)
-    padding: 2.5rem 2rem;
-    border-bottom: 1px solid rgba(255, 70, 70, 0.15); // Linha vermelha gamer sutil
+    width: 100%;
     position: sticky;
     top: 0;
-    backdrop-filter: blur(2rem);
-    -webkit-backdrop-filter: blur(2rem);
-    z-index: 99;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    background: linear-gradient(180deg, rgba(6, 6, 8, 0.95) 0%, rgba(6, 6, 8, 0.8) 100%);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 1.2rem 1.6rem;
+
+    // Linha superior de energia neon
+    &_bar-glow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #ff3333, transparent);
+    }
 
     .header_container {
         display: flex;
         align-items: center;
-        justify-content: center; // Centraliza o bloco principal
+        justify-content: space-between; // Alinhamento HUD tripartido
+        width: 100%;
         position: relative;
-        min-height: 7rem;
     }
 
-    // Botão Voltar ultra moderno e responsivo
-    .btn_voltar {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+    // --- LADO ESQUERDO: Botão de Voltar Minimalista ---
+    .btn_back_modern {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1.2rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: rgba(255, 255, 255, 0.8);
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 1.4rem;
-        font-weight: 600;
-        letter-spacing: 0.05rem;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        transition: color 0.25s ease, transform 0.25s ease;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 
-        .seta {
-            font-size: 1.8rem;
-            transition: transform 0.25s ease;
+        .back-icon svg {
+            width: 2rem;
+            height: 2rem;
+            transition: transform 0.3s ease;
         }
 
-        &:hover {
-            color: #ff4646; // Cor temática ativa no hover
+        .back-text {
+            display: none; // Escondido no mobile para focar no minimalismo
+        }
 
-            .seta {
-                transform: translateX(-4px); // A seta faz o movimento de recuo
-            }
+        &:active {
+            transform: scale(0.9);
+            background: rgba(255, 51, 51, 0.15);
+            border-color: #ff3333;
         }
     }
 
-    // Bloco que agrupa a imagem e os textos de forma alinhada
-    .header_main_content {
+    // --- CENTRO: Painel HUD Integrado ---
+    .header_hud_display {
         display: flex;
         align-items: center;
-        gap: 2rem; // Espaçamento perfeito entre logo e texto
+        background: rgba(14, 14, 18, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 0.6rem 1.4rem 0.6rem 0.6rem; // Logo compacta embutida
+        border-radius: 5rem; // Formato pílula elegante
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05),
+            0 8px 24px rgba(0, 0, 0, 0.3);
+        max-width: 75%;
     }
 
-    .header_logo {
-        width: 7rem;
-        height: 7rem;
+    .logo_hex_frame {
+        width: 7.5rem;
+        height: 7.5rem;
         position: relative;
         flex-shrink: 0;
 
-        // Efeito de brilho neon (glow) sutil atrás da logo
-        &::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 1.2rem;
-            box-shadow: 0 0 20px rgba(255, 70, 70, 0.25);
-            z-index: -1;
-        }
-
-        img {
+        .logo_img_hud {
             width: 100%;
             height: 100%;
-            object-fit: cover; // Garante que a imagem não distorça
-            border-radius: 1.2rem;
-            border: 1.5px solid rgba(255, 255, 255, 0.1);
-            display: block;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #ff3333;
+            box-shadow: 0 0 10px rgba(255, 51, 51, 0.4);
+        }
+
+        .live-dot {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 8px;
+            height: 8px;
+            background: #00ff66; // Ponto verde ativo
+            border-radius: 50%;
+            box-shadow: 0 0 8px #00ff66;
         }
     }
 
-    .header_texts {
+    .hud_divider {
+        width: 1px;
+        height: 2.2rem;
+        background: rgba(255, 255, 255, 0.15);
+        margin: 0 1rem;
+    }
+
+    .hud_content {
         display: flex;
         flex-direction: column;
+        justify-content: center;
 
-        h1 {
-            font-size: 2.4rem;
-            font-weight: 400; // Peso leve para as palavras "de"
-            color: rgba(255, 255, 255, 0.6); // Deixa o "de" discreto
-            letter-spacing: -0.02rem;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        .hud_subtitle {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 0.2rem;
+        }
 
-            // Destaca os números em branco sólido
-            span {
-                font-weight: 800;
-                color: #FFFFFF;
+        .hud_title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+
+            .sep {
+                color: rgba(255, 255, 255, 0.2);
+                font-weight: 300;
             }
 
-            // Destaca o mês com a cor de destaque do campeonato
             #mes {
-                color: #ff4646;
-                position: relative;
+                color: #ff3333;
+                text-shadow: 0 0 8px rgba(255, 51, 51, 0.4);
             }
         }
     }
+
+    // Elemento oculto para equilíbrio de Grid
+    .header_right_spacer {
+        width: 4rem; // Mesmo tamanho do botão voltar
+    }
 }
-
-// Media Query corrigida para evitar sobreposição
-
 
 
 main {
@@ -869,7 +909,8 @@ main {
                 border-top-right-radius: 0.8rem;
                 border-bottom-right-radius: 0.8rem;
             }
-            .avisoPunição{
+
+            .avisoPunição {
                 font-size: 2rem;
             }
 
@@ -2414,19 +2455,31 @@ main {
     }
 }
 
-
 .footer {
-    background: #070707;
+    background: #060608; // Preto espacial idêntico ao Header
     padding: 5rem 2rem 3rem 2rem;
-    // Uma borda sutil em gradiente que separa o main do footer perfeitamente
-    border-top: 1px solid rgba(255, 70, 70, 0.08);
+    border-top: 1px solid rgba(255, 51, 51, 0.1); // Divisória superior com toque de vermelho neon
     position: relative;
     width: 100%;
+    overflow: hidden;
+
+    // Detalhe de linha neon inferior opcional para selar o design
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(255, 51, 51, 0.3), transparent);
+    }
 
     .footer_container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .footer_main {
@@ -2437,64 +2490,83 @@ main {
     }
 
     .footer_siga {
-        color: #60A5FA; // Mantido o tom azul, mas com uma tipografia mais limpa e moderna
-        font-size: 1.6rem;
-        font-weight: 600;
-        letter-spacing: 0.08rem;
-        text-transform: uppercase; // Estilo minimalista de eSports
-        text-shadow: 0 2px 8px rgba(96, 165, 250, 0.2);
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: 800;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase; // Estilo HUD tático
+        text-shadow: 0 0 10px rgba(255, 51, 51, 0.2);
+        margin-bottom: 2rem;
+        position: relative;
+        display: inline-block;
+
+        // Pequeno detalhe estético abaixo do texto "Siga o Legado"
+        &::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #ff3333;
+            margin: 0.8rem auto 0 auto;
+            box-shadow: 0 0 8px rgba(255, 51, 51, 0.6);
+        }
     }
 
     .links {
-        margin-top: 2.5rem;
         display: flex;
         justify-content: center;
-        gap: 1.8rem;
+        gap: 2rem;
 
-        a {
-            color: #FFFFFF;
-            font-size: 2rem;
-            width: 4.8rem;
-            height: 4.8rem;
+        // Base para botões sociais estilo "Teclado Mecânico/Gamer"
+        .link-social {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 2.2rem;
+            width: 5rem;
+            height: 5rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 50%; // Formato perfeitamente circular para um visual clean
-            transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease, filter 0.25s ease;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.2rem; // Cantos ligeiramente arredondados em vez de círculo perfeito
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+            i {
+                transition: transform 0.3s ease;
+            }
 
             &:hover {
-                transform: translateY(-4px); // Flutua levemente para cima em vez de apenas crescer
+                color: #ffffff;
+                background: rgba(255, 51, 51, 0.1);
+                border-color: #ff3333;
+                box-shadow: 0 0 20px rgba(255, 51, 51, 0.3),
+                    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+                transform: translateY(-4px);
+
+                i {
+                    transform: scale(1.15);
+                }
+            }
+
+            &:active {
+                transform: translateY(-1px) scale(0.95);
             }
         }
 
-        // Customização individual premium de cada rede social
+        // Removidos os degradês chamativos antigos por efeitos de hover focados em neon discreto
         .link-insta {
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.2);
-
             &:hover {
-                box-shadow: 0 6px 20px rgba(220, 39, 67, 0.45);
+                box-shadow: 0 0 20px rgba(255, 51, 51, 0.3); // Brilho vermelho escarlate
             }
         }
 
         .link-tiktok {
-            background: #000000;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            position: relative;
-
             &:hover {
-                border-color: #00f2fe;
-                box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
-            }
-        }
-
-        .link-whats {
-            background: #2BD46A;
-            box-shadow: 0 4px 15px rgba(43, 212, 106, 0.2);
-
-            &:hover {
-                box-shadow: 0 6px 20px rgba(43, 212, 106, 0.45);
+                // Brilho azul/ciano característico do TikTok nas bordas de forma minimalista
+                border-color: #00f0ff;
+                box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
             }
         }
     }
@@ -2503,7 +2575,8 @@ main {
         width: 100%;
         border: 0;
         height: 1px;
-        background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.05) 80%, transparent);
+        // Gradiente que some nas pontas para um visual limpo
+        background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.08) 20%, rgba(255, 255, 255, 0.08) 80%, transparent);
         margin-bottom: 2.5rem;
     }
 
@@ -2522,26 +2595,46 @@ main {
     }
 
     .copyright {
-        font-size: 1.3rem;
-        color: #4B5263;
-        font-weight: 400;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.3); // Cinza fosco discreto
+        font-weight: 500;
+        letter-spacing: 0.05rem;
     }
 
     .footer_sublinks {
         a {
-            color: #6B7280;
-            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.2rem;
             text-decoration: none;
-            transition: color 0.2s ease;
-            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            position: relative;
+            padding: 0.5rem 0;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: #ff3333;
+                transition: width 0.3s ease;
+            }
 
             &:hover {
-                color: #FFFFFF;
+                color: #ffffff;
+                text-shadow: 0 0 8px rgba(255, 51, 51, 0.4);
+
+                &::after {
+                    width: 100%;
+                }
             }
         }
     }
 }
-
 
 
 
@@ -2552,8 +2645,8 @@ main {
 
         .header_container {
             // Transformamos em grid para organizar as posições sem quebras
-            display: grid;
-            grid-template-columns: 1fr;
+            // display: grid;
+            // grid-template-columns: 1fr;
             gap: 1.5rem;
             min-height: auto;
         }
@@ -2643,8 +2736,150 @@ main {
 
 }
 
+
+//tablet
 @media (min-width: 769px) {
+    .header {
+        padding: 1.6rem 3rem;
+
+        // Botão voltar ganha corpo e vira um botão de painel tático
+        .btn_back_modern {
+            width: auto;
+            height: auto;
+            padding: 0.8rem 1.8rem;
+            border-radius: 1.4rem;
+            gap: 0.8rem;
+
+            .back-icon svg {
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+
+            .back-text {
+                display: inline-block;
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.1rem;
+            }
+
+            &:hover {
+                border-color: rgba(255, 51, 51, 0.4);
+                color: #ffffff;
+                background: rgba(255, 51, 51, 0.08);
+                box-shadow: 0 0 20px rgba(255, 51, 51, 0.1);
+
+                .back-icon svg {
+                    transform: translateX(-3px);
+                }
+            }
+        }
+
+        // Expansão do bloco central
+        .header_hud_display {
+            padding: 0.8rem 2rem 0.8rem 0.8rem;
+            border-radius: 1.6rem; // Design mais angular e moderno no tablet
+        }
+
+        .logo_hex_frame {
+            width: 4.8rem;
+            height: 4.8rem;
+        }
+
+        .hud_divider {
+            height: 3rem;
+            margin: 0 1.6rem;
+        }
+
+        .hud_content {
+            .hud_subtitle {
+                font-size: 1rem;
+                letter-spacing: 0.2rem;
+            }
+
+            .hud_title {
+                font-size: 2rem;
+                gap: 0.5rem;
+            }
+        }
+
+        .header_right_spacer {
+            width: 11rem; // Compensa a largura do botão voltar no grid flexbox
+        }
+    }
+
     .desempenhoDetalhado_player_partida {
         flex: 1 1 calc((100% / 3) - 2rem) !important;
+    }
+}
+
+
+//desktop
+@media (min-width: 1024px) {
+    .header {
+        padding: 2rem 4rem;
+
+        &_bar-glow {
+            height: 4px;
+            box-shadow: 0 1px 15px rgba(255, 51, 51, 0.4);
+        }
+
+        // Botão de voltar premium com preenchimento total e efeito glow no hover
+        .btn_back_modern {
+            padding: 1rem 2.2rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-color: rgba(255, 255, 255, 0.05);
+
+            &:hover {
+                background: #ff3333;
+                border-color: #ff3333;
+                box-shadow: 0 0 25px rgba(255, 51, 51, 0.4);
+                transform: scale(1.03);
+
+                .back-icon svg {
+                    transform: translateX(-5px);
+                }
+            }
+        }
+
+        // HUD Display Premium para Monitores Grandes
+        .header_hud_display {
+            border-radius: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(12, 12, 16, 0.8);
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1),
+                0 15px 35px rgba(0, 0, 0, 0.5);
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                border-color: rgba(255, 51, 51, 0.3);
+                box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1),
+                    0 15px 35px rgba(255, 51, 51, 0.1);
+            }
+        }
+
+        .logo_hex_frame {
+            width: 5.6rem;
+            height: 5.6rem;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            &:hover {
+                transform: scale(1.08) rotate(-4deg);
+            }
+        }
+
+        .hud_content {
+            .hud_subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hud_title {
+                font-size: 2.4rem;
+            }
+        }
+
+        .header_right_spacer {
+            width: 13rem;
+        }
     }
 }
