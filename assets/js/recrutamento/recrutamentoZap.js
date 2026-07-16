@@ -63,8 +63,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const mensagem = `
     🎮 *NOVA INSCRIÇÃO - O LEGADO*
 
-    ━━━━━━━━━━━━━━━
-
     👤 *Nick*
     ${nick}
 
@@ -92,7 +90,6 @@ document.addEventListener("DOMContentLoaded", () => {
     📝 *Observações*
     ${observacoes || "Nenhuma"}
 
-    ━━━━━━━━━━━━━━━
     `;
 
     // ======================
