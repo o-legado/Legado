@@ -268,13 +268,13 @@ a {
   font-weight: 500;
 }
 .main .seasons-grid .season-card .card-body .season-title {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 .main .seasons-grid .season-card .card-body .season-desc {
   color: #9ca3af;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   margin-top: 0.4rem;
   line-height: 1.4;
 }
@@ -291,13 +291,13 @@ a {
   flex-direction: column;
 }
 .main .seasons-grid .season-card .season-stats .stat-item .stat-label {
-  font-size: 0.65rem;
+  font-size: 1.4rem;
   color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 .main .seasons-grid .season-card .season-stats .stat-item .stat-value {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-top: 0.2rem;
   display: flex;
@@ -306,7 +306,7 @@ a {
 }
 .main .seasons-grid .season-card .season-stats .stat-item .stat-value.prize {
   color: #f59e0b;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 .main .seasons-grid .season-card .podium-rewards {
   display: flex;
@@ -323,18 +323,18 @@ a {
   flex-direction: column;
 }
 .main .seasons-grid .season-card .podium-rewards .podium-item .podium-label {
-  font-size: 0.65rem;
+  font-size: 1.4rem;
   color: #9ca3af;
   display: flex;
   align-items: center;
   gap: 0.2rem;
 }
 .main .seasons-grid .season-card .podium-rewards .podium-item .podium-label .trophy-gold {
-  font-size: 0.85rem;
+  font-size: 1.3rem;
   color: #fcd34d;
 }
 .main .seasons-grid .season-card .podium-rewards .podium-item .podium-value {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #f3f4f6;
   margin-top: 0.1rem;
@@ -345,14 +345,14 @@ a {
 .main .seasons-grid .season-card .card-btn {
   width: 100%;
   border: none;
-  border-radius: 12px;
-  padding: 14px;
+  border-radius: 1.2rem;
+  padding: 1.4rem;
   font-size: 0.875rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.8rem;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -361,23 +361,24 @@ a {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main .seasons-grid .season-card.ongoing {
-  border-hover: 1px solid rgba(239, 68, 68, 0.3);
+  border: 1px solid rgba(239, 68, 68, 0.3);
 }
 .main .seasons-grid .season-card.ongoing .card-glow {
   background-color: rgba(239, 68, 68, 0.08);
 }
 .main .seasons-grid .season-card.ongoing:hover .card-glow {
   background-color: rgba(239, 68, 68, 0.15);
-  box-shadow: 0 0 30px rgba(239, 68, 68, 0.2);
+  box-shadow: 0 0 3rem rgba(239, 68, 68, 0.2);
 }
 .main .seasons-grid .season-card.ongoing .status-badge {
   background-color: rgba(16, 185, 129, 0.1);
   color: #10b981;
   border: 1px solid rgba(16, 185, 129, 0.2);
+  font-size: 1.2rem;
 }
 .main .seasons-grid .season-card.ongoing .status-badge .pulse-dot {
-  width: 6px;
-  height: 6px;
+  width: 0.6rem;
+  height: 0.6rem;
   background-color: #10b981;
   border-radius: 50%;
   animation: pulse 1.5s infinite;
@@ -386,6 +387,7 @@ a {
   background-color: #ef4444;
   color: white;
   box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+  font-size: 1.4rem;
 }
 .main .seasons-grid .season-card.ongoing .btn-primary:hover {
   background-color: #dc2626;
@@ -394,7 +396,7 @@ a {
   transform: scale(0.98);
 }
 .main .seasons-grid .season-card.upcoming {
-  border-hover: 1px solid rgba(245, 158, 11, 0.3);
+  border: 1px solid rgba(245, 158, 11, 0.3);
 }
 .main .seasons-grid .season-card.upcoming .card-glow {
   background-color: rgba(245, 158, 11, 0.04);
