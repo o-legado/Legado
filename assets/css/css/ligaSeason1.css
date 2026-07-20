@@ -115,7 +115,7 @@ body {
   align-items: center;
   gap: 6px;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 0.65rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #ff4646;
   letter-spacing: 1px;
@@ -170,44 +170,6 @@ body {
   }
   100% {
     opacity: 0.4;
-  }
-}
-@media (max-width: 768px) {
-  .header {
-    padding: 1.2rem 1rem;
-  }
-  .header .header_container {
-    flex-direction: column;
-    gap: 1.2rem;
-    align-items: center;
-    min-height: auto;
-  }
-  .header .btn_voltar {
-    position: relative;
-    left: unset;
-    top: unset;
-    transform: unset;
-    align-self: flex-start;
-    padding: 0.4rem 0;
-    font-size: 1rem;
-  }
-  .header .header_main_content {
-    width: 100%;
-    justify-content: flex-start;
-    gap: 1rem;
-  }
-  .header .header_logo {
-    width: 4.5rem;
-    height: 4.5rem;
-  }
-  .header .header_texts .header_title {
-    font-size: 1.8rem;
-  }
-  .header .header_texts .header_title .date-separator {
-    font-size: 1.1rem;
-  }
-  .header .header_texts .header_title .date-year {
-    font-size: 1.1rem;
   }
 }
 main {
@@ -2028,7 +1990,6 @@ main .container .top_kills_wrapper {
   .header .header_main_content {
     width: 100%;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
     gap: 1rem;
   }

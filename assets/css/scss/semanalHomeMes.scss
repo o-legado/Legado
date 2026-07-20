@@ -1,0 +1,1099 @@
+// ==========================================================================
+// VARIÁVEIS DO TEMA DARK PREMIUM
+// ==========================================================================
+$bg-dark: #0a0a0c;
+$primary: #e01b35;
+$primary-hover: #ff2e4d;
+$border: rgba(255, 255, 255, 0.06);
+$glass: rgba(15, 15, 18, 0.5);
+$text-main: #f4f4f5;
+$text-muted: #8f8f9e;
+
+@mixin transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// ==========================================================================
+// CONFIGURAÇÕES GLOBAIS E RESETS
+// ==========================================================================
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-dark;
+    color: $text-main;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+}
+
+// Layout responsivo centralizado
+.largura-definida {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000; // Aumentado para garantir que nada passe por cima
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); // Animação global suave
+
+    // Estilo "Modern Glassmorphism" (Efeito de Vidro Refinado)
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(15, 15, 18, 0.9); // Fundo escuro levemente transparente
+        backdrop-filter: blur(16px); // Blur mais pronunciado
+        -webkit-backdrop-filter: blur(16px);
+        z-index: -1; // Fica atrás do conteúdo
+    }
+
+    // Borda inferior sutil e moderna
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    &_nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.4rem 2.4rem; // Espaçamento interno mais generoso
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        // BOTÃO DE VOLTAR - Estilo "App Action"
+        .voltar {
+            // Usamos a cor de destaque (ex: laranja neon) para o texto/ícone
+            color: #FF5A1F; // Cor de Destaque Neon (substitua $primary se preferir)
+            font-size: 1.4rem;
+            font-weight: 600; // Um pouco mais de peso
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem; // Espaço maior entre ícone e texto
+            padding: 0.8rem 1.6rem; // Transforma o link em um "pill" (pílula)
+            background: rgba(#FF5A1F, 0.08); // Fundo sutil com a cor de destaque
+            border-radius: 50px; // Forma de pílula
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+
+            // Microinteração de hover (padrão)
+            &:hover {
+                background: rgba(#FF5A1F, 0.15); // Escurece levemente o fundo no hover
+
+                .seta {
+                    transform: translateX(-5px); // Seta se move mais agressivamente
+                }
+            }
+
+            .seta {
+                font-size: 2rem;
+                font-weight: 400; // Seta mais leve
+                line-height: 1;
+                transition: transform 0.3s ease;
+            }
+        }
+
+        // LOGO CONTAINER - Foco em equilíbrio
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin: 0;
+
+            .img {
+                // Tamanho de app: Compacto e equilibrado
+                height: 7rem;
+                width: 7rem;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 2px solid rgba(#FF5A1F, 0.4); // Borda com a cor de destaque e transparência
+                box-shadow: 0 0 15px rgba(#FF5A1F, 0.2); // Brilho neon sutil
+                transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+                // Sem rotação agressiva no mobile, foco na escala
+                &:hover {
+                    transform: scale(1.08);
+                    border-color: rgba(#FF5A1F, 1); // Borda acende no hover
+                    box-shadow: 0 0 25px rgba(#FF5A1F, 0.3); // Brilho neon mais forte
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    padding: 6rem 0;
+
+    .container {
+        .containerSemanais {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        h2 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            margin-bottom: 0.8rem;
+            background: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.6rem;
+            color: $text-muted;
+            margin-bottom: 4rem;
+        }
+
+        // Grid dos Cards de Datas
+        &_divsDates {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+            gap: 2.4rem;
+            width: 100%;
+
+            // Estilização individual do CARD
+            &_divDate {
+                background: $glass;
+                border: 1px solid $border;
+                border-radius: 1.6rem;
+                padding: 2.4rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                position: relative;
+                overflow: hidden;
+
+                // Ativa a animação de entrada fade-in-up automaticamente em ordem sequencial
+                opacity: 0;
+                animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+                transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                    border-color 0.4s ease,
+                    box-shadow 0.4s ease;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4),
+                    inset 0 1px 1px rgba(255, 255, 255, 0.02);
+                backdrop-filter: blur(0.4rem);
+
+                // Título do Dia (Ex: Dia 02/07)
+                p:nth-of-type(1) {
+                    font-size: 2.2rem;
+                    font-weight: 700;
+                    color: $text-main;
+                    margin-bottom: 0;
+                }
+
+                // Descrição Interna do Card (Ex: Ver dias de treino)
+                p:nth-of-type(2) {
+                    font-size: 1.4rem;
+                    color: $text-muted;
+                    margin-bottom: 0.8rem;
+                }
+
+                // Wrapper do Ícone do Calendário
+                &_icon {
+                    background: rgba($primary, 0.06);
+                    border: 1px solid rgba($primary, 0.15);
+                    width: 4.4rem;
+                    height: 4.4rem;
+                    border-radius: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s ease;
+
+                    i {
+                        font-size: 2rem;
+                        color: $primary;
+                        transition: all 0.3s ease;
+                    }
+                }
+
+                // Botão "Acessar >"
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.6rem;
+                    width: 100%;
+                    background: linear-gradient(135deg, $primary, #ca142d);
+                    color: #ffffff;
+                    padding: 1.2rem;
+                    border-radius: 1rem;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                    margin-top: auto; // Empurra o botão sempre para o rodapé do card
+                    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+                    span {
+                        font-size: 1.3rem;
+                        display: inline-block;
+                        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+                }
+
+                // EFEITOS HOVER DO CARD
+                &:hover {
+                    transform: translateY(-8px) scale(1.01);
+                    border-color: rgba($primary, 0.4);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6),
+                        0 0 25px rgba($primary, 0.1),
+                        inset 0 1px 1px rgba(255, 255, 255, 0.06);
+
+                    .container_divsDates_divDate_icon {
+                        background: rgba($primary, 0.12);
+                        border-color: rgba($primary, 0.35);
+
+                        i {
+                            color: $primary-hover;
+                            transform: scale(1.08);
+                        }
+                    }
+
+                    a {
+                        background: linear-gradient(135deg, $primary-hover, #e01b35);
+                        box-shadow: 0 0 20px rgba($primary, 0.4);
+
+                        span {
+                            transform: translateX(5px); // Seta dá um pulinho pro lado
+                        }
+                    }
+                }
+            }
+        }
+
+        .seasons-grid {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1 1 calc((100%/1) - 1.5rem);
+
+            gap: 2.4rem;
+
+            // CARD COMPONENT
+            .season-card {
+                background-color: rgba(255, 255, 255, 0.02);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                border-radius: 1.6rem;
+                padding: 2.4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+                overflow: hidden;
+                backdrop-filter: blur(4px);
+                @include transition-smooth;
+
+                .card-glow {
+                    position: absolute;
+                    top: -3.2rem;
+                    right: -3.2rem;
+                    width: 9.6rem;
+                    height: 9.6rem;
+                    border-radius: 5rem;
+                    filter: blur(3.2rem);
+                    @include transition-smooth;
+                }
+
+                &:hover {
+                    transform: translateY(-4px);
+                    background-color: rgba(255, 255, 255, 0.04);
+
+                    .card-btn span {
+                        transform: translateX(4px);
+                    }
+                }
+
+                // Header do Card
+                .card-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 2.4rem;
+
+                    .status-badge {
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        padding: 0.4rem 1rem;
+                        border-radius: 0.6rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.6rem;
+                    }
+
+                    .date-badge {
+                        color: #6b7280;
+                        font-size: 0.85rem;
+                        font-weight: 500;
+                    }
+                }
+
+                // Corpo do Card
+                .card-body {
+                    .season-title {
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                    }
+
+                    .season-desc {
+                        color: #9ca3af;
+                        font-size: 1.2rem;
+                        margin-top: 0.4rem;
+                        line-height: 1.4;
+                    }
+                }
+
+                // Estatísticas Internas (Informações Gerais)
+                .season-stats {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1.2rem;
+                    margin-top: 2rem;
+                    padding-top: 1.6rem;
+                    border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+                    .stat-item {
+                        display: flex;
+                        flex-direction: column;
+
+                        .stat-label {
+                            font-size: 1.1rem;
+                            color: #6b7280;
+                            text-transform: uppercase;
+                            letter-spacing: 0.5px;
+                        }
+
+                        .stat-value {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            margin-top: 0.2rem;
+                            display: flex;
+                            align-items: center;
+                            gap: 0.4rem;
+                            color: #f3f4f6;
+
+                            &.prize {
+                                color: #f59e0b;
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+
+                // Seção dos 3 Primeiros Colocados (Pódio)
+                .podium-rewards {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    background-color: rgba(255, 255, 255, 0.02);
+                    border: 1px solid rgba(255, 255, 255, 0.04);
+                    border-radius: 1.2rem;
+                    padding: 1.4rem;
+                    margin: 2rem 0;
+                    gap: 0.8rem;
+
+                    .podium-item {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        flex: 1;
+
+                        .podium-label {
+                            font-size: 1rem;
+                            color: #6b7280;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                        }
+
+                        .team-info {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            gap: 0.6rem;
+                            margin: 0.8rem 0;
+
+                            .team-logo {
+                                width: 10rem;
+                                height: 10rem;
+                                object-fit: contain;
+                                border-radius: 2rem;
+                                background-color: rgba(0, 0, 0, 0.4);
+                                padding: 0.2rem;
+                            }
+
+                            .team-name {
+                                font-size: 1.1rem;
+                                font-weight: 700;
+                                color: #e5e7eb;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                max-width: 8.5rem;
+                            }
+                        }
+
+                        .podium-value {
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                            color: #9ca3af;
+                        }
+
+                        // Destaque para o 1º Lugar (Campeão)
+                        &.top-1 {
+                            .podium-label {
+                                color: #fcd34d;
+                            }
+
+                            .team-name {
+                                color: #fcd34d;
+                            }
+
+                            .podium-value {
+                                color: #fcd34d;
+                                font-weight: 700;
+                            }
+
+                            .team-logo {
+                                border: 2px solid #fcd34d;
+                                box-shadow: 0 0 10px rgba(252, 211, 77, 0.25);
+                            }
+                        }
+                    }
+                }
+
+                // Botão Acessar/Ação
+                .card-btn {
+                    width: 100%;
+                    border: none;
+                    border-radius: 1.2rem;
+                    padding: 1.4rem;
+                    font-size: 1.4rem;
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 0.8rem;
+                    cursor: pointer;
+                    text-decoration: none;
+                    @include transition-smooth;
+
+                    span {
+                        font-size: 1.2rem;
+                        @include transition-smooth;
+                    }
+                }
+
+                // ==========================================
+                // MODIFICADORES DE ESTADO (COMPETIÇÕES)
+                // ==========================================
+
+                // Estado 1: Em Andamento / Ativo
+                &.ongoing {
+                    border: 1px solid rgba(#ef4444, 0.3);
+
+                    .card-glow {
+                        background-color: rgba(#ef4444, 0.08);
+                    }
+
+                    &:hover .card-glow {
+                        background-color: rgba(#ef4444, 0.15);
+                        box-shadow: 0 0 3rem rgba(#ef4444, 0.2);
+                    }
+
+                    .status-badge {
+                        background-color: rgba(#10b981, 0.1);
+                        color: #10b981;
+                        border: 1px solid rgba(#10b981, 0.2);
+
+                        .pulse-dot {
+                            width: 0.6rem;
+                            height: 0.6rem;
+                            background-color: #10b981;
+                            border-radius: 50%;
+                            animation: pulse 1.5s infinite;
+                        }
+                    }
+
+                    .btn-primary {
+                        background-color: #ef4444;
+                        color: white;
+                        box-shadow: 0 4px 12px rgba(#ef4444, 0.15);
+
+                        &:hover {
+                            background-color: #dc2626;
+                        }
+
+                        &:active {
+                            transform: scale(0.98);
+                        }
+                    }
+                }
+
+                // Estado 2: Em Breve
+                &.upcoming {
+                    border: 1px solid rgba(#f59e0b, 0.3);
+
+                    .card-glow {
+                        background-color: rgba(#f59e0b, 0.04);
+                    }
+
+                    .status-badge {
+                        background-color: rgba(#f59e0b, 0.1);
+                        color: #f59e0b;
+                        border: 1px solid rgba(#f59e0b, 0.2);
+                    }
+
+                    .btn-disabled {
+                        background-color: rgba(255, 255, 255, 0.05);
+                        color: #6b7280;
+                        cursor: not-allowed;
+                    }
+                }
+
+                // Estado 3: Finalizada (Cores ajustadas para indicar conclusão)
+                &.finished {
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+
+                    .card-glow {
+                        background-color: rgba(255, 255, 255, 0.02);
+                    }
+
+                    // Badge de status neutro/cinza para passar ideia de concluído
+                    .status-badge {
+                        background-color: rgba(107, 114, 128, 0.15);
+                        color: #9ca3af;
+                        border: 1px solid rgba(107, 114, 128, 0.3);
+
+                        .status-dot {
+                            width: 0.6rem;
+                            height: 0.6rem;
+                            background-color: #6b7280;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .btn-primary,
+                    .btn-secondary {
+                        background-color: #ef4444;
+                        color: #ffffff;
+
+                        &:hover {
+                            background-color: #dc2626;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(0.9);
+                opacity: 0.6;
+            }
+        }
+
+
+
+        // Balões caindo
+        @keyframes balloonsFalling {
+            0% {
+                transform: translateY(-50px) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.6;
+            }
+
+            80% {
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: translateY(380px) rotate(25deg);
+                opacity: 0;
+            }
+        }
+
+        // Movimento suave da luz neon no fundo
+        @keyframes auroraMove {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 0.4;
+            }
+
+            50% {
+                transform: translate(-10%, 15%) scale(1.2);
+                opacity: 0.7;
+            }
+        }
+
+        // Subida de faíscas minimalistas
+        @keyframes sparkRise {
+            0% {
+                transform: translateY(100px) scale(0);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+                transform: translateY(0) scale(1.2);
+            }
+
+            100% {
+                transform: translateY(-120px) scale(0);
+                opacity: 0;
+            }
+        }
+
+        // Raio de iluminação passando no escudo do campeão
+        @keyframes goldShimmer {
+            0% {
+                left: -150%;
+            }
+
+            100% {
+                left: 150%;
+            }
+        }
+
+        // Pulso neon no escudo do campeão
+        @keyframes championGlow {
+
+            0%,
+            100% {
+                border-color: #fcd34d;
+                box-shadow: 0 0 12px rgba(252, 211, 77, 0.4), inset 0 0 12px rgba(252, 211, 77, 0.2);
+            }
+
+            50% {
+                border-color: #fbbf24;
+                box-shadow: 0 0 25px rgba(252, 211, 77, 0.8), inset 0 0 20px rgba(252, 211, 77, 0.4);
+            }
+        }
+
+        // Flutuação das coroas
+        @keyframes crownFloat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+
+        // ==========================================
+        // ESTILOS DO CARD
+        // ==========================================
+        .season-card.season-01-card {
+            position: relative;
+            background: rgba(18, 18, 24, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 2rem;
+            padding: 2.4rem;
+            flex: 1 1 32rem;
+            overflow: hidden;
+            backdrop-filter: blur(16px);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+            &:hover {
+                transform: translateY(-6px);
+                border-color: rgba(239, 68, 68, 0.4);
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(239, 68, 68, 0.15);
+
+                .aurora-glow {
+                    opacity: 0.8;
+                }
+            }
+
+            // Efeitos de Fundo
+            .card-bg-effects {
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                z-index: 0;
+
+                .aurora-glow {
+                    position: absolute;
+                    top: -30%;
+                    left: -20%;
+                    width: 140%;
+                    height: 140%;
+                    background: radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, rgba(252, 211, 77, 0.08) 40%, transparent 70%);
+                    animation: auroraMove 8s infinite ease-in-out;
+                }
+
+                // Estilos dos Balões Caindo
+                .falling-balloons {
+                    .balloon {
+                        position: absolute;
+                        top: -30px;
+                        font-size: 1.6rem;
+                        opacity: 0;
+                        animation: balloonsFalling 6s infinite linear;
+
+                        &:nth-child(1) {
+                            left: 10%;
+                            animation-delay: 0s;
+                        }
+
+                        &:nth-child(2) {
+                            left: 38%;
+                            animation-delay: 2.2s;
+                            font-size: 1.3rem;
+                        }
+
+                        &:nth-child(3) {
+                            left: 65%;
+                            animation-delay: 4.1s;
+                        }
+
+                        &:nth-child(4) {
+                            left: 88%;
+                            animation-delay: 1.1s;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+
+                .sparks {
+                    span {
+                        position: absolute;
+                        width: 3px;
+                        height: 3px;
+                        background-color: #fcd34d;
+                        border-radius: 50%;
+                        box-shadow: 0 0 6px #fcd34d;
+                        animation: sparkRise 4s infinite linear;
+
+                        &:nth-child(1) {
+                            left: 15%;
+                            animation-delay: 0s;
+                        }
+
+                        &:nth-child(2) {
+                            left: 35%;
+                            animation-delay: 1.2s;
+                            background-color: #ef4444;
+                            box-shadow: 0 0 6px #ef4444;
+                        }
+
+                        &:nth-child(3) {
+                            left: 60%;
+                            animation-delay: 2.5s;
+                        }
+
+                        &:nth-child(4) {
+                            left: 80%;
+                            animation-delay: 0.7s;
+                        }
+
+                        &:nth-child(5) {
+                            left: 90%;
+                            animation-delay: 3.1s;
+                            background-color: #ef4444;
+                            box-shadow: 0 0 6px #ef4444;
+                        }
+                    }
+                }
+            }
+
+            .card-header,
+            .card-body,
+            .card-btn {
+                position: relative;
+                z-index: 1;
+            }
+
+            // Pódio
+            .podium-rewards {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                background: rgba(0, 0, 0, 0.4);
+                border: 1px solid rgba(255, 255, 255, 0.05);
+                border-radius: 1.6rem;
+                padding: 1.6rem 1rem;
+                margin: 2rem 0;
+
+                .podium-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    flex: 1;
+
+                    .podium-label {
+                        font-size: 1rem;
+                        font-weight: 700;
+                        color: #6b7280;
+                        text-transform: uppercase;
+                        margin-bottom: 0.6rem;
+                    }
+
+                    .team-info {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.6rem;
+
+                        // Estilo geral de coroas e ícones
+                        .crown-badge {
+                            position: absolute;
+                            top: -18px;
+                            font-size: 1.5rem;
+                            z-index: 2;
+                            animation: crownFloat 2s infinite ease-in-out;
+
+                            &.gold {
+                                filter: drop-shadow(0 0 6px rgba(252, 211, 77, 0.8));
+                            }
+
+                            &.silver {
+                                filter: drop-shadow(0 0 6px rgba(209, 213, 219, 0.8));
+                            }
+
+                            &.bronze {
+                                filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.6));
+                            }
+                        }
+
+                        .logo-box {
+                            position: relative;
+                            width: 10rem;
+                            height: 10rem;
+                            border-radius: 1.2rem;
+                            overflow: hidden;
+                            border: 1px solid rgba(255, 255, 255, 0.1);
+                            background: #000;
+
+                            .team-logo {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .team-name {
+                            font-size: 1.1rem;
+                            font-weight: 700;
+                            color: #e5e7eb;
+                        }
+                    }
+
+                    .podium-value {
+                        font-size: 1.1rem;
+                        font-weight: 600;
+                        color: #9ca3af;
+                        margin-top: 0.4rem;
+                    }
+
+                    // Campeão 1º Lugar
+                    &.top-1 {
+
+                        .podium-label,
+                        .team-name,
+                        .podium-value {
+                            color: #fcd34d;
+                            text-shadow: 0 0 10px rgba(252, 211, 77, 0.3);
+                        }
+
+                        .logo-box {
+                            border: 2px solid #fcd34d;
+                            animation: championGlow 3s infinite ease-in-out;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: -150%;
+                                width: 100%;
+                                height: 100%;
+                                background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+                                transform: skewX(-20deg);
+                                animation: goldShimmer 3.5s infinite ease-in-out;
+                            }
+                        }
+                    }
+
+                    // 2º Lugar
+                    &.top-2 {
+                        .logo-box {
+                            border-color: rgba(209, 213, 219, 0.5);
+                        }
+                    }
+
+                    // 3º Lugar
+                    &.top-3 {
+                        .logo-box {
+                            border-color: rgba(217, 119, 6, 0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// ==========================================================================
+// ESCALONAMENTO DE TEMPO (DELAY) PARA CADA CARD APARECER EM SÉRIE
+// ==========================================================================
+.container_divsDates_divDate:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.container_divsDates_divDate:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.container_divsDates_divDate:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.container_divsDates_divDate:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.container_divsDates_divDate:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.container_divsDates_divDate:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+// ==========================================================================
+// KEYFRAMES DA ANIMAÇÃO DE ENTRADA CINEMATOGRÁFICA
+// ==========================================================================
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+        filter: blur(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+
+//tablet
+@media (min-width: 768px) {
+    .header {
+        &_nav {
+            padding: 1.8rem 3.5rem; // Aumenta a área de respiro
+
+            .voltar {
+                font-size: 1.5rem; // Escala a tipografia
+                gap: 1rem;
+                padding: 1rem 2rem; // "pill" maior
+
+                .seta {
+                    font-size: 2.2rem;
+                }
+            }
+
+            .logo-container {
+                .img {
+                    height: 6rem; // Logo cresce proporcionalmente
+                    width: 6rem;
+                }
+            }
+        }
+    }
+    main{
+        .seasons-grid {
+            flex: 1 1 calc((100%/2) - 1.5rem) !important;
+        }
+    }
+}
+
+// 2. DESKTOP (mínimo de 1024px)
+@media (min-width: 1024px) {
+    .header {
+        &_nav {
+            padding: 2.2rem 4rem; // Espaçamento de desktop "premium"
+
+            .voltar {
+                font-size: 1.6rem;
+
+                // Interação de desktop mais rica
+                &:hover {
+                    background: #FF5A1F; // O fundo preenche completamente com a cor neon no desktop
+                    color: #fff; // Texto fica branco
+
+                    .seta {
+                        color: #fff; // Seta fica branca
+                        transform: translateX(-5px);
+                    }
+                }
+            }
+
+            .logo-container {
+                .img {
+                    height: 7rem; // Tamanho final ideal para desktop
+                    width: 7rem;
+                    box-shadow: 0 0 20px rgba(#FF5A1F, 0.25);
+
+                    // Animação de rotação sutil e premium apenas no desktop
+                    &:hover {
+                        transform: scale(1.1) rotate(3deg);
+                        border-color: rgba(#FF5A1F, 1);
+                        box-shadow: 0 0 35px rgba(#FF5A1F, 0.4); // Brilho neon máximo
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        .seasons-grid {
+            flex: 1 1 calc((100%/3) - 1.5rem) !important;
+        }
+    }
+}
+

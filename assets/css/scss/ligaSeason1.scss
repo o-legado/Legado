@@ -132,7 +132,7 @@ $font-body-gamer: 'Space Grotesk', sans-serif;
             align-items: center;
             gap: 6px;
             font-family: $font-body-gamer;
-            font-size: 0.65rem;
+            font-size: 1.4rem;
             font-weight: 700;
             color: $vermelho-liga;
             letter-spacing: 1px;
@@ -193,53 +193,7 @@ $font-body-gamer: 'Space Grotesk', sans-serif;
     100% { opacity: 0.4; }
 }
 
-// ==========================================================
-// MEDIA QUERIES (RESPONSIVIDADE INTELIGENTE)
-// ==========================================================
-@media (max-width: 768px) {
-    .header {
-        padding: 1.2rem 1rem;
 
-        .header_container {
-            flex-direction: column;
-            gap: 1.2rem;
-            align-items: center;
-            min-height: auto;
-        }
-
-        // Move o botão voltar para uma posição fixa sem quebrar o alinhamento central
-        .btn_voltar {
-            position: relative;
-            left: unset;
-            top: unset;
-            transform: unset;
-            align-self: flex-start; // Alinha à esquerda no mobile
-            padding: 0.4rem 0;
-            font-size: 1rem;
-        }
-
-        .header_main_content {
-            width: 100%;
-            justify-content: flex-start;
-            gap: 1rem;
-        }
-
-        .header_logo {
-            width: 4.5rem;
-            height: 4.5rem;
-        }
-
-        .header_texts {
-            .header_title {
-                font-size: 1.8rem;
-
-                .date-separator { font-size: 1.1rem; }
-                .date-year { font-size: 1.1rem; }
-            }
-        }
-    }
-}
-// Media Query corrigida para evitar sobreposição
 
 
 
@@ -2250,7 +2204,6 @@ main {
         .header_main_content {
             width: 100%;
             justify-content: center;
-            flex-direction: column; // Empilha a logo acima do texto no celular
             text-align: center;
             gap: 1rem;
         }
