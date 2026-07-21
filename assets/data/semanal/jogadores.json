@@ -1,0 +1,42 @@
+{
+    "julho":{
+        "semanal1": {
+
+            "data": "02/07/2026",
+            "equipes": {
+            "EDT E-SPORTS": {
+                "RAFA  .x2": { "logo": "", "dados": [1, 0, 0] },
+                "*BLACKN444": { "logo": "", "dados": [4, 0, null] },
+                "GR  KaykCold": { "logo": "", "dados": [1, 0, 0] },
+                "Ⓥ  VILAO  ⚔☠★": { "logo": "", "dados": [0, 1, 0] },
+                "《ŁĐ》 YESHUA": { "logo": "", "dados": [null, null, 0] }
+            },
+            "VTX CASH": {
+                "GMP  NOG10": { "logo": "", "dados": [4, 0, null] },
+                "AJAX  Dgx7": { "logo": "", "dados": [1, 0, 1] },
+                "BØSS⁷  †": { "logo": "", "dados": [4, 1, 1] },
+                "VTX  MUDINHO⁷": { "logo": "", "dados": [6, 0, null] }
+            }
+    }
+    },
+    
+    "treino2": {
+    "data": "07/07/2026",
+    "equipes": {
+      "FCB E-SPORTS": {
+        "《ŁĐ》WHITER™": { "logo": "", "dados": [3, 0, 4] },
+        "sub~~yuri": { "logo": "", "dados": [1, 0, 6] },
+        "《ŁĐ》Nobre7": { "logo": "", "dados": [0, 0, 4] },
+        "ŁĐ JORDAN7": { "logo": "", "dados": [1, 0, 7] }
+      },
+      "6 LEGADOS": {
+        "SEM MEDO²⁴⁴": { "logo": "", "dados": [2, 0, 1] },
+        "KILØKURA": { "logo": "", "dados": [0, null, 0] },
+        "》♡♡(+_+)♡♡《": { "logo": "", "dados": [4, 0, 3] },
+        "❀ump Bossシ": { "logo": "", "dados": [2, 1, 2] }
+      }
+    }
+    }
+
+  }
+}

@@ -1931,10 +1931,8 @@
       }
     }
     },
-
-
     
-  "treino3": {
+    "treino3": {
     "data": "09/07/2026",
     "equipes": {
       "EVOS PHOENIX": {
@@ -2014,11 +2012,9 @@
         "EVOS ANGEL 乂": { "logo": "", "dados": [null, null, 1] }
       }
     }
-  },
+    },
 
-
-  
-  "treino4": {
+    "treino4": {
     "data": "14/07/2026",
     "equipes": {
       "6 LEGADOS": {
@@ -2254,10 +2250,7 @@
         }
       }
     }
-  }
-
-
-
+    }
 
   }
 }

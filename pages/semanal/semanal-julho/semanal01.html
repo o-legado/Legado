@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semanal</title>
     <link rel="stylesheet" href="../../../assets/css/css/xtreinoDia.css">
-    <link rel="stylesheet" href="../../../assets/css/scss/xtreinoDia.scss">
+    <!-- <link rel="stylesheet" href="../../../assets/css/scss/xtreinoDia.scss"> -->
 
 
     <!--FONTE-->
@@ -38,7 +38,7 @@
         <div class="header_container largura-definida">
             <!-- LADO ESQUERDO: Botão de Voltar Integrado (Estilo Interface de Jogo) -->
             <div class="header_left-group">
-                <a href="../xtreino-Julho/xtreinoJulhoHome.html" class="btn_back_modern">
+                <a href="semanalHomeJulho.html" class="btn_back_modern">
                     <span class="back-icon">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2.5"
@@ -137,7 +137,7 @@
             </div>
             <!--SISTEMA DE PONTUAÇÃO-->
 
-            <!--Tabela-->
+            <!--Tabela GRUPO A-->
             <div class="table_wrapper">
 
                 <!--TITLE RANKING-->
@@ -160,7 +160,37 @@
                             <th>INFO</th>
                         </tr>
                     </thead>
-                    <tbody class="container_table_tbody" id="tbody"></tbody>
+                    <tbody class="container_table_tbody" id="tbodyGrupoA"></tbody>
+
+                </table>
+
+            </div>
+            <!--Tabela-->
+
+            <!--Tabela GRUPO B-->
+            <div class="table_wrapper">
+
+                <!--TITLE RANKING-->
+                <div class="table_header">
+                    <h2>🏆 Grupo B <span id="rankingSeason"> </span> </h2>
+                    <p>📅 <span id="data"></span></p>
+                </div>
+                <!--TITLE RANKING-->
+
+
+                <table class="container_table">
+                    <thead>
+                        <tr>
+                            <th>POS</th>
+                            <th class="equipe_th">EQUIPE</th>
+                            <th>Q</th>
+                            <th>AB</th>
+                            <th>B!</th>
+                            <th>PTS</th>
+                            <th>INFO</th>
+                        </tr>
+                    </thead>
+                    <tbody class="container_table_tbody" id="tbodyGrupoB"></tbody>
 
                 </table>
 
@@ -406,10 +436,11 @@
     </footer>
 
 
-
-
-
     <script src="../../../assets/js/classificação/sistemaPontuação.js" type="module"></script>
+
+
+
+
 
     <script src="../../../assets/js/semanal/semanalCriarTabela.js" type="module"></script>
     <!-- <script src="../../../assets/js/classificaçãoNovoModelo/criarTabela.js" type="module"></script> -->
