@@ -2250,7 +2250,88 @@
         }
       }
     }
+    },
+
+
+    
+    "treino5": {
+        "data": "21/07/2026",
+        "equipes": {
+            "ELITE-X": {
+                "THEP·BRABOX": { "logo": "", "dados": [0, 0, 2] },
+                "THEP·Six9": { "logo": "", "dados": [0, 2, 1] },
+                "THEP·KRATØS": { "logo": "", "dados": [1, 3, 2] },
+                "lil_yurii33": { "logo": "", "dados": [1, 0, 2] }
+            },
+            "6 LEGADOS": {
+                "P2C naochora": { "logo": "", "dados": [1, 1, 0] },
+                "BR_kevin$€": { "logo": "", "dados": [0, 0, 1] },
+                "P2C erreiHud": { "logo": "", "dados": [1, 2, 2] },
+                "LOUD_LK_014$": { "logo": "", "dados": [3, 0, 1] }
+            },
+            "CJ CITY": {
+                "easy   CJ": { "logo": "", "dados": [0, 0, 0] },
+                "Gusttavo7__": { "logo": "", "dados": [6, 2, 0] },
+                "₦Ŧ$ Gb adm": { "logo": "", "dados": [0, 1, 1] },
+                "fly       CJ": { "logo": "", "dados": [0, 0, 0] }
+            },
+            "FCB E-SPORTS 2.0": {
+                "《ŁÐ》 crazyboy": { "logo": "", "dados": [0, 3, 0] },
+                "《ŁÐ》 vieirssz": { "logo": "", "dados": [0, 1, 0] },
+                "Sevengoat": { "logo": "", "dados": [0, 2, 0] },
+                "《ŁÐ》 !Bn.op益": { "logo": "", "dados": [0, 2, 1] }
+            },
+            "IMPÉRIO 171": {
+                "Lcszinn7 171": { "logo": "", "dados": [2, 0, 0] },
+                "deuséunico": { "logo": "", "dados": [0, 0, 0] },
+                "DK炎D y . K i s a k i": { "logo": "", "dados": [1, 1, 0] },
+                "Silrox' rage": { "logo": "", "dados": [1, 0, 1] }
+            },
+            "FCB E-SPORTS": {
+                "《ŁÐ》 WHITER™": { "logo": "", "dados": [5, 1, 3] },
+                "sub~~yuri": { "logo": "", "dados": [5, 3, 4] },
+                "《ŁÐ》 Nobre7": { "logo": "", "dados": [3, 1, 1] },
+                "ŁÐ JORDAN7": { "logo": "", "dados": [7, 3, 2] }
+            },
+            "SS GAMING (S07)": {
+                "SS.DUQUE": { "logo": "", "dados": [0, 1, 0] },
+                "mtx7'": { "logo": "", "dados": [0, 0, 0] },
+                "SS KINGX": { "logo": "", "dados": [0, 0, 0] },
+                "SS.SHEIK11": { "logo": "", "dados": [0, null, null] }
+            },
+            "AXION": {
+                "AX.Gean7": { "logo": "", "dados": [1, 1, 0] },
+                "AX PROZIN愛": { "logo": "", "dados": [1, 1, 4] },
+                "'L.I.O.Nº": { "logo": "", "dados": [1, 3, 5] },
+                "nocrying\"": { "logo": "", "dados": [1, null, null] },
+                "HF PHZIN7wp": { "logo": "", "dados": [null, 3, 2] }
+            },
+            "SS GAMING (S09)": {
+                "SS Luis9": { "logo": "", "dados": [0, 0, null] },
+                "SS.NBW7": { "logo": "", "dados": [0, 0, 3] },
+                "拉瑞斯•☯": { "logo": "", "dados": [0, null, null] },
+                "SS Darach": { "logo": "", "dados": [0, 1, 6] },
+                "frestyle500x": { "logo": "", "dados": [null, 0, 1] }
+            },
+            "RBT NEXUS": {
+                "AŁıSSØNRBT": { "logo": "", "dados": [5, 2, 3] },
+                "PÂNICO 1v3": { "logo": "", "dados": [4, null, null] },
+                "AJF Sung": { "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(5.1)AJF Sung.jpeg", "dados": [4, 5, 4] },
+                "CASTIEL RBT": { "logo": "", "dados": [2, 0, 1] },
+                "mt    RBT": { "logo": "", "dados": [null, 1, 3] }
+            },
+            "DRAKARYS": {
+                "DR.xVitinhø7": { "logo": "", "dados": [1, 2, 0] },
+                "DR.Cassio7x": { "logo": "", "dados": [1, 3, 0] },
+                "DR.LKziin": { "logo": "", "dados": [8, 5, 0] },
+                "DR.Xavier9": { "logo": "", "dados": [4, 4, 0] }
+            },
+            "GAME OVER": {
+                "GO J7": { "logo": "", "dados": [null, null, null] }
+            }
+        }
     }
+
 
   }
 }
