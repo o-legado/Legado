@@ -4708,8 +4708,6 @@
     ]
         },
         
-        
-        
     "treino5": {
         "data": "21/07/2026",
         "equipes": [
@@ -4846,7 +4844,147 @@
                 "puniçãoPontos": ""
             }
         ]
-    }
+    },
+
+    
+  "treino6": {
+    "data": "23/07/2026",
+    "equipes": [
+      {
+        "equipe": "6 LEGADOS",
+        "detalhes": [
+          { "queda": 1, "kills": 1, "posicao": 4 },
+          { "queda": 2, "kills": 2, "posicao": 7 },
+          { "queda": 3, "kills": 0, "posicao": 7 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "LINE 15",
+        "detalhes": [
+          { "queda": 1, "kills": 9, "posicao": 3 },
+          { "queda": 2, "kills": 13, "posicao": 3 },
+          { "queda": 3, "kills": 6, "posicao": 2 }
+        ],
+        "logo": "../../../assets/img/logosXtreinoEquipes/julho/(6.2) line15.jpg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "TROPA DO AMOR",
+        "detalhes": [
+          { "queda": 1, "kills": 5, "posicao": 8 },
+          { "queda": 2, "kills": 7, "posicao": 5 },
+          { "queda": 3, "kills": 9, "posicao": 4 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "FCB E-SPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 7 },
+          { "queda": 2, "kills": 2, "posicao": 8 },
+          { "queda": 3, "kills": 11, "posicao": 5 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "ARSENAL E-SPORT",
+        "detalhes": [
+          { "queda": 1, "kills": 5, "posicao": 2 },
+          { "queda": 2, "kills": 1, "posicao": 4 },
+          { "queda": 3, "kills": 8, "posicao": 3 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "FCB E-SPORTS 2.0",
+        "detalhes": [
+          { "queda": 1, "kills": 1, "posicao": 10 },
+          { "queda": 2, "kills": 1, "posicao": 9 },
+          { "queda": 3, "kills": 7, "posicao": 6 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "RBT NEXUS",
+        "detalhes": [
+          { "queda": 1, "kills": 24, "posicao": 1 },
+          { "queda": 2, "kills": 3, "posicao": 6 },
+          { "queda": 3, "kills": 1, "posicao": 10 }
+        ],
+        "logo": "../../../assets/img/logosXtreinoEquipes/julho/(6.3) rbt nexus.jpg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "DRAGONS STYLE BR",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "TEMPEST X",
+        "detalhes": [
+          { "queda": 1, "kills": 11, "posicao": 5 },
+          { "queda": 2, "kills": 0, "posicao": 10 },
+          { "queda": 3, "kills": 2, "posicao": 9 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "CVL BRASIL",
+        "detalhes": [
+          { "queda": 1, "kills": 2, "posicao": 6 },
+          { "queda": 2, "kills": 8, "posicao": 2 },
+          { "queda": 3, "kills": 6, "posicao": 8 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "INSANITY",
+        "detalhes": [
+          { "queda": 1, "kills": 4, "posicao": 9 },
+          { "queda": 2, "kills": 24, "posicao": 1 },
+          { "queda": 3, "kills": 11, "posicao": 1 }
+        ],
+        "logo": "../../../assets/img/logosXtreinoEquipes/julho/(6.1)INSANITY.jpg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "AXION",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      }
+    ]
+  }
+
 
 
 

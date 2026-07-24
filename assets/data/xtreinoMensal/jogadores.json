@@ -2252,8 +2252,6 @@
     }
     },
 
-
-    
     "treino5": {
         "data": "21/07/2026",
         "equipes": {
@@ -2330,7 +2328,217 @@
                 "GO J7": { "logo": "", "dados": [null, null, null] }
             }
         }
+    },
+
+    
+  "treino6": {
+    "data": "23/07/2026",
+    "equipes": {
+      "6 LEGADOS": {
+        "ⓥ™GENERAL !亗": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "SEM MEDO²⁴⁴": {
+          "logo": "",
+          "dados": [1, 2, 0]
+        },
+        "BR_kevin$€": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "LOUD_LK_014$": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "LINE 15": {
+        "fusca078": {
+          "logo": "",
+          "dados": [1, 3, 0]
+        },
+        "ML.KLkaio10%": {
+          "logo": "",
+          "dados": [3, 2, 2]
+        },
+        "tryhard": {
+          "logo": "",
+          "dados": [4, 7, 4]
+        },
+        "TW.YGZINNO1": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        }
+      },
+      "TROPA DO AMOR": {
+        "HS#Apelão#": {
+          "logo": "",
+          "dados": [1, 0, 2]
+        },
+        "_YGOR_RJ": {
+          "logo": "",
+          "dados": [1, null, null]
+        },
+        "PCDnetinho 炎": {
+          "logo": "",
+          "dados": [0, 3, 2]
+        },
+        "BR Ø11ŻÊ": {
+          "logo": "",
+          "dados": [3, null, null]
+        },
+        "BD.martinz7": {
+          "logo": "",
+          "dados": [null, 4, 5]
+        },
+        "Davipressãão": {
+          "logo": "",
+          "dados": [null, null, 0]
+        }
+      },
+      "FCB E-SPORTS": {
+        "《ŁĐ》WHITER™️": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "sub~~yuri": {
+          "logo": "",
+          "dados": [0, 1, 2]
+        },
+        "《ŁĐ》Nobre7": {
+          "logo": "",
+          "dados": [0, 0, 4]
+        },
+        "ŁĐ JORDAN7": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "《ŁĐ》crazyboy": {
+          "logo": "",
+          "dados": [null, null, 5]
+        }
+      },
+      "ARSENAL E-SPORT": {
+        "ARS mendes7": {
+          "logo": "",
+          "dados": [2, 1, 1]
+        },
+        ".FX mt7": {
+          "logo": "",
+          "dados": [0, 0, 2]
+        },
+        "SMR.REDZIN": {
+          "logo": "",
+          "dados": [3, 0, 2]
+        },
+        "ARS txr7": {
+          "logo": "",
+          "dados": [0, 0, 3]
+        }
+      },
+      "FCB E-SPORTS 2.0": {
+        "moneyeasy$'": {
+          "logo": "",
+          "dados": [0, 1, 2]
+        },
+        "Sevengoat": {
+          "logo": "",
+          "dados": [1, 0, 3]
+        },
+        "MEMPHIS10yt": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "《ŁĐ》vieirssz": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        }
+      },
+      "RBT NEXUS": {
+        "AŁISSØNRBT": {
+          "logo": "",
+          "dados": [6, 0, 1]
+        },
+        "PÂNICO 1v3": {
+          "logo": "",
+          "dados": [8, 1, 0]
+        },
+        "AJF Sung": {
+          "logo": "",
+          "dados": [5, 2, 0]
+        },
+        "mt RBT": {
+          "logo": "",
+          "dados": [5, 0, 0]
+        }
+      },
+      "DRAGONS STYLE BR": {},
+      "TEMPEST X": {
+        "RafiXXzzx": {
+          "logo": "",
+          "dados": [1, null, null]
+        },
+        "Rayol.x7ex": {
+          "logo": "",
+          "dados": [4, 0, 0]
+        },
+        "RGK LK¹⁷¹ツ": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        },
+        "LST kakazy7": {
+          "logo": "",
+          "dados": [4, 0, 1]
+        },
+        "androidHACK": {
+          "logo": "",
+          "dados": [null, 0, 1]
+        }
+      },
+      "CVL BRASIL": {
+        "VT MAFIOSO": {
+          "logo": "",
+          "dados": [1, 3, 0]
+        },
+        "CVL it_malia": {
+          "logo": "",
+          "dados": [0, 1, 4]
+        },
+        "TNY RIGBYVIP": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "Spectre": {
+          "logo": "",
+          "dados": [1, 3, 2]
+        }
+      },
+      "INSANITY": {
+        "InS yanz⁷": {
+          "logo": "",
+          "dados": [0, 9, 0]
+        },
+        "EO JULIØ": {
+          "logo": "",
+          "dados": [1, 4, null]
+        },
+        "WIN Nandéx⁹²": {
+          "logo": "",
+          "dados": [1, 4, 3]
+        },
+        "InS NAIRÓBI": {
+          "logo": "",
+          "dados": [2, 7, 4]
+        },
+        "InS godx7": {
+          "logo": "",
+          "dados": [null, null, 4]
+        }
+      },
+      "AXION": {}
     }
+  }
+
 
 
   }
