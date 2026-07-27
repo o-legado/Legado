@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semanal</title>
-    <link rel="stylesheet" href="../../../assets/css/css/xtreinoDia.css">
-    <!-- <link rel="stylesheet" href="../../../assets/css/scss/xtreinoDia.scss"> -->
+    <link rel="stylesheet" href="../../../assets/css/css/semanalDia.css">
+    <link rel="stylesheet" href="../../../assets/css/scss/semanalDia.scss">
 
 
     <!--FONTE-->
@@ -143,7 +143,7 @@
                 <!--TITLE RANKING-->
                 <div class="table_header">
                     <h2>🏆 Grupo A <span id="rankingSeason"> </span> </h2>
-                    <p>📅 <span id="data"></span></p>
+                    
                 </div>
                 <!--TITLE RANKING-->
 
@@ -165,7 +165,7 @@
                 </table>
 
             </div>
-            <!--Tabela-->
+            <!--Tabela GRUPO A-->
 
             <!--Tabela GRUPO B-->
             <div class="table_wrapper">
@@ -173,7 +173,7 @@
                 <!--TITLE RANKING-->
                 <div class="table_header">
                     <h2>🏆 Grupo B <span id="rankingSeason"> </span> </h2>
-                    <p>📅 <span id="data"></span></p>
+                    
                 </div>
                 <!--TITLE RANKING-->
 
@@ -195,7 +195,154 @@
                 </table>
 
             </div>
-            <!--Tabela-->
+            <!--Tabela GRUPO B-->
+
+            <!--CLASSIFICADOS-->
+            <div class="classificados-final-componente">
+                <div class="classificados-container">
+                    <div class="classificados-header">
+                        <!-- Ícone Ribbon (Fita) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 15l-4-4v-8h8v8l-4 4z"></path>
+                            <path d="M10 11l-4 4v7l4-2 4 2v-7"></path>
+                        </svg>
+                        <!-- Ícone Check Quadrado com cor inline para simular neon no SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="#66ff66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="check-icon">
+                            <polyline points="9 11 12 14 22 4"></polyline>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                        </svg>
+                        <span>CLASSIFICADOS PARA A FINAL</span>
+                    </div>
+
+                    <div class="classificados-body">
+                        <!-- COLUNA GRUPO A -->
+                        <div class="grupo-coluna">
+                            <h3 class="grupo-titulo titulo-azul">
+                                <span class="dot dot-azul"></span> TOP 4 - GRUPO A
+                            </h3>
+
+                            <div class="equipe-card card-azul">
+                                <div class="posicao pos-1">1</div>
+                                <div class="equipe-logo"><img src="" alt="Logo Trem Bala"></div>
+                                <div class="equipe-info">
+                                    <span class="nome">TREM BALA</span>
+                                    <span class="pontos">48 pts</span>
+                                </div>
+                            </div>
+
+                            <div class="equipe-card card-azul">
+                                <div class="posicao pos-2">2</div>
+                                <div class="equipe-logo"><img src="" alt="Logo Equipe X"></div>
+                                <div class="equipe-info">
+                                    <span class="nome">EQUIPE X</span>
+                                    <span class="pontos">41 pts</span>
+                                </div>
+                            </div>
+
+                            <div class="equipe-card card-azul">
+                                <div class="posicao pos-3">3</div>
+                                <div class="equipe-logo"><img src="" alt="Logo Equipe Russo 1">
+                                </div>
+                                <div class="equipe-info">
+                                    <span class="nome">EQUIPE RUSSO 1</span>
+                                    <span class="pontos">39 pts</span>
+                                </div>
+                            </div>
+
+                            <div class="equipe-card card-azul">
+                                <div class="posicao pos-4">4</div>
+                                <div class="equipe-logo"><img src="" alt="Logo LK 02"></div>
+                                <div class="equipe-info">
+                                    <span class="nome">LK 02</span>
+                                    <span class="pontos">33 pts</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COLUNA GRUPO B -->
+                        <div class="grupo-coluna">
+                            <h3 class="grupo-titulo titulo-roxo">
+                                <span class="dot dot-roxo"></span> TOP 4 - GRUPO B
+                            </h3>
+
+                            <div class="equipe-card card-roxo">
+                                <div class="posicao pos-1">1</div>
+                                <div class="equipe-logo"><img src="" alt="Logo Team Secret BR">
+                                </div>
+                                <div class="equipe-info">
+                                    <span class="nome">TEAM SECRET BR</span>
+                                    <span class="pontos">52 pts</span>
+                                </div>
+                            </div>
+
+                            <div class="equipe-card card-roxo">
+                                <div class="posicao pos-2">2</div>
+                                <div class="equipe-logo"><img src="" alt="Logo Ninja Squad"></div>
+                                <div class="equipe-info">
+                                    <span class="nome">NINJA SQUAD</span>
+                                    <span class="pontos">44 pts</span>
+                                </div>
+                            </div>
+
+                            <div class="equipe-card card-roxo">
+                                <div class="posicao pos-3">3</div>
+                                <div class="equipe-logo"><img src="" alt="Logo Pain Gaming"></div>
+                                <div class="equipe-info">
+                                    <span class="nome">PAIN GAMING</span>
+                                    <span class="pontos">40 pts</span>
+                                </div>
+                            </div>
+
+                            <div class="equipe-card card-roxo">
+                                <div class="posicao pos-4">4</div>
+                                <div class="equipe-logo"><img
+                                        src="../../../assets/img/logosXtreinoEquipes/julho/(2.3) TMZ elite caos.jpeg"
+                                        alt="Logo Vivo Keyd"></div>
+                                <div class="equipe-info">
+                                    <span class="nome">VIVO KEYD</span>
+                                    <span class="pontos">35 pts</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CLASSIFICADOS-->
+
+            <!--Tabela GRUPO FINAL-->
+            <div class="table_wrapper">
+
+                <!--TITLE RANKING-->
+                <div class="table_header">
+                    <h2>🏆 Grupo Final <span id="rankingSeason"> </span> </h2>
+                    
+                </div>
+                <!--TITLE RANKING-->
+
+
+                <table class="container_table">
+                    <thead>
+                        <tr>
+                            <th>POS</th>
+                            <th class="equipe_th">EQUIPE</th>
+                            <th>Q</th>
+                            <th>AB</th>
+                            <th>B!</th>
+                            <th>PTS</th>
+                            <th>INFO</th>
+                        </tr>
+                    </thead>
+                    <tbody class="container_table_tbody" id="tbodyGrupoFinal"></tbody>
+
+                </table>
+
+            </div>
+            <!--Tabela GRUPO FINAL-->
+
+            
 
             <!--Campeão-->
             <div class="card-campeao">
@@ -443,9 +590,10 @@
 
 
     <script src="../../../assets/js/semanal/semanalCriarTabela.js" type="module"></script>
-    <!-- <script src="../../../assets/js/classificaçãoNovoModelo/criarTabela.js" type="module"></script> -->
-    <!-- <script src="../../../assets/js/classificaçãoNovoModelo/hallDaFama.js" type="module"></script>
-    <script src="../../../assets/js/classificaçãoNovoModelo/infoDetalhada.js" type="module"></script> -->
+    <script src="../../../assets/js/semanal/semanalCriarJogadores.js" type="module"></script>
+    <script src="../../../assets/js/semanal/semanalCriarHallDaFama.js" type="module"></script>
+    <script src="../../../assets/js/semanal/semanalInfoDetalhada.js" type="module"></script>
+
 
 </body>
 
