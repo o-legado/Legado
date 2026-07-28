@@ -329,6 +329,52 @@
                         "logo": "",
                         "puniçãoDescrição": "",
                         "puniçãoPontos": ""
+                    },
+                    {
+                        "equipe": "BLACK WOLFS",
+                        "detalhes": [
+                            {
+                                "queda": 1,
+                                "kills": 12,
+                                "posicao": 1
+                            },
+                            {
+                                "queda": 2,
+                                "kills": 20,
+                                "posicao": 1
+                            },
+                            {
+                                "queda": 3,
+                                "kills": 14,
+                                "posicao": 1
+                            }
+                        ],
+                        "logo": "",
+                        "puniçãoDescrição": "",
+                        "puniçãoPontos": ""
+                    },
+                    {
+                        "equipe": "ALPHA TEAM",
+                        "detalhes": [
+                            {
+                                "queda": 1,
+                                "kills": 1,
+                                "posicao": 7
+                            },
+                            {
+                                "queda": 2,
+                                "kills": 6,
+                                "posicao": 6
+                            },
+                            {
+                                "queda": 3,
+                                "kills": 12,
+                                "posicao": 3
+                            }
+                        ],
+                        "logo": "",
+                        "puniçãoDescrição": "",
+                        "puniçãoPontos": ""
                     }
                 ]
             },

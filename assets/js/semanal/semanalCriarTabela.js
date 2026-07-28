@@ -21,6 +21,7 @@ async function carregarDados() {
 }
 //o js para e espera pegar todos os dados no json
 async function iniciarApp() {
+    
     await carregarDados()
     
     dataClicada = localStorage.getItem("dataDoXtreino");
@@ -34,6 +35,9 @@ async function iniciarApp() {
     // Agora sim! Avisa que TUDO (equipes e ranking) está 100% pronto.
     setTimeout(() => {
         window.dispatchEvent(new CustomEvent("dadosProntos"));
+    }, 50);
+    setTimeout(() => {
+        window.dispatchEvent(new CustomEvent("dadosProntosTop4"));
     }, 50);
 
 }
@@ -868,6 +872,7 @@ const criarTabelaEquipeFinal = {
 
 
 export {resultadoFinalGrupoFinal}
+export {resultadoFinalA, resultadoFinalB}
 export async function obterJogadores() {
     if (!jogadores) {
         await carregarDados();

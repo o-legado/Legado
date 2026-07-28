@@ -340,6 +340,7 @@ main .container .table_wrapper {
   overflow: hidden;
   border: 1px solid #1f1f1f;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  margin-bottom: 7rem;
 }
 main .container .table_wrapper .table_header {
   background: linear-gradient(to bottom, #0d0d0d, #060606);

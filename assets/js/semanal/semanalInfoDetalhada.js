@@ -88,9 +88,6 @@ const organizarDadosEquipe = {
 
     // Seleciona o mês e filtra o treino correto baseado na data clicada
     start(equipes, btnClicado, trEquipe) {
-        console.log(equipes)
-        console.log(btnClicado)
-        console.log(trEquipe)
         const mesDoHtmlSelecionado = document.querySelector("#mes").textContent.toLowerCase().trim();
         
 
@@ -102,8 +99,17 @@ const organizarDadosEquipe = {
                     const dataTodosTreinos = mesSelecionadoJson[indice].data;
                     
                     if (dataTodosTreinos == dataClicada) {
+                        
                         const treinoEquipe = mesSelecionadoJson[indice];
-                        this.chegarNoDetalhes(treinoEquipe, btnClicado, trEquipe)
+
+                        const nomeGrupo = btnClicado.parentElement.parentElement.parentElement.parentElement.previousElementSibling.children[0].textContent
+                        let nomeGrupoEditado = nomeGrupo.replace("🏆", "").trim().replace(" ", "");
+                        nomeGrupoEditado = nomeGrupoEditado.charAt(0).toLowerCase() + nomeGrupoEditado.slice(1);
+                        
+
+                        
+                        
+                        this.chegarNoDetalhes(treinoEquipe[nomeGrupoEditado], btnClicado, trEquipe)
                         break;
                     }
                 }
@@ -114,6 +120,7 @@ const organizarDadosEquipe = {
     // Processa os dados, soma os pontos, ordena e define as posições reais da tabela
     chegarNoDetalhes(treinoEquipe, btnClicado, trEquipe) {
         const equipesArray = treinoEquipe.equipes
+        
 
         let contador = 1
         let tdEquipe = btnClicado.parentElement

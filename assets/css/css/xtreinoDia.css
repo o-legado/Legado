@@ -331,9 +331,6 @@ main .container .container_controls .container_select {
   outline: none;
   width: 25rem;
 }
-main .container {
-  /* --- TABELA --- */
-}
 main .container .table_wrapper {
   background-color: #060606;
   border-radius: 1.6rem;
@@ -741,279 +738,634 @@ main .container .table_wrapper .desempenhoDetalhado_penalidade .contentPts .span
   font-weight: 800;
   color: #eab308;
 }
-main .container {
-  /* Importando uma fonte moderna bem ao estilo eSports */
+@keyframes logoRevelacao3D {
+  0% {
+    opacity: 0;
+    transform: perspective(1000px) rotateX(25deg) translateY(30px) scale(0.85);
+    filter: blur(12px) brightness(0.3);
+  }
+  60% {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(-5deg) translateY(-5px) scale(1.02);
+    filter: blur(0px) brightness(1.3);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(1000px) rotateX(0deg) translateY(0) scale(1);
+    filter: blur(0px) brightness(1);
+  }
+}
+main .container .card-campeao {
+  /* Reflexo duplo de luz cruzando a logo */
+}
+@keyframes varreduraLuzPremium {
+  0% {
+    transform: translateX(-180%) rotate(30deg);
+  }
+  20%, 100% {
+    transform: translateX(180%) rotate(30deg);
+  }
+}
+main .container .card-campeao {
+  /* Aura de energia pulsante ao redor do escudo da logo */
+}
+@keyframes auraNeonPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(239, 68, 68, 0.4), 0 0 30px rgba(239, 68, 68, 0.2), inset 0 0 15px rgba(255, 255, 255, 0.1);
+    border-color: rgba(239, 68, 68, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(239, 68, 68, 0.8), 0 0 60px rgba(239, 68, 68, 0.4), inset 0 0 25px rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+}
+main .container .card-campeao {
+  /* Flutuação suave de partículas e emojis orbita */
+}
+@keyframes flutuarOrbital {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-8px) rotate(6deg) scale(1.1);
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(250, 204, 21, 0.8));
+  }
+}
+@keyframes raioFaisca {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8) rotate(-10deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(15deg);
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.9));
+  }
+}
+main .container .card-campeao {
+  /* Holofote de fundo dinâmico */
+}
+@keyframes holofoteCinematico {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+    background: radial-gradient(circle at 50% 35%, rgba(220, 38, 38, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.08);
+    background: radial-gradient(circle at 50% 30%, rgba(220, 38, 38, 0.7) 0%, rgba(15, 3, 3, 0) 75%);
+  }
+}
+main .container .card-campeao {
+  /* Entrada fluida do container do card */
+}
+@keyframes cardIntro {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 main .container .card-campeao {
   position: relative;
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
-  background: linear-gradient(135deg, #000000 0%, #140202 50%, #000000 100%);
-  border-radius: 16px;
+  background: radial-gradient(ellipse at top, #180303 0%, #080808 70%, #000000 100%);
+  border-radius: 24px;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(180, 0, 0, 0.2);
   text-align: center;
-  /* O Holofote Vermelho no fundo */
+  animation: cardIntro 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  /* Holofote vermelho ambiente no fundo */
 }
 main .container .card-campeao .brilho-foco {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, rgba(180, 0, 0, 0.45) 0%, transparent 70%);
   pointer-events: none;
   z-index: 1;
+  animation: holofoteCinematico 4s ease-in-out infinite;
 }
 main .container .card-campeao {
-  /* Borda fina interna para dar acabamento premium */
+  /* Painel de vidro fosco (Glassmorphism Pro) */
 }
 main .container .card-campeao .card-conteudo {
   position: relative;
   z-index: 2;
-  padding: 30px 20px;
+  padding: 35px 25px;
   margin: 12px;
-  border: 1px solid rgba(239, 68, 68, 0.25);
-  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(10, 10, 10, 0.5);
+  backdrop-filter: blur(16px);
+  border-radius: 18px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
 }
-main .container .card-campeao .temporada-tag {
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.4);
-  letter-spacing: 2px;
-  text-transform: uppercase;
+main .container .card-campeao {
+  /* Título Dourado Metálico com Coroa Integrada */
 }
 main .container .card-campeao .campeao-title {
-  font-size: 42px;
+  position: relative;
+  display: inline-block;
+  font-size: 38px;
   font-weight: 900;
-  color: #ffffff;
-  margin: 10px 0;
-  letter-spacing: 3px;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 10px 0 20px 0;
+  background: linear-gradient(180deg, #ffffff 10%, #fbbf24 60%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 4px 15px rgba(245, 158, 11, 0.4));
+  /* Coroa Real Flutuante sobre o título */
+}
+main .container .card-campeao .campeao-title::before {
+  content: "👑";
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  -webkit-text-fill-color: initial;
+  animation: flutuarOrbital 3s ease-in-out infinite;
 }
 main .container .card-campeao {
-  /* Container da Logo do Time */
+  /* CONTAINER DA LOGO COM ELEMENTOS TEMÁTICOS */
 }
 main .container .card-campeao .equipe-logo-container {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin: 15px 0;
+  align-items: center;
+  margin: 25px 0;
+  /* Emoji Brilho/Partícula Flutuante (Lado Esquerdo) */
+}
+main .container .card-campeao .equipe-logo-container::before {
+  content: "✨";
+  position: absolute;
+  left: 18%;
+  top: 10%;
+  font-size: 24px;
+  z-index: 4;
+  pointer-events: none;
+  animation: flutuarOrbital 3.5s ease-in-out infinite;
+}
+main .container .card-campeao .equipe-logo-container {
+  /* Emoji Raio de Energia Flutuante (Lado Direito) */
+}
+main .container .card-campeao .equipe-logo-container::after {
+  content: "⚡";
+  position: absolute;
+  right: 18%;
+  bottom: 15%;
+  font-size: 22px;
+  z-index: 4;
+  pointer-events: none;
+  animation: raioFaisca 2.5s ease-in-out infinite;
 }
 main .container .card-campeao {
-  /* Moldura Azul brilhante idêntica ao print */
+  /* MOLDURA DA LOGO - O CENTRO DA ANIMAÇÃO */
 }
 main .container .card-campeao .equipe-logo-placeholder {
-  width: 16rem;
-  height: 16rem;
-  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: linear-gradient(135deg, #0d1322 0%, #172554 50%, #0f172a 100%);
   border: 3px solid #ef4444;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+  border-radius: 16px;
+  z-index: 3;
+  overflow: hidden;
+  /* Animação de Entrada 3D e Iluminação Pulsante */
+  animation: logoRevelacao3D 1s cubic-bezier(0.16, 1, 0.3, 1) forwards, auraNeonPulse 3s ease-in-out infinite 1s;
+  /* Varredura com Duplo Feixe de Luz (Specular Sheen) */
 }
-main .container .card-campeao .campeao-equipe {
-  font-size: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
+main .container .card-campeao .equipe-logo-placeholder::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  width: 220%;
+  height: 220%;
+  background: linear-gradient(30deg, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0.4) 48%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0.4) 52%, rgba(255, 255, 255, 0) 65%);
+  pointer-events: none;
+  animation: varreduraLuzPremium 4s ease-in-out infinite 1.2s;
 }
 main .container .card-campeao {
-  /* Grid das estatísticas alinhadas de lado a lado */
+  /* Nome da Equipe */
+}
+main .container .card-campeao .campeao-equipe {
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+main .container .card-campeao {
+  /* ESTATÍSTICAS MODERNAS */
 }
 main .container .card-campeao .stats-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  margin-bottom: 25px;
+  gap: 16px;
+  margin-bottom: 20px;
 }
 main .container .card-campeao .stat-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 70px;
+  flex: 1;
+  max-width: 110px;
+  padding: 12px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+main .container .card-campeao .stat-box:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+main .container .card-campeao .stat-box.pontos {
+  border-bottom: 3px solid #facc15;
+}
+main .container .card-campeao .stat-box.pontos .stat-numero {
+  color: #facc15;
+  text-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
+}
+main .container .card-campeao .stat-box.kills {
+  border-bottom: 3px solid #4ade80;
+}
+main .container .card-campeao .stat-box.kills .stat-numero {
+  color: #4ade80;
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.4);
+}
+main .container .card-campeao .stat-box.booyah {
+  border-bottom: 3px solid #c084fc;
+}
+main .container .card-campeao .stat-box.booyah .stat-numero {
+  color: #c084fc;
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.4);
 }
 main .container .card-campeao .stat-numero {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 900;
   margin: 0;
   line-height: 1;
 }
 main .container .card-campeao .stat-label {
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 800;
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 5px;
+  margin-top: 6px;
   letter-spacing: 1px;
 }
 main .container .card-campeao {
-  /* Cores específicas para cada tipo de ponto */
-}
-main .container .card-campeao .pontos .stat-numero {
-  color: #eab308;
-}
-main .container .card-campeao {
-  /* Amarelo */
-}
-main .container .card-campeao .kills .stat-numero {
-  color: #22c55e;
-}
-main .container .card-campeao {
-  /* Verde */
-}
-main .container .card-campeao .booyah .stat-numero {
-  color: #a855f7;
-}
-main .container .card-campeao {
-  /* Roxo */
+  /* Rodapé Elegante */
 }
 main .container .card-campeao .agradecimento {
+  position: relative;
+  display: inline-block;
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.3);
-  letter-spacing: 1px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
   margin-top: 15px;
+  text-transform: uppercase;
+  /* Detalhe sutil de troféu no final */
+}
+main .container .card-campeao .agradecimento::after {
+  content: " 🏆";
+  font-size: 12px;
+}
+@keyframes cyberGrid {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+main .container .card-mvp {
+  /* 2. Feixe de Scanner Laser descendo o card */
+}
+@keyframes laserScanner {
+  0% {
+    top: -10%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+main .container .card-mvp {
+  /* 3. Varredura de Brilho Diagonal */
+}
+@keyframes varreduraDiagonal {
+  0% {
+    left: -150%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  40%, 100% {
+    left: 200%;
+    opacity: 0;
+  }
+}
+main .container .card-mvp {
+  /* 4. Flutuação 3D e aura de energia na Logo */
+}
+@keyframes logoFlutuar3D {
+  0%, 100% {
+    transform: translateY(0) rotateX(0deg) rotateY(0deg) scale(1);
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.5), 0 0 30px rgba(34, 197, 94, 0.2);
+  }
+  25% {
+    transform: translateY(-4px) rotateX(6deg) rotateY(-5deg) scale(1.02);
+    box-shadow: -6px 6px 20px rgba(34, 197, 94, 0.7), 0 0 35px rgba(34, 197, 94, 0.4);
+  }
+  75% {
+    transform: translateY(3px) rotateX(-5deg) rotateY(6deg) scale(1.01);
+    box-shadow: 6px -4px 20px rgba(34, 197, 94, 0.7), 0 0 35px rgba(34, 197, 94, 0.4);
+  }
+}
+main .container .card-mvp {
+  /* 5. Gradiente Animado no Texto */
+}
+@keyframes textShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+main .container .card-mvp {
+  /* 6. Batida de Energia no Placar */
+}
+@keyframes killScorePulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 10px rgba(34, 197, 94, 0.6));
+  }
+  48% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.12);
+    filter: drop-shadow(0 0 25px rgb(34, 197, 94)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.9));
+  }
+  54% {
+    transform: scale(0.98);
+  }
+  58% {
+    transform: scale(1.04);
+  }
+}
+main .container .card-mvp {
+  /* 7. Ponto de Status "LIVE" piscando */
+}
+@keyframes statusBlink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.2;
+    transform: scale(0.7);
+  }
+}
+main .container .card-mvp {
+  /* 8. Seta animada */
+}
+@keyframes setaImpulso {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(5px);
+    opacity: 1;
+    text-shadow: 0 0 8px #22c55e;
+  }
+}
+main .container .card-mvp {
+  /* 9. Moldura de mira gamer */
+}
+@keyframes miraReticle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
 }
 main .container .card-mvp {
   position: relative;
   width: 100%;
   max-width: 910px;
-  /* Alinhado proporcionalmente com a largura do TOP 3 */
-  margin: 25px auto;
-  background: linear-gradient(135deg, #020804 0%, #05220e 50%, #020804 100%);
+  margin: 15px auto;
+  background: linear-gradient(135deg, #010603 0%, #05220e 50%, #010603 100%);
   border: 2px solid #22c55e;
   border-radius: 14px;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(34, 197, 94, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), 0 0 20px rgba(34, 197, 94, 0.25);
   overflow: hidden;
-  /* Holofote de luz verde suave no fundo */
+  /* VARREDURA DIAGONAL DE BRILHO */
+}
+main .container .card-mvp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.05) 20%, rgba(34, 197, 94, 0.35) 50%, rgba(255, 255, 255, 0.05) 80%, transparent 100%);
+  transform: skewX(-30deg);
+  animation: varreduraDiagonal 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 4;
+}
+main .container .card-mvp {
+  /* LINHA DE SCANNER LASER */
+}
+main .container .card-mvp::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #4ade80 50%, transparent 100%);
+  box-shadow: 0 0 15px #22c55e, 0 0 30px #22c55e;
+  animation: laserScanner 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 4;
+}
+main .container .card-mvp {
+  /* GRID CIBERNÉTICO E HOLOFOTE */
 }
 main .container .card-mvp .brilho-foco-mvp {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 30% 50%, rgba(34, 197, 94, 0.25) 0%, transparent 60%);
+  background: radial-gradient(circle at 50% 30%, rgba(34, 197, 94, 0.35) 0%, transparent 70%);
   pointer-events: none;
   z-index: 1;
 }
+main .container .card-mvp .brilho-foco-mvp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(34, 197, 94, 0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(34, 197, 94, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: cyberGrid 8s linear infinite;
+  opacity: 0.7;
+}
 main .container .card-mvp {
-  /* Borda interna sutil para acabamento */
+  /* CONTEÚDO (Centralizado para Mobile) */
 }
 main .container .card-mvp .card-mvp-conteudo {
   position: relative;
   z-index: 2;
-  padding: 20px 30px;
+  padding: 20px 15px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-}
-main .container .card-mvp {
-  /* Alinhamento da esquerda (Foto + Texto) */
+  text-align: center;
+  gap: 18px;
 }
 main .container .card-mvp .mvp-perfil {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 12px;
+  perspective: 1000px;
 }
 main .container .card-mvp {
-  /* Container do Ícone (Círculo Verde com Brilho) */
+  /* AVATAR/LOGO MOBILE */
 }
-main .container .card-mvp .avatar-container {
+main .container .card-mvp img.avatar-container {
   position: relative;
-  width: 15rem;
-  height: 15rem;
+  width: 110px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
   background: radial-gradient(circle, #16a34a 0%, #14532d 100%);
   border: 3px solid #22c55e;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
-}
-main .container .card-mvp .avatar-target svg {
-  width: 34px;
-  height: 34px;
-  color: #ffffff;
-  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.5));
-}
-main .container .card-mvp {
-  /* Textos informativos do jogador */
+  animation: logoFlutuar3D 5s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 main .container .card-mvp .mvp-info {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 main .container .card-mvp .mvp-tag {
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 800;
   color: #22c55e;
   letter-spacing: 2px;
   margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .card-mvp .mvp-tag::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #4ade80;
+  border-radius: 50%;
+  margin-right: 6px;
+  box-shadow: 0 0 8px #22c55e;
+  animation: statusBlink 1.2s infinite ease-in-out;
 }
 main .container .card-mvp .mvp-nick {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 900;
-  color: #ffffff;
   margin: 0;
   line-height: 1.1;
   letter-spacing: 1px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ffffff 0%, #86efac 30%, #ffffff 60%, #22c55e 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 4s linear infinite;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8));
 }
 main .container .card-mvp .mvp-equipe {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.4);
-  margin: 6px 0 0 0;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 4px 0 0 0;
   letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-main .container .card-mvp .detalhe-seta {
+main .container .card-mvp .mvp-equipe .detalhe-seta {
   font-size: 9px;
   color: #22c55e;
   margin-right: 4px;
-  vertical-align: middle;
+  display: inline-block;
+  animation: setaImpulso 1.5s infinite ease-in-out;
 }
 main .container .card-mvp {
-  /* Bloco do placar de Kills (Direita) */
+  /* PLACAR MOBILE */
 }
 main .container .card-mvp .mvp-score {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-right: 10px;
+  width: 100%;
+  padding-top: 15px;
+  border-top: 1px solid rgba(34, 197, 94, 0.2);
 }
-main .container .card-mvp .score-numero {
-  font-size: 54px;
+main .container .card-mvp .mvp-score .score-numero {
+  font-size: 48px;
   font-weight: 900;
-  color: #22c55e;
   line-height: 0.9;
-  text-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
-  /* Efeito Glow Neon */
+  display: inline-block;
+  background: linear-gradient(180deg, #4ade80 0%, #15803d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: killScorePulse 2.5s infinite ease-in-out;
 }
-main .container .card-mvp .score-label {
-  font-size: 11px;
+main .container .card-mvp .mvp-score .score-label {
+  font-size: 10px;
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 2.5px;
   margin-top: 4px;
-}
-main .container .card-mvp {
-  /* Responsividade para Celulares */
-}
-@media (max-width: 600px) {
-  main .container .card-mvp .card-mvp-conteudo {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-    padding: 25px 20px;
-  }
-  main .container .card-mvp .mvp-perfil {
-    flex-direction: column;
-    gap: 12px;
-  }
-  main .container .card-mvp .mvp-score {
-    padding-right: 0;
-    border-top: 1px solid rgba(34, 197, 94, 0.2);
-    width: 100%;
-    padding-top: 15px;
-  }
 }
 main .container .secao-top3 {
   position: relative;
@@ -1409,9 +1761,6 @@ main .container .secao-top3-kills {
   main .container .secao-top3-kills .card-kill-podio {
     max-width: 280px;
   }
-}
-main .container {
-  /* --- TOP KILLS SECTION --- */
 }
 main .container .top_kills_wrapper {
   margin-top: 5rem;
@@ -1981,6 +2330,80 @@ main .container .top_kills_wrapper {
   }
   .desempenhoDetalhado_player_partida {
     flex: 1 1 calc(33.3333333333% - 2rem) !important;
+  }
+  .card-mvp {
+    margin: 25px auto;
+  }
+  .card-mvp .brilho-foco-mvp {
+    background: radial-gradient(circle at 25% 50%, rgba(34, 197, 94, 0.35) 0%, transparent 70%);
+  }
+  .card-mvp .card-mvp-conteudo {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    text-align: left !important;
+    padding: 22px 32px !important;
+    gap: 0 !important;
+  }
+  .card-mvp .mvp-perfil {
+    flex-direction: row !important;
+    gap: 2rem !important;
+  }
+  .card-mvp img.avatar-container {
+    width: 135px !important;
+    height: 135px !important;
+  }
+  .card-mvp img.avatar-container:hover {
+    transform: scale(1.1) rotate(0deg) !important;
+    border-color: #86efac;
+  }
+  .card-mvp .mvp-info {
+    align-items: flex-start !important;
+  }
+  .card-mvp .mvp-tag {
+    justify-content: flex-start !important;
+  }
+  .card-mvp .mvp-nick {
+    font-size: 36px !important;
+    letter-spacing: 1.5px !important;
+  }
+  .card-mvp .mvp-equipe {
+    justify-content: flex-start !important;
+    font-size: 13px !important;
+  }
+  .card-mvp .mvp-score {
+    width: auto !important;
+    border-top: none !important;
+    padding-top: 0 !important;
+    padding: 10px 20px !important;
+    /* Ativa as Cantoneiras de Mira Gamer no Desktop */
+  }
+  .card-mvp .mvp-score::before, .card-mvp .mvp-score::after {
+    content: "";
+    position: absolute !important;
+    width: 12px !important;
+    height: 12px !important;
+    border: 2px solid #22c55e !important;
+    pointer-events: none !important;
+    animation: miraReticle 2.5s infinite ease-in-out !important;
+  }
+  .card-mvp .mvp-score::before {
+    top: 0 !important;
+    left: 0 !important;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+  .card-mvp .mvp-score::after {
+    bottom: 0 !important;
+    right: 0 !important;
+    border-left: none !important;
+    border-top: none !important;
+  }
+  .card-mvp .mvp-score .score-numero {
+    font-size: 58px !important;
+  }
+  .card-mvp .mvp-score .score-label {
+    font-size: 11px !important;
+    letter-spacing: 3px !important;
   }
 }
 @media (min-width: 1024px) {
