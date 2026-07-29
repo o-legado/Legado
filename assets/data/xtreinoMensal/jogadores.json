@@ -2331,7 +2331,7 @@
     },
 
     
-  "treino6": {
+    "treino6": {
     "data": "23/07/2026",
     "equipes": {
       "6 LEGADOS": {
@@ -2537,7 +2537,236 @@
       },
       "AXION": {}
     }
-  }
+    },
+
+
+    
+    "treino7": {
+    "data": "28/07/2026",
+    "equipes": {
+      "FCB E-SPORTS": {
+        "《ŁĐ》WHITER™": {
+          "logo": "",
+          "dados": [2, 0, 1]
+        },
+        "sub~~yuri": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(7.2) yuri.jpeg",
+          "dados": [5, 5, 2]
+        },
+        "《ŁĐ》Nobre7": {
+          "logo": "",
+          "dados": [2, 2, 3]
+        },
+        "jordannrei": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(7.1) jordan.jpg",
+          "dados": [8, 8, 0]
+        }
+      },
+      "VT-ESPORTES": {
+        "z e p p. x 7 ☂": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "XxX_xit3d0": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "(^3^)-☆trn☆": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "deusa•su": {
+          "logo": "",
+          "dados": [null, null, 1]
+        }
+      },
+      "6 LEGADOS": {
+        "《ŁĐ》coronel¥": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "V™GENERAL !亗": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "P2C erreiHud": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "LD JPZIN7": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        }
+      },
+      "7KG ESPORTE": {
+        "7KG JUNIOR7": {
+          "logo": "",
+          "dados": [0, 1, 2]
+        },
+        "Psy Gui7": {
+          "logo": "",
+          "dados": [2, 3, 5]
+        },
+        "7KG StarkAwp": {
+          "logo": "",
+          "dados": [0, 2, 1]
+        },
+        "7KG Plking7": {
+          "logo": "",
+          "dados": [1, 1, 4]
+        }
+      },
+      "INVICTUS": {
+        "TW Souzaff™": {
+          "logo": "",
+          "dados": [0, 2, 1]
+        },
+        "APX zx7cura": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "danike N$.": {
+          "logo": "",
+          "dados": [0, 1, null]
+        },
+        "EA Fubuki67": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "TL3.sx7": {
+          "logo": "",
+          "dados": [null, 1, null]
+        },
+        "!dragneel.": {
+          "logo": "",
+          "dados": [null, null, 0]
+        }
+      },
+      "RDX SPORTS": {
+        "NKMATHIAS †": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        },
+        "sup_phz": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "FUCK LOVE乂": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "TM• JR GAS": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "LEVEL SPORT": {
+        "HD ¦ VEYKER★": {
+          "logo": "",
+          "dados": [2, 3, 3]
+        },
+        "michael": {
+          "logo": "",
+          "dados": [2, 6, 0]
+        },
+        "I'm BRITO": {
+          "logo": "",
+          "dados": [1, 1, 3]
+        },
+        "*THE¦ Angel ⼗": {
+          "logo": "",
+          "dados": [null, 0, 0]
+        }
+      },
+      "JOGA A ILHA BB": {
+        "PSL musiala": {
+          "logo": "",
+          "dados": [3, 0, 0]
+        },
+        "ANG CLB.sx": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        },
+        "Dnsiqueira_7": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "PSL duartex": {
+          "logo": "",
+          "dados": [0, 0, 3]
+        }
+      },
+      "SS GAMING": {
+        "SS.DUQUE": {
+          "logo": "",
+          "dados": [2, 0, 2]
+        },
+        "SS.NBW7": {
+          "logo": "",
+          "dados": [2, 0, 9]
+        },
+        "SS Darach☂": {
+          "logo": "",
+          "dados": [0, 3, 2]
+        },
+        "SS.Tubinha7": {
+          "logo": "",
+          "dados": [0, 2, 2]
+        }
+      },
+      "TDM-SPORT": {
+        "VYX.kalebz9x": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(7.3)VYX.kalebz9x.jpg",
+          "dados": [2, 4, 6]
+        },
+        "MTS JHOSEFER": {
+          "logo": "",
+          "dados": [3, 6, 2]
+        },
+        "TDM Wm06": {
+          "logo": "",
+          "dados": [0, 3, 2]
+        },
+        "TDM.USOPP": {
+          "logo": "",
+          "dados": [0, 4, 3]
+        }
+      },
+      "DYNASTY SPORTS": {
+        "o b i n a c i": {
+          "logo": "",
+          "dados": [6, 0, 0]
+        },
+        "LPFF.TH7": {
+          "logo": "",
+          "dados": [3, 0, 0]
+        },
+        "RV Ld7": {
+          "logo": "",
+          "dados": [2, 0, 1]
+        }
+      },
+      "FCB E-SPORTS 2.0": {
+        "nitghfear": {
+          "logo": "",
+          "dados": [8, 2, 1]
+        },
+        "MEMPHIS10yt": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        },
+        "Sevengoat": {
+          "logo": "",
+          "dados": [3, 1, 1]
+        },
+        "《ŁĐ》!Bn.op益": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        }
+      }
+    }
+    }
+
 
 
 
