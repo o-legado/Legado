@@ -3471,17 +3471,30 @@ main {
 
 
 .footer {
-    background: #070707;
+    background: #060608; // Preto espacial idêntico ao Header
     padding: 5rem 2rem 3rem 2rem;
-    // Uma borda sutil em gradiente que separa o main do footer perfeitamente
-    border-top: 1px solid rgba(255, 70, 70, 0.08);
+    border-top: 1px solid rgba(255, 51, 51, 0.1); // Divisória superior com toque de vermelho neon
     position: relative;
     width: 100%;
+    overflow: hidden;
+
+    // Detalhe de linha neon inferior opcional para selar o design
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgba(255, 51, 51, 0.3), transparent);
+    }
 
     .footer_container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .footer_main {
@@ -3492,64 +3505,83 @@ main {
     }
 
     .footer_siga {
-        color: #60A5FA; // Mantido o tom azul, mas com uma tipografia mais limpa e moderna
-        font-size: 1.6rem;
-        font-weight: 600;
-        letter-spacing: 0.08rem;
-        text-transform: uppercase; // Estilo minimalista de eSports
-        text-shadow: 0 2px 8px rgba(96, 165, 250, 0.2);
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-weight: 800;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase; // Estilo HUD tático
+        text-shadow: 0 0 10px rgba(255, 51, 51, 0.2);
+        margin-bottom: 2rem;
+        position: relative;
+        display: inline-block;
+
+        // Pequeno detalhe estético abaixo do texto "Siga o Legado"
+        &::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: #ff3333;
+            margin: 0.8rem auto 0 auto;
+            box-shadow: 0 0 8px rgba(255, 51, 51, 0.6);
+        }
     }
 
     .links {
-        margin-top: 2.5rem;
         display: flex;
         justify-content: center;
-        gap: 1.8rem;
+        gap: 2rem;
 
-        a {
-            color: #FFFFFF;
-            font-size: 2rem;
-            width: 4.8rem;
-            height: 4.8rem;
+        // Base para botões sociais estilo "Teclado Mecânico/Gamer"
+        .link-social {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 2.2rem;
+            width: 5rem;
+            height: 5rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 50%; // Formato perfeitamente circular para um visual clean
-            transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease, filter 0.25s ease;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1.2rem; // Cantos ligeiramente arredondados em vez de círculo perfeito
+            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+            i {
+                transition: transform 0.3s ease;
+            }
 
             &:hover {
-                transform: translateY(-4px); // Flutua levemente para cima em vez de apenas crescer
+                color: #ffffff;
+                background: rgba(255, 51, 51, 0.1);
+                border-color: #ff3333;
+                box-shadow: 0 0 20px rgba(255, 51, 51, 0.3),
+                    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+                transform: translateY(-4px);
+
+                i {
+                    transform: scale(1.15);
+                }
+            }
+
+            &:active {
+                transform: translateY(-1px) scale(0.95);
             }
         }
 
-        // Customização individual premium de cada rede social
+        // Removidos os degradês chamativos antigos por efeitos de hover focados em neon discreto
         .link-insta {
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-            box-shadow: 0 4px 15px rgba(220, 39, 67, 0.2);
-
             &:hover {
-                box-shadow: 0 6px 20px rgba(220, 39, 67, 0.45);
+                box-shadow: 0 0 20px rgba(255, 51, 51, 0.3); // Brilho vermelho escarlate
             }
         }
 
         .link-tiktok {
-            background: #000000;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            position: relative;
-
             &:hover {
-                border-color: #00f2fe;
-                box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
-            }
-        }
-
-        .link-whats {
-            background: #2BD46A;
-            box-shadow: 0 4px 15px rgba(43, 212, 106, 0.2);
-
-            &:hover {
-                box-shadow: 0 6px 20px rgba(43, 212, 106, 0.45);
+                // Brilho azul/ciano característico do TikTok nas bordas de forma minimalista
+                border-color: #00f0ff;
+                box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
             }
         }
     }
@@ -3558,7 +3590,8 @@ main {
         width: 100%;
         border: 0;
         height: 1px;
-        background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05) 20%, rgba(255, 255, 255, 0.05) 80%, transparent);
+        // Gradiente que some nas pontas para um visual limpo
+        background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.08) 20%, rgba(255, 255, 255, 0.08) 80%, transparent);
         margin-bottom: 2.5rem;
     }
 
@@ -3577,21 +3610,42 @@ main {
     }
 
     .copyright {
-        font-size: 1.3rem;
-        color: #4B5263;
-        font-weight: 400;
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.3); // Cinza fosco discreto
+        font-weight: 500;
+        letter-spacing: 0.05rem;
     }
 
     .footer_sublinks {
         a {
-            color: #6B7280;
-            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 1.2rem;
             text-decoration: none;
-            transition: color 0.2s ease;
-            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            position: relative;
+            padding: 0.5rem 0;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: #ff3333;
+                transition: width 0.3s ease;
+            }
 
             &:hover {
-                color: #FFFFFF;
+                color: #ffffff;
+                text-shadow: 0 0 8px rgba(255, 51, 51, 0.4);
+
+                &::after {
+                    width: 100%;
+                }
             }
         }
     }
@@ -4029,3 +4083,6 @@ main {
         }
     }
 }
+
+
+
