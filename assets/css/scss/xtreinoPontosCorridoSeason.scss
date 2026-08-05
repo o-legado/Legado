@@ -2964,203 +2964,821 @@ main {
 
         //top 3 jogador
         .secao-top3-kills {
+            /* ESTRUTURA CONTAINER BASE */
             position: relative;
             width: 100%;
-            max-width: 910px;
-            margin: 40px auto;
-            background: linear-gradient(135deg, #020603 0%, #05160b 100%);
-            border: 1px solid rgba(34, 197, 94, 0.2);
-            border-radius: 16px;
-            padding: 35px 20px 25px 20px;
+            /* Antes: max-width: 960px → Depois: 96rem (960 ÷ 10) */
+            max-width: 96rem;
+            /* Antes: margin: 40px auto → Depois: 4rem (40 ÷ 10) */
+            margin: 4rem auto;
+            background: radial-gradient(circle at 50% 20%, #06150a 0%, #020703 60%, #000301 100%);
+            /* Antes: border: 1px solid... → Mantém em 1px (valores muito pequenos podem ficar em px) */
+            border: 1px solid rgba(34, 197, 94, 0.25);
+            /* Antes: border-radius: 20px → 2rem */
+            border-radius: 2rem;
+            /* Antes: padding: 40px 16px 30px 16px */
+            padding: 4rem 1.6rem 3rem 1.6rem;
             font-family: 'Montserrat', sans-serif;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+            box-shadow:
+                0 30px 60px rgba(0, 0, 0, 0.9),
+                0 0 40px rgba(34, 197, 94, 0.1),
+                inset 0 0 30px rgba(34, 197, 94, 0.05);
             text-align: center;
             overflow: hidden;
+            perspective: 1200px;
 
-            /* Brilho radial verde ao fundo */
+            /* Entrada Cinematográfica da Seção */
+            animation: hudSectionReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+            /* ──────────────────────────────────────────────────────────────────────────
+       CAMADAS DE FUNDO: GRID CIBERNÉTICO, SCANNER RADAR & PARTÍCULAS
+       ────────────────────────────────────────────────────────────────────── */
             .brilho-fundo-kills {
                 position: absolute;
                 inset: 0;
-                background: radial-gradient(circle at 50% 30%, rgba(34, 197, 94, 0.15) 0%, transparent 60%);
                 pointer-events: none;
+                z-index: 0;
+                overflow: hidden;
+
+                /* Luz Verde Central Pulsante */
+                background: radial-gradient(ellipse at 50% 0%, rgba(34, 197, 94, 0.2) 0%, transparent 75%);
+                animation: ambientAura 6s ease-in-out infinite alternate;
+
+                /* Grid HUD Futurista */
+                &::before {
+                    content: "";
+                    position: absolute;
+                    inset: -50%;
+                    background-image:
+                        linear-gradient(rgba(34, 197, 94, 0.07) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(34, 197, 94, 0.07) 1px, transparent 1px);
+                    /* Antes: background-size: 30px 30px → 3rem */
+                    background-size: 3rem 3rem;
+                    transform: perspective(500px) rotateX(60deg) translateY(-50px);
+                    animation: gridScroll 15s linear infinite;
+                    opacity: 0.7;
+                }
+
+                /* Feixe de Radar Varrendo a Seção */
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -50%;
+                    left: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: conic-gradient(from 0deg at 50% 50%, rgba(34, 197, 94, 0.15) 0deg, transparent 60deg, transparent 360deg);
+                    animation: radarSweep 10s linear infinite;
+                }
             }
 
+            /* ──────────────────────────────────────────────────────────────────────────
+       TÍTULO HUD COM LASER SIGHT
+       ────────────────────────────────────────────────────────────────────── */
             .top3-kills-title {
-                font-size: 38px;
+                position: relative;
+                z-index: 2;
+                /* Antes: font-size: 28px → 2.8rem */
+                font-size: 2.8rem;
                 font-weight: 900;
                 color: #ffffff;
-                letter-spacing: 2px;
-                margin-bottom: 40px;
-                display: flex;
+                /* Antes: letter-spacing: 4px → 0.4rem */
+                letter-spacing: 0.4rem;
+                /* Antes: margin-bottom: 45px → 4.5rem */
+                margin-bottom: 4.5rem;
+                display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                gap: 15px;
-                text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+                /* Antes: gap: 12px → 1.2rem */
+                gap: 1.2rem;
+                text-transform: uppercase;
+
+                /* Gradiente Cromado de Alta Tecnologia */
+                background: linear-gradient(180deg, #ffffff 30%, #4ade80 70%, #15803d 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                /* Antes: filter: drop-shadow(0 0 18px...) → 1.8rem */
+                filter: drop-shadow(0 0 1.8rem rgba(34, 197, 94, 0.5));
+                animation: titleReveal 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+
+                /* Ícone de Alvo / Crosshair Animado */
+                .icon-alvo {
+                    display: inline-block;
+                    /* Antes: font-size: 28px → 2.8rem */
+                    font-size: 2.8rem;
+                    -webkit-text-fill-color: initial;
+                    filter: drop-shadow(0 0 1.2rem rgba(34, 197, 94, 0.9));
+                    animation:
+                        crosshairLock 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s both,
+                        targetPulse 2s ease-in-out infinite alternate 1.7s;
+                }
+
+                /* Linhas Laser Laterais no Título */
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    /* Antes: width: 40px → 4rem */
+                    width: 4rem;
+                    /* Antes: height: 2px → Mantém em px (valores muito pequenos) */
+                    height: 2px;
+                    background: linear-gradient(90deg, transparent, #22c55e);
+                    box-shadow: 0 0 8px #22c55e;
+                }
+
+                &::before {
+                    right: 100%;
+                    /* Antes: margin-right: 15px → 1.5rem */
+                    margin-right: 1.5rem;
+                }
+
+                &::after {
+                    left: 100%;
+                    /* Antes: margin-left: 15px → 1.5rem */
+                    margin-left: 1.5rem;
+                    transform: scaleX(-1);
+                }
+
+                @media (min-width: 768px) {
+                    /* Antes: font-size: 38px → 3.8rem */
+                    font-size: 3.8rem;
+                    /* Antes: letter-spacing: 6px → 0.6rem */
+                    letter-spacing: 0.6rem;
+
+                    .icon-alvo {
+                        /* Antes: font-size: 36px → 3.6rem */
+                        font-size: 3.6rem;
+                    }
+
+                    &::before,
+                    &::after {
+                        /* Antes: width: 80px → 8rem */
+                        width: 8rem;
+                    }
+                }
             }
 
-            .icon-alvo {
-                font-size: 34px;
-                filter: drop-shadow(0 0 8px rgba(34, 197, 94, 0.6));
-            }
-
-            /* Grid do Pódio */
+            /* ──────────────────────────────────────────────────────────────────────────
+       GRID DO PÓDIO
+       ────────────────────────────────────────────────────────────────────── */
             .podio-kills-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-            }
-
-            /* Estrutura dos Cards individuais */
-            .card-kill-podio {
                 position: relative;
-                background: #090d0a;
-                width: 100%;
-                max-width: 260px;
-                border-radius: 12px;
-                padding-top: 30px;
+                z-index: 2;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                overflow: hidden;
-                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+                /* Antes: gap: 32px → 3.2rem */
+                gap: 3.2rem;
+
+                @media (min-width: 1024px) {
+                    flex-direction: row;
+                    align-items: flex-end;
+                    justify-content: center;
+                    /* Antes: gap: 22px → 2.2rem */
+                    gap: 2.2rem;
+                    /* Antes: padding-bottom: 10px → 1rem */
+                    padding-bottom: 1rem;
+
+                    /* Base Energética Luminosa Sob o Pódio */
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        /* Antes: bottom: -10px → -1rem */
+                        bottom: -1rem;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 85%;
+                        /* Antes: height: 20px → 2rem */
+                        height: 2rem;
+                        background: radial-gradient(ellipse at center, rgba(34, 197, 94, 0.4) 0%, transparent 75%);
+                        filter: blur(12px);
+                        z-index: 0;
+                    }
+                }
             }
 
-            /* Configuração de bordas e luzes específicas por colocação */
+            /* ──────────────────────────────────────────────────────────────────────────
+       CARDS INDIVIDUAIS
+       ────────────────────────────────────────────────────────────────────── */
+            .card-kill-podio {
+                position: relative;
+                width: 100%;
+                /* Antes: max-width: 300px → 30rem */
+                max-width: 30rem;
+                background: #070c08;
+                /* Antes: padding: 30px 16px 55px 16px */
+                padding: 3rem 1.6rem 5.5rem 1.6rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border: none;
+
+                /* Canto Corte Cyberpunk via Clip-Path */
+                clip-path: polygon(1.6rem 0, 100% 0, 100% calc(100% - 1.6rem), calc(100% - 1.6rem) 100%, 0 100%, 0 1.6rem);
+
+                /* Antes: box-shadow: 0 20px 40px... */
+                box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.8);
+                cursor: pointer;
+                transform-style: preserve-3d;
+                transition:
+                    transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1),
+                    filter 0.4s ease,
+                    box-shadow 0.4s ease;
+
+                &>* {
+                    position: relative;
+                    z-index: 3;
+                }
+
+                /* Camada Interna do Card */
+                &::after {
+                    content: "";
+                    position: absolute;
+                    inset: 2px;
+                    background: linear-gradient(180deg, #0b120c 0%, #040805 100%);
+                    clip-path: polygon(1.5rem 0, 100% 0, 100% calc(100% - 1.5rem), calc(100% - 1.5rem) 100%, 0 100%, 0 1.5rem);
+                    z-index: 1;
+                    transition: opacity 0.3s ease;
+                }
+
+                /* Borda Giro Energético */
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: -150%;
+                    left: -50%;
+                    width: 200%;
+                    height: 200%;
+                    background: conic-gradient(transparent 270deg, rgba(255, 255, 255, 0.6) 360deg);
+                    animation: hudBorderRotate 4s linear infinite;
+                    z-index: 0;
+                }
+
+                /* Microinterações e Hover */
+                &:hover {
+                    /* Antes: transform: translateY(-14px) scale(1.03) rotateX(4deg) */
+                    transform: translateY(-1.4rem) scale(1.03) rotateX(4deg);
+                    filter: brightness(1.15);
+
+                    .avatar-kill-placeholder {
+                        animation-play-state: paused;
+                        transform: scale(1.1) rotate(2deg);
+                    }
+
+                    .medalha-topo {
+                        /* Antes: transform: scale(1.25) translateY(-5px) */
+                        transform: scale(1.25) translateY(-0.5rem);
+                    }
+
+                    .faixa-posicao {
+                        /* Antes: letter-spacing: 4px → 0.4rem */
+                        letter-spacing: 0.4rem;
+                    }
+                }
+
+                @media (min-width: 1024px) {
+                    /* Antes: max-width: 270px → 27rem */
+                    max-width: 27rem;
+                }
+            }
+
+            /* ──────────────────────────────────────────────────────────────────────────
+       RANKINGS ESPECÍFICOS E ANIMAÇÕES DAS LOGOS / AVATARES
+       ────────────────────────────────────────────────────────────────────── */
+
+            /* 🥇 1º LUGAR */
             .kill-primeiro {
-                border: 2px solid #eab308;
-                box-shadow: 0 0 20px rgba(234, 179, 8, 0.15);
+                animation:
+                    cardDropIn 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.1s both,
+                    championAuraPulse 3s ease-in-out infinite alternate 2s;
+                z-index: 4;
+
+                @media (min-width: 1024px) {
+                    order: 2;
+                    /* Antes: max-width: 300px → 30rem */
+                    max-width: 30rem;
+                    /* Antes: margin-bottom: 25px → 2.5rem */
+                    margin-bottom: 2.5rem;
+                    /* Antes: padding-top: 38px → 3.8rem */
+                    padding-top: 3.8rem;
+                }
+
+                &::before {
+                    background: conic-gradient(transparent 180deg, #f59e0b 270deg, #fffbeb 360deg);
+                    animation-duration: 2.5s;
+                }
+
+                /* Antes: box-shadow: 0 0 35px... */
+                box-shadow: 0 0 3.5rem rgba(245, 158, 11, 0.25);
+
+                &:hover {
+                    /* Antes: box-shadow: 0 0 60px... 0 25px 50px... */
+                    box-shadow: 0 0 6rem rgba(245, 158, 11, 0.6), 0 2.5rem 5rem rgba(0, 0, 0, 0.9);
+                }
             }
 
+            /* 🥈 2º LUGAR */
             .kill-segundo {
-                border: 2px solid #64748b;
-                box-shadow: 0 0 20px rgba(100, 116, 139, 0.15);
+                animation:
+                    cardDropIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.7s both,
+                    silverPulse 4s ease-in-out infinite alternate 1.8s;
+                z-index: 3;
+
+                @media (min-width: 1024px) {
+                    order: 1;
+                }
+
+                &::before {
+                    background: conic-gradient(transparent 180deg, #94a3b8 270deg, #ffffff 360deg);
+                    animation-duration: 4s;
+                }
+
+                /* Antes: box-shadow: 0 0 25px... */
+                box-shadow: 0 0 2.5rem rgba(148, 163, 184, 0.15);
+
+                &:hover {
+                    /* Antes: box-shadow: 0 0 45px... */
+                    box-shadow: 0 0 4.5rem rgba(148, 163, 184, 0.4);
+                }
             }
 
+            /* 🥉 3º LUGAR */
             .kill-terceiro {
-                border: 2px solid #ea580c;
-                box-shadow: 0 0 20px rgba(234, 88, 12, 0.15);
+                animation:
+                    cardDropIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.9s both,
+                    bronzePulse 4s ease-in-out infinite alternate 1.8s;
+                z-index: 2;
+
+                @media (min-width: 1024px) {
+                    order: 3;
+                }
+
+                &::before {
+                    background: conic-gradient(transparent 180deg, #ea580c 270deg, #ffedd5 360deg);
+                    animation-duration: 3.5s;
+                }
+
+                /* Antes: box-shadow: 0 0 25px... */
+                box-shadow: 0 0 2.5rem rgba(234, 88, 12, 0.15);
+
+                &:hover {
+                    /* Antes: box-shadow: 0 0 45px... */
+                    box-shadow: 0 0 4.5rem rgba(234, 88, 12, 0.4);
+                }
             }
 
-            /* Medalhas no topo do card */
+            /* ──────────────────────────────────────────────────────────────────────────
+       DETALHES INTERNOS & ANIMAÇÃO DAS LOGOS/AVATARES
+       ────────────────────────────────────────────────────────────────────── */
+
             .medalha-topo {
-                font-size: 24px;
-                margin-bottom: 10px;
+                /* Antes: font-size: 34px → 3.4rem */
+                font-size: 3.4rem;
+                /* Antes: margin-bottom: 12px → 1.2rem */
+                margin-bottom: 1.2rem;
+                filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.7));
+                transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+                animation: medalFloat 3s ease-in-out infinite alternate;
             }
 
-            /* Avatares dos Jogadores */
+            .kill-primeiro .medalha-topo {
+                /* Antes: font-size: 48px → 4.8rem */
+                font-size: 4.8rem;
+                filter: drop-shadow(0 0 2rem rgba(245, 158, 11, 0.8));
+            }
+
+            /* Container do Avatar / Logo */
             .avatar-kill-container {
-                margin-bottom: 15px;
+                position: relative;
+                /* Antes: margin-bottom: 18px → 1.8rem */
+                margin-bottom: 1.8rem;
+                /* Antes: border-radius: 14px → 1.4rem */
+                border-radius: 1.4rem;
+                /* Antes: padding: 3px → 0.3rem */
+                padding: 0.3rem;
+                background: rgba(255, 255, 255, 0.05);
+
+                /* Holograma / Varredura de Luz sobre a Logo */
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -150%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+                    transform: skewX(-20deg);
+                    animation: avatarHoloScan 3.5s infinite;
+                    z-index: 4;
+                    pointer-events: none;
+                }
             }
 
+            /* Elemento da Logo/Avatar em si */
             .avatar-kill-placeholder {
-                width: 10rem;
-                height: 10rem;
-                border-radius: 12px;
-                border: 2px solid rgba(255, 255, 255, 0.1);
+                /* Antes: width: 11rem (mantém rem, mas vou verificar se era px)
+           Nota: 11rem aqui já está em rem, deixamos igual */
+                width: 11rem;
+                height: 11rem;
+                /* Antes: border-radius: 12px → 1.2rem */
+                border-radius: 1.2rem;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.4s ease;
+                transform-origin: center center;
             }
 
+            /* Animação Contínua Única para Cada Logo (Levitação e Pulsação) */
             .avatar-ouro {
-                background: linear-gradient(135deg, #1e3a8a, #0f172a);
-                border-color: #eab308;
+                /* Antes: border: 2px solid... → Mantém em px (valores muito pequenos) */
+                border: 2px solid #f59e0b;
+                background: linear-gradient(135deg, #451a03, #78350f, #0f172a);
+                /* Antes: box-shadow: 0 0 20px... → 2rem */
+                box-shadow: 0 0 2rem rgba(245, 158, 11, 0.4);
+                animation: avatarFloatOuro 3.6s ease-in-out infinite;
             }
 
             .avatar-prata {
-                background: linear-gradient(135deg, #312e81, #1e1b4b);
-                border-color: #64748b;
+                border: 2px solid #94a3b8;
+                background: linear-gradient(135deg, #1e293b, #0f172a);
+                /* Antes: box-shadow: 0 0 15px... → 1.5rem */
+                box-shadow: 0 0 1.5rem rgba(148, 163, 184, 0.3);
+                animation: avatarFloatPrata 4.2s ease-in-out infinite;
             }
 
             .avatar-bronze {
-                background: linear-gradient(135deg, #7c2d12, #431407);
-                border-color: #ea580c;
+                border: 2px solid #ea580c;
+                background: linear-gradient(135deg, #431407, #0f172a);
+                /* Antes: box-shadow: 0 0 15px... → 1.5rem */
+                box-shadow: 0 0 1.5rem rgba(234, 88, 12, 0.3);
+                animation: avatarFloatBronze 4.8s ease-in-out infinite;
             }
 
-            /* Textos informativos */
+            /* Textos do Card */
             .player-nick {
-                font-size: 20px;
+                /* Antes: font-size: 20px → 2rem */
+                font-size: 2rem;
                 font-weight: 900;
                 color: #ffffff;
-                margin: 5px 0;
+                /* Antes: margin: 4px 0 → 0.4rem */
+                margin: 0.4rem 0;
+                /* Antes: letter-spacing: 1.5px → 0.15rem */
+                letter-spacing: 0.15rem;
+                text-transform: uppercase;
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            }
+
+            .kill-primeiro .player-nick {
+                /* Antes: font-size: 24px → 2.4rem */
+                font-size: 2.4rem;
+                color: #fffbeb;
+                text-shadow: 0 0 1.5rem rgba(245, 158, 11, 0.6);
             }
 
             .player-equipe {
-                font-size: 11px;
-                font-weight: 700;
-                color: rgba(255, 255, 255, 0.4);
-                margin: 0 0 15px 0;
-                letter-spacing: 0.5px;
+                /* Antes: font-size: 11px → 1.1rem */
+                font-size: 1.1rem;
+                font-weight: 800;
+                color: rgba(255, 255, 255, 0.5);
+                /* Antes: margin: 0 0 18px 0 → 0 0 1.8rem 0 */
+                margin: 0 0 1.8rem 0;
+                /* Antes: letter-spacing: 2px → 0.2rem */
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
             }
 
-            /* Placar de Kills */
             .player-score {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-bottom: 25px;
+                /* Antes: margin-bottom: 12px → 1.2rem */
+                margin-bottom: 1.2rem;
             }
 
             .score-num {
-                font-size: 42px;
+                /* Antes: font-size: 46px → 4.6rem */
+                font-size: 4.6rem;
                 font-weight: 900;
-                color: #ffffff;
                 line-height: 1;
+                /* Antes: letter-spacing: -1px → -0.1rem */
+                letter-spacing: -0.1rem;
+                animation: scoreHeartbeat 2.5s ease-in-out infinite;
             }
 
             .kill-primeiro .score-num {
-                color: #eab308;
-                text-shadow: 0 0 15px rgba(234, 179, 8, 0.4);
+                /* Antes: font-size: 54px → 5.4rem */
+                font-size: 5.4rem;
+                color: #fbbf24;
+                /* Antes: text-shadow: 0 0 25px... 0 0 10px... */
+                text-shadow: 0 0 2.5rem rgba(245, 158, 11, 0.8), 0 0 1rem rgba(255, 255, 255, 0.8);
             }
 
             .kill-segundo .score-num {
-                color: #cbd5e1;
-                text-shadow: 0 0 15px rgba(203, 213, 225, 0.3);
+                color: #e2e8f0;
+                /* Antes: text-shadow: 0 0 20px... */
+                text-shadow: 0 0 2rem rgba(226, 232, 240, 0.5);
             }
 
             .kill-terceiro .score-num {
                 color: #f97316;
-                text-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
+                /* Antes: text-shadow: 0 0 20px... */
+                text-shadow: 0 0 2rem rgba(249, 115, 22, 0.6);
             }
 
             .score-txt {
-                font-size: 10px;
-                font-weight: 700;
+                /* Antes: font-size: 11px → 1.1rem */
+                font-size: 1.1rem;
+                font-weight: 900;
                 color: rgba(255, 255, 255, 0.4);
-                margin-top: 5px;
-                letter-spacing: 1px;
+                /* Antes: margin-top: 4px → 0.4rem */
+                margin-top: 0.4rem;
+                /* Antes: letter-spacing: 3px → 0.3rem */
+                letter-spacing: 0.3rem;
             }
 
-            /* Faixas coloridas na base do card */
             .faixa-posicao {
+                position: absolute;
+                bottom: 0;
+                left: 0;
                 width: 100%;
-                padding: 10px 0;
-                font-size: 12px;
+                /* Antes: padding: 12px 0 → 1.2rem */
+                padding: 1.2rem 0;
+                /* Antes: font-size: 13px → 1.3rem */
+                font-size: 1.3rem;
                 font-weight: 900;
                 color: #ffffff;
-                letter-spacing: 1px;
+                /* Antes: letter-spacing: 2px → 0.2rem */
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+                z-index: 3;
+                transition: letter-spacing 0.3s ease;
             }
 
             .kill-primeiro .faixa-posicao {
-                background: linear-gradient(to top, #eab308, #ca8a04);
-                color: #000;
+                background: linear-gradient(90deg, #b45309, #f59e0b, #fbbf24, #f59e0b, #b45309);
+                background-size: 200% auto;
+                color: #000000;
+                font-weight: 900;
+                animation: metallicShimmer 3s linear infinite;
+                /* Antes: box-shadow: 0 -5px 15px... */
+                box-shadow: 0 -0.5rem 1.5rem rgba(245, 158, 11, 0.4);
             }
 
             .kill-segundo .faixa-posicao {
-                background: linear-gradient(to top, #475569, #334155);
+                background: linear-gradient(90deg, #334155, #64748b, #94a3b8, #64748b, #334155);
+                background-size: 200% auto;
+                animation: metallicShimmer 4s linear infinite;
             }
 
             .kill-terceiro .faixa-posicao {
-                background: linear-gradient(to top, #ea580c, #c2410c);
+                background: linear-gradient(90deg, #7c2d12, #c2410c, #ea580c, #c2410c, #7c2d12);
+                background-size: 200% auto;
+                animation: metallicShimmer 4s linear infinite;
             }
 
-            /* Responsividade */
-            @media (max-width: 768px) {
-                .podio-kills-container {
-                    flex-direction: column;
-                    gap: 25px;
+            /* ──────────────────────────────────────────────────────────────────────────
+       KEYFRAMES: MOVIMENTOS E ANIMAÇÕES
+       ────────────────────────────────────────────────────────────────────── */
+
+            /* Movimentos Específicos das Logos / Avatares */
+            @keyframes avatarFloatOuro {
+
+                0%,
+                100% {
+                    /* Antes: transform: translateY(0) ... */
+                    transform: translateY(0) scale(1) rotate(0deg);
+                    /* Antes: box-shadow: 0 0 20px... → 2rem */
+                    box-shadow: 0 0 2rem rgba(245, 158, 11, 0.4);
                 }
 
-                .card-kill-podio {
-                    max-width: 280px;
+                50% {
+                    /* Antes: transform: translateY(-9px) ... */
+                    transform: translateY(-0.9rem) scale(1.04) rotate(2deg);
+                    /* Antes: box-shadow: 0 0 35px... → 3.5rem */
+                    box-shadow: 0 0 3.5rem rgba(245, 158, 11, 0.7);
+                }
+            }
+
+            @keyframes avatarFloatPrata {
+
+                0%,
+                100% {
+                    transform: translateY(0) scale(1) rotate(0deg);
+                    /* Antes: box-shadow: 0 0 15px... → 1.5rem */
+                    box-shadow: 0 0 1.5rem rgba(148, 163, 184, 0.3);
+                }
+
+                50% {
+                    /* Antes: transform: translateY(-6px) ... */
+                    transform: translateY(-0.6rem) scale(1.025) rotate(-1.5deg);
+                    /* Antes: box-shadow: 0 0 25px... → 2.5rem */
+                    box-shadow: 0 0 2.5rem rgba(148, 163, 184, 0.5);
+                }
+            }
+
+            @keyframes avatarFloatBronze {
+
+                0%,
+                100% {
+                    transform: translateY(0) scale(1) rotate(0deg);
+                    /* Antes: box-shadow: 0 0 15px... → 1.5rem */
+                    box-shadow: 0 0 1.5rem rgba(234, 88, 12, 0.3);
+                }
+
+                50% {
+                    /* Antes: transform: translateY(-5px) ... */
+                    transform: translateY(-0.5rem) scale(1.02) rotate(1.5deg);
+                    /* Antes: box-shadow: 0 0 25px... → 2.5rem */
+                    box-shadow: 0 0 2.5rem rgba(234, 88, 12, 0.5);
+                }
+            }
+
+            @keyframes hudSectionReveal {
+                0% {
+                    opacity: 0;
+                    /* Antes: transform: translateY(40px)... → 4rem */
+                    transform: translateY(4rem) scale(0.96);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
+
+            @keyframes ambientAura {
+                0% {
+                    opacity: 0.5;
+                    transform: scale(0.95);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
+            }
+
+            @keyframes gridScroll {
+
+                /* Antes: transform: perspective(500px) rotateX(60deg) translateY(0); */
+                0% {
+                    transform: perspective(500px) rotateX(60deg) translateY(0);
+                }
+
+                /* Antes: transform: perspective(500px) rotateX(60deg) translateY(30px); → 3rem */
+                100% {
+                    transform: perspective(500px) rotateX(60deg) translateY(3rem);
+                }
+            }
+
+            @keyframes radarSweep {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes titleReveal {
+                0% {
+                    opacity: 0;
+                    /* Antes: transform: translateY(-25px); → -2.5rem */
+                    transform: translateY(-2.5rem);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes crosshairLock {
+                0% {
+                    transform: scale(3) rotate(-180deg);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: scale(1) rotate(0deg);
+                    opacity: 1;
+                }
+            }
+
+            @keyframes targetPulse {
+                0% {
+                    transform: scale(1);
+                    filter: drop-shadow(0 0 1rem rgba(34, 197, 94, 0.8));
+                }
+
+                100% {
+                    transform: scale(1.15);
+                    filter: drop-shadow(0 0 2.2rem rgba(34, 197, 94, 1));
+                }
+            }
+
+            @keyframes cardDropIn {
+                0% {
+                    opacity: 0;
+                    /* Antes: transform: translateY(60px)... → 6rem */
+                    transform: translateY(6rem) scale(0.85);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
+
+            @keyframes hudBorderRotate {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes championAuraPulse {
+                0% {
+                    /* Antes: box-shadow: 0 0 25px... → 2.5rem */
+                    box-shadow: 0 0 2.5rem rgba(245, 158, 11, 0.2);
+                }
+
+                100% {
+                    /* Antes: box-shadow: 0 0 50px... 0 0 15px... → 5rem e 1.5rem */
+                    box-shadow: 0 0 5rem rgba(245, 158, 11, 0.55), 0 0 1.5rem rgba(255, 255, 255, 0.3);
+                }
+            }
+
+            @keyframes silverPulse {
+                0% {
+                    /* Antes: box-shadow: 0 0 20px... → 2rem */
+                    box-shadow: 0 0 2rem rgba(148, 163, 184, 0.15);
+                }
+
+                100% {
+                    /* Antes: box-shadow: 0 0 35px... → 3.5rem */
+                    box-shadow: 0 0 3.5rem rgba(148, 163, 184, 0.35);
+                }
+            }
+
+            @keyframes bronzePulse {
+                0% {
+                    /* Antes: box-shadow: 0 0 20px... → 2rem */
+                    box-shadow: 0 0 2rem rgba(234, 88, 12, 0.15);
+                }
+
+                100% {
+                    /* Antes: box-shadow: 0 0 35px... → 3.5rem */
+                    box-shadow: 0 0 3.5rem rgba(234, 88, 12, 0.35);
+                }
+            }
+
+            @keyframes medalFloat {
+                0% {
+                    transform: translateY(0);
+                }
+
+                /* Antes: transform: translateY(-6px); → -0.6rem */
+                100% {
+                    transform: translateY(-0.6rem);
+                }
+            }
+
+            @keyframes avatarHoloScan {
+                0% {
+                    left: -150%;
+                }
+
+                30%,
+                100% {
+                    left: 150%;
+                }
+            }
+
+            @keyframes scoreHeartbeat {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                }
+
+                50% {
+                    transform: scale(1.04);
+                }
+            }
+
+            @keyframes metallicShimmer {
+                0% {
+                    background-position: 0% center;
+                }
+
+                100% {
+                    background-position: 200% center;
                 }
             }
         }
