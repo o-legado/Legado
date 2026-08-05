@@ -2770,6 +2770,236 @@
 
 
 
+  },
+
+  "agosto": {
+    
+      "treino1": {
+        "data": "04/08/2026",
+        "equipes": {
+            "FCB E-SPORTS": {
+                "《ŁĐ》 WHITER™": {
+                    "logo": "",
+                    "dados": [1, 1, 6]
+                },
+                "sub~~yuri": {
+                    "logo": "",
+                    "dados": [4, 2, 2]
+                },
+                "《ŁĐ》 Jordanx8": {
+                    "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(7.1) jordan.jpg",
+                    "dados": [4, 0, 7]
+                },
+                "《ŁĐ》 Nobre7": {
+                    "logo": "",
+                    "dados": [0, 0, 2]
+                }
+            },
+            "DISTRITO": {
+                "Tt DARLING": {
+                    "logo": "",
+                    "dados": [1, 0, 3]
+                },
+                "TT Santos⁷": {
+                    "logo": "",
+                    "dados": [0, 4, 4]
+                },
+                "Ac urielx7": {
+                    "logo": "",
+                    "dados": [0, null, null]
+                },
+                "Tt MAY⁷ ✿": {
+                    "logo": "",
+                    "dados": [2, 0, 2]
+                },
+                "ØLP GLZINN": {
+                    "logo": "",
+                    "dados": [null, 3, 3]
+                }
+            },
+            "6 LEGADOS": {
+                "LD JPZIN7": {
+                    "logo": "",
+                    "dados": [5, 0, 0]
+                },
+                "ⓥ™GENERAL !亗": {
+                    "logo": "",
+                    "dados": [5, 2, 2]
+                },
+                "P2C erreiHud": {
+                    "logo": "",
+                    "dados": [5, 0, 6]
+                },
+                "A9.GOMESmvp": {
+                    "logo": "",
+                    "dados": [3, 1, 0]
+                }
+            },
+            "PHANTOMZ": {
+                "MDM L7ZIM": {
+                    "logo": "",
+                    "dados": [0, 6, 4]
+                },
+                "MDM Darkxz'": {
+                    "logo": "",
+                    "dados": [1, 2, 3]
+                },
+                "egofive7": {
+                    "logo": "",
+                    "dados": [1, 5, 4]
+                },
+                "埃曼努埃尔": {
+                    "logo": "",
+                    "dados": [3, 5, 0]
+                }
+            },
+            "LEGACY⁰¹": {
+                "nitghfear": {
+                    "logo": "",
+                    "dados": [11, 3, 4]
+                },
+                "faeljc70": {
+                    "logo": "",
+                    "dados": [6, 2, 5]
+                },
+                "HS#Apelão#": {
+                    "logo": "",
+                    "dados": [3, 4, 0]
+                },
+                "A4.Rique9": {
+                    "logo": "",
+                    "dados": [0, 5, 1]
+                }
+            },
+            "FRANÇA": {
+                "F7 GARRINCHA": {
+                    "logo": "",
+                    "dados": [1, 1, 0]
+                },
+                "p l a y e r☯": {
+                    "logo": "",
+                    "dados": [0, 0, 1]
+                },
+                "☯F7 IGORzin☯": {
+                    "logo": "",
+                    "dados": [3, 0, 0]
+                },
+                "™its sagaz±": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                }
+            },
+            "FCB E-SPORTS 2.0": {
+                "《ŁĐ》 skyfall™": {
+                    "logo": "",
+                    "dados": [7, 1, 0]
+                },
+                "MEMPHIS10yt": {
+                    "logo": "",
+                    "dados": [1, 2, null]
+                },
+                "《ŁĐ》 vieirssz": {
+                    "logo": "",
+                    "dados": [1, 3, 1]
+                },
+                "Isa_biel_": {
+                    "logo": "",
+                    "dados": [null, null, 1]
+                }
+            },
+            "ARSENAL": {
+                "ARS mendes7": {
+                    "logo": "",
+                    "dados": [3, 2, 2]
+                },
+                ".FX mt7": {
+                    "logo": "",
+                    "dados": [0, 2, 0]
+                },
+                "ARS txr7": {
+                    "logo": "",
+                    "dados": [0, 2, 0]
+                },
+                "SMR.REDZIN": {
+                    "logo": "",
+                    "dados": [5, 2, 0]
+                }
+            },
+            "LINE FLAMENGO": {
+                "VK$ OBSCURO╬": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                },
+                "RNG PG!!!": {
+                    "logo": "",
+                    "dados": [0, 1, null]
+                },
+                "GRE.noTxz§": {
+                    "logo": "",
+                    "dados": [1, 0, null]
+                },
+                "IM.Frost.MKR": {
+                    "logo": "",
+                    "dados": [2, 0, 1]
+                }
+            },
+            "SS GAMING": {
+                "SS Darach☂": {
+                    "logo": "",
+                    "dados": [0, 1, 0]
+                },
+                "SS.NBW7": {
+                    "logo": "",
+                    "dados": [0, 1, 1]
+                },
+                "SS KINGX": {
+                    "logo": "",
+                    "dados": [0, 1, 1]
+                },
+                "SS HOKAGE": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                }
+            },
+            "M1 BASE": {
+                "NVX.DIMASHS": {
+                    "logo": "",
+                    "dados": [0, 1, 3]
+                },
+                "NVX.CALVO7": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "M1.GURI": {
+                    "logo": "",
+                    "dados": [0, 1, 0]
+                },
+                "NVX.dx7": {
+                    "logo": "",
+                    "dados": [0, 4, 2]
+                }
+            },
+            "BLACKWOOD3 PRO": {
+                "B3 Twolove": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "ST LANCELOT7": {
+                    "logo": "",
+                    "dados": [0, 1, 1]
+                },
+                "⚔⬆xit±?": {
+                    "logo": "",
+                    "dados": [0, 0, 4]
+                },
+                "B3_dalas_rlk": {
+                    "logo": "",
+                    "dados": [0, 0, 1]
+                }
+            }
+        }
+      }
+
   }
 }
 

@@ -230,6 +230,7 @@ main .container_divsDates_divDate {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 2rem;
   flex: 1 1 calc(100% - 2.4rem);
 }
 @media (min-width: 600px) {
