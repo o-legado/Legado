@@ -2998,7 +2998,212 @@
                 }
             }
         }
+      },
+      
+  "treino2": {
+    "data": "06/08/2026",
+    "equipes": {
+      "FCB E-SPORTS": {
+        "《ŁÐ》 WHITER™": {
+          "logo": "",
+          "dados": [1, 0, 2]
+        },
+        "sub-~yuri": {
+          "logo": "",
+          "dados": [4, 1, 2]
+        },
+        "《ŁÐ》 Nobre7": {
+          "logo": "",
+          "dados": [3, 0, 1]
+        },
+        "《ŁÐ》 skyfall™": {
+          "logo": "",
+          "dados": [null, 1, 0]
+        }
+      },
+      "RJ VORTEX": {
+        "RJ KING7": {
+          "logo": "",
+          "dados": [5, 3, 0]
+        },
+        "RJ MITO.mpv": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "ANT i aLouça☂?": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        },
+        "AF LIPE": {
+          "logo": "",
+          "dados": [2, 2, 0]
+        }
+      },
+      "6 LEGADOS": {
+        "Ⓥ™GENERAL !亗": {
+          "logo": "",
+          "dados": [0, 6, 0]
+        },
+        "P2C erreiHud": {
+          "logo": "",
+          "dados": [2, 5, 1]
+        },
+        "✟ Gringø ✟": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "《ŁÐ》 coronel¥": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        }
+      },
+      "F7 ESPANHA": {
+        "F7 @JEFFIM": {
+          "logo": "",
+          "dados": [0, 3, 1]
+        },
+        "E s t a p l a y e r ☯": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "REI DRAKEN": {
+          "logo": "",
+          "dados": [0, 0, 2]
+        },
+        "Só o ouro": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        }
+      },
+      "LEGACY01": {
+        "《ŁÐ》 DG777": {
+          "logo": "",
+          "dados": [1, 0, null]
+        },
+        "KILØKURΔ": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "A4.Rique9": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "P2C naochora": {
+          "logo": "",
+          "dados": [0, 2, null]
+        }
+      },
+      "F7 FRANÇA": {
+        "drak_bx2": {
+          "logo": "",
+          "dados": [2, 1, 3]
+        },
+        "BKT GOMES$": {
+          "logo": "",
+          "dados": [3, 0, 1]
+        },
+        "™Its sagaz±": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        },
+        "F7 GARRINCHA": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        }
+      },
+      "ES-SPORTS": {
+        "I'm.SLOWXX": {
+          "logo": "",
+          "dados": [4, 1, 3]
+        },
+        "Dante_ggk": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "༄ºNômadεºᵉʳ": {
+          "logo": "",
+          "dados": [3, 0, 1]
+        },
+        "Luh2G5x3K1WO": {
+          "logo": "",
+          "dados": [2, 2, 0]
+        }
+      },
+      "INSANITY": {
+        "FF Shox7.X": {
+          "logo": "",
+          "dados": [1, 5, 6]
+        },
+        "InS EDU.™": {
+          "logo": "",
+          "dados": [2, 1, 1]
+        },
+        "InS Lopesx!": {
+          "logo": "",
+          "dados": [3, 0, 6]
+        },
+        "LYT.LT7": {
+          "logo": "",
+          "dados": [3, 1, 1]
+        }
+      },
+      "TDM-SPORT": {
+        "TDM Wm06": {
+          "logo": "",
+          "dados": [2, 2, null]
+        },
+        "SCCP ⚡KIEL 么": {
+          "logo": "",
+          "dados": [3, 1, null]
+        },
+        "VYX.kalebz9x": {
+          "logo": "",
+          "dados": [null, 0, 0]
+        },
+        "✟ Gz": {
+          "logo": "",
+          "dados": [null, 0, null]
+        }
+      },
+      "EVOS VORAX": {
+        "支 ALMOSZ": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/agosto/mvp/(2.3)ALMOSZ.jpg",
+          "dados": [1, 9, 0]
+        },
+        "EVOS WSZIN 愛": {
+          "logo": "",
+          "dados": [1, 3, 0]
+        },
+        "EVOS NICOLS": {
+          "logo": "",
+          "dados": [1, 2, 0]
+        },
+        "VnK1ng10": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/agosto/mvp/(2.1)Vnk1ng10.jpg",
+          "dados": [9, 8, 1]
+        }
+      },
+      "LOS ORIGENS": {
+        "felipetjs...": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "LOS VARELA": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "✟PM PIXOTE✟": {
+          "logo": "",
+          "dados": [1, 0, null]
+        },
+        "PM TwoNine☘": {
+          "logo": "",
+          "dados": [null, 2, null]
+        }
       }
+    }
+  }
+
 
   }
 }
