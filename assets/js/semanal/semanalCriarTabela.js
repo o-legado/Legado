@@ -68,8 +68,8 @@ const organizarDadosEquipeA = {
     start(equipes) {
         const mesDoHtmlSelecionado = document.querySelector("#mes").textContent.toLowerCase().trim();
         
-        
         for (let mesEquipes in equipes) {
+            
             if (mesEquipes === mesDoHtmlSelecionado) {
                 const mesSelecionadoJson = equipes[mesEquipes];
                 
@@ -78,6 +78,7 @@ const organizarDadosEquipeA = {
 
                     if (dataTodosTreinos == dataClicada) {
                         const treinoEquipe = mesSelecionadoJson[indice];
+                        
                         this.pegarDadosDasEquipes(treinoEquipe.grupoA);
                         break;
                     }
