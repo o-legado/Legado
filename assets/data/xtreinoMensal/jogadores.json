@@ -3202,7 +3202,248 @@
         }
       }
     }
+  },
+
+
+  
+  "treino3": {
+    "data": "11/08/2026",
+    "equipes": {
+      "FCB E-SPORTS": {
+        "《ŁĐ》 WHITER™": {
+          "logo": "",
+          "dados": [6, 3, 0]
+        },
+        "sub~~yuri": {
+          "logo": "",
+          "dados": [4, 0, 2]
+        },
+        "《ŁĐ》 Nobre7": {
+          "logo": "",
+          "dados": [4, 2, 0]
+        },
+        "VK   BRAGA": {
+          "logo": "",
+          "dados": [5, null, null]
+        },
+        "《ŁĐ》 Jordanx8": {
+          "logo": "",
+          "dados": [null, null, 1]
+        }
+      },
+      "EVOS PHOENIX": {
+        "EVOS.xitt⁰⁰⁷": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "EVOS BELZEBU": {
+          "logo": "",
+          "dados": [1, 1, 2]
+        },
+        "EVOS BELLION": {
+          "logo": "",
+          "dados": [1, 0, 3]
+        },
+        "丂 Ur T 乃 ㄥ 尺 匚": {
+          "logo": "",
+          "dados": [null, 0, 0]
+        }
+      },
+      "DARKWOLVES": {
+        "Dkş.MENOR67": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "Dkş.LUAN†": {
+          "logo": "",
+          "dados": [2, 0, 2]
+        },
+        "Dkş.SOMBRA": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "Dkş.BATMAN⚡": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "EVOS VORAX": {
+        "EVOS MACABRO": {
+          "logo": "",
+          "dados": [6, 3, 4]
+        },
+        "EVOS WSZIN  愛": {
+          "logo": "",
+          "dados": [2, 0, null]
+        },
+        "༄  pedro   bm": {
+          "logo": "",
+          "dados": [1, 5, 5]
+        },
+        "VnK1ng10": {
+          "logo": "",
+          "dados": [null, 5, 6]
+        },
+        "EVOS NICOLS": {
+          "logo": "",
+          "dados": [null, null, 4]
+        }
+      },
+      "TDM-SPORT": {
+        "MTS   JHOSEFER": {
+          "logo": "",
+          "dados": [1, 0, 2]
+        },
+        "TDM  Wm06": {
+          "logo": "",
+          "dados": [0, 2, 1]
+        },
+        "TDM.USOPP": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        },
+        "TDM.WILL.77": {
+          "logo": "",
+          "dados": [0, 4, 1]
+        }
+      },
+      "YAKUZA E-SPORTS": {
+        "YKZ  SUGUI": {
+          "logo": "",
+          "dados": [0, 1, 5]
+        },
+        "YKZ  LEANDRO™": {
+          "logo": "",
+          "dados": [0, 1, 2]
+        },
+        "YKZ  Max245": {
+          "logo": "",
+          "dados": [1, 4, 3]
+        },
+        "YKZ  MT7": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "ARSENAL": {
+        "ARS  mendes7": {
+          "logo": "",
+          "dados": [1, 0, 2]
+        },
+        ".FX    mt7": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "ARS  txr7": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        },
+        "SMR.REDZIN": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "HOPE": {
+        "HOPE   ZAN": {
+          "logo": "",
+          "dados": [4, 0, 4]
+        },
+        "HOPE   DIZ": {
+          "logo": "",
+          "dados": [2, 2, null]
+        },
+        "HOPE  FURTADO": {
+          "logo": "",
+          "dados": [4, 0, 6]
+        },
+        "HOPE   JOS": {
+          "logo": "",
+          "dados": [2, 2, 7]
+        },
+        "HOPE   TOI": {
+          "logo": "",
+          "dados": [null, null, 4]
+        }
+      },
+      "REPUDIADOS da VK": {
+        "Mateusorvet": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "GOGETA  愛": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "CHZ  CORA": {
+          "logo": "",
+          "dados": [1, 2, 1]
+        },
+        "Pó  Do  Bruxo": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "VK   BRAGA": {
+          "logo": "",
+          "dados": [null, 5, 0]
+        }
+      },
+      "OFF TEAM 7": {
+        "OFF  TADALA7": {
+          "logo": "",
+          "dados": [5, 2, 0]
+        },
+        "OFF  NOG09º7": {
+          "logo": "",
+          "dados": [6, 3, 3]
+        },
+        "OFF.KAUA7": {
+          "logo": "",
+          "dados": [8, 1, 5]
+        },
+        "OFF  Seven'": {
+          "logo": "",
+          "dados": [4, 4, 3]
+        }
+      },
+      "MÁFIA ONE": {
+        "INDIA  euM7  🌸": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        },
+        "Sempre  euM7": {
+          "logo": "",
+          "dados": [1, 2, 1]
+        },
+        "Menos  euM7": {
+          "logo": "",
+          "dados": [1, 6, 5]
+        },
+        "Play1M7": {
+          "logo": "",
+          "dados": [0, 4, 1]
+        }
+      },
+      "6 LEGADOS": {
+        "ⓥ™GENERAL !亗": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "P2C  erreiHud": {
+          "logo": "",
+          "dados": [1, 0, 2]
+        },
+        "《ŁĐ》 coronel¥": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "LD  JPZIN7": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      }
+    }
   }
+
 
 
   }
