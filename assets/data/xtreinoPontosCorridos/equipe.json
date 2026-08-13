@@ -1,139 +1,175 @@
 {
-  "season1": {
-    "data": "05/06/2026",
-    "equipes": [
-      {
-        "equipe": "O LEGADO",
-        "detalhes": [
-          { "queda": 1, "kills": 18, "posicao": 3 },
-          { "queda": 2, "kills": 1, "posicao": 10 },
-          { "queda": 3, "kills": 5, "posicao": 7 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "TEAM MIZY",
-        "detalhes": [
-          { "queda": 1, "kills": 10, "posicao": 6 },
-          { "queda": 2, "kills": 11, "posicao": 5 },
-          { "queda": 3, "kills": 9, "posicao": 5 }
-        ],
-        "logo": "../../../assets/img/xtreinoPontosCorridos/TEAM MIZY.jpg",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "Ql 1000",
-        "detalhes": [
-          { "queda": 1, "kills": 10, "posicao": 11 },
-          { "queda": 2, "kills": 7, "posicao": 9 },
-          { "queda": 3, "kills": 0, "posicao": 8 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "EVOS SPORTING",
-        "detalhes": [
-          { "queda": 1, "kills": 5, "posicao": 10 },
-          { "queda": 2, "kills": 0, "posicao": 12 },
-          { "queda": 3, "kills": 0, "posicao": 12 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "GAMING XP",
-        "detalhes": [
-          { "queda": 1, "kills": 1, "posicao": 12 },
-          { "queda": 2, "kills": 6, "posicao": 8 },
-          { "queda": 3, "kills": 20, "posicao": 1 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "GAMER OVER",
-        "detalhes": [
-          { "queda": 1, "kills": 10, "posicao": 7 },
-          { "queda": 2, "kills": 9, "posicao": 11 },
-          { "queda": 3, "kills": 0, "posicao": 11 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "SS GAMING",
-        "detalhes": [
-          { "queda": 1, "kills": 3, "posicao": 4 },
-          { "queda": 2, "kills": 3, "posicao": 7 },
-          { "queda": 3, "kills": 0, "posicao": 10 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "RXT E-SPORTs",
-        "detalhes": [
-          { "queda": 1, "kills": 11, "posicao": 5 },
-          { "queda": 2, "kills": 11, "posicao": 2 },
-          { "queda": 3, "kills": 3, "posicao": 6 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "DRAKARYS",
-        "detalhes": [
-          { "queda": 1, "kills": 7, "posicao": 8 },
-          { "queda": 2, "kills": 2, "posicao": 3 },
-          { "queda": 3, "kills": 14, "posicao": 2 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "INVICTUS GG",
-        "detalhes": [
-          { "queda": 1, "kills": 8, "posicao": 2 },
-          { "queda": 2, "kills": 15, "posicao": 1 },
-          { "queda": 3, "kills": 13, "posicao": 4 }
-        ],
-        "logo": "../../../assets/img/xtreinoPontosCorridos/INVICTUS GG.jpg",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "RX E-SPORTS",
-        "detalhes": [
-          { "queda": 1, "kills": 17, "posicao": 1 },
-          { "queda": 2, "kills": 8, "posicao": 4 },
-          { "queda": 3, "kills": 3, "posicao": 9 }
-        ],
-        "logo": "../../../assets/img/xtreinoPontosCorridos/RX E-SPORTS.jpg",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      },
-      {
-        "equipe": "DΞVORAX",
-        "detalhes": [
-          { "queda": 1, "kills": 6, "posicao": 9 },
-          { "queda": 2, "kills": 1, "posicao": 6 },
-          { "queda": 3, "kills": 7, "posicao": 3 }
-        ],
-        "logo": "",
-        "puniçãoDescrição": "",
-        "puniçãoPontos": ""
-      }
-    ]
-  }
+    "season1": {
+      "data": "05/06/2026",
+      "equipes": [
+        {
+          "equipe": "O LEGADO",
+          "detalhes": [
+            { "queda": 1, "kills": 18, "posicao": 3 },
+            { "queda": 2, "kills": 1, "posicao": 10 },
+            { "queda": 3, "kills": 5, "posicao": 7 },
+            { "queda": 4, "kills": 0, "posicao": 10 },
+            { "queda": 5, "kills": 3, "posicao": 7 },
+            { "queda": 6, "kills": 4, "posicao": 7 }
+          ],
+          "logo": "",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "TEAM MIZY",
+          "detalhes": [
+            { "queda": 1, "kills": 10, "posicao": 6 },
+            { "queda": 2, "kills": 11, "posicao": 5 },
+            { "queda": 3, "kills": 9, "posicao": 5 },
+            { "queda": 4, "kills": 10, "posicao": 4 },
+            { "queda": 5, "kills": 11, "posicao": 3 },
+            { "queda": 6, "kills": 18, "posicao": 3 }
+          ],
+          "logo": "../../../assets/img/xtreinoPontosCorridos/TEAM MIZY.jpg",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "Ql 1000",
+          "detalhes": [
+            { "queda": 1, "kills": 10, "posicao": 11 },
+            { "queda": 2, "kills": 7, "posicao": 9 },
+            { "queda": 3, "kills": 0, "posicao": 8 },
+            { "queda": 4, "kills": 14, "posicao": 6 },
+            { "queda": 5, "kills": 10, "posicao": 1 },
+            { "queda": 6, "kills": 2, "posicao": 11 }
+          ],
+          "logo": "",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "EVOS SPORTING",
+          "detalhes": [
+            { "queda": 1, "kills": 5, "posicao": 10 },
+            { "queda": 2, "kills": 0, "posicao": 12 },
+            { "queda": 3, "kills": 0, "posicao": 12 },
+            { "queda": 4, "kills": 4, "posicao": 3 },
+            { "queda": 5, "kills": 6, "posicao": 5 },
+            { "queda": 6, "kills": 10, "posicao": 4 }
+          ],
+          "logo": "",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "GAMING XP",
+          "detalhes": [
+            { "queda": 1, "kills": 1, "posicao": 12 },
+            { "queda": 2, "kills": 6, "posicao": 8 },
+            { "queda": 3, "kills": 20, "posicao": 1 },
+            { "queda": 4, "kills": 0, "posicao": 13 },
+            { "queda": 5, "kills": 0, "posicao": 13 },
+            { "queda": 6, "kills": 0, "posicao": 13 }
+          ],
+          "logo": "",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "GAMER OVER",
+          "detalhes": [
+            { "queda": 1, "kills": 10, "posicao": 7 },
+            { "queda": 2, "kills": 9, "posicao": 11 },
+            { "queda": 3, "kills": 0, "posicao": 11 },
+            { "queda": 4, "kills": 3, "posicao": 7 },
+            { "queda": 5, "kills": 4, "posicao": 6 },
+            { "queda": 6, "kills": 1, "posicao": 9 }
+          ],
+          "logo": "",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "SS GAMING",
+          "detalhes": [
+            { "queda": 1, "kills": 3, "posicao": 4 },
+            { "queda": 2, "kills": 3, "posicao": 7 },
+            { "queda": 3, "kills": 0, "posicao": 10 },
+            { "queda": 4, "kills": 1, "posicao": 9 },
+            { "queda": 5, "kills": 1, "posicao": 11 },
+            { "queda": 6, "kills": 1, "posicao": 8 }
+          ],
+          "logo": "",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "RXT E-SPORTs",
+          "detalhes": [
+            { "queda": 1, "kills": 11, "posicao": 5 },
+            { "queda": 2, "kills": 11, "posicao": 2 },
+            { "queda": 3, "kills": 3, "posicao": 6 },
+            { "queda": 4, "kills": 6, "posicao": 2 },
+            { "queda": 5, "kills": 8, "posicao": 8 },
+            { "queda": 6, "kills": 9, "posicao": 1 }
+          ],
+          "logo": "",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "DRAKARYS",
+          "detalhes": [
+            { "queda": 1, "kills": 7, "posicao": 8 },
+            { "queda": 2, "kills": 2, "posicao": 3 },
+            { "queda": 3, "kills": 14, "posicao": 2 },
+            { "queda": 4, "kills": 13, "posicao": 1 },
+            { "queda": 5, "kills": 9, "posicao": 2 },
+            { "queda": 6, "kills": 20, "posicao": 2 }
+          ],
+          "logo": "../../../assets/img/xtreinoPontosCorridos/DRACARYS.jpg",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "INVICTUS GG",
+          "detalhes": [
+            { "queda": 1, "kills": 8, "posicao": 2 },
+            { "queda": 2, "kills": 15, "posicao": 1 },
+            { "queda": 3, "kills": 13, "posicao": 4 },
+            { "queda": 4, "kills": 0, "posicao": 11 },
+            { "queda": 5, "kills": 3, "posicao": 9 },
+            { "queda": 6, "kills": 0, "posicao": 5 }
+          ],
+          "logo": "../../../assets/img/xtreinoPontosCorridos/INVICTUS GG.jpg",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "RX E-SPORTS",
+          "detalhes": [
+            { "queda": 1, "kills": 17, "posicao": 1 },
+            { "queda": 2, "kills": 8, "posicao": 4 },
+            { "queda": 3, "kills": 3, "posicao": 9 },
+            { "queda": 4, "kills": 23, "posicao": 5 },
+            { "queda": 5, "kills": 13, "posicao": 4 },
+            { "queda": 6, "kills": 0, "posicao": 6 }
+          ],
+          "logo": "../../../assets/img/xtreinoPontosCorridos/RX E-SPORTS.jpg",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        },
+        {
+          "equipe": "DΞVORAX",
+          "detalhes": [
+            { "queda": 1, "kills": 6, "posicao": 9 },
+            { "queda": 2, "kills": 1, "posicao": 6 },
+            { "queda": 3, "kills": 7, "posicao": 3 },
+            { "queda": 4, "kills": 3, "posicao": 8 },
+            { "queda": 5, "kills": 2, "posicao": 10 },
+            { "queda": 6, "kills": 1, "posicao": 10 }
+          ],
+          "logo": "",
+          "puniçãoDescrição": "",
+          "puniçãoPontos": ""
+        }
+      ]
+    }
 }
