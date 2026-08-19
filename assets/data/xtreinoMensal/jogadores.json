@@ -3643,7 +3643,231 @@
       },
       "EVOS PHOENIX": {}
     }
-  }
+  },
+
+
+  
+    "treino5": {
+        "data": "18/08/2026",
+        "equipes": {
+            "FCB E-SPORTS": {
+                "《ŁĐ》 docorte": {
+                    "logo": "",
+                    "dados": [3, null, null]
+                },
+                "sub~~yuri": {
+                    "logo": "",
+                    "dados": [2, 9, 3]
+                },
+                "《ŁĐ》 Nobre7": {
+                    "logo": "",
+                    "dados": [1, 2, 1]
+                },
+                "lonely'": {
+                    "logo": "",
+                    "dados": [1, 2, 0]
+                },
+                "《ŁĐ》 WHITER™": {
+                    "logo": "",
+                    "dados": [null, 4, 0]
+                }
+            },
+            "BLACKWOOD3": {
+                "B3 Twolove": {
+                    "logo": "",
+                    "dados": [0, 5, 0]
+                },
+                "ST LANCELOT7": {
+                    "logo": "",
+                    "dados": [1, null, 1]
+                },
+                "B3_Fantasma\"": {
+                    "logo": "",
+                    "dados": [1, 3, 0]
+                },
+                "AJUDANTEDEL": {
+                    "logo": "",
+                    "dados": [1, null, null]
+                },
+                "Theking_B3": {
+                    "logo": "",
+                    "dados": [null, 0, 0]
+                }
+            },
+            "TDM-SPORT": {
+                "SCCP ⚡KIEL 么": {
+                    "logo": "",
+                    "dados": [2, 0, 0]
+                },
+                "TDM Wm06": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "TDM.USOPP": {
+                    "logo": "",
+                    "dados": [1, 0, 1]
+                },
+                "TDM.WILL.77": {
+                    "logo": "",
+                    "dados": [3, 1, 0]
+                }
+            },
+            "LEGACY⁰¹": {
+                "《ŁĐ》 DG777": {
+                    "logo": "",
+                    "dados": [2, 2, 0]
+                },
+                "<ctrl42>2 pedro ﾂ7": {
+                    "logo": "",
+                    "dados": [2, 2, 0]
+                },
+                "《ŁĐ》 A N J O'★": {
+                    "logo": "",
+                    "dados": [1, 4, 0]
+                },
+                "PA EZE!!": {
+                    "logo": "",
+                    "dados": [null, 1, 0]
+                }
+            },
+            "FORA DA LEI": {
+                "FĐŁ MAFIOSO": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "FĐŁ HELPME": {
+                    "logo": "",
+                    "dados": [5, 3, 2]
+                },
+                "Ł ✝rare✝": {
+                    "logo": "",
+                    "dados": [1, 2, 5]
+                },
+                "FĐŁ 444": {
+                    "logo": "",
+                    "dados": [5, 2, 5]
+                }
+            },
+            "DARK CITY": {},
+            "OFFLINE": {
+                "gabriel._s.x": {
+                    "logo": "",
+                    "dados": [1, null, null]
+                },
+                "《LD》 LUKINHA": {
+                    "logo": "",
+                    "dados": [3, 0, 1]
+                },
+                "《LČ》• D u D u †": {
+                    "logo": "",
+                    "dados": [1, null, null]
+                },
+                "P2C erreiHud": {
+                    "logo": "",
+                    "dados": [null, null, 0]
+                },
+                "SEM MEDO244": {
+                    "logo": "",
+                    "dados": [null, null, 0]
+                },
+                "P2C naochora": {
+                    "logo": "",
+                    "dados": [null, null, 0]
+                }
+            },
+            "6 LEGADO": {
+                "《ŁĐ》 coronel¥": {
+                    "logo": "",
+                    "dados": [0, 1, 0]
+                },
+                "LD JPZIN7": {
+                    "logo": "",
+                    "dados": [1, 2, 0]
+                },
+                "《ŁĐ》 N7 BYE 9": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "《ŁĐ》 NIKEBOY7": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                }
+            },
+            "WMX DRANGONS": {
+                "WMX_KAIO ✝": {
+                    "logo": "",
+                    "dados": [0, 0, 1]
+                },
+                "Ⓦⓜⓧ ⓅⒶⓊⓁⓄ愛 ☯": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "BRT VITINHO": {
+                    "logo": "",
+                    "dados": [0, 0, null]
+                },
+                "WMX AnaC ✝": {
+                    "logo": "",
+                    "dados": [0, 0, null]
+                }
+            },
+            "EVOS VORAX": {
+                "EVOS ALMOS": {
+                    "logo": "",
+                    "dados": [7, 1, 4]
+                },
+                "EVOS NICOLS": {
+                    "logo": "",
+                    "dados": [6, 1, 2]
+                },
+                "EVOS WSZIN": {
+                    "logo": "",
+                    "dados": [1, 1, 0]
+                },
+                "pedro bm": {
+                    "logo": "",
+                    "dados": [6, 3, 5]
+                }
+            },
+            "FROMZERO": {
+                "Fael o Mala": {
+                    "logo": "",
+                    "dados": [4, 4, 10]
+                },
+                "L! D_N7": {
+                    "logo": "",
+                    "dados": [3, 5, 5]
+                },
+                "L! Gbzin": {
+                    "logo": "",
+                    "dados": [2, 4, 1]
+                },
+                "ngmparea'!": {
+                    "logo": "",
+                    "dados": [3, 7, 6]
+                }
+            },
+            "REPUDIADOS da VK": {
+                "VK BRAGA": {
+                    "logo": "",
+                    "dados": [0, 0, 1]
+                },
+                "Mateusorvet": {
+                    "logo": "",
+                    "dados": [1, 1, 0]
+                },
+                "GOGETA": {
+                    "logo": "",
+                    "dados": [1, 2, 0]
+                },
+                "VK CHRY": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                }
+            }
+        }
+    }
+
 
 
 
