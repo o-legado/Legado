@@ -5698,7 +5698,7 @@
                     { "queda": 2, "kills": 17, "posicao": 6 },
                     { "queda": 3, "kills": 4, "posicao": 3 }
                 ],
-                "logo": "",
+                "logo": "../../../assets/img/logosXtreinoEquipes/julho/(3.1) FBC-E-SPORTS.jpg",
                 "puniçãoDescrição": "",
                 "puniçãoPontos": ""
             },
@@ -5765,8 +5765,8 @@
                     { "queda": 3, "kills": 1, "posicao": 10 }
                 ],
                 "logo": "",
-                "puniçãoDescrição": "",
-                "puniçãoPontos": ""
+                "puniçãoDescrição": "POR FALAR NO CHAT COISAS DESNESSECARIA",
+                "puniçãoPontos": "5"
             },
             {
                 "equipe": "6 LEGADO",
@@ -5787,8 +5787,8 @@
                     { "queda": 3, "kills": 1, "posicao": 8 }
                 ],
                 "logo": "",
-                "puniçãoDescrição": "",
-                "puniçãoPontos": ""
+                "puniçãoDescrição": "POR TERMINAR O X-TREINO SO COM 2 JOGADORES NO SLOT",
+                "puniçãoPontos": "5"
             },
             {
                 "equipe": "EVOS VORAX",
@@ -5797,9 +5797,9 @@
                     { "queda": 2, "kills": 6, "posicao": 1 },
                     { "queda": 3, "kills": 11, "posicao": 5 }
                 ],
-                "logo": "",
-                "puniçãoDescrição": "",
-                "puniçãoPontos": ""
+                "logo": "../../../assets/img/logosXtreinoEquipes/agosto/(2.2)EVOS VORAX.jpg",
+                "puniçãoDescrição": "POR FALAR NO CHAT COISAS DESNESSECARIA",
+                "puniçãoPontos": "5"
             },
             {
                 "equipe": "FROMZERO",
@@ -5808,7 +5808,7 @@
                     { "queda": 2, "kills": 20, "posicao": 2 },
                     { "queda": 3, "kills": 22, "posicao": 1 }
                 ],
-                "logo": "",
+                "logo": "../../../assets/img/logosXtreinoEquipes/agosto/(5.1)FROMZERO.jpg",
                 "puniçãoDescrição": "",
                 "puniçãoPontos": ""
             },
