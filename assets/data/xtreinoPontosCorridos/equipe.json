@@ -97,7 +97,7 @@
             { "queda": 5, "kills": 4, "posicao": 6 },
             { "queda": 6, "kills": 1, "posicao": 9 },
             { "queda": 7, "kills": 6, "posicao": 4 },
-            { "queda": 8, "kills": 0, "posicao": 13 },
+            { "queda": 8, "kills": 0, "posicao": 12 },
             { "queda": 9, "kills": 0, "posicao": 9 }
           ],
           "logo": "",
@@ -113,9 +113,9 @@
             { "queda": 4, "kills": 1, "posicao": 9 },
             { "queda": 5, "kills": 1, "posicao": 11 },
             { "queda": 6, "kills": 1, "posicao": 8 },
-            { "queda": 7, "kills": 0, "posicao": 13 },
+            { "queda": 7, "kills": 0, "posicao": 12 },
             { "queda": 8, "kills": 2, "posicao": 11 },
-            { "queda": 9, "kills": 0, "posicao": 13 }
+            { "queda": 9, "kills": 0, "posicao": 12 }
           ],
           "logo": "",
           "puniçãoDescrição": "",
