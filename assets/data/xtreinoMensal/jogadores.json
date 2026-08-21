@@ -3866,7 +3866,252 @@
                 }
             }
         }
+    },
+
+
+    
+  "treino6": {
+    "data": "20/08/2026",
+    "equipes": {
+      "FCB E-SPORTS": {
+        "WHITER": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(3.1) ld whiter.jpg",
+          "dados": [1, 7, 5]
+        },
+        "sub~~yuri": {
+          "logo": "",
+          "dados": [1, 7, 2]
+        },
+        "Bn.op": {
+          "logo": "",
+          "dados": [2, 3, 5]
+        },
+        "Nobre7": {
+          "logo": "",
+          "dados": [0, 6, 5]
+        }
+      },
+      "REPUDIADOS DA VK": {
+        "Mateusorvet": {
+          "logo": "",
+          "dados": [1, 3, 0]
+        },
+        "BRAGA": {
+          "logo": "",
+          "dados": [3, 1, 2]
+        },
+        "CJbagun": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "CHRY": {
+          "logo": "",
+          "dados": [2, 4, 3]
+        }
+      },
+      "TDM-SPORT": {
+        "USOPP": {
+          "logo": "",
+          "dados": [3, 2, 2]
+        },
+        "Wm06": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "WILL.77": {
+          "logo": "",
+          "dados": [1, 1, 1]
+        },
+        "SKIEL": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        }
+      },
+      "ALFA3": {
+        "CONNOR": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "igorzin": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        },
+        "WnZ7": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        },
+        "♡e♡VIC♡": {
+          "logo": "",
+          "dados": [null, 0, null]
+        }
+      },
+      "FORA DA LEI": {
+        "FdL 444": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        },
+        "HELPME": {
+          "logo": "",
+          "dados": [3, 0, 1]
+        },
+        "rare": {
+          "logo": "",
+          "dados": [1, 3, 4]
+        },
+        "BiG": {
+          "logo": "",
+          "dados": [1, 2, 0]
+        }
+      },
+      "WHITE GAMING": {
+        "0!@00@7:(": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "lanazk": {
+          "logo": "",
+          "dados": [2, 0, null]
+        },
+        "KHALIFAZK": {
+          "logo": "",
+          "dados": [0, 0, 3]
+        },
+        "雨果 1": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "雨果 2": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "♡L♡e♡VIC♡": {
+          "logo": "",
+          "dados": [null, null, 0]
+        }
+      },
+      "EVOS VORAX": {
+        "ALMOS": {
+          "logo": "",
+          "dados": [5, 4, 2]
+        },
+        "MACABRO": {
+          "logo": "",
+          "dados": [1, 4, 1]
+        },
+        "WSZIN": {
+          "logo": "",
+          "dados": [1, 2, 1]
+        },
+        "AKAZA": {
+          "logo": "",
+          "dados": [1, null, null]
+        },
+        "pedro bm": {
+          "logo": "../../../assets/img/logosXtreinoEquipes/agosto/mvp/(6.2)pedro bm.jpg",
+          "dados": [null, 8, 7]
+        }
+      },
+      "6 LEGADO": {
+        "VITOR": {
+          "logo": "",
+          "dados": [4, 1, 1]
+        },
+        "LD JPZIN7": {
+          "logo": "",
+          "dados": [4, 1, 1]
+        },
+        "coronel": {
+          "logo": "",
+          "dados": [null, 1, 1]
+        },
+        "NIKEBOY7": {
+          "logo": "",
+          "dados": [null, 0, 0]
+        }
+      },
+      "EVOS-SPORTING": {
+        "BELZEBU": {
+          "logo": "",
+          "dados": [4, 0, 1]
+        },
+        "SOUZAXS": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "XTREM": {
+          "logo": "",
+          "dados": [3, 3, 3]
+        },
+        "ANGEL": {
+          "logo": "",
+          "dados": [4, 0, 1]
+        }
+      },
+      "OFFLINE": {
+        "erreiHud": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        },
+        "SEM MEDO244": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "DG777": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "gabriel.s.x": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "Gringo": {
+          "logo": "",
+          "dados": [null, null, 0]
+        }
+      },
+      "OSS eSPORTS": {
+        "ZENITSU": {
+          "logo": "",
+          "dados": [11, 3, 8]
+        },
+        "AKAZA": {
+          "logo": "",
+          "dados": [4, 0, 3]
+        },
+        "FLASHth": {
+          "logo": "",
+          "dados": [1, 3, 4]
+        },
+        "TANJIRO": {
+          "logo": "",
+          "dados": [4, 0, 0]
+        }
+      },
+      "BLACK%SHADOW": {
+        "frajol4 rs": {
+          "logo": "",
+          "dados": [2, 0, 1]
+        },
+        "APELOX77": {
+          "logo": "",
+          "dados": [0, 0, 4]
+        },
+        "PAPALÉGUAS.": {
+          "logo": "",
+          "dados": [1, 1, 4]
+        },
+        "Sem.mira": {
+          "logo": "",
+          "dados": [1, 1, null]
+        },
+        "SOARESmobile": {
+          "logo": "",
+          "dados": [null, null, 3]
+        }
+      }
     }
+  }
+
 
 
 
