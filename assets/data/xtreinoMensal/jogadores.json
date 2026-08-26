@@ -4110,7 +4110,87 @@
         }
       }
     }
-  }
+  },
+
+
+  
+    "treino7": {
+        "data": "25/08/2026",
+        "equipes": {
+            "LEGACY⁰¹": {
+                "PA EZE!!": { "logo": "", "dados": [3, 5, 2] },
+                "亗² pedro ツ⁷": { "logo": "", "dados": [3, 0, 0] },
+                "kn talent": { "logo": "", "dados": [1, 2, 0] },
+                "《ŁĐ》 DG777": { "logo": "", "dados": [2, 1, 0] }
+            },
+            "FCB E-SPORTS": {
+                "《ŁĐ》 WHITER™": { "logo": "", "dados": [1, 1, 3] },
+                "sub~~yuri": { "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(7.2) yuri.jpeg", "dados": [8, 0, 6] },
+                "《ŁĐ》 docorte": { "logo": "", "dados": [5, 2, 6] },
+                "《ŁĐ》 skyfall™": { "logo": "", "dados": [2, 1, null] },
+                "《ŁĐ》 !Bn.op益": { "logo": "", "dados": [null, null, 1] }
+            },
+            "TDM-SPORT": {
+                "TDM.USOPP": { "logo": "", "dados": [1, 0, 1] },
+                "TDM Wm06": { "logo": "", "dados": [0, 0, 1] },
+                "TDM ϟKIEL 么": { "logo": "", "dados": [0, 0, 2] },
+                "gbzinn.,,": { "logo": "", "dados": [0, null, null] }
+            },
+            "FORA DA LEI": {
+                "FØŁ 444": { "logo": "", "dados": [1, 0, 1] },
+                "Ł ♱rare♱": { "logo": "", "dados": [2, 0, 3] },
+                "FØŁ HELPME✓": { "logo": "", "dados": [2, 0, 1] },
+                "ĄLPĄ_INSANA☻": { "logo": "", "dados": [0, 0, 1] }
+            },
+            "6 LEGADO": {
+                "《ŁĐ》 coronel¥": { "logo": "", "dados": [0, 0, 0] },
+                "《ŁĐ》 NIKEBOY7": { "logo": "", "dados": [6, 2, 0] },
+                "VITOR": { "logo": "", "dados": [1, 0, 0] },
+                "LD JPZIN7": { "logo": "", "dados": [3, 1, 0] }
+            },
+            "OS MENTE FRACA": {
+                "WOLF LIPE": { "logo": "", "dados": [0, 1, 0] },
+                "INS LIPE": { "logo": "", "dados": [0, 0, 0] },
+                "LØS_John123M": { "logo": "", "dados": [0, 0, null] },
+                "♱PRETINHO♱Ⓓⓥ": { "logo": "", "dados": [2, 0, 0] },
+                "Knzin7AURA": { "logo": "", "dados": [null, null, 0] }
+            },
+            "WMX DRANGONS": {
+                "WMX NANE 愛": { "logo": "", "dados": [0, 0, null] },
+                "ⓟⓐⓤⓛⓞ愛": { "logo": "", "dados": [0, 0, null] },
+                "WMX_KAIO ♱": { "logo": "", "dados": [0, 0, null] },
+                "WMX AnaC ♱": { "logo": "", "dados": [0, 0, null] }
+            },
+            "Dragons style": {
+                "LV.ISAGI7MVP": { "logo": "", "dados": [3, 4, 0] },
+                "Beiço.06": { "logo": "", "dados": [1, 4, 1] },
+                "GOLDO(1f6P9!": { "logo": "", "dados": [2, 5, 0] },
+                "LTX.Dest7x": { "logo": "", "dados": [0, null, null] },
+                "@NC VN9": { "logo": "", "dados": [null, 0, 0] }
+            },
+            "ARSENAL": {
+                "ARS txr7": { "logo": "", "dados": [2, 0, 0] },
+                "ARS mendes7": { "logo": "", "dados": [1, 0, 1] },
+                "SMR.REDZIN": { "logo": "", "dados": [2, 0, 0] },
+                "ARS MANDELA7": { "logo": "", "dados": [3, 0, 2] }
+            },
+            "OSS KIDS": {
+            },
+            "NOVA GERAÇÃO": {
+                "AURA Pires": { "logo": "", "dados": [0, null, null] },
+                "AURA índio⁶⁷": { "logo": "", "dados": [0, null, null] },
+                "BT jv01": { "logo": "", "dados": [0, null, null] },
+                "AURAanjo⁶⁷": { "logo": "", "dados": [0, null, null] }
+            },
+            "FOLID": {
+                "w1n": { "logo": "", "dados": [4, 3, 2] },
+                "Velma!7": { "logo": "", "dados": [2, 7, 8] },
+                "E4 Yuta♡": { "logo": "", "dados": [7, 6, 12] },
+                "FLQ.Jotave": { "logo": "", "dados": [5, 1, 7] }
+            }
+        }
+    }
+
 
 
 
