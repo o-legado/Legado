@@ -1,6 +1,6 @@
 
-let jogadores 
-let equipes 
+let jogadores
+let equipes
 let dataClicada
 const resultadoFinal = [];
 async function carregarDados() {
@@ -14,7 +14,7 @@ async function carregarDados() {
 //o js para e espera pegar todos os dados no json
 async function iniciarApp() {
     await carregarDados()
-    
+
     dataClicada = localStorage.getItem("dataDoXtreino");
     organizarDadosEquipe.start(equipes)
     formarDadosJogadores.start(jogadores)
@@ -49,28 +49,28 @@ const organizarDadosEquipe = {
 
     // Seleciona o mês e filtra o treino correto baseado na data clicada
     start(equipes) {
-        
+
         const season = localStorage.getItem("season");
-        
-        
-        
+
+
+
         const seasonSelecionadoJson = equipes[season];
         this.pegarDadosDasEquipes(seasonSelecionadoJson.equipes,);
-        
-        
+
+
     },
 
     // Processa os dados, soma os pontos, ordena e define as posições reais da tabela
     pegarDadosDasEquipes(treinoEquipe, data) {
-        
-        
-    
+
+
+
         treinoEquipe.forEach(infoEquipes => {
             let kill = 0;
             let posicaoPts = 0;
             let booyah = 0;
             let equipePts;
-            
+
             const nomeEquipe = infoEquipes.equipe;
             const arrayQuedas = infoEquipes.detalhes;
             const logo = infoEquipes.logo;
@@ -93,12 +93,12 @@ const organizarDadosEquipe = {
             });
 
             // Total de pontos: (Soma dos Abates + Soma dos Pontos de Posição) - Punição aplicada
-            if(punicaoPontosAtual !== "" && punicaoPontosAtual !== null && punicaoPontosAtual !== undefined){
+            if (punicaoPontosAtual !== "" && punicaoPontosAtual !== null && punicaoPontosAtual !== undefined) {
                 equipePts = (kill + posicaoPts - punicaoPontosAtual)
-            }else{
+            } else {
                 equipePts = (kill + posicaoPts)
             }
-            
+
 
             resultadoFinal.push({
                 posicao: 0, // Será definida logo abaixo após a ordenação decrescente
@@ -122,8 +122,8 @@ const organizarDadosEquipe = {
             item.posicao = index + 1;
         });
 
-       
-        
+
+
         // Envia os dados ordenados e com pontos de posição computados para a tabela
         enviarDadosTabela.start(resultadoFinal);
     },
@@ -151,7 +151,7 @@ const organizarDadosEquipe = {
 //aq ira enviar os dados para fazer a tabela organizado
 const enviarDadosTabela = {
     start(classificação) {
-        
+
         //aq ira perccorer o array da classificação
         classificação.forEach(objEquipe => {
             const posição = objEquipe.posicao
@@ -165,7 +165,7 @@ const enviarDadosTabela = {
             const punicaoPontosAtual = objEquipe.punicaoPontosAtual
 
             criarTabela.start(posição, equipe, quedas, abate, booyah, pts, data, logo)
-           
+
         });
     }
 }
@@ -268,69 +268,101 @@ const criarTabela = {
 let ranking = []
 
 const formarDadosJogadores = {
-    
-    start(equipesPlayers) {
-        
-        for (let mesEquipes in equipesPlayers) {
-            
-                
-                const mesSelecionadoJson = equipesPlayers[mesEquipes];
-                
-                for (let indice in mesSelecionadoJson) {
-                    const dataTodosTreinos = mesSelecionadoJson[indice].data;
-                    
 
-                    
-                        const treinoJogadores = mesSelecionadoJson.equipes;
-                        this.pegarDadosDosJogadores(treinoJogadores);
-                        break;
-                    
-                }
-            
+    start(equipesPlayers) {
+
+        for (let mesEquipes in equipesPlayers) {
+
+
+            const mesSelecionadoJson = equipesPlayers[mesEquipes];
+
+            for (let indice in mesSelecionadoJson) {
+                const dataTodosTreinos = mesSelecionadoJson[indice].data;
+
+
+
+                const treinoJogadores = mesSelecionadoJson.equipes;
+                this.pegarDadosDosJogadores(treinoJogadores);
+                break;
+
+            }
+
         }
 
     },
     pegarDadosDosJogadores(treinoJogadores) {
         // ranking = []
-        
+
         // Percorre os nomes das equipes
         for (let nomeEquipe in treinoJogadores) {
-            
+
             // Armazena todos os jogadores de uma equipe
             const jogadoresEquipe = treinoJogadores[nomeEquipe]
-    
+
             // Percorre todos os jogadores de uma equipe
             for (let nomeJogador in jogadoresEquipe) {
-    
+
                 // Armazena a soma total de cada jogador
                 let somaKills = 0
-    
+
                 let logoPlayer = jogadoresEquipe[nomeJogador].logo
 
                 // Armazena as partidas de cada jogador (array de kills)
                 let jogadoresPartidaKillArray = jogadoresEquipe[nomeJogador].dados
-    
+
                 // Percorre cada kill que o jogador fez
                 for (let i = 0; i < jogadoresPartidaKillArray.length; i++) {
                     // Soma e armazena as kills
                     somaKills += jogadoresPartidaKillArray[i]
                 }
-    
+
                 this.ordemDoRanking(nomeEquipe, nomeJogador, jogadoresPartidaKillArray, somaKills, logoPlayer)
             }
         }
-    
+
         // Ordena quem tem mais pontos (abates)
-        ranking.sort((a, b) => b.pts - a.pts)
-    
+        ranking.sort((a, b) => {
+            // 1º CRITÉRIO: Total de Kills (Decrescente)
+            if (b.pts !== a.pts) {
+                return b.pts - a.pts;
+            }
+
+            // 2º CRITÉRIO: Jogadores da MESMA EQUIPE -> Desempate queda a queda (da última para a primeira)
+            if (a.equipe === b.equipe) {
+                const killsA = a.kills || [];
+                const killsB = b.kills || [];
+
+                // Quantidade total de quedas jogadas (compara a partir da última queda)
+                const totalQuedas = Math.max(killsA.length, killsB.length);
+
+                for (let i = totalQuedas - 1; i >= 0; i--) {
+                    const killQuedaA = killsA[i] || 0;
+                    const killQuedaB = killsB[i] || 0;
+
+                    if (killQuedaB !== killQuedaA) {
+                        return killQuedaB - killQuedaA; // Quem matou mais na queda mais recente fica em cima
+                    }
+                }
+            }
+
+            // 3º CRITÉRIO: Jogadores de EQUIPES DIFERENTES -> Posição da Equipe na tabela geral (Crescente)
+            const equipeA = resultadoFinal.find(e => e.equipe === a.equipe);
+            const equipeB = resultadoFinal.find(e => e.equipe === b.equipe);
+
+            const posEquipeA = equipeA ? equipeA.posicao : Infinity;
+            const posEquipeB = equipeB ? equipeB.posicao : Infinity;
+
+            return posEquipeA - posEquipeB;
+        });
+
         // Aplica as posições de cada jogador baseado no index
         ranking.forEach((jogador, index) => {
             jogador.posição = index + 1
         })
-    
+
         // Envia o ranking pronto para renderizar na tela
         criarRankJogador.start(ranking)
-        
+
     },
 
     ordemDoRanking(nomeEquipe, nomeJogador, jogadoresPartidaKillArray, somaKills, logoPlayer) {
@@ -442,7 +474,7 @@ const criarRankJogador = {
     }
 }
 
-export {resultadoFinal, ranking}
+export { resultadoFinal, ranking }
 
 // console.log(resultadoFinal)
 // console.log(ranking)
