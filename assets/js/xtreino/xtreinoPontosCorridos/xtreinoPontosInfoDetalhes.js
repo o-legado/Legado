@@ -444,8 +444,9 @@ const criarHtmlJogadorInfo = {
         // Se existir a div, clicando no botão irá remover
         const nomeJogadorSemEspaço = namePlayer.replace(/[^\w]/g, "");
 
-        const divExistente = document.querySelector(`#${nomeJogadorSemEspaço}`);
-
+        
+        const divExistente = document.getElementById(nomeJogadorSemEspaço);
+        
         if(divExistente){
             divExistente.remove();
             return;
