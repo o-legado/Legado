@@ -367,8 +367,39 @@ const formarDadosJogadores = {
             }
         }
     
-        // Ordena quem tem mais pontos (abates)
-        ranking.sort((a, b) => b.pts - a.pts)
+        ranking.sort((a, b) => {
+            // 1º CRITÉRIO: Total de Kills (Decrescente)
+            if (b.pts !== a.pts) {
+                return b.pts - a.pts;
+            }
+
+            // 2º CRITÉRIO: Jogadores da MESMA EQUIPE -> Desempate queda a queda (da última para a primeira)
+            if (a.equipe === b.equipe) {
+                const killsA = a.kills || [];
+                const killsB = b.kills || [];
+
+                // Quantidade total de quedas jogadas (compara a partir da última queda)
+                const totalQuedas = Math.max(killsA.length, killsB.length);
+
+                for (let i = totalQuedas - 1; i >= 0; i--) {
+                    const killQuedaA = killsA[i] || 0;
+                    const killQuedaB = killsB[i] || 0;
+
+                    if (killQuedaB !== killQuedaA) {
+                        return killQuedaB - killQuedaA; // Quem matou mais na queda mais recente fica em cima
+                    }
+                }
+            }
+
+            // 3º CRITÉRIO: Jogadores de EQUIPES DIFERENTES -> Posição da Equipe na tabela geral (Crescente)
+            const equipeA = resultadoFinal.find(e => e.equipe === a.equipe);
+            const equipeB = resultadoFinal.find(e => e.equipe === b.equipe);
+
+            const posEquipeA = equipeA ? equipeA.posicao : Infinity;
+            const posEquipeB = equipeB ? equipeB.posicao : Infinity;
+
+            return posEquipeA - posEquipeB;
+        });
     
         // Aplica as posições de cada jogador baseado no index
         ranking.forEach((jogador, index) => {

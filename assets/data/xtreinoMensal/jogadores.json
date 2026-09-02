@@ -4441,6 +4441,80 @@
 
 
 
+  },
+
+  "setembro": {
+    
+    "treino1": {
+        "data": "01/09/2026",
+        "equipes": {
+            "NORTH7": {
+                "RAID lucass7": { "logo": "", "dados": [0, 11, 5] },
+                "T7 R9.": { "logo": "", "dados": [0, 2, 1] },
+                "Mobpsico": { "logo": "", "dados": [0, null, null] },
+                "MNOORICHASS": { "logo": "", "dados": [null, 1, 5] },
+                "T7 don'tcry7": { "logo": "", "dados": [null, 1, 1] }
+            },
+            "FCB E-SPORTS": {
+                "《ŁÐ》WHITER™": { "logo": "../../../assets/img/logosXtreinoEquipes/julho/mvp/(3.1) ld whiter.jpg", "dados": [3, 2, 4] },
+                "《ŁÐ》docorte": { "logo": "", "dados": [4, 2, 2] },
+                "sub~~yuri": { "logo": "", "dados": [5, 2, 2] },
+                "《ŁÐ》vieirssz": { "logo": "", "dados": [2, 3, 0] }
+            },
+            "TDM-SPORT": {
+                "TDM.WILL.77": { "logo": "", "dados": [2, 0, 1] },
+                "LUANZIN⚡️🦅": { "logo": "", "dados": [2, 0, 1] },
+                "TDM Wm06": { "logo": "", "dados": [1, 0, 1] },
+                "TDM ⚡️KIEL 么": { "logo": "", "dados": [0, 0, 1] }
+            },
+            "6 LEGADO": {
+                "faeljc70": { "logo": "", "dados": [3, 2, null] },
+                "《ŁÐ》Biel⁴⁸": { "logo": "", "dados": [2, 0, 1] },
+                "《ŁÐ》coronel¥": { "logo": "", "dados": [1, 1, 1] },
+                "《ŁÐ》NIKEBOY7": { "logo": "", "dados": [0, null, 1] }
+            },
+            "NTJ SPORT": {
+                "mk7  ²º NTJ": { "logo": "", "dados": [4, 0, 2] },
+                "GESTER NTJ": { "logo": "", "dados": [2, 0, 1] },
+                "BMG Pdx7L": { "logo": "", "dados": [1, 3, 8] },
+                "MENOR PSICO!": { "logo": "", "dados": [1, null, null] },
+                "LÜH⁰¹⁶": { "logo": "", "dados": [null, 0, 1] }
+            },
+            "TROPA FANTASMA": {
+                "kn talent": { "logo": "", "dados": [1, 0, 0] },
+                "QI SOUZA7": { "logo": "", "dados": [0, 2, 0] },
+                "《ŁÐ》YESHUA": { "logo": "", "dados": [0, null, 2] },
+                "《ŁÐ》DG777": { "logo": "", "dados": [0, 0, 2] }
+            },
+            "LEGACY⁰¹": {
+                "PA EZE!!": { "logo": "", "dados": [3, 0, null] },
+                "#Emanuel": { "logo": "", "dados": [1, null, null] },
+                "亗² pedro ツ⁷": { "logo": "", "dados": [1, 1, 0] },
+                "《ŁÐ》A N J O'★": { "logo": "", "dados": [0, 2, 1] },
+                "JJK YUTA⁷": { "logo": "", "dados": [null, 0, 0] }
+            },
+            "SS GAMING": {
+                "MESTRE GOAT": { "logo": "", "dados": [4, 0, 0] },
+                "SS Darach☂": { "logo": "", "dados": [3, 3, 0] },
+                "SS.DUQUE": { "logo": "", "dados": [2, 1, null] },
+                "SS VINNI.": { "logo": "", "dados": [7, 2, 0] }
+            },
+            "TREM DA PIZZA": {
+                "L.Higuaín": { "logo": "", "dados": [null, 1, 0] },
+                "QBR CHOCO777": { "logo": "", "dados": [null, 0, 0] },
+                "QBR FiLPE777": { "logo": "", "dados": [null, 0, null] },
+                "feedd": { "logo": "", "dados": [null, null, 0] }
+            },
+            "NF E-SPORTS": {
+                "CHAMPツ": { "logo": "", "dados": [null, 0, 2] },
+                "PEPAO%": { "logo": "", "dados": [null, 2, 2] },
+                "XX Alves7": { "logo": "", "dados": [null, 1, 2] },
+                "BATATA": { "logo": "", "dados": [null, 0, 3] }
+            },
+            "ZX GAMING": {}
+        }
+    }
+
   }
 }
 
