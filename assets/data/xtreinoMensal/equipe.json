@@ -6243,15 +6243,6 @@
       }
     ]
   }
-
-
-
-
-
-
-
-
-
     },
     "setembro":{
         "treino1": {
@@ -6379,7 +6370,147 @@
                 "puniçãoPontos": ""
             }
         ]
-        }
+        },
+
+        
+  "treino2": {
+    "data": "03/09/2026",
+    "equipes": [
+      {
+        "equipe": "NORTH7",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 9 },
+          { "queda": 2, "kills": 2, "posicao": 9 },
+          { "queda": 3, "kills": 1, "posicao": 4 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "LEGACY⁰¹",
+        "detalhes": [
+          { "queda": 1, "kills": 24, "posicao": 1 },
+          { "queda": 2, "kills": 19, "posicao": 1 },
+          { "queda": 3, "kills": 0, "posicao": 11 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "DISASTERS",
+        "detalhes": [
+          { "queda": 1, "kills": 11, "posicao": 2 },
+          { "queda": 2, "kills": 13, "posicao": 3 },
+          { "queda": 3, "kills": 11, "posicao": 2 }
+        ],
+        "logo": "../../../assets/img/logosXtreinoEquipes/setembro/(2.2)DISASTERS.jpg",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "FÚRIA BASE",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 10 },
+          { "queda": 2, "kills": 1, "posicao": 11 },
+          { "queda": 3, "kills": 9, "posicao": 8 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "TDM SPORT",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 11 },
+          { "queda": 2, "kills": 7, "posicao": 8 },
+          { "queda": 3, "kills": 6, "posicao": 3 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "LINE FR",
+        "detalhes": [
+          { "queda": 1, "kills": 11, "posicao": 4 },
+          { "queda": 2, "kills": 4, "posicao": 7 },
+          { "queda": 3, "kills": 0, "posicao": 7 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "SS GAMING",
+        "detalhes": [
+          { "queda": 1, "kills": 3, "posicao": 6 },
+          { "queda": 2, "kills": 7, "posicao": 4 },
+          { "queda": 3, "kills": 9, "posicao": 6 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "THE DARK",
+        "detalhes": [
+          { "queda": 1, "kills": 3, "posicao": 7 },
+          { "queda": 2, "kills": 1, "posicao": 5 },
+          { "queda": 3, "kills": 10, "posicao": 5 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "ZX GAMING",
+        "detalhes": [
+          { "queda": 1, "kills": 1, "posicao": 8 },
+          { "queda": 2, "kills": 1, "posicao": 10 },
+          { "queda": 3, "kills": 4, "posicao": 9 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "THE|ESQUAD",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "NF ESPORTS",
+        "detalhes": [
+          { "queda": 1, "kills": 5, "posicao": 3 },
+          { "queda": 2, "kills": 9, "posicao": 6 },
+          { "queda": 3, "kills": 2, "posicao": 10 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "KRYZOR",
+        "detalhes": [
+          { "queda": 1, "kills": 7, "posicao": 5 },
+          { "queda": 2, "kills": 7, "posicao": 2 },
+          { "queda": 3, "kills": 14, "posicao": 1 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      }
+    ]
+  }
+
 
     }
 }
