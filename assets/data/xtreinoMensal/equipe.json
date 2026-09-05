@@ -6394,7 +6394,7 @@
           { "queda": 2, "kills": 19, "posicao": 1 },
           { "queda": 3, "kills": 0, "posicao": 11 }
         ],
-        "logo": "",
+        "logo": "../../../assets/img/logosXtreinoEquipes/setembro/(2.1)legacy.jpg",
         "puniçãoDescrição": "",
         "puniçãoPontos": ""
       },
@@ -6467,9 +6467,9 @@
       {
         "equipe": "ZX GAMING",
         "detalhes": [
-          { "queda": 1, "kills": 1, "posicao": 8 },
-          { "queda": 2, "kills": 1, "posicao": 10 },
-          { "queda": 3, "kills": 4, "posicao": 9 }
+          { "queda": 1, "kills": null, "posicao": 13 },
+          { "queda": 2, "kills": null, "posicao": 13 },
+          { "queda": 3, "kills": null, "posicao": 13 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -6478,9 +6478,9 @@
       {
         "equipe": "THE|ESQUAD",
         "detalhes": [
-          { "queda": 1, "kills": 0, "posicao": 13 },
-          { "queda": 2, "kills": 0, "posicao": 13 },
-          { "queda": 3, "kills": 0, "posicao": 13 }
+          { "queda": 1, "kills": 1, "posicao": 8 },
+          { "queda": 2, "kills": 1, "posicao": 10 },
+          { "queda": 3, "kills": 4, "posicao": 9 }
         ],
         "logo": "",
         "puniçãoDescrição": "",
@@ -6504,7 +6504,7 @@
           { "queda": 2, "kills": 7, "posicao": 2 },
           { "queda": 3, "kills": 14, "posicao": 1 }
         ],
-        "logo": "",
+        "logo": "../../../assets/img/logosXtreinoEquipes/setembro/(2.3)KRYZOR.jpg",
         "puniçãoDescrição": "",
         "puniçãoPontos": ""
       }
