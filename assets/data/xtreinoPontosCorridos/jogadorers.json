@@ -154,6 +154,212 @@
           "VX.NEXUSawp": { "logo": "", "dados": [null, null, null, null, null, null, null, null, null, 1, 4, null] }
         }
       }
+    },
+    
+    "season2": {
+        "data": "02/09/2026",
+        "equipes": {
+            "O LEGADO": {
+                "⟨ŁĐ⟩ WHITER™": {
+                    "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/ld whiter.jpg",
+                    "dados": [6, 5, 6]
+                },
+                "⟨ŁĐ⟩ vieirssz": {
+                    "logo": "",
+                    "dados": [3, 1, 2]
+                },
+                "⟨ŁĐ⟩ Hsapela": {
+                    "logo": "",
+                    "dados": [1, 0, 1]
+                },
+                "⟨ŁĐ⟩ NIKEBOY7": {
+                    "logo": "",
+                    "dados": [3, 1, 1]
+                }
+            },
+            "GAMING XP": {
+                "777 JM²³ 10": {
+                    "logo": "",
+                    "dados": [0, 2, 4]
+                },
+                "777 Menorzzk": {
+                    "logo": "",
+                    "dados": [0, 0, 4]
+                },
+                "777 SNOWego愛": {
+                    "logo": "",
+                    "dados": [0, 2, 5]
+                },
+                "777 APOLLO": {
+                    "logo": "",
+                    "dados": [0, 2, 2]
+                }
+            },
+            "RXT E-SPORTS": {
+                "RXT  MTZero": {
+                    "logo": "",
+                    "dados": [0, 2, 2]
+                },
+                "RXT perdoa": {
+                    "logo": "",
+                    "dados": [3, 1, 2]
+                },
+                "RXT0NEXTT": {
+                    "logo": "",
+                    "dados": [1, 1, 1]
+                },
+                "RXT gustazx": {
+                    "logo": "",
+                    "dados": [3, 4, 3]
+                }
+            },
+            "SS GAMING": {
+                "SS.DUQUE": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                },
+                "SS.NBW7": {
+                    "logo": "",
+                    "dados": [1, 1, 1]
+                },
+                "SS.PH7": {
+                    "logo": "",
+                    "dados": [1, 0, 0]
+                },
+                "SS GOAT": {
+                    "logo": "",
+                    "dados": [null, 0, 2]
+                }
+            },
+            "Ql 1000": {
+                "QI Julia": {
+                    "logo": "",
+                    "dados": [2, 2, 1]
+                },
+                "QI sadeyesk’": {
+                    "logo": "",
+                    "dados": [1, 2, 0]
+                },
+                "QI dg": {
+                    "logo": "",
+                    "dados": [5, 2, 0]
+                },
+                "QI chyopdg\"": {
+                    "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/QI chyopdg.jpg",
+                    "dados": [6, 5, 3]
+                }
+            },
+            "TDM-SPORT": {},
+            "GAMER OVER": {
+                "GO GREGO7": {
+                    "logo": "",
+                    "dados": [2, 1, 5]
+                },
+                "GO A⁷": {
+                    "logo": "",
+                    "dados": [2, 0, 9]
+                },
+                "GO TH7 †": {
+                    "logo": "",
+                    "dados": [2, 0, 0]
+                },
+                "GO0KARINA.∫0": {
+                    "logo": "",
+                    "dados": [1, 0, 1]
+                }
+            },
+            "RX E-SPORTS": {
+                "RX PATROA": {
+                    "logo": "",
+                    "dados": [0, null, 1]
+                },
+                "RX ριήġὺιм ": {
+                    "logo": "",
+                    "dados": [0, null, null]
+                },
+                "RX BEDTEEDY": {
+                    "logo": "",
+                    "dados": [0, null, 0]
+                },
+                "RX MOR4ESx": {
+                    "logo": "",
+                    "dados": [null, null, 0]
+                }
+            },
+            "DENDELE": {
+                "DDL.sattz7": {
+                    "logo": "",
+                    "dados": [2, 5, null]
+                },
+                "DDL.sNickz7": {
+                    "logo": "",
+                    "dados": [1, 5, null]
+                },
+                "DDL.Pepãox7": {
+                    "logo": "",
+                    "dados": [2, 2, null]
+                },
+                "DDL.Keplax7": {
+                    "logo": "",
+                    "dados": [0, 2, null]
+                }
+            },
+            "NEXT LEVEL": {
+                "NXL.BIELZIN": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "NXL.RAIKONEN": {
+                    "logo": "",
+                    "dados": [3, 0, 1]
+                },
+                "NXL.ASTR4": {
+                    "logo": "",
+                    "dados": [3, 1, 1]
+                },
+                "NXL.GV9ZY": {
+                    "logo": "",
+                    "dados": [1, 1, 3]
+                }
+            },
+            "ESPARTANS": {
+                "SPTOPEPEU": {
+                    "logo": "",
+                    "dados": [5, 1, 0]
+                },
+                "SPT SAMSUNG": {
+                    "logo": "",
+                    "dados": [0, 0, 0]
+                },
+                "SPT___ASTA": {
+                    "logo": "",
+                    "dados": [3, 1, 0]
+                },
+                "SPT MORENO ô": {
+                    "logo": "",
+                    "dados": [2, 0, 0]
+                }
+            },
+            "DYNASTY GANG": {
+                "DGF AZOG": {
+                    "logo": "",
+                    "dados": [4, 2, 0]
+                },
+                "DGF a SASSÁ⁷": {
+                    "logo": "",
+                    "dados": [4, 2, 0]
+                },
+                "DGF NESCAU": {
+                    "logo": "",
+                    "dados": [7, 0, 0]
+                },
+                "DGF FALLEN₩0": {
+                    "logo": "",
+                    "dados": [3, 1, 0]
+                }
+            }
+        }
     }
-  
-  }
+
+    
+}

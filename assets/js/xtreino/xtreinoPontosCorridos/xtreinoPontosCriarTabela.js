@@ -270,22 +270,26 @@ let ranking = []
 const formarDadosJogadores = {
 
     start(equipesPlayers) {
-
         for (let mesEquipes in equipesPlayers) {
-
-
-            const mesSelecionadoJson = equipesPlayers[mesEquipes];
-
-            for (let indice in mesSelecionadoJson) {
-                const dataTodosTreinos = mesSelecionadoJson[indice].data;
-
-
-
-                const treinoJogadores = mesSelecionadoJson.equipes;
-                this.pegarDadosDosJogadores(treinoJogadores);
-                break;
+            const season = localStorage.getItem("season");
+            
+            if(mesEquipes == season){
+                const mesSelecionadoJson = equipesPlayers[mesEquipes];
+                
+                for (let indice in mesSelecionadoJson) {
+                    const dataTodosTreinos = mesSelecionadoJson[indice].data;
+                
+    
+    
+    
+                    const treinoJogadores = mesSelecionadoJson.equipes;
+                    this.pegarDadosDosJogadores(treinoJogadores);
+                    break;
+    
+                }
 
             }
+            
 
         }
 

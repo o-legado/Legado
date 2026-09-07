@@ -1,6 +1,6 @@
 
-let jogadores 
-let equipes 
+let jogadores
+let equipes
 let dataClicada
 let trEquipe
 let ptsPosiçãoTotal = 0;
@@ -15,7 +15,7 @@ async function carregarDados() {
 //o js para e espera pegar todos os dados no json
 async function iniciarApp() {
     await carregarDados()
-    
+
     dataClicada = localStorage.getItem("dataDoXtreino");
 }
 iniciarApp()
@@ -39,37 +39,37 @@ const classificação = [
 
 //aq ira descobrir qul btn foi clicado
 document.addEventListener("click", function (e) {
-    
-    if(e.target.textContent === '📋') {
 
-        if(e.target.id == "infoEquipe"){
+    if (e.target.textContent === '📋') {
+
+        if (e.target.id == "infoEquipe") {
 
             const btnClicado = e.target
             trEquipe = pegarTrEquipe(btnClicado)
             organizarDadosEquipe.start(equipes, btnClicado, trEquipe)
 
-        } else if(e.target.id == "infoPlayer"){
+        } else if (e.target.id == "infoPlayer") {
             const btnClicado = e.target
             const namePlayer = pegarNamePlayer(btnClicado)
             const namePLayerEquipe = pegarNamePlayerEquipe(btnClicado)
             organizarDadosPlayer.start(jogadores, btnClicado, namePlayer, namePLayerEquipe)
         }
-        
+
     }
 })
 
 //aq ira pegar o tr da equipe para usar como base para criar o tr info
-function pegarTrEquipe(btnClicado){
+function pegarTrEquipe(btnClicado) {
     const trEquipe = btnClicado.parentElement.parentElement
     return trEquipe
 }
-function pegarNamePlayer(btnClicado){
+function pegarNamePlayer(btnClicado) {
     const div = btnClicado.parentElement;
     const nomeJogador = div.querySelector(".player_info h4");
 
     return nomeJogador.textContent
 }
-function pegarNamePlayerEquipe(btnClicado){
+function pegarNamePlayerEquipe(btnClicado) {
 
     const card = btnClicado.parentElement;
 
@@ -85,70 +85,69 @@ function pegarNamePlayerEquipe(btnClicado){
 const organizarDadosEquipe = {
 
     // Seleciona o mês e filtra o treino correto baseado na data clicada
-    start(equipes, btnClicado, trEquipe) {
-        
-        
-        for (let mesEquipes in equipes) {
-            
-                const mesSelecionadoJson = equipes[mesEquipes];
+    start(equipesTotais, btnClicado, trEquipe) {
+        // 1. Pegamos a etiqueta exata da "gaveta" que queremos abrir
+        const season = localStorage.getItem("season");
 
-                for (let indice in mesSelecionadoJson) {
-                    const dataTodosTreinos = mesSelecionadoJson[indice].data;
-                    
-                    
-                        const treinoEquipe = mesSelecionadoJson.equipes;
-                        
-                        this.chegarNoDetalhes(treinoEquipe, btnClicado, trEquipe)
-                        break;
-                    
-                }
-            
+        // 2. Cláusula de Guarda: protegemos o código caso a season não exista
+        if (!equipesTotais[season]) {
+            console.error(`🚨 ERRO: A season '${season}' não existe no objeto equipesTotais!`);
+            return; // Interrompe para evitar que a tela quebre
         }
+
+        // 3. Acesso Direto: pulamos o for...in e pegamos os dados imediatamente
+        const dadosDaSeason = equipesTotais[season];
+
+        // 4. Isolamos apenas o array de equipes que está dentro da season
+        const arrayDeEquipes = dadosDaSeason.equipes;
+
+        // 5. Enviamos os dados filtrados para a próxima função
+        this.chegarNoDetalhes(arrayDeEquipes, btnClicado, trEquipe);
     },
 
     // Processa os dados, soma os pontos, ordena e define as posições reais da tabela
     chegarNoDetalhes(treinoEquipe, btnClicado, trEquipe) {
-        
+
 
         let contador = 1
         let tdEquipe = btnClicado.parentElement
-        do{
+        do {
             tdEquipe = tdEquipe.previousElementSibling
             contador++
         } while (contador <= 5)
         const tdNameEquipe = tdEquipe.textContent
 
-        
+
         treinoEquipe.forEach(equipe => {
 
-            if(equipe.equipe == tdNameEquipe){
+            if (equipe.equipe == tdNameEquipe) {
                 criarHtmlEquipeInfo.start(trEquipe, equipe)
             }
-            
+
         });
-        
+
     }
 
 };
 
 const criarHtmlEquipeInfo = {
 
-    start(trEquipe, equipe){
+    start(trEquipe, equipe) {
 
         //se existir o tr, clicando no btn ira remover
         const trExistente = document.querySelector(`#detalhe_linha`)
-        if(trExistente){
+        if (trExistente) {
             trExistente.remove()
             return
         }
 
 
         const trInfo = document.createElement("tr")
-        trInfo.setAttribute("id",`detalhe_linha`)
+        trInfo.setAttribute("id", `detalhe_linha`)
         trEquipe.after(trInfo)
         const tdInfo = this.criaTd(trInfo)
         const divDesempenhoDetalhado = this.divDesempenhoDetalhado(tdInfo)
-        
+
         const criarH2 = this.criarH2(divDesempenhoDetalhado, equipe.equipe)
         const divDesempenhoDetalhadoQuedas = this.divDesempenhoDetalhadoQuedas(divDesempenhoDetalhado)
 
@@ -165,21 +164,21 @@ const criarHtmlEquipeInfo = {
 
 
     },
-    criaTd(trInfo){
+    criaTd(trInfo) {
         const tdInfo = document.createElement("td")
         tdInfo.setAttribute("class", "td_infoPartida")
         tdInfo.colSpan = 7
         trInfo.appendChild(tdInfo)
         return tdInfo
-        
+
     },
-    divDesempenhoDetalhado(tdInfo){
+    divDesempenhoDetalhado(tdInfo) {
         const div = document.createElement("div")
         div.setAttribute("class", "desempenhoDetalhado")
         tdInfo.appendChild(div)
         return div
     },
-    criarH2(divDesempenhoDetalhado, nomeEquipe){
+    criarH2(divDesempenhoDetalhado, nomeEquipe) {
         const h2 = document.createElement("h2")
         const span = document.createElement("span")
         span.textContent = nomeEquipe
@@ -188,7 +187,7 @@ const criarHtmlEquipeInfo = {
         divDesempenhoDetalhado.appendChild(h2)
         return
     },
-    divDesempenhoDetalhadoQuedas(divDesempenhoDetalhado){
+    divDesempenhoDetalhadoQuedas(divDesempenhoDetalhado) {
         const div = document.createElement("div")
         div.setAttribute("class", "desempenhoDetalhado_quedas")
         divDesempenhoDetalhado.appendChild(div)
@@ -198,7 +197,7 @@ const criarHtmlEquipeInfo = {
 
 
     //aq ira organizar os dados
-    organizarDadosEquipe(equipe, trEquipe, divDesempenhoDetalhadoQuedas){
+    organizarDadosEquipe(equipe, trEquipe, divDesempenhoDetalhadoQuedas) {
         // Criamos os acumuladores começando em 0
         let totalKills = 0;
         let totalPtsPosicao = 0;
@@ -209,7 +208,7 @@ const criarHtmlEquipeInfo = {
             const posicao = element.posicao;
 
             // Pega os pontos da posição atual
-            const ptsPos = Number(this.ptsPosição(posicao)) || 0; 
+            const ptsPos = Number(this.ptsPosição(posicao)) || 0;
 
             // Acumula os valores de cada partida
             totalKills += kills;
@@ -221,27 +220,27 @@ const criarHtmlEquipeInfo = {
 
         // Calcula a soma real de todas as quedas juntas
         const ptsOriginalTotal = totalKills + totalPtsPosicao;
-        
+
         return ptsOriginalTotal;
     },
-    ptsPosição(posicao){
+    ptsPosição(posicao) {
         let pontuação
         classificação.forEach(element => {
-            if(posicao == element.posição){
+            if (posicao == element.posição) {
                 pontuação = element.pts
             }
         });
         return pontuação
     },
     // ptsTotalPosição(ptsPosição){
-        
+
     //     ptsPosiçãoTotal += ptsPosição
     //     return ptsPosiçãoTotal
     // },
 
 
     //aq ira criar cada div
-    criardivDesempenhoPartida(divDesempenhoDetalhadoQuedas, index, posição, kills, ptsPos){
+    criardivDesempenhoPartida(divDesempenhoDetalhadoQuedas, index, posição, kills, ptsPos) {
         const div = document.createElement("div")
         div.setAttribute("class", "desempenhoDetalhado_quedas_partida")
         divDesempenhoDetalhadoQuedas.appendChild(div)
@@ -259,10 +258,10 @@ const criarHtmlEquipeInfo = {
         div.appendChild(pPtsPos)
         div.appendChild(pPtsKills)
         div.appendChild(pPtsTotal)
-        
+
         return div
     },
-    criarH3(index){
+    criarH3(index) {
         const h3 = document.createElement("h3")
         const span = document.createElement("span")
         span.textContent = `${index}°`
@@ -270,22 +269,22 @@ const criarHtmlEquipeInfo = {
         h3.textContent += ` Queda`
         return h3
     },
-    criarP_posição(posição){
+    criarP_posição(posição) {
         let p = document.createElement("p")
         let span = document.createElement("span")
         span.textContent = posição
         p.setAttribute("class", "desempenhoDetalhado_quedas_partida_posição")
-        
+
         p.textContent = "posição:"
-        
+
         p.appendChild(span)
-        if(posição === 13){
+        if (posição === 13) {
             span.textContent = "não jogou"
         }
         return p
 
     },
-    criarP_Kilss(kills){
+    criarP_Kilss(kills) {
         const p = document.createElement("p")
         const span = document.createElement("span")
         span.textContent = kills
@@ -295,7 +294,7 @@ const criarHtmlEquipeInfo = {
         return p
 
     },
-    criarP_ptsPos(ptsPos){
+    criarP_ptsPos(ptsPos) {
         const p = document.createElement("p")
         const span = document.createElement("span")
         span.textContent = ptsPos
@@ -305,7 +304,7 @@ const criarHtmlEquipeInfo = {
         return p
 
     },
-    criarPKills(kills){
+    criarPKills(kills) {
         const p = document.createElement("p")
         const span = document.createElement("span")
         span.textContent = kills
@@ -315,7 +314,7 @@ const criarHtmlEquipeInfo = {
         return p
 
     },
-    criarPTotal(totalPartida){
+    criarPTotal(totalPartida) {
         const p = document.createElement("p")
         const span = document.createElement("span")
         const soma = totalPartida
@@ -323,13 +322,13 @@ const criarHtmlEquipeInfo = {
         p.setAttribute("class", "desempenhoDetalhado_quedas_total")
         p.textContent = "Total: "
         p.appendChild(span)
-        
+
         return p
 
     },
 
     //aq ira criar a div penalidade
-    criarPenalidade(divCards, puniçãoDescrição, puniçãoPontos, ptsTotal){
+    criarPenalidade(divCards, puniçãoDescrição, puniçãoPontos, ptsTotal) {
         const divPenalidade = document.createElement("div")
         divCards.after(divPenalidade)
 
@@ -341,7 +340,7 @@ const criarHtmlEquipeInfo = {
 
         //aq cria a div para ficar os pts
         const divPts = this.criaDivPts()
-        
+
 
         const pPtsOriginal = this.pPtsOriginal(ptsTotal)
         const pPtsRedução = this.pPtsRedução(puniçãoPontos)
@@ -353,13 +352,13 @@ const criarHtmlEquipeInfo = {
         divPenalidade.appendChild(divPts)
 
     },
-    criarH2Penalidade(){
+    criarH2Penalidade() {
         const h2 = document.createElement("h2")
         h2.setAttribute("class", "title_penalidade")
         h2.textContent = "⚠️Penalidade Aplicada"
         return h2
     },
-    criarPdescrição(puniçãoDescrição){
+    criarPdescrição(puniçãoDescrição) {
         const p = document.createElement("p")
         const span = document.createElement("span")
         p.setAttribute("class", "penalidade_descrição")
@@ -369,12 +368,12 @@ const criarHtmlEquipeInfo = {
         p.appendChild(span)
         return p
     },
-    criaDivPts(){
+    criaDivPts() {
         const div = document.createElement("div")
         div.setAttribute("class", "contentPts")
         return div
     },
-    pPtsOriginal(ptsTotal){
+    pPtsOriginal(ptsTotal) {
         const p = document.createElement("p")
         p.setAttribute("class", "pPtsOriginal")
         const span = document.createElement("span")
@@ -384,7 +383,7 @@ const criarHtmlEquipeInfo = {
         p.appendChild(span)
         return p
     },
-    pPtsRedução(puniçãoPontos){
+    pPtsRedução(puniçãoPontos) {
         const p = document.createElement("p")
         p.setAttribute("class", "pPtsRedução")
         const span = document.createElement("span")
@@ -394,7 +393,7 @@ const criarHtmlEquipeInfo = {
         p.appendChild(span)
         return p
     },
-    pPtsFinal(ptsTotal, puniçãoPontos){
+    pPtsFinal(ptsTotal, puniçãoPontos) {
         const p = document.createElement("p")
         p.setAttribute("class", "pPtsFinal")
         const span = document.createElement("span")
@@ -413,41 +412,47 @@ const criarHtmlEquipeInfo = {
 
 
 
-const organizarDadosPlayer ={
-    start(jogadores, btnClicado, namePlayer, namePLayerEquipe){
-        
+const organizarDadosPlayer = {
+    start(jogadores, btnClicado, namePlayer, namePLayerEquipe) {
+        // console.log("Todos os jogadores recebidos:", jogadores);
 
-        for (let mesJogadores in jogadores) {
-            
-                const mesSelecionadoJson = jogadores[mesJogadores];
+        // 1. Pegamos a 'season' do localStorage uma única vez (Boa prática: Performance)
+        const season = localStorage.getItem("season");
 
-                for (let indice in mesSelecionadoJson) {
-                    const dataTodosTreinos = mesSelecionadoJson[indice].data;
-                    
-                    
-                        const treinoEquipe = mesSelecionadoJson.equipes;
-                        
-                        // this.chegarNoDetalhes(treinoEquipe, btnClicado, trEquipe)
-                        criarHtmlJogadorInfo.start(treinoEquipe, btnClicado, namePlayer, namePLayerEquipe)
-                        break;
-                    
-                }
-            
+        // 2. Verificamos se essa 'season' realmente existe dentro do objeto 'jogadores'.
+        // (Boa prática: "Guard Clause" ou Cláusula de Guarda. Evita erros no console!)
+        if (!jogadores[season]) {
+            console.error(`A season '${season}' não foi encontrada no banco de dados!`);
+            return; // Interrompe a função aqui se não achar, protegendo o código.
         }
+
+        // 3. Vamos DIRETO na "gaveta" correta, sem precisar do loop for...in!
+        // Acessamos os dados usando a variável entre colchetes.
+        const seasonSelecionada = jogadores[season];
+
+        // 4. Agora pegamos apenas o objeto de 'equipes' dentro dessa season
+        const equipesDaSeason = seasonSelecionada.equipes;
+
+        // 5. Enviamos os dados corretos para a próxima função criar o HTML
+        criarHtmlJogadorInfo.start(equipesDaSeason, btnClicado, namePlayer, namePLayerEquipe);
     }
 }
 
 const criarHtmlJogadorInfo = {
 
-    start(treinoPlayer, btnClicado, namePlayer, namePLayerEquipe){
+    start(equipes, btnClicado, namePlayer, namePLayerEquipe) {
+        const treinoPlayer = equipes[namePLayerEquipe][namePlayer]
 
+
+
+        //treinoPlayer
         // Se existir a div, clicando no botão irá remover
         const nomeJogadorSemEspaço = namePlayer.replace(/[^\w]/g, "");
 
-        
+
         const divExistente = document.getElementById(nomeJogadorSemEspaço);
-        
-        if(divExistente){
+
+        if (divExistente) {
             divExistente.remove();
             return;
         }
@@ -467,13 +472,15 @@ const criarHtmlJogadorInfo = {
         // Adiciona toda a estrutura após o card do jogador
         divPai.after(div);
 
-        const arrayKills = treinoPlayer[namePLayerEquipe][namePlayer].dados;
+        console.log(treinoPlayer)
+        const arrayKills = treinoPlayer.dados;
+
 
         this.divDesempenhoDetalhado(divContainerCard, arrayKills);
 
     },
 
-    criarH2(nomeJogador){
+    criarH2(nomeJogador) {
         const h2 = document.createElement("h2");
 
         const span = document.createElement("span");
@@ -485,14 +492,14 @@ const criarHtmlJogadorInfo = {
         return h2;
     },
 
-    divContainerCard(){
+    divContainerCard() {
         const div = document.createElement("div");
         div.setAttribute("class", "desempenhoDetalhado_player");
 
         return div;
     },
 
-    divDesempenhoDetalhado(divContainerCard, killsArray){
+    divDesempenhoDetalhado(divContainerCard, killsArray) {
 
         killsArray.forEach((killDaPartida, index) => {
 
@@ -512,24 +519,24 @@ const criarHtmlJogadorInfo = {
 
     },
 
-    criarH3(numberPartida){
+    criarH3(numberPartida) {
         const h3 = document.createElement("h3");
         h3.textContent = `${numberPartida}° Queda`;
 
         return h3;
     },
 
-    criarPKill(valorKill, divPartida){
+    criarPKill(valorKill, divPartida) {
 
         const p = document.createElement("p");
         p.setAttribute("class", "killInfoPlayer");
         p.textContent = "Kills: ";
 
         const span = document.createElement("span");
-        if(valorKill == null){
+        if (valorKill == null) {
             span.textContent = "Não jogou";
             p.textContent = ""
-        }else{
+        } else {
             span.textContent = valorKill ?? 0;
         }
 
