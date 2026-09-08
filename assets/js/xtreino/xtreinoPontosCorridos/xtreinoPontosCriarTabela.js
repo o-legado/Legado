@@ -45,25 +45,18 @@ const classificação = [
 ]
 
 //aq formula os dados e organiza em ordem decrescente
+//aq formula os dados e organiza em ordem decrescente
 const organizarDadosEquipe = {
 
     // Seleciona o mês e filtra o treino correto baseado na data clicada
     start(equipes) {
-
         const season = localStorage.getItem("season");
-
-
-
         const seasonSelecionadoJson = equipes[season];
-        this.pegarDadosDasEquipes(seasonSelecionadoJson.equipes,);
-
-
+        this.pegarDadosDasEquipes(seasonSelecionadoJson.equipes);
     },
 
     // Processa os dados, soma os pontos, ordena e define as posições reais da tabela
     pegarDadosDasEquipes(treinoEquipe, data) {
-
-
 
         treinoEquipe.forEach(infoEquipes => {
             let kill = 0;
@@ -72,12 +65,12 @@ const organizarDadosEquipe = {
             let equipePts;
 
             const nomeEquipe = infoEquipes.equipe;
-            const arrayQuedas = infoEquipes.detalhes;
+            const arrayQuedas = infoEquipes.detalhes || [];
             const logo = infoEquipes.logo;
 
             // BLINDAGEM: Pega a punição do seu JSON mesmo se estiver escrita com ou sem acento
-            const punicaoDescricao = infoEquipes.puniçãoDescrição
-            const punicaoPontosAtual = infoEquipes.puniçãoPontos
+            const punicaoDescricao = infoEquipes.puniçãoDescrição;
+            const punicaoPontosAtual = infoEquipes.puniçãoPontos;
 
             // Calcula abates, pontos por posição e booyahs de todas as quedas
             arrayQuedas.forEach(objQuedas => {
@@ -94,11 +87,10 @@ const organizarDadosEquipe = {
 
             // Total de pontos: (Soma dos Abates + Soma dos Pontos de Posição) - Punição aplicada
             if (punicaoPontosAtual !== "" && punicaoPontosAtual !== null && punicaoPontosAtual !== undefined) {
-                equipePts = (kill + posicaoPts - punicaoPontosAtual)
+                equipePts = (kill + posicaoPts - punicaoPontosAtual);
             } else {
-                equipePts = (kill + posicaoPts)
+                equipePts = (kill + posicaoPts);
             }
-
 
             resultadoFinal.push({
                 posicao: 0, // Será definida logo abaixo após a ordenação decrescente
@@ -109,20 +101,57 @@ const organizarDadosEquipe = {
                 pts: equipePts,
                 data: data,
                 logo: logo,
-                punicaoPontosAtual: punicaoPontosAtual
+                punicaoPontosAtual: punicaoPontosAtual,
+                detalhes: arrayQuedas // ⚠️ CORREÇÃO CRÍTICA: Guardamos as quedas para usar no desempate
             });
         });
 
-        // 1. ORDENAÇÃO DECRESCENTE (Quem somou mais pontos vai para o topo da tabela)
-        resultadoFinal.sort((a, b) => b.pts - a.pts);
+        // 1. ORDENAÇÃO COM MÚLTIPLOS CRITÉRIOS DE DESEMPATE
+        resultadoFinal.sort((a, b) => {
+            // 1º CRITÉRIO: Total de Pontos (Maior para Menor)
+            if (b.pts !== a.pts) {
+                return b.pts - a.pts;
+            }
 
-        // 2. ATRIBUIÇÃO DA POSIÇÃO REAL DE CLASSIFICAÇÃO
-        // O array já está ordenado. O primeiro (índice 0) vira 1º colocado, o segundo vira 2º, etc.
-        resultadoFinal.forEach((item, index) => {
-            item.posicao = index + 1;
+            // 2º CRITÉRIO: Quantidade de Booyahs (Maior para Menor)
+            if (b.booyah !== a.booyah) {
+                return b.booyah - a.booyah;
+            }
+
+            // 3º CRITÉRIO: Total de Abates/Kills (Maior para Menor)
+            if (b.abate !== a.abate) {
+                return b.abate - a.abate;
+            }
+
+            // 4º CRITÉRIO: Desempate por Queda (da Última para a Primeira)
+            const quedasA = a.detalhes || [];
+            const quedasB = b.detalhes || [];
+            const totalQuedas = Math.max(quedasA.length, quedasB.length);
+
+            // Percorre as quedas do fim para o começo (ex: queda 5, depois 4, 3...)
+            for (let i = totalQuedas - 1; i >= 0; i--) {
+                const quedaA = quedasA[i];
+                const quedaB = quedasB[i];
+
+                // Pega a posição de cada equipe na queda especificada
+                const posA = quedaA ? Number(quedaA.posicao || quedaA.posição || 99) : 99;
+                const posB = quedaB ? Number(quedaB.posicao || quedaB.posição || 99) : 99;
+
+                if (posA !== posB) {
+                    // Quanto MENOR a posição na queda (ex: 1º lugar é melhor que 2º), MELHOR a equipe fica na frente.
+                    return posA - posB;
+                }
+            }
+
+            return 0; // Empate absoluto em todos os critérios
         });
 
-
+        // 2. ATRIBUIÇÃO DA POSIÇÃO REAL E LIMPEZA
+        resultadoFinal.forEach((item, index) => {
+            item.posicao = index + 1;
+            delete item.detalhes; // Removemos os detalhes após ordenar para manter a tabela leve
+        });
+        console.log(resultadoFinal)
 
         // Envia os dados ordenados e com pontos de posição computados para a tabela
         enviarDadosTabela.start(resultadoFinal);
