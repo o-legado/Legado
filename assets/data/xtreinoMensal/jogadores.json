@@ -4591,7 +4591,85 @@
         "*BLACKN444": { "logo": "", "dados": [1, 2, 1] }
       }
     }
-  }
+  },
+
+  
+    "treino3": {
+        "data": "08/09/2026",
+        "equipes": {
+            "NOVE NOVE": {
+                "TS SAN": { "logo": "", "dados": [1, 0, 0] },
+                "not5! •99•": { "logo": "", "dados": [0, 0, 2] },
+                "TW09 •99•": { "logo": "", "dados": [0, 0, 6] }
+            },
+            "LEGACY⁰¹": {
+                "《ŁĐ》ANJO'★": { "logo": "", "dados": [0, null, null] },
+                "《ŁĐ》PATOLINO": { "logo": "", "dados": [0, 0, null] },
+                "PA EZE!!": { "logo": "", "dados": [1, 0, 0] },
+                "亗² pedro ツ⁷": { "logo": "", "dados": [0, 0, 0] },
+                "MNR IDIO?": { "logo": "", "dados": [null, 0, null] }
+            },
+            "LIFESTYLER7": {
+                "《ŁĐ》WHITER™": { "logo": "", "dados": [2, 0, 0] },
+                "sub~~yuri": { "logo": "", "dados": [2, 0, 0] },
+                "kn talent": { "logo": "", "dados": [1, 0, 1] },
+                "QI SOUZA7": { "logo": "", "dados": [2, 0, 1] }
+            },
+            "KRYZOR": {
+                "《ŁĐ》YESHUA": { "logo": "", "dados": [3, 2, 1] },
+                "《ŁĐ》DG777": { "logo": "", "dados": [2, 1, 2] },
+                "あ CAFETAO": { "logo": "", "dados": [3, 1, 2] },
+                "*BLACKN444": { "logo": "", "dados": [1, 1, 2] }
+            },
+            "MYSTICPX": {
+                "MPX.HNRQ7zx": { "logo": "", "dados": [1, 0, 0] },
+                "godzeusxz": { "logo": "", "dados": [2, 1, 1] },
+                "BVBHércules": { "logo": "", "dados": [null, 0, null] }
+            },
+            "HYUUGA": {
+                "EQ RAFÃO": { "logo": "", "dados": [1, 1, 0] },
+                "HYG Izumi☕": { "logo": "", "dados": [5, 0, 0] },
+                "™01K_SILVAA": { "logo": "", "dados": [2, 0, 2] },
+                "HYG trigor!愛": { "logo": "", "dados": [null, 0, 1] }
+            },
+            "FURIA DO NORTE": {
+                "ELA N TEAMA+": { "logo": "../../../assets/img/logosXtreinoEquipes/setembro/mvp/(3.3)ELA N TEAMA+.jpg", "dados": [0, 3, 8] },
+                "FZN_Felipe*": { "logo": "", "dados": [0, 0, 0] },
+                "RUIM 亗": { "logo": "", "dados": [0, 2, 1] },
+                "™SURTADØ¥": { "logo": "", "dados": [null, 3, 2] }
+            },
+            "FÚRIA": {
+                "FR ShoxzZ": { "logo": "", "dados": [0, 1, 3] },
+                "Dark.op gstz": { "logo": "", "dados": [1, null, null] },
+                "༺FR Nômade༻": { "logo": "", "dados": [0, 1, 0] },
+                "Dante_ggk": { "logo": "", "dados": [0, 1, 0] }
+            },
+            "FROMZERO": {
+                "Fael o Mala 乂": { "logo": "", "dados": [3, 2, 3] },
+                "CIVIL.MG7": { "logo": "", "dados": [4, 7, 5] },
+                "PH7mvp!": { "logo": "", "dados": [8, 2, 0] },
+                "ngmparea'!": { "logo": "", "dados": [9, 9, 3] }
+            },
+            "NOVA ERA": {
+                "LORRAN ツ": { "logo": "", "dados": [0, 2, 1] },
+                "SUBZERØ_": { "logo": "", "dados": [0, 0, 0] },
+                "《ŁĐ》Hsapela": { "logo": "", "dados": [0, 0, 1] },
+                "《ŁĐ》NIKEBOY7": { "logo": "", "dados": [0, 0, null] }
+            },
+            "ALPHA SQUAD": {
+                "AQSelanvolta": { "logo": "", "dados": [2, null, null] },
+                "|S| 匸 H 乇 ◇K I N G": { "logo": "", "dados": [0, null, null] },
+                "!Jn.op": { "logo": "", "dados": [0, null, null] }
+            },
+            "RXT E-SPORTs": {
+                "RXT B!ELX7": { "logo": "", "dados": [0, 5, 3] },
+                "RXT MTZero": { "logo": "", "dados": [0, 1, 2] },
+                "RXT perdoa": { "logo": "", "dados": [0, 2, 5] },
+                "RXT gustazx": { "logo": "", "dados": [0, 4, 5] }
+            }
+        }
+    }
+
 
 
   }
