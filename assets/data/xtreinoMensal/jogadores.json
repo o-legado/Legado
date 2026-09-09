@@ -4646,9 +4646,9 @@
             },
             "FROMZERO": {
                 "Fael o Mala 乂": { "logo": "", "dados": [3, 2, 3] },
-                "CIVIL.MG7": { "logo": "", "dados": [4, 7, 5] },
+                "CIVIL.MG7": { "logo": "../../../assets/img/logosXtreinoEquipes/setembro/mvp/(3.2)mg.jpg", "dados": [4, 7, 5] },
                 "PH7mvp!": { "logo": "", "dados": [8, 2, 0] },
-                "ngmparea'!": { "logo": "", "dados": [9, 9, 3] }
+                "ngmparea'!": { "logo": "../../../assets/img/logosXtreinoEquipes/setembro/mvp/(3.1)ngmparea.jpg", "dados": [9, 9, 3] }
             },
             "NOVA ERA": {
                 "LORRAN ツ": { "logo": "", "dados": [0, 2, 1] },
