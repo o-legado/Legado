@@ -157,209 +157,299 @@
     },
     
     "season2": {
-        "data": "02/09/2026",
-        "equipes": {
-            "O LEGADO": {
-                "⟨ŁĐ⟩ WHITER™": {
-                    "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/ld whiter.jpg",
-                    "dados": [6, 5, 6]
-                },
-                "⟨ŁĐ⟩ vieirssz": {
-                    "logo": "",
-                    "dados": [3, 1, 2]
-                },
-                "⟨ŁĐ⟩ Hsapela": {
-                    "logo": "",
-                    "dados": [1, 0, 1]
-                },
-                "⟨ŁĐ⟩ NIKEBOY7": {
-                    "logo": "",
-                    "dados": [3, 1, 1]
-                }
-            },
-            "GAMING XP": {
-                "777 JM²³ 10": {
-                    "logo": "",
-                    "dados": [0, 2, 4]
-                },
-                "777 Menorzzk": {
-                    "logo": "",
-                    "dados": [0, 0, 4]
-                },
-                "777 SNOWego愛": {
-                    "logo": "",
-                    "dados": [0, 2, 5]
-                },
-                "777 APOLLO": {
-                    "logo": "",
-                    "dados": [0, 2, 2]
-                }
-            },
-            "RXT E-SPORTS": {
-                "RXT  MTZero": {
-                    "logo": "",
-                    "dados": [0, 2, 2]
-                },
-                "RXT perdoa": {
-                    "logo": "",
-                    "dados": [3, 1, 2]
-                },
-                "RXT0NEXTT": {
-                    "logo": "",
-                    "dados": [1, 1, 1]
-                },
-                "RXT gustazx": {
-                    "logo": "",
-                    "dados": [3, 4, 3]
-                }
-            },
-            "SS GAMING": {
-                "SS.DUQUE": {
-                    "logo": "",
-                    "dados": [1, 0, 0]
-                },
-                "SS.NBW7": {
-                    "logo": "",
-                    "dados": [1, 1, 1]
-                },
-                "SS.PH7": {
-                    "logo": "",
-                    "dados": [1, 0, 0]
-                },
-                "SS GOAT": {
-                    "logo": "",
-                    "dados": [null, 0, 2]
-                }
-            },
-            "Ql 1000": {
-                "QI Julia": {
-                    "logo": "",
-                    "dados": [2, 2, 1]
-                },
-                "QI sadeyesk’": {
-                    "logo": "",
-                    "dados": [1, 2, 0]
-                },
-                "QI dg": {
-                    "logo": "",
-                    "dados": [5, 2, 0]
-                },
-                "QI chyopdg\"": {
-                    "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/QI chyopdg.jpg",
-                    "dados": [6, 5, 3]
-                }
-            },
-            "TDM-SPORT": {},
-            "GAMER OVER": {
-                "GO GREGO7": {
-                    "logo": "",
-                    "dados": [2, 1, 5]
-                },
-                "GO A⁷": {
-                    "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/Go a7.jpg",
-                    "dados": [2, 0, 9]
-                },
-                "GO TH7 †": {
-                    "logo": "",
-                    "dados": [2, 0, 0]
-                },
-                "GO0KARINA.∫0": {
-                    "logo": "",
-                    "dados": [1, 0, 1]
-                }
-            },
-            "ONE PIECE": {
-                "RX PATROA": {
-                    "logo": "",
-                    "dados": [0, null, 1]
-                },
-                "RX ριήġὺιм ": {
-                    "logo": "",
-                    "dados": [0, null, null]
-                },
-                "RX BEDTEEDY": {
-                    "logo": "",
-                    "dados": [0, null, 0]
-                },
-                "RX MOR4ESx": {
-                    "logo": "",
-                    "dados": [null, null, 0]
-                }
-            },
-            "DENDELE": {
-                "DDL.sattz7": {
-                    "logo": "",
-                    "dados": [2, 5, null]
-                },
-                "DDL.sNickz7": {
-                    "logo": "",
-                    "dados": [1, 5, null]
-                },
-                "DDL.Pepãox7": {
-                    "logo": "",
-                    "dados": [2, 2, null]
-                },
-                "DDL.Keplax7": {
-                    "logo": "",
-                    "dados": [0, 2, null]
-                }
-            },
-            "NEXT LEVEL": {
-                "NXL.BIELZIN": {
-                    "logo": "",
-                    "dados": [0, 0, 0]
-                },
-                "NXL.RAIKONEN": {
-                    "logo": "",
-                    "dados": [3, 0, 1]
-                },
-                "NXL.ASTR4": {
-                    "logo": "",
-                    "dados": [3, 1, 1]
-                },
-                "NXL.GV9ZY": {
-                    "logo": "",
-                    "dados": [1, 1, 3]
-                }
-            },
-            "ESPARTANS": {
-                "SPTOPEPEU": {
-                    "logo": "",
-                    "dados": [5, 1, 0]
-                },
-                "SPT SAMSUNG": {
-                    "logo": "",
-                    "dados": [0, 0, 0]
-                },
-                "SPT___ASTA": {
-                    "logo": "",
-                    "dados": [3, 1, 0]
-                },
-                "SPT MORENO ô": {
-                    "logo": "",
-                    "dados": [2, 0, 0]
-                }
-            },
-            "DYNASTY GANG": {
-                "DGF AZOG": {
-                    "logo": "",
-                    "dados": [4, 2, 0]
-                },
-                "DGF a SASSÁ⁷": {
-                    "logo": "",
-                    "dados": [4, 2, 0]
-                },
-                "DGF NESCAU": {
-                    "logo": "",
-                    "dados": [7, 0, 0]
-                },
-                "DGF FALLEN₩0": {
-                    "logo": "",
-                    "dados": [3, 1, 0]
-                }
-            }
+      "data": "02/09/2026",
+      "equipes": {
+        "O LEGADO": {
+          "⟨ŁĐ⟩ WHITER™": {
+            "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/ld whiter.jpg",
+            "dados": [6, 5, 6, null, null, null]
+          },
+          "⟨ŁĐ⟩ vieirssz": {
+            "logo": "",
+            "dados": [3, 1, 2, null, null, null]
+          },
+          "⟨ŁĐ⟩ Hsapela": {
+            "logo": "",
+            "dados": [1, 0, 1, null, null, null]
+          },
+          "⟨ŁĐ⟩ NIKEBOY7": {
+            "logo": "",
+            "dados": [3, 1, 1, null, null, null]
+          },
+          "《ŁÐ》DG777": {
+            "logo": "",
+            "dados": [null, null, null, 2, 1, 1]
+          },
+          "《ŁÐ》YESHUA": {
+            "logo": "",
+            "dados": [null, null, null, 3, 2, 2]
+          },
+          "《ŁÐ》PATOLINO": {
+            "logo": "",
+            "dados": [null, null, null, 2, 0, 3]
+          },
+          "《ŁÐ》seven": {
+            "logo": "",
+            "dados": [null, null, null, 0, 3, 4]
+          }
+        },
+        "GAMING XP": {
+          "777 JM²³ 10": {
+            "logo": "",
+            "dados": [0, 2, 4, null, null, null]
+          },
+          "777 Menorzzk": {
+            "logo": "",
+            "dados": [0, 0, 4, null, null, null]
+          },
+          "777 SNOWego愛": {
+            "logo": "",
+            "dados": [0, 2, 5, 0, 4, 7]
+          },
+          "777 APOLLO": {
+            "logo": "",
+            "dados": [0, 2, 2, 2, 0, 4]
+          },
+          "777 latrel": {
+            "logo": "",
+            "dados": [null, null, null, 0, 1, 4]
+          },
+          "777 xerru": {
+            "logo": "",
+            "dados": [null, null, null, 0, 2, 2]
+          }
+        },
+        "RXT E-SPORTS": {
+          "RXT  MTZero": {
+            "logo": "",
+            "dados": [0, 2, 2, 0, 1, 2]
+          },
+          "RXT perdoa": {
+            "logo": "",
+            "dados": [3, 1, 2, 0, 2, 1]
+          },
+          "RXT0NEXTT": {
+            "logo": "",
+            "dados": [1, 1, 1, null, null, null]
+          },
+          "RXT gustazx": {
+            "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/RXT gustazx.jpg",
+            "dados": [3, 4, 3, 3, 5, 6]
+          },
+          "RXT BIELX7": {
+            "logo": "",
+            "dados": [null, null, null, 1, 2, 4]
+          }
+        },
+        "SS GAMING": {
+          "SS.DUQUE": {
+            "logo": "",
+            "dados": [1, 0, 0, 1, 1, 1]
+          },
+          "SS.NBW7": {
+            "logo": "",
+            "dados": [1, 1, 1, null, null, null]
+          },
+          "SS.PH7": {
+            "logo": "",
+            "dados": [1, 0, 0, null, null, null]
+          },
+          "SS GOAT": {
+            "logo": "",
+            "dados": [null, 0, 2, null, null, null]
+          },
+          "SS.KINGX": {
+            "logo": "",
+            "dados": [null, null, null, 0, 1, 0]
+          },
+          "SS Luis9": {
+            "logo": "",
+            "dados": [null, null, null, 0, 0, 0]
+          },
+          "SS Darach ☂": {
+            "logo": "",
+            "dados": [null, null, null, 2, 0, 1]
+          }
+        },
+        "Ql 1000": {
+          "QI Julia": {
+            "logo": "",
+            "dados": [2, 2, 1, 4, 5, 2]
+          },
+          "QI sadeyesk’": {
+            "logo": "",
+            "dados": [1, 2, 0, 2, 1, 2]
+          },
+          "QI dg": {
+            "logo": "",
+            "dados": [5, 2, 0, null, null, null]
+          },
+          "QI chyopdg\"": {
+            "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/QI chyopdg.jpg",
+            "dados": [6, 5, 3, 5, 1, 2]
+          },
+          "QI\"VGZIIN\"": {
+            "logo": "",
+            "dados": [null, null, null, 0, 1, 1]
+          }
+        },
+        "TDM-SPORT": {
+          "TDM.USOPP": {
+            "logo": "",
+            "dados": [null, null, null, 2, 0, 2]
+          },
+          "TDM.WILL.77": {
+            "logo": "",
+            "dados": [null, null, null, 0, 0, 1]
+          },
+          "TDM ⚡KIEL 么": {
+            "logo": "",
+            "dados": [null, null, null, 1, 0, 0]
+          },
+          "TDM.Michel": {
+            "logo": "",
+            "dados": [null, null, null, 0, 0, 1]
+          }
+        },
+        "GAMER OVER": {
+          "GO GREGO7": {
+            "logo": "",
+            "dados": [2, 1, 5, 4, 0, 6]
+          },
+          "GO A⁷": {
+            "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/Go a7.jpg",
+            "dados": [2, 0, 9, null, null, null]
+          },
+          "GO TH7 †": {
+            "logo": "",
+            "dados": [2, 0, 0, null, null, null]
+          },
+          "GO0KARINA.∫0": {
+            "logo": "",
+            "dados": [1, 0, 1, null, null, null]
+          },
+          "GO BIGxucru⁷": {
+            "logo": "",
+            "dados": [null, null, null, 14, 0, 3]
+          },
+          "GO Olivera ⁷": {
+            "logo": "",
+            "dados": [null, null, null, 2, 0, 2]
+          },
+          "GO KARINA)": {
+            "logo": "",
+            "dados": [null, null, null, 2, 0, 0]
+          }
+        },
+        "ONE PIECE": {
+          "RX PATROA": {
+            "logo": "",
+            "dados": [0, null, 1, null, null, null]
+          },
+          "RX ριήġὺιм ": {
+            "logo": "",
+            "dados": [0, null, null, null, null, null]
+          },
+          "RX BEDTEEDY": {
+            "logo": "",
+            "dados": [0, null, 0, null, null, null]
+          },
+          "RX MOR4ESx": {
+            "logo": "",
+            "dados": [null, null, 0, null, null, null]
+          },
+          "ONE LUFFY ☂": {
+            "logo": "",
+            "dados": [null, null, null, 4, 3, 0]
+          },
+          "ONE ZORO ⚔": {
+            "logo": "",
+            "dados": [null, null, null, 0, null, null]
+          },
+          "ONE SHANKS": {
+            "logo": "",
+            "dados": [null, null, null, 1, 3, 0]
+          },
+          "ONE NAMI ⚑": {
+            "logo": "",
+            "dados": [null, null, null, 0, 0, 0]
+          }
+        },
+        "DENDELE": {
+          "DDL.sattz7": {
+            "logo": "",
+            "dados": [2, 5, null, null, null, null]
+          },
+          "DDL.sNickz7": {
+            "logo": "",
+            "dados": [1, 5, null, null, null, null]
+          },
+          "DDL.Pepãox7": {
+            "logo": "",
+            "dados": [2, 2, null, null, null, null]
+          },
+          "DDL.Keplax7": {
+            "logo": "",
+            "dados": [0, 2, null, null, null, null]
+          }
+        },
+        "NEXT LEVEL": {
+          "NXL.BIELZIN": {
+            "logo": "",
+            "dados": [0, 0, 0, 0, 1, 1]
+          },
+          "NXL.RAIKONEN": {
+            "logo": "",
+            "dados": [3, 0, 1, 1, 0, 1]
+          },
+          "NXL.ASTR4": {
+            "logo": "",
+            "dados": [3, 1, 1, 2, 0, 1]
+          },
+          "NXL.GV9ZY": {
+            "logo": "",
+            "dados": [1, 1, 3, 4, 0, 1]
+          }
+        },
+        "ESPARTANS": {
+          "SPTOPEPEU": {
+            "logo": "",
+            "dados": [5, 1, 0, null, null, null]
+          },
+          "SPT SAMSUNG": {
+            "logo": "",
+            "dados": [0, 0, 0, null, null, null]
+          },
+          "SPT___ASTA": {
+            "logo": "",
+            "dados": [3, 1, 0, null, null, null]
+          },
+          "SPT MORENO ô": {
+            "logo": "",
+            "dados": [2, 0, 0, null, null, null]
+          }
+        },
+        "DYNASTY GANG": {
+          "DGF AZOG": {
+            "logo": "",
+            "dados": [4, 2, 0, null, null, null]
+          },
+          "DGF a SASSÁ⁷": {
+            "logo": "",
+            "dados": [4, 2, 0, null, null, null]
+          },
+          "DGF NESCAU": {
+            "logo": "",
+            "dados": [7, 0, 0, null, null, null]
+          },
+          "DGF FALLEN₩0": {
+            "logo": "",
+            "dados": [3, 1, 0, null, null, null]
+          }
         }
+      }
     }
+  
+}
 
     
-}
