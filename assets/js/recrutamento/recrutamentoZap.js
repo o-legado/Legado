@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // NÚMERO DO WHATSAPP
     // ======================
 
-    const telefone = "5521971547455";
+    const telefone = "5521995726477";
 
     // ======================
     // URL DO WHATSAPP
