@@ -4668,7 +4668,244 @@
                 "RXT gustazx": { "logo": "", "dados": [0, 4, 5] }
             }
         }
+    },
+
+
+    
+  "treino4": {
+    "data": "15/09/2026",
+    "equipes": {
+      "SS GAMING": {
+        "SS.DUQUE": {
+          "logo": "",
+          "dados": [0, 6, 1]
+        },
+        "FX BADYBOY": {
+          "logo": "",
+          "dados": [0, 0, 3]
+        },
+        "SS.NBW7": {
+          "logo": "",
+          "dados": [0, 4, 1]
+        },
+        "SS.SHEIK11": {
+          "logo": "",
+          "dados": [null, 2, 1]
+        }
+      },
+      "LEGACY⁰¹": {
+        "《ŁĐ》A N J O '": {
+          "logo": "",
+          "dados": [3, 0, 2]
+        },
+        "《ŁĐ》亗PEDROツ": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "《ŁĐ》PATOLINO": {
+          "logo": "",
+          "dados": [3, 1, 1]
+        },
+        "VITOR": {
+          "logo": "",
+          "dados": [3, 0, 5]
+        }
+      },
+      "LIFESTYLER7": {
+        "QI SOUZA7": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "《ŁĐ》WHITER™": {
+          "logo": "",
+          "dados": [0, 1, 2]
+        },
+        "sub~~yuri": {
+          "logo": "",
+          "dados": [2, 2, 2]
+        },
+        "kn talent": {
+          "logo": "",
+          "dados": [0, 2, 1]
+        }
+      },
+      "KRYZOR": {
+        "《ŁĐ》DG777": {
+          "logo": "",
+          "dados": [0, null, 0]
+        },
+        "RAFA .x2": {
+          "logo": "",
+          "dados": [2, 1, 0]
+        },
+        "あ ￤ CAFE TAO": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        },
+        "*BLACKN444": {
+          "logo": "",
+          "dados": [3, 2, 0]
+        }
+      },
+      "NOVA ERA": {
+        "LORRAN ツ": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁĐ》.JV.": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "《ŁĐ》Hsapela": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        },
+        "《ŁĐ》NIKEBOY7": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "TDM-SPORT": {
+        "TDM Wm06": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "TDM.WILL.77": {
+          "logo": "",
+          "dados": [0, 5, 0]
+        },
+        "TDM ⚡KIEL 么": {
+          "logo": "",
+          "dados": [0, 4, 3]
+        },
+        "mvp•sagaz™": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "urbannic": {
+          "logo": "",
+          "dados": [null, 8, 2]
+        }
+      },
+      "FRANÇA": {
+        "FR DESGRAÇA_": {
+          "logo": "",
+          "dados": [1, 1, 1]
+        },
+        "FR LUCIFER": {
+          "logo": "",
+          "dados": [4, 5, 6]
+        },
+        "FR BIEL⁷ ale": {
+          "logo": "",
+          "dados": [5, 5, 8]
+        },
+        "BN⁰²": {
+          "logo": "",
+          "dados": [null, 2, 2]
+        }
+      },
+      "FURY NIGHT": {
+        "DRX ALEMÃOx": {
+          "logo": "",
+          "dados": [4, 2, 4]
+        },
+        "sara paty ෆ": {
+          "logo": "",
+          "dados": [2, 2, 4]
+        },
+        "FNT NØX": {
+          "logo": "",
+          "dados": [2, 0, null]
+        },
+        "4F BRANCO": {
+          "logo": "",
+          "dados": [2, 7, 5]
+        },
+        "jo ao": {
+          "logo": "",
+          "dados": [null, null, 4]
+        }
+      },
+      "6 LEGADOS": {
+        "《ŁĐ》N7 BYE 9": {
+          "logo": "",
+          "dados": [1, 0, 2]
+        },
+        "《ŁĐ》Biel⁴⁸": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "XL THIAGUINサザ": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁĐ》coronel¥": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        }
+      },
+      "OS CRIAS JG": {
+        "ØNË RYUKI": {
+          "logo": "",
+          "dados": [0, 0, 4]
+        },
+        "ةبﻩوم ن ودب": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        },
+        "@souzazz.ttk": {
+          "logo": "",
+          "dados": [3, 0, null]
+        },
+        "ØNË_PATRÃO_": {
+          "logo": "",
+          "dados": [3, 0, 0]
+        },
+        "naldoDraco": {
+          "logo": "",
+          "dados": [null, null, 0]
+        }
+      },
+      "BLACKWOOD3": {
+        "B3 Twolove": {
+          "logo": "",
+          "dados": [3, 2, 6]
+        },
+        "Rzinn ᵏᶦⁿᵍ": {
+          "logo": "",
+          "dados": [4, 0, 3]
+        },
+        "B3 ༒ZENÏTSÜ༒": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "B3_Fantasma\"": {
+          "logo": "",
+          "dados": [0, 0, 2]
+        }
+      },
+      "STARTRACKER": {
+        "anti femea": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "Cauetks": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "clemiulda42": {
+          "logo": "",
+          "dados": [0, 2, 2]
+        },
+        "lonely'": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        }
+      }
     }
+  }
+
 
 
 
