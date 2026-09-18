@@ -4904,7 +4904,83 @@
         }
       }
     }
-  }
+  },
+
+
+  
+    
+    "treino5": {
+        "data": "17/09/2026",
+        "equipes": {
+            "FRANÇA": {
+                "FR Santz": { "logo": "", "dados": [0, 0, 5] },
+                "FR BIEL7 ale": { "logo": "", "dados": [0, 2, 7] },
+                "FR LUCIFER": { "logo": "", "dados": [0, 1, 3] },
+                "FR DESGRAÇA_": { "logo": "", "dados": [0, 0, null] },
+                "FR SILVA✓": { "logo": "", "dados": [null, null, 3] }
+            },
+            "VIKINGS": {
+                "VK KING7mvp": { "logo": "", "dados": [0, 0, 0] },
+                "Black_sha$": { "logo": "", "dados": [2, 0, null] },
+                "NXH Frostx": { "logo": "", "dados": [0, null, 1] },
+                "ﾠGG IRMÃﾠ": { "logo": "", "dados": [0, 0, 0] },
+                "VK unknonw": { "logo": "", "dados": [null, 0, 0] }
+            },
+            "INTZ77": {
+                "777مات يوس": { "logo": "", "dados": [5, 1, 1] },
+                "WRX.xl7": { "logo": "", "dados": [0, 0, 1] },
+                "BIG5MOKE VG": { "logo": "", "dados": [0, 0, 0] },
+                "LOS GOAT333*": { "logo": "", "dados": [2, 1, 3] }
+            },
+            "LEGACY⁰¹": {
+                "FG Caasi7": { "logo": "", "dados": [0, null, null] },
+                "PCDNETINHO 炎": { "logo": "", "dados": [0, null, null] },
+                "《LĐ》 PATOLINO": { "logo": "", "dados": [0, 0, 0] },
+                "JJK YUTA7": { "logo": "", "dados": [2, 0, null] }
+            },
+            "END GAMER": {},
+            "ARCH E-SPORTS": {
+                "ARCH.Kauexis": { "logo": "../../../assets/img/logosXtreinoEquipes/setembro/mvp/(5.2)ARCH.Kauexis.jpg", "dados": [3, 4, 3] },
+                "ARCH.Smzinho": { "logo": "", "dados": [3, 0, 0] },
+                "ARCH.fino": { "logo": "", "dados": [1, 1, 4] },
+                "ARCH.InkyAWP": { "logo": "", "dados": [3, 4, 2] }
+            },
+            "NOVA ERA": {
+                "LORRAN ツ": { "logo": "", "dados": [2, 2, 0] },
+                "LD JPZIN7": { "logo": "", "dados": [1, 3, 1] },
+                "《LĐ》 vieirssz": { "logo": "", "dados": [1, 2, 0] },
+                "《LĐ》 NIKEBOY7": { "logo": "", "dados": [3, 3, 0] }
+            },
+            "FRX": {},
+            "FURACÃO ESPORTE": {
+                "FRC_DOG_MAL": { "logo": "", "dados": [1, 4, 0] },
+                "FRC ZURUF": { "logo": "", "dados": [2, 4, 0] },
+                "MENDESx7 FRC": { "logo": "", "dados": [0, 1, 2] },
+                "Deusasexy♡": { "logo": "", "dados": [1, 2, 0] }
+            },
+            "SS GAMING": {
+                "SS.DUQUE": { "logo": "", "dados": [4, 4, 1] },
+                "SS.SHEIK11": { "logo": "", "dados": [6, 3, 1] },
+                "SS VINNI.": { "logo": "", "dados": [1, 1, 1] },
+                "FX BADYBOY": { "logo": "", "dados": [1, 1, null] }
+            },
+            "ESQUADRÃO E-SPORTS": {
+                "MR 〤『BAD-BOY』": { "logo": "", "dados": [0, 0, 0] },
+                "Lu7s psico": { "logo": "", "dados": [0, null, null] },
+                "FRC_WANDRION": { "logo": "", "dados": [0, 0, null] },
+                "FRC VINYY": { "logo": "", "dados": [0, 1, 0] },
+                "♤♧mh♧♤": { "logo": "", "dados": [null, 0, null] }
+            },
+            "KRYZOR": {
+                "《LĐ》 DG777": { "logo": "", "dados": [0, 0, 4] },
+                "愛 SASUKE☂": { "logo": "", "dados": [0, 0, 2] },
+                "RAFA .x2": { "logo": "", "dados": [0, 0, 7] },
+                "《LĐ》 YESHUA": { "logo": "", "dados": [1, 0, 3] }
+            }
+        }
+    }
+
+
 
 
 

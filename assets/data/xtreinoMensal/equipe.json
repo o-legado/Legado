@@ -6788,7 +6788,149 @@
         "puniçãoPontos": ""
       }
     ]
-  }
+  },
+
+  
+    
+    "treino5": {
+        "data": "17/09/2026",
+        "equipes": [
+            {
+                "equipe": "FRANÇA",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 11 },
+                    { "queda": 2, "kills": 3, "posicao": 7 },
+                    { "queda": 3, "kills": 18, "posicao": 1 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "VIKINGS",
+                "detalhes": [
+                    { "queda": 1, "kills": 2, "posicao": 10 },
+                    { "queda": 2, "kills": 0, "posicao": 9 },
+                    { "queda": 3, "kills": 1, "posicao": 10 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "INTZ77",
+                "detalhes": [
+                    { "queda": 1, "kills": 7, "posicao": 1 },
+                    { "queda": 2, "kills": 2, "posicao": 4 },
+                    { "queda": 3, "kills": 5, "posicao": 3 }
+                ],
+                "logo": "../../../assets/img/logosXtreinoEquipes/setembro/(5.3)intz77.jpg",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "LEGACY⁰¹",
+                "detalhes": [
+                    { "queda": 1, "kills": 2, "posicao": 5 },
+                    { "queda": 2, "kills": 0, "posicao": 10 },
+                    { "queda": 3, "kills": 0, "posicao": 9 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "END GAMER",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 13 },
+                    { "queda": 2, "kills": 0, "posicao": 13 },
+                    { "queda": 3, "kills": 0, "posicao": 13 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "ARCH E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 10, "posicao": 3 },
+                    { "queda": 2, "kills": 9, "posicao": 5 },
+                    { "queda": 3, "kills": 9, "posicao": 7 }
+                ],
+                "logo": "../../../assets/img/logosXtreinoEquipes/setembro/(5.2)ARCH E-SPORTS.jpg",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "NOVA ERA",
+                "detalhes": [
+                    { "queda": 1, "kills": 7, "posicao": 6 },
+                    { "queda": 2, "kills": 10, "posicao": 2 },
+                    { "queda": 3, "kills": 1, "posicao": 6 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "FRX",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 9 },
+                    { "queda": 2, "kills": 0, "posicao": 13 },
+                    { "queda": 3, "kills": 0, "posicao": 13 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "FURACÃO ESPORTE",
+                "detalhes": [
+                    { "queda": 1, "kills": 4, "posicao": 8 },
+                    { "queda": 2, "kills": 11, "posicao": 3 },
+                    { "queda": 3, "kills": 2, "posicao": 8 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "SS GAMING",
+                "detalhes": [
+                    { "queda": 1, "kills": 12, "posicao": 2 },
+                    { "queda": 2, "kills": 9, "posicao": 1 },
+                    { "queda": 3, "kills": 3, "posicao": 4 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "ESQUADRÃO E-SPORTS",
+                "detalhes": [
+                    { "queda": 1, "kills": 0, "posicao": 7 },
+                    { "queda": 2, "kills": 1, "posicao": 6 },
+                    { "queda": 3, "kills": 0, "posicao": 5 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            },
+            {
+                "equipe": "KRYZOR",
+                "detalhes": [
+                    { "queda": 1, "kills": 1, "posicao": 4 },
+                    { "queda": 2, "kills": 0, "posicao": 8 },
+                    { "queda": 3, "kills": 16, "posicao": 2 }
+                ],
+                "logo": "",
+                "puniçãoDescrição": "",
+                "puniçãoPontos": ""
+            }
+        ]
+    }
+
+
 
 
 
