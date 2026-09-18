@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X-Treino Season 2</title>
-    <link rel="stylesheet" href="../../../assets/css/css/xtreinoPontosCorridoSeason.css">
-    <link rel="stylesheet" href="../../../assets/css/scss/xtreinoPontosCorridoSeason.scss">
+    <title>X-Treino Setembro 17/09</title>
+    <link rel="stylesheet" href="../../../assets/css/css/xtreinoDia.css">
+    <link rel="stylesheet" href="../../../assets/css/scss/xtreinoDia.scss">
 
 
     <!--FONTE-->
@@ -16,13 +16,13 @@
     <!--FONTE-->
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-SW7Q9LH3LR');
-    </script>
+    </script> -->
     <!-- Google tag (gtag.js) -->
 
     <!--Incon-->
@@ -32,33 +32,49 @@
 
 <body>
     <header class="header">
+        <!-- Linha de luz superior dinâmica -->
+        <div class="header_bar-glow"></div>
+
         <div class="header_container largura-definida">
+            <!-- LADO ESQUERDO: Botão de Voltar Integrado (Estilo Interface de Jogo) -->
+            <div class="header_left-group">
+                <a href="../xtreino-setembro/xtreinoSetembroHome.html" class="btn_back_modern">
+                    <span class="back-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="back-text">Painel</span>
+                </a>
+            </div>
 
-            <a href="./homeXtreinoPontosCorridos.html" class="btn_voltar">
-                <i class="fa-solid fa-arrow-left icon-seta"></i>
-                <span>Voltar</span>
-            </a>
+            <!-- CENTRO: Bloco HUD Futurista com Logo e Data Integradas -->
+            <div class="header_hud_display">
+                <!-- Moldura de Destaque da Logo -->
+                <div class="logo_hex_frame">
+                    <img src="../../../assets/img/logo-xtreino.jpg" alt="X-Treino" class="logo_img_hud">
+                    <span class="live-dot"></span>
+                </div>
 
-            <div class="header_main_content">
-                <figure class="header_logo">
-                    <img src="../../../assets/img/xtreinoPontosCorridos/LOGO XTREINO.jpg" alt="Logo X-Treino Legado">
-                    <div class="logo-glow"></div>
-                </figure>
+                <!-- Divisor Vertical Moderno -->
+                <div class="hud_divider"></div>
 
-                <div class="header_texts">
-                    <div class="badge_status">
-                        <span class="ping-animation"></span>
-                        FINALIZADO
-                    </div>
-                    <h1 class="header_title">
-                        <span class="date-highlight">02 Set</span>
-                        <span class="date-separator">até</span>
-                        <span class="date-highlight">30 Set</span>
-                        <span class="date-year">2026</span>
+                <!-- Bloco de Texto Estilizado -->
+                <div class="hud_content">
+                    <span class="hud_subtitle">Treino do Dia</span>
+                    <h1 class="hud_title">
+                        <span class="day">17</span>
+                        <span class="sep">/</span>
+                        <span class="month" id="mes">Setembro</span>
+                        <span class="sep">/</span>
+                        <span class="year">2026</span>
                     </h1>
                 </div>
             </div>
 
+            <!-- LADO DIREITO: Espaço para manter a simetria visual perfeito -->
+            <div class="header_right_spacer"></div>
         </div>
     </header>
 
@@ -66,126 +82,6 @@
     <main>
 
         <section class="container largura-definida">
-
-            <div class="equipes-confirmadas-container">
-                <div class="section-header">
-                    <h2 class="section-title">
-                        <span class="title-glow"></span>
-                        <i class="fa-solid fa-users"></i> EQUIPES CONFIRMADAS
-                    </h2>
-                    <span class="badge-total">12 Organizações</span>
-                </div>
-
-                <div class="equipes-grid">
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/o legado.jpg" alt="">
-                            <div class="logo-fallback">LD</div>
-                        </div>
-                        <span class="equipe-name">O Legado</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/Ql  1000.jpg" alt="">
-                            <div class="logo-fallback">QL</div>
-                        </div>
-                        <span class="equipe-name">Ql 1000</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/DENDELE.jpg" alt="">
-                            <div class="logo-fallback">DEN</div>
-                        </div>
-                        <span class="equipe-name">DENDELE</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/GAMING XP.jpg" alt="">
-                            <div class="logo-fallback">XP</div>
-                        </div>
-                        <span class="equipe-name">777 GAMING</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/GAMER OVER.jpg" alt="">
-                            <div class="logo-fallback">GO</div>
-                        </div>
-                        <span class="equipe-name">GAMER OVER</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/SS GAMING.jpg" alt="">
-                            <div class="logo-fallback">SS</div>
-                        </div>
-                        <span class="equipe-name">SS GAMING</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/RXT E-SPORTs.jpg" alt="">
-                            <div class="logo-fallback">RTX</div>
-                        </div>
-                        <span class="equipe-name">RXT E-SPORTs</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/next level.jpg" alt="">
-                            <div class="logo-fallback">NL</div>
-                        </div>
-                        <span class="equipe-name">NEXT LEVEL</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/TDM-SPORT.jpg" alt="">
-                            <div class="logo-fallback">TDM</div>
-                        </div>
-                        <span class="equipe-name">TDM-SPORT</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/one piece.jpg" alt="">
-                            <div class="logo-fallback">RX</div>
-                        </div>
-                        <span class="equipe-name">ONE PIECE</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/ESPARTANS.jpg" alt="">
-                            <div class="logo-fallback">ESP</div>
-                        </div>
-                        <span class="equipe-name">ESPARTANS</span>
-                    </div>
-
-                    <div class="equipe-card">
-                        <div class="card-border-glow"></div>
-                        <div class="logo-box">
-                            <img src="../../../assets/img/xtreinoPontosCorridos/HYG BYAKUGAN.jpg" alt="">
-                            <div class="logo-fallback">TMZ</div>
-                        </div>
-                        <span class="equipe-name">HYG BYAKUGAN</span>
-                    </div>
-                </div>
-            </div>
 
             <!--SISTEMA DE PONTUAÇÃO-->
             <button class="btn-scoring-system">📊 Sistema de Pontuação <span>▼</span></button>
@@ -246,8 +142,8 @@
 
                 <!--TITLE RANKING-->
                 <div class="table_header">
-                    <h2>🏆 RANKING <span id="rankingSeason">X-Treino Pontos Corridos</span></h2>
-                    <p>📅 <span id="data" style="display: none;"></span></p>
+                    <h2>🏆 RANKING <span id="rankingSeason">Treino</span></h2>
+                    <p>📅 <span id="data"></span></p>
                 </div>
                 <!--TITLE RANKING-->
 
@@ -256,7 +152,7 @@
                     <thead>
                         <tr>
                             <th>POS</th>
-                            <th class="equipe_th">TIME</th>
+                            <th class="equipe_th">EQUIPE</th>
                             <th>Q</th>
                             <th>AB</th>
                             <th>B!</th>
@@ -277,10 +173,10 @@
 
                 <div class="card-conteudo">
 
-                    <h2 class="campeao-title">1° Lugar</h2>
+                    <h2 class="campeao-title">CAMPEÃO</h2>
 
                     <div class="equipe-logo-container">
-                        <img class="equipe-logo-placeholder" src="" alt="">
+                        <img class="equipe-logo-placeholder" src="" alt="Sem logo">
                     </div>
 
                     <p class="campeao-equipe"></p>
@@ -302,7 +198,7 @@
                         </div>
                     </div>
 
-                    <p class="agradecimento">AGRADECEMOS A TODOS OS PARTICIPANTES DO CAMPEONATO!</p>
+                    <p class="agradecimento">AGRADECEMOS A TODOS OS PARTICIPANTES DO X-TREINO!</p>
                 </div>
             </div>
             <!--Campeão-->
@@ -315,8 +211,9 @@
                 <div class="card-mvp-conteudo">
                     <!-- Lado Esquerdo: Ícone/Avatar + Info do Jogador -->
                     <div class="mvp-perfil">
-                        <img src="" alt="" class="avatar-container">
-                        
+                        <img src="../../../assets/img/logosXtreinoEquipes/junho/mvp/(2.1)GO M!D⁷.jpg" alt="Sem logo"
+                            class="avatar-container">
+
 
                         <div class="mvp-info">
                             <span class="mvp-tag">MVP DE KILLS • </span>
@@ -350,7 +247,7 @@
                         <div class="card-podio-interno">
                             <div class="logo-equipe-container">
                                 <!-- Substitua pela imagem real da logo -->
-                                <img src="" alt="" class="logo-placeholder logo-segundo">
+                                <img src="" alt="Sem logo" class="logo-placeholder logo-segundo">
                             </div>
                             <h3 class="nome-equipe" id="top3-2"></h3>
                             <p class="pontos-equipe" id="top3-2pts"><span>pts</span></p>
@@ -365,7 +262,7 @@
                         <div class="card-podio-interno">
                             <div class="logo-equipe-container">
                                 <!-- Substitua pela imagem real da logo -->
-                                <img src="" alt="" class="logo-placeholder logo-primeiro">
+                                <img src="" alt="Sem logo" class="logo-placeholder logo-primeiro">
                             </div>
                             <h3 class="nome-equipe" id="top3-1"></h3>
                             <p class="pontos-equipe" id="top3-pts"><span>pts</span></p>
@@ -380,7 +277,7 @@
                         <div class="card-podio-interno">
                             <div class="logo-equipe-container">
                                 <!-- Substitua pela imagem real da logo -->
-                                <img src="" alt="" class="logo-placeholder logo-terceiro">
+                                <img src="" alt="Sem logo" class="logo-placeholder logo-terceiro" >
                             </div>
                             <h3 class="nome-equipe" id="top3-3"></h3>
                             <p class="pontos-equipe" id="top3-3pts"><span>pts</span></p>
@@ -413,7 +310,7 @@
                         <div class="medalha-topo">🥇</div>
                         <div class="avatar-kill-container">
                             <!-- Substitua pelo quadrado da logo ou avatar do jogador -->
-                            <img src="" alt="" class="avatar-kill-placeholder avatar-ouro">
+                            <img src="" alt="Sem logo" class="avatar-kill-placeholder avatar-ouro">
                         </div>
                         <h3 class="player-nick" id="top1KillName"></h3>
                         <p class="player-equipe" id="top1killEquipe">▶ </p>
@@ -428,8 +325,8 @@
                     <div class="card-kill-podio kill-segundo">
                         <div class="medalha-topo">🥈</div>
                         <div class="avatar-kill-container">
-                            
-                            <img src="" alt="" class="avatar-kill-placeholder avatar-prata">
+
+                            <img src="" alt="Sem logo" class="avatar-kill-placeholder avatar-prata">
                         </div>
                         <h3 class="player-nick" id="top2KillName"></h3>
                         <p class="player-equipe" id="top2killEquipe">▶ </p>
@@ -444,7 +341,7 @@
                     <div class="card-kill-podio kill-terceiro">
                         <div class="medalha-topo">🥉</div>
                         <div class="avatar-kill-container">
-                            <img src="" alt="" class="avatar-kill-placeholder avatar-bronze">
+                            <img src="" alt="Sem logo" class="avatar-kill-placeholder avatar-bronze" style="object-position: top;">
                         </div>
                         <h3 class="player-nick" id="top3KillName"></h3>
                         <p class="player-equipe" id="top3killEquipe">▶ </p>
@@ -467,7 +364,7 @@
 
                 <div class="top_kills_grid">
                     <div>
-                        <!-- <p>111aaaaaaa</p> -->
+                        <p>111aaaaaaa</p>
                     </div>
 
                 </div>
@@ -500,7 +397,7 @@
             <hr class="footer_divider">
 
             <div class="footer_bottom">
-                <p class="copyright">© 2026 X-Treino Pontos Corridos Legado. Todos os direitos reservados.</p>
+                <p class="copyright">© 2026 X-Treino Legado. Todos os direitos reservados.</p>
                 <div class="footer_sublinks">
                     <a href="#top">Voltar ao topo</a>
                 </div>
@@ -510,19 +407,15 @@
 
 
 
-
+    <!-- <script src="../js/hallDaFamal.js" type="module"></script> -->
 
     <script src="../../../assets/js/classificação/sistemaPontuação.js" type="module"></script>
-    <script src="../../../assets/js/xtreino/xtreinoPontosCorridos/xtreinoPontosCriarTabela.js" type="module"></script>
-    <script src="../../../assets/js/xtreino/xtreinoPontosCorridos/xtreinoPontosHallDaFama.js" type="module"></script>
-    <script src="../../../assets/js/xtreino/xtreinoPontosCorridos/xtreinoPontosInfoDetalhes.js" type="module"></script>
-    
-
-    <!-- 
-    <script src="../../../assets/js/liga/ligaInfoDetalhada.js" type="module"></script>
-    -->
+    <script src="../../../assets/js/classificaçãoNovoModelo/criarTabela.js" type="module"></script>
+    <script src="../../../assets/js/classificaçãoNovoModelo/infoDetalhada.js" type="module"></script>
+    <script src="../../../assets/js/classificaçãoNovoModelo/hallDaFama.js" type="module"></script>
 
 
+    <!-- <script src="../../../assets/js/classificação/infoDetalhada.js" type="module"></script> -->
 
 </body>
 
