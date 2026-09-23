@@ -420,23 +420,8 @@
             "dados": [null, null, null, null, null, null, 0, 0, 0]
           }
         },
-        "DENDELE": {
-          "DDL.sattz7": {
-            "logo": "",
-            "dados": [2, 5, null, null, null, null, null, null, null]
-          },
-          "DDL.sNickz7": {
-            "logo": "",
-            "dados": [1, 5, null, null, null, null, null, null, null]
-          },
-          "DDL.Pepãox7": {
-            "logo": "",
-            "dados": [2, 2, null, null, null, null, null, null, null]
-          },
-          "DDL.Keplax7": {
-            "logo": "",
-            "dados": [0, 2, null, null, null, null, null, null, null]
-          }
+        "FRANCE": {
+          
         },
         "NEXT LEVEL": {
           "NXL.BIELZIN": {
