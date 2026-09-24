@@ -246,8 +246,6 @@
       ]
     },
 
-    
-
     "season2": {
       "data": "02/09/2026",
       "equipes": [
@@ -262,7 +260,10 @@
             { "queda": 6, "kills": 10, "posicao": 4 },
             { "queda": 7, "kills": 3, "posicao": 4 },
             { "queda": 8, "kills": 4, "posicao": 3 },
-            { "queda": 9, "kills": 4, "posicao": 7 }
+            { "queda": 9, "kills": 4, "posicao": 7 },
+            { "queda": 10, "kills": 1, "posicao": 9 },
+            { "queda": 11, "kills": 0, "posicao": 7 },
+            { "queda": 12, "kills": 4, "posicao": 7 }
           ],
           "logo": "../../../assets/img/xtreinoPontosCorridos/o legado.jpg",
           "puniçãoDescrição": "",
@@ -279,7 +280,10 @@
             { "queda": 6, "kills": 17, "posicao": 2 },
             { "queda": 7, "kills": 5, "posicao": 7 },
             { "queda": 8, "kills": 6, "posicao": 2 },
-            { "queda": 9, "kills": 9, "posicao": 4 }
+            { "queda": 9, "kills": 9, "posicao": 4 },
+            { "queda": 10, "kills": 4, "posicao": 4 },
+            { "queda": 11, "kills": 7, "posicao": 2 },
+            { "queda": 12, "kills": 8, "posicao": 5 }
           ],
           "logo": "../../../assets/img/xtreinoPontosCorridos/GAMING XP.jpg",
           "puniçãoDescrição": "",
@@ -296,7 +300,10 @@
             { "queda": 6, "kills": 13, "posicao": 1 },
             { "queda": 7, "kills": 14, "posicao": 1 },
             { "queda": 8, "kills": 3, "posicao": 10 },
-            { "queda": 9, "kills": 23, "posicao": 1 }
+            { "queda": 9, "kills": 23, "posicao": 1 },
+            { "queda": 10, "kills": 7, "posicao": 7 },
+            { "queda": 11, "kills": 0, "posicao": 10 },
+            { "queda": 12, "kills": 15, "posicao": 1 }
           ],
           "logo": "../../../assets/img/xtreinoPontosCorridos/RXT E-SPORTs.jpg",
           "puniçãoDescrição": "",
@@ -313,7 +320,10 @@
             { "queda": 6, "kills": 2, "posicao": 3 },
             { "queda": 7, "kills": 4, "posicao": 5 },
             { "queda": 8, "kills": 3, "posicao": 8 },
-            { "queda": 9, "kills": 6, "posicao": 3 }
+            { "queda": 9, "kills": 6, "posicao": 3 },
+            { "queda": 10, "kills": 0, "posicao": 13 },
+            { "queda": 11, "kills": 0, "posicao": 13 },
+            { "queda": 12, "kills": 0, "posicao": 13 }
           ],
           "logo": "",
           "puniçãoDescrição": "",
@@ -330,7 +340,10 @@
             { "queda": 6, "kills": 7, "posicao": 7 },
             { "queda": 7, "kills": 4, "posicao": 8 },
             { "queda": 8, "kills": 10, "posicao": 1 },
-            { "queda": 9, "kills": 0, "posicao": 5 }
+            { "queda": 9, "kills": 0, "posicao": 5 },
+            { "queda": 10, "kills": 1, "posicao": 8 },
+            { "queda": 11, "kills": 5, "posicao": 6 },
+            { "queda": 12, "kills": 8, "posicao": 4 }
           ],
           "logo": "../../../assets/img/xtreinoPontosCorridos/Ql  1000.jpg",
           "puniçãoDescrição": "",
@@ -347,7 +360,10 @@
             { "queda": 6, "kills": 4, "posicao": 8 },
             { "queda": 7, "kills": 3, "posicao": 2 },
             { "queda": 8, "kills": 0, "posicao": 7 },
-            { "queda": 9, "kills": 0, "posicao": 9 }
+            { "queda": 9, "kills": 0, "posicao": 9 },
+            { "queda": 10, "kills": 5, "posicao": 3 },
+            { "queda": 11, "kills": 5, "posicao": 3 },
+            { "queda": 12, "kills": 3, "posicao": 6 }
           ],
           "logo": "",
           "puniçãoDescrição": "",
@@ -364,7 +380,10 @@
             { "queda": 6, "kills": 11, "posicao": 5 },
             { "queda": 7, "kills": 0, "posicao": 9 },
             { "queda": 8, "kills": 0, "posicao": 9 },
-            { "queda": 9, "kills": 0, "posicao": 13 }
+            { "queda": 9, "kills": 0, "posicao": 13 },
+            { "queda": 10, "kills": 9, "posicao": 2 },
+            { "queda": 11, "kills": 9, "posicao": 1 },
+            { "queda": 12, "kills": 2, "posicao": 8 }
           ],
           "logo": "../../../assets/img/xtreinoPontosCorridos/GAMER OVER.jpg",
           "puniçãoDescrição": "",
@@ -381,7 +400,10 @@
             { "queda": 6, "kills": 0, "posicao": 9 },
             { "queda": 7, "kills": 0, "posicao": 10 },
             { "queda": 8, "kills": 1, "posicao": 5 },
-            { "queda": 9, "kills": 2, "posicao": 8 }
+            { "queda": 9, "kills": 2, "posicao": 8 },
+            { "queda": 10, "kills": 2, "posicao": 5 },
+            { "queda": 11, "kills": 0, "posicao": 9 },
+            { "queda": 12, "kills": 0, "posicao": 13 }
           ],
           "logo": "",
           "puniçãoDescrição": "",
@@ -398,7 +420,10 @@
             { "queda": 6, "kills": 0, "posicao": 13 },
             { "queda": 7, "kills": 0, "posicao": 13 },
             { "queda": 8, "kills": 0, "posicao": 13 },
-            { "queda": 9, "kills": 0, "posicao": 13 }
+            { "queda": 9, "kills": 0, "posicao": 13 },
+            { "queda": 10, "kills": 4, "posicao": 10 },
+            { "queda": 11, "kills": 7, "posicao": 4 },
+            { "queda": 12, "kills": 21, "posicao": 3 }
           ],
           "logo": "",
           "puniçãoDescrição": "",
@@ -415,7 +440,10 @@
             { "queda": 6, "kills": 4, "posicao": 6 },
             { "queda": 7, "kills": 5, "posicao": 6 },
             { "queda": 8, "kills": 5, "posicao": 6 },
-            { "queda": 9, "kills": 2, "posicao": 2 }
+            { "queda": 9, "kills": 2, "posicao": 2 },
+            { "queda": 10, "kills": 12, "posicao": 6 },
+            { "queda": 11, "kills": 1, "posicao": 8 },
+            { "queda": 12, "kills": 1, "posicao": 9 }
           ],
           "logo": "",
           "puniçãoDescrição": "",
@@ -432,7 +460,10 @@
             { "queda": 6, "kills": 0, "posicao": 13 },
             { "queda": 7, "kills": 17, "posicao": 3 },
             { "queda": 8, "kills": 9, "posicao": 4 },
-            { "queda": 9, "kills": 2, "posicao": 6 }
+            { "queda": 9, "kills": 2, "posicao": 6 },
+            { "queda": 10, "kills": 10, "posicao": 1 },
+            { "queda": 11, "kills": 12, "posicao": 5 },
+            { "queda": 12, "kills": 10, "posicao": 2 }
           ],
           "logo": "",
           "puniçãoDescrição": "",
@@ -449,7 +480,10 @@
             { "queda": 6, "kills": 0, "posicao": 13 },
             { "queda": 7, "kills": 0, "posicao": 13 },
             { "queda": 8, "kills": 0, "posicao": 13 },
-            { "queda": 9, "kills": 0, "posicao": 13 }
+            { "queda": 9, "kills": 0, "posicao": 13 },
+            { "queda": 10, "kills": 0, "posicao": 13 },
+            { "queda": 11, "kills": 0, "posicao": 13 },
+            { "queda": 12, "kills": 0, "posicao": 13 }
           ],
           "logo": "",
           "puniçãoDescrição": "",
@@ -457,6 +491,7 @@
         }
       ]
     }
+  
   
   
 }
