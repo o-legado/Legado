@@ -5213,7 +5213,261 @@
         }
       }
     }
+  },
+
+  
+  
+  "treino7": {
+    "data": "24/09/2026",
+    "equipes": {
+      "INTZ 777": {
+        "BIG5MOKE VG": {
+          "logo": "",
+          "dados": [0, 2, 1]
+        },
+        "WRX.xl7": {
+          "logo": "",
+          "dados": [0, 5, 1]
+        },
+        "INTZ TH7": {
+          "logo": "",
+          "dados": [1, 3, 0]
+        },
+        "ngmparea7x": {
+          "logo": "",
+          "dados": [6, 6, 0]
+        }
+      },
+      "*7VEN GAMING": {
+        "7VẸN.ŠΘMЂŘĂ": {
+          "logo": "",
+          "dados": [2, 1, 0]
+        },
+        "7VEN.WEINNY愛": {
+          "logo": "",
+          "dados": [2, 4, 0]
+        },
+        "7VEN.Mqs7 ☯": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "7VEN.LEOZIN9": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        }
+      },
+      "FRANÇA": {
+        "FR SILVA✓": {
+          "logo": "",
+          "dados": [1, 3, 6]
+        },
+        "FR Volgx7": {
+          "logo": "",
+          "dados": [0, 0, 7]
+        },
+        "FR LUCIFER": {
+          "logo": "",
+          "dados": [3, 2, 3]
+        },
+        "JONNAS$XIT.": {
+          "logo": "",
+          "dados": [0, 5, 4]
+        }
+      },
+      "N7 STORM": {
+        "SS Luis9": {
+          "logo": "",
+          "dados": [1, 1, 1]
+        },
+        "N7.talys7": {
+          "logo": "",
+          "dados": [0, 2, 3]
+        },
+        "B7 pxz": {
+          "logo": "",
+          "dados": [2, 1, null]
+        },
+        "SS.NBW7": {
+          "logo": "",
+          "dados": [0, 3, 0]
+        },
+        "L! pandoxz19": {
+          "logo": "",
+          "dados": [null, null, 0]
+        }
+      },
+      "TDM-SPORT": {
+        "TDM Wm06": {
+          "logo": "",
+          "dados": [1, 1, 1]
+        },
+        "LUANZIN⍦⍝⍙": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "TDM.Michel": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "PS•MELIODAS": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "6 LEGADOS": {
+        "《ŁĐ》coronel¥": {
+          "logo": "",
+          "dados": [1, 0, 3]
+        },
+        "XL THIAGUIN⌖": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        },
+        "《ŁĐ》Biel⁴⁸": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        },
+        "《ŁĐ》N7 BYE": {
+          "logo": "",
+          "dados": [2, null, 0]
+        },
+        "《ŁĐ》N7 BYE 9": {
+          "logo": "",
+          "dados": [null, 1, null]
+        }
+      },
+      "FL  FÚRIA NEGRA": {
+        "HD dolynn": {
+          "logo": "",
+          "dados": [1, 4, 3]
+        },
+        "NT7.Diallo7": {
+          "logo": "",
+          "dados": [0, 0, 2]
+        },
+        "SEAL red xit": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "FRY L0ST.EXE": {
+          "logo": "",
+          "dados": [0, 3, 1]
+        }
+      },
+      "ONE PIECE": {
+        "ONE LUFFY ☂": {
+          "logo": "",
+          "dados": [0, 3, 1]
+        },
+        "ONE BROOK 봇": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "ONE ZORO ⚔": {
+          "logo": "",
+          "dados": [1, null, null]
+        },
+        "scarlετço": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "Lp-Bruce": {
+          "logo": "",
+          "dados": [null, 1, null]
+        },
+        "ONE NAMI ⚑": {
+          "logo": "",
+          "dados": [null, null, 0]
+        }
+      },
+      "FROMZERO BASE": {
+        "VK Kfzin": {
+          "logo": "",
+          "dados": [1, 2, 3]
+        },
+        "FZ.Kross8": {
+          "logo": "",
+          "dados": [3, 1, 1]
+        },
+        "VK FZIINʰˢ": {
+          "logo": "",
+          "dados": [7, 1, 2]
+        },
+        "IMP Nikeboy": {
+          "logo": "",
+          "dados": [1, 1, 1]
+        }
+      },
+      "APOSENTADOS": {
+        "WAY GP7 rs!": {
+          "logo": "",
+          "dados": [3, 8, 8]
+        },
+        "WAY Mnx777ᴮ": {
+          "logo": "",
+          "dados": [3, 3, 7]
+        },
+        "WAY J⁷": {
+          "logo": "",
+          "dados": [0, 2, 3]
+        },
+        "WAY YANAAHᴹᴳ": {
+          "logo": "",
+          "dados": [1, null, null]
+        },
+        "WAY Proteinⱽ": {
+          "logo": "",
+          "dados": [null, 4, 6]
+        }
+      },
+      "FURY E-ESPORT": {
+        "GATO MUFINO": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        },
+        "@PHZIN 9M": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "TDM ϟKIEL 么": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "SUPREME444": {
+          "logo": "",
+          "dados": [null, 0, 1]
+        }
+      },
+      "OCB CRÉDITO": {
+        "XIT HGMvp7": {
+          "logo": "",
+          "dados": [9, 3, 1]
+        },
+        "LP NEGUINHO♱": {
+          "logo": "",
+          "dados": [7, 0, 2]
+        },
+        "ZeaL MygauH7": {
+          "logo": "",
+          "dados": [5, 1, null]
+        },
+        "K9.Sonic7xp": {
+          "logo": "",
+          "dados": [2, 0, null]
+        },
+        "XIT JAYA": {
+          "logo": "",
+          "dados": [null, null, 0]
+        },
+        "XIT giovanne": {
+          "logo": "",
+          "dados": [null, null, 1]
+        }
+      }
+    }
   }
+
+
 
 
 
