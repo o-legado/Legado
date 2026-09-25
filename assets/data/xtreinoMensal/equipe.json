@@ -7098,13 +7098,13 @@
         "puniçãoPontos": ""
       },
       {
-        "equipe": "FRANÇA",
+        "equipe": "FRANCE",
         "detalhes": [
           { "queda": 1, "kills": 4, "posicao": 4 },
           { "queda": 2, "kills": 10, "posicao": 1 },
           { "queda": 3, "kills": 20, "posicao": 1 }
         ],
-        "logo": "",
+        "logo": "../../../assets/img/logosXtreinoEquipes/setembro/(7.2)france.jpg",
         "puniçãoDescrição": "",
         "puniçãoPontos": ""
       },
@@ -7181,7 +7181,7 @@
           { "queda": 2, "kills": 17, "posicao": 3 },
           { "queda": 3, "kills": 24, "posicao": 2 }
         ],
-        "logo": "",
+        "logo": "../../../assets/img/logosXtreinoEquipes/setembro/(7.1)aposentados.jpg",
         "puniçãoDescrição": "",
         "puniçãoPontos": ""
       },
