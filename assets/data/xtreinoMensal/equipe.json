@@ -7218,5 +7218,146 @@
 
 
 
+    },
+    "outubro":{
+        
+  "treino1": {
+    "data": "08/10/2026",
+    "equipes": [
+      {
+        "equipe": "NEXT LEVEL",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 11 },
+          { "queda": 2, "kills": 2, "posicao": 11 },
+          { "queda": 3, "kills": 1, "posicao": 9 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "6 LEGADOS",
+        "detalhes": [
+          { "queda": 1, "kills": 10, "posicao": 4 },
+          { "queda": 2, "kills": 8, "posicao": 1 },
+          { "queda": 3, "kills": 0, "posicao": 6 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "RS CARIOCAS",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 13 },
+          { "queda": 2, "kills": 0, "posicao": 13 },
+          { "queda": 3, "kills": 0, "posicao": 13 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "LEGACY⁰¹",
+        "detalhes": [
+          { "queda": 1, "kills": 2, "posicao": 8 },
+          { "queda": 2, "kills": 7, "posicao": 10 },
+          { "queda": 3, "kills": 11, "posicao": 3 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "INTZ 77",
+        "detalhes": [
+          { "queda": 1, "kills": 8, "posicao": 2 },
+          { "queda": 2, "kills": 2, "posicao": 6 },
+          { "queda": 3, "kills": 0, "posicao": 7 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "OS ESPANCA XOTA",
+        "detalhes": [
+          { "queda": 1, "kills": 5, "posicao": 5 },
+          { "queda": 2, "kills": 7, "posicao": 7 },
+          { "queda": 3, "kills": 1, "posicao": 10 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "DYNASTY FURY",
+        "detalhes": [
+          { "queda": 1, "kills": 0, "posicao": 10 },
+          { "queda": 2, "kills": 6, "posicao": 5 },
+          { "queda": 3, "kills": 1, "posicao": 11 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "TEAM ØNE",
+        "detalhes": [
+          { "queda": 1, "kills": 2, "posicao": 3 },
+          { "queda": 2, "kills": 4, "posicao": 8 },
+          { "queda": 3, "kills": 7, "posicao": 5 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "N7 STORM",
+        "detalhes": [
+          { "queda": 1, "kills": 1, "posicao": 9 },
+          { "queda": 2, "kills": 6, "posicao": 4 },
+          { "queda": 3, "kills": 4, "posicao": 8 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "001 PRIME",
+        "detalhes": [
+          { "queda": 1, "kills": 8, "posicao": 6 },
+          { "queda": 2, "kills": 17, "posicao": 2 },
+          { "queda": 3, "kills": 15, "posicao": 1 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "007 GAMER",
+        "detalhes": [
+          { "queda": 1, "kills": 5, "posicao": 7 },
+          { "queda": 2, "kills": 4, "posicao": 9 },
+          { "queda": 3, "kills": 4, "posicao": 4 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      },
+      {
+        "equipe": "ZYNX E-SPORT",
+        "detalhes": [
+          { "queda": 1, "kills": 12, "posicao": 1 },
+          { "queda": 2, "kills": 6, "posicao": 3 },
+          { "queda": 3, "kills": 5, "posicao": 2 }
+        ],
+        "logo": "",
+        "puniçãoDescrição": "",
+        "puniçãoPontos": ""
+      }
+    ]
+  }
+
     }
 }
