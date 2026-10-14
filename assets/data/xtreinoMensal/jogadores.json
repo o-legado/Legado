@@ -5678,7 +5678,99 @@
         }
       }
     }
+  },
+
+  
+  
+  "treino2": {
+    "data": "13/10/2026",
+    "equipes": {
+      "KRYZOR": {
+        "《ŁĐ》 DG777": { "logo": "", "dados": [4, 3, 0] },
+        "《ŁĐ》 PATOLINO": { "logo": "", "dados": [0, 5, 0] },
+        "GG.WASSANAπ": { "logo": "", "dados": [1, 4, 0] },
+        "RAFA .x2": { "logo": "", "dados": [0, 2, 0] }
+      },
+      "RXT E-SPORTS": {
+        "RXT perdoa": { "logo": "", "dados": [2, 3, 1] },
+        "RXT MTZero": { "logo": "", "dados": [0, 0, 1] },
+        "RXT PATRÃO": { "logo": "", "dados": [5, 2, 0] },
+        "RXT B!ELX7": { "logo": "", "dados": [1, 1, 0] }
+      },
+      "LEGACY⁰¹": {
+        "《ŁĐ》 whiter$": { "logo": "", "dados": [0, 1, 2] },
+        "《ŁĐ》 亗PEDROツ⁷": { "logo": "", "dados": [0, 0, 0] },
+        "《ŁĐ》 UMP⁹⁹⁹": { "logo": "", "dados": [0, 1, 0] },
+        "《ŁĐ》 seven": { "logo": "", "dados": [0, 1, 0] }
+      },
+      "LYONS E-SPORTS": {
+        "LS JOKERR": { "logo": "", "dados": [1, 0, null] },
+        "PAULO-GÁS-ⓥ": { "logo": "", "dados": [1, null, null] },
+        "RPR SOMBRA": { "logo": "", "dados": [2, null, null] },
+        "FL!P.Henriq7": { "logo": "", "dados": [6, null, null] }
+      },
+      "LINE GAMING": {
+        "ST Zenox ffx": { "logo": "", "dados": [3, 5, null] },
+        "FLX.Araujo7": { "logo": "", "dados": [1, 5, null] },
+        "RPR XIT": { "logo": "", "dados": [0, null, null] },
+        "igui do dry": { "logo": "", "dados": [1, null, null] },
+        "FL!P.Henriq7": { "logo": "", "dados": [null, 6, null] }
+      },
+      "LYONS": {
+        "《ŁĐ》 YESHUA": { "logo": "", "dados": [0, 1, 1] },
+        "ANTI João7!愛": { "logo": "", "dados": [0, null, null] },
+        "lcziim7": { "logo": "", "dados": [0, null, null] },
+        "Pelezin.x7": { "logo": "", "dados": [0, null, 1] },
+        "DR.daishy7": { "logo": "", "dados": [null, 2, null] },
+        "F99.TGKING7": { "logo": "", "dados": [null, 0, 1] }
+      },
+      "NOVA ERA": {
+        "LORRAN ツ": { "logo": "", "dados": [2, 2, 2] },
+        "《ŁĐ》 Hsapela": { "logo": "", "dados": [4, 0, 2] },
+        "ETR 10": { "logo": "", "dados": [2, 0, 2] },
+        "FR.Kn7": { "logo": "", "dados": [4, 3, 3] }
+      },
+      "LYONS FURY": {
+        "TSE.rqking": { "logo": "", "dados": [4, 1, null] },
+        "SEAL red xit": { "logo": "", "dados": [1, 4, 2] },
+        "™+Easywin 么": { "logo": "", "dados": [4, 3, null] },
+        "FRY L0ST.EXE": { "logo": "", "dados": [4, 3, null] },
+        "#yamal": { "logo": "", "dados": [null, null, 1] },
+        "#davi": { "logo": "", "dados": [null, null, 1] },
+        "#lost": { "logo": "", "dados": [null, null, 0] }
+      },
+      "L7_ESPORT": {
+        "愛sem sensi": { "logo": "", "dados": [0, 0, 0] },
+        "i'am king⁰⁰¹": { "logo": "", "dados": [3, 1, 0] },
+        "Picanha²²": { "logo": "", "dados": [4, 0, 0] },
+        "Lobihno1887L": { "logo": "", "dados": [0, null, null] },
+        "K I L L E R 〆": { "logo": "", "dados": [null, 0, null] },
+        "ARK KILLE": { "logo": "", "dados": [null, null, 0] }
+      },
+      "SS GAMING": {
+        "SS.DUQUE": { "logo": "", "dados": [3, 0, 2] },
+        "SS.BEDYBOY": { "logo": "", "dados": [3, 0, 3] },
+        "SS VINNI.": { "logo": "", "dados": [4, 0, 3] },
+        "RPR HOKAGE": { "logo": "", "dados": [1, null, null] },
+        "SS.BUTZIM": { "logo": "", "dados": [null, 0, 2] }
+      },
+      "TRUPE FANTASMA": {
+        "BSK i1⁹": { "logo": "", "dados": [0, null, null] },
+        "KDO krozz27": { "logo": "", "dados": [0, 0, 0] },
+        "NB VITIM@": { "logo": "", "dados": [1, 2, 8] },
+        "zulluoo³": { "logo": "", "dados": [0, 1, 2] },
+        "BSK thalyson": { "logo": "", "dados": [null, 2, 2] }
+      },
+      "ESPARTANS": {
+        "SPT PEPEU": { "logo": "", "dados": [12, 6, 0] },
+        "SPT___ASTA": { "logo": "", "dados": [1, 3, 0] },
+        "SPT MORENO Ӧ": { "logo": "", "dados": [2, 3, 0] },
+        "SPT Luxury": { "logo": "", "dados": [1, 0, 0] }
+      }
+    }
   }
+
+
 
   }
 }
