@@ -5768,7 +5768,84 @@
         "SPT Luxury": { "logo": "", "dados": [1, 0, 0] }
       }
     }
+  },
+
+  
+  "treino3": {
+    "data": "15/10/2026",
+    "equipes": {
+      "ECLIPSE": {
+        "TF DUDU7.sx": { "logo": "", "dados": [3, 0, 1] },
+        "ØLP JNZIN11": { "logo": "", "dados": [8, 3, 0] },
+        "ØLP Facada": { "logo": "", "dados": [4, 6, 2] },
+        "ØLP Fbemfé": { "logo": "", "dados": [6, 0, 1] }
+      },
+      "COMANF USA": {
+        "USA.JHS": { "logo": "", "dados": [2, 1, 8] },
+        "USA.JK7ZIM": { "logo": "", "dados": [2, 0, 2] },
+        "USA.BMw9": { "logo": "", "dados": [0, 0, 4] },
+        "USA.JORGE": { "logo": "", "dados": [4, 0, 0] }
+      },
+      "KRYZOR": {
+        "《ŁÐ》DG777": { "logo": "", "dados": [1, 0, null] },
+        "GG.WASSANAπ": { "logo": "", "dados": [0, 1, null] },
+        "mah6_$*": { "logo": "", "dados": [0, 0, null] },
+        "TEAM pelezin": { "logo": "", "dados": [1, 0, null] }
+      },
+      "LF FORMAÇÃO SWAT": {
+        "LF URSØ": { "logo": "", "dados": [1, 0, 1] },
+        "gbzin7 prime": { "logo": "", "dados": [1, 0, 1] },
+        "LF Manogu245": { "logo": "", "dados": [0, 1, 2] },
+        "@!Scottx.op™": { "logo": "", "dados": [5, 2, 1] }
+      },
+      "LEGACY⁰¹": {
+        "PCDNETINHO 炎": { "logo": "", "dados": [0, 1, 0] },
+        "《ŁÐ》A N J O' ★": { "logo": "", "dados": [1, 2, 0] },
+        "《ŁÐ》whiter$": { "logo": "", "dados": [3, 2, 0] },
+        "《LD》YURI..": { "logo": "", "dados": [1, 0, 2] }
+      },
+      "BG NASA": {
+        "BG STARKMVP": { "logo": "", "dados": [4, 10, 9] },
+        "BG LUKK1NG": { "logo": "", "dados": [2, 4, 5] },
+        "BG.BuuRRyN": { "logo": "", "dados": [1, 4, 5] },
+        "BG SIX": { "logo": "", "dados": [1, 6, 7] }
+      },
+      "YAKUZA OFICIAL": {
+        "PIKA D SAL": { "logo": "", "dados": [0, null, null] },
+        "RS.GUIZIN7": { "logo": "", "dados": [0, 0, null] },
+        "Ryatrool": { "logo": "", "dados": [0, 0, null] },
+        "SBR_GENERAL&": { "logo": "", "dados": [1, 1, null] },
+        "Adrian.7": { "logo": "", "dados": [null, 2, null] }
+      },
+      "LYONS": {
+        "《ŁÐ》YESHUA": { "logo": "", "dados": [0, 1, 0] },
+        "AG.thecruz7": { "logo": "", "dados": [0, 1, 0] },
+        "Asta10 ☂": { "logo": "", "dados": [0, 3, 0] },
+        "@Santzz": { "logo": "", "dados": [0, 2, 0] }
+      },
+      "INSANOS": {
+        "@Heitor*10": { "logo": "", "dados": [0, 2, 1] },
+        "MN Ratovisk": { "logo": "", "dados": [0, 0, 0] },
+        "Regret out": { "logo": "", "dados": [1, 0, 0] },
+        "☆ Borges": { "logo": "", "dados": [0, 2, 0] }
+      },
+      "007 GAMER": {
+        "007 ─╤デ┬─": { "logo": "", "dados": [0, null, null] },
+        "007 LIPE": { "logo": "", "dados": [1, 1, 0] },
+        "CARA*-*": { "logo": "", "dados": [0, 1, 0] },
+        "EGOO✠SLAYER": { "logo": "", "dados": [1, 0, 0] },
+        "FG.BOPEX17": { "logo": "", "dados": [null, 3, 1] }
+      },
+      "LOS DOLLARS": {},
+      "NOVA ERA": {
+        "mnr_sagaz64": { "logo": "", "dados": [null, 0, 0] },
+        "ETR 10": { "logo": "", "dados": [null, 0, 0] },
+        "《ŁÐ》vieirssz": { "logo": "", "dados": [null, 0, 0] },
+        "preto velho'": { "logo": "", "dados": [null, null, 0] }
+      }
+    }
   }
+
 
 
 
