@@ -5852,12 +5852,12 @@
     "equipes": {
       "Ql 1000": {
         "Ql Nikeboy7": { "logo": "", "dados": [2, 4, 1] },
-        "Ql IMPERADOR": { "logo": "", "dados": [1, 6, 3] },
+        "Ql IMPERADOR": { "logo": "../../../assets/img/logosXtreinoEquipes/outubro/mvp/(4.2)Ql IMPERADOR.jpg", "dados": [1, 6, 3] },
         "Ql JOKERZIN": { "logo": "", "dados": [3, 1, 0] },
         "Ql Gaab": { "logo": "", "dados": [4, 4, 0] }
       },
       "YAKUZA OFICIAL": {
-        "FNX faiscax7": { "logo": "", "dados": [7, 1, 3] },
+        "FNX faiscax7": { "logo": "../../../assets/img/logosXtreinoEquipes/outubro/mvp/(4.1)FNX faiscax7.jpg", "dados": [7, 1, 3] },
         "FNX Lcking7": { "logo": "", "dados": [3, 1, 4] },
         "FNX Kn'fxp7": { "logo": "", "dados": [4, 0, 4] },
         "RBC RDWp": { "logo": "", "dados": [0, 3, 5] }
