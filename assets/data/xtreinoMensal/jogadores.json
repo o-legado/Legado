@@ -5925,7 +5925,87 @@
         "UZ PAVUNA": { "logo": "", "dados": [null, 0, null] }
       }
     }
+  },
+
+  
+  "treino5": {
+    "data": "22/10/2026",
+    "equipes": {
+      "INSANOS": {
+        "M4Uz ★": { "logo": "", "dados": [4, 6, 1] },
+        "@Heitor°10": { "logo": "", "dados": [4, 0, 1] },
+        "@INS FREITAS": { "logo": "", "dados": [2, 1, 2] },
+        "Regret out": { "logo": "", "dados": [8, 1, 3] }
+      },
+      "6 LEGADOS": {
+        "《ŁÐ》coronel¥": { "logo": "", "dados": [1, 0, 0] },
+        "《ŁÐ》N7 BYE 9": { "logo": "", "dados": [1, 0, 2] },
+        "《ŁÐ》LEOZINX": { "logo": "", "dados": [0, 0, 0] },
+        "《ŁÐ》Biel⁴⁸": { "logo": "", "dados": [1, 0, 0] }
+      },
+      "ESPARTANS": {
+        "SPT PEPEU": { "logo": "", "dados": [7, 1, 2] },
+        "SPT-NEYMAR": { "logo": "", "dados": [1, 0, null] },
+        "SPT___ASTA": { "logo": "", "dados": [0, 0, 1] },
+        "SPT Luxury": { "logo": "", "dados": [2, 3, 2] }
+      },
+      "META GAMING": {
+        "Douglas_1003": { "logo": "", "dados": [0, 0, 1] },
+        "《ŁÐ》YESHUA": { "logo": "", "dados": [1, 0, 4] },
+        "《ŁÐ》PATOLINO": { "logo": "", "dados": [0, 1, 5] },
+        "《ŁÐ》•COYOTE•": { "logo": "", "dados": [0, 4, 2] }
+      },
+      "HEADSHOT E-SPORTS": {
+        "《ŁÐ》!Bn.op益": { "logo": "", "dados": [0, 1, 0] },
+        "FBI MAJØR&": { "logo": "", "dados": [1, 0, 0] },
+        "FBI !Smoke7": { "logo": "", "dados": [0, 0, 0] }
+      },
+      "LEGACY⁰¹": {
+        "《ŁÐ》whiter$": { "logo": "", "dados": [1, 1, 0] },
+        "《LD》YURI..": { "logo": "", "dados": [4, 2, 0] },
+        "LDR Xvine": { "logo": "", "dados": [2, 1, 0] },
+        "TS LUANntj": { "logo": "", "dados": [1, 1, 0] }
+      },
+      "Ql 1000": {
+        "QI Nikeboy7": { "logo": "", "dados": [0, 2, 0] },
+        "QI IMPERADOR": { "logo": "", "dados": [1, 0, 0] },
+        "QI GALEGO": { "logo": "", "dados": [0, 1, 0] },
+        "QI JOKERZIN": { "logo": "", "dados": [2, 5, 0] }
+      },
+      "INS FÚRIA": {
+        "INS Narutin": { "logo": "", "dados": [3, 0, 1] },
+        "INS Nyx☪": { "logo": "", "dados": [1, 0, 1] },
+        "CORONEL X": { "logo": "", "dados": [0, 1, 0] },
+        "lczinnfx7": { "logo": "", "dados": [2, 0, 0] }
+      },
+      "TFX E-SPORTS": {
+        "XL lczinn7!": { "logo": "", "dados": [1, null, null] },
+        "TFX Br7": { "logo": "", "dados": [0, null, null] },
+        "BLK.drmvp7": { "logo": "", "dados": [null, null, null] },
+        "AVX DH7": { "logo": "", "dados": [0, null, null] }
+      },
+      "PESADELOS": {
+        "PSL musiala": { "logo": "", "dados": [3, 8, 5] },
+        "PSL AKAZA": { "logo": "", "dados": [4, 4, 7] },
+        "PSL SONNY": { "logo": "", "dados": [5, 7, 6] },
+        "CKC Mg10wp": { "logo": "", "dados": [4, 6, 4] }
+      },
+      "777 GAMING": {
+        "777 SNOWego愛": { "logo": "", "dados": [1, null, 0] },
+        "777 king あ": { "logo": "", "dados": [3, 2, 0] },
+        "mbappé愛☯": { "logo": "", "dados": [2, null, null] },
+        "777 APOLLO": { "logo": "", "dados": [1, 1, 0] },
+        "777 JM²³ ¹⁰": { "logo": "", "dados": [null, 1, 1] }
+      },
+      "DRAGON RED": {
+        "꧁༒ FG MRS ༒꧂": { "logo": "", "dados": [0, 0, null] },
+        "USA jackzin": { "logo": "", "dados": [0, 0, null] },
+        "RED.kingAwp7": { "logo": "", "dados": [0, 1, null] },
+        "rus ghost'": { "logo": "", "dados": [0, 0, null] }
+      }
+    }
   }
+
 
 
 
