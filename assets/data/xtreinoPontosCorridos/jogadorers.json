@@ -568,387 +568,438 @@
 
    
     
+    
     "season3": {
       "data": "07/10/2026",
       "equipes": {
         "NEXT LEVEL": {
           "NXL.RAIKONEN": {
             "logo": "",
-            "dados": [3, 0, 1, 1, 0, 1, 4, 0, 0]
+            "dados": [3, 0, 1, 1, 0, 1, 4, 0, 0, 1, 1, 0]
           },
           "NXL.felipeXz": {
             "logo": "",
-            "dados": [2, 0, null, 0, 0, 0, 3, 0, 5]
+            "dados": [2, 0, null, 0, 0, 0, 3, 0, 5, 3, 0, 0]
           },
           "NXL.ASTR4": {
             "logo": "",
-            "dados": [1, 1, 1, 1, 2, 4, 5, 0, 0]
+            "dados": [1, 1, 1, 1, 2, 4, 5, 0, 0, 2, 5, 0]
           },
           "NXL.GV9zy": {
             "logo": "",
-            "dados": [4, 3, 0, 0, 0, 1, 4, 0, 0]
+            "dados": [4, 3, 0, 0, 0, 1, 4, 0, 0, 0, 1, 0]
           }
         },
         "RXT E-SPORTES": {
           "RXT PUMA": {
             "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/RXT PUMA.jpg",
-            "dados": [2, 1, 5, null, 0, 5, null, null, null]
+            "dados": [2, 1, 5, null, 0, 5, null, null, null, null, null, null]
           },
           "RXT perdoa": {
             "logo": "",
-            "dados": [0, 2, 2, 2, null, 3, 3, 0, 3]
+            "dados": [0, 2, 2, 2, null, 3, 3, 0, 3, null, null, null]
           },
           "RXT MTZero": {
             "logo": "",
-            "dados": [0, 0, 6, 2, 0, 2, 2, 0, 0]
+            "dados": [0, 0, 6, 2, 0, 2, 2, 0, 0, null, null, null]
           },
           "RXT PATRÃO": {
             "logo": "",
-            "dados": [null, 0, 6, 1, 0, null, null, null, null]
+            "dados": [null, 0, 6, 1, 0, null, null, null, null, null, null, null]
           },
           "RXT gustazx": {
             "logo": "",
-            "dados": [null, null, null, 2, 0, 7, null, null, null]
+            "dados": [null, null, null, 2, 0, 7, null, null, null, null, null, null]
           },
           "RXT 07": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 1, 1, 1]
+            "dados": [null, null, null, null, null, null, 1, 1, 1, null, null, null]
           },
           "RXT.LDZINN": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 3, 0, 1]
+            "dados": [null, null, null, null, null, null, 3, 0, 1, 5, 2, 0]
+          },
+          "RXT Giovana✿": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 1, 3, 0]
+          },
+          "RXT.RexzX": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 2, 2, 1]
+          },
+          "RXT KALEBxit": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 0, 1, 0]
           }
         },
         "ESPARTANS": {
           "SPT Luxury": {
             "logo": "",
-            "dados": [1, 2, 0, 2, 2, 1, null, null, null]
+            "dados": [1, 2, 0, 2, 2, 1, null, null, null, 0, 4, 3]
           },
           "SPT MENDES™": {
             "logo": "",
-            "dados": [1, 2, 0, null, null, null, null, null, null]
+            "dados": [1, 2, 0, null, null, null, null, null, null, null, null, null]
           },
           "SPT ___ASTA": {
             "logo": "",
-            "dados": [4, 1, 0, 2, 0, 2, 0, 3, 5]
+            "dados": [4, 1, 0, 2, 0, 2, 0, 3, 5, 0, 4, 0]
           },
           "SPT PEPEU": {
             "logo": "../../../assets/img/logosXtreinoEquipes/outubro/mvp/(4.3)SPT PEPEU.jpg",
-            "dados": [5, 3, 0, 5, 11, 2, 0, 7, 6]
+            "dados": [5, 3, 0, 5, 11, 2, 0, 7, 6, 0, 10, 1]
           },
           "SPT MORENO ó": {
             "logo": "",
-            "dados": [null, null, null, 4, 4, 2, 0, 4, 1]
+            "dados": [null, null, null, 4, 4, 2, 0, 4, 1, 0, 4, 1]
           },
           "SPT Pietro!": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 0, 4, 4]
+            "dados": [null, null, null, null, null, null, 0, 4, 4, null, null, null]
           }
         },
         "777 GAMING XP": {
           "777 APOLLO": {
             "logo": "",
-            "dados": [2, 0, 1, 0, 0, 2, 0, 2, 2]
+            "dados": [2, 0, 1, 0, 0, 2, 0, 2, 2, 4, 0, 0]
           },
           "777 king ඞ": {
             "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/777 king ඞ.jpg",
-            "dados": [4, 2, 0, 1, 1, 4, 10, 5, 2]
+            "dados": [4, 2, 0, 1, 1, 4, 10, 5, 2, 2, 0, 5]
           },
           "777 SNOwego愛": {
             "logo": "",
-            "dados": [1, null, 0, 2, 1, 4, 5, 2, 3]
+            "dados": [1, null, 0, 2, 1, 4, 5, 2, 3, 9, 3, 2]
           },
           "777 Menorzzk": {
             "logo": "",
-            "dados": [0, 2, 1, null, null, null, null, null, null]
+            "dados": [0, 2, 1, null, null, null, null, null, null, null, null, null]
           },
           "777 Latrel.": {
             "logo": "",
-            "dados": [null, null, null, 0, 0, 1, null, null, null]
+            "dados": [null, null, null, 0, 0, 1, null, null, null, null, null, null]
           },
           "777 JM²³ ¹⁰": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 1, 2, 0]
+            "dados": [null, null, null, null, null, null, 1, 2, 0, null, null, null]
+          },
+          "777 tramp.": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 6, 1, 4]
           }
         },
         "FRANÇE": {
           "FR DESGRAÇA✓": {
             "logo": "",
-            "dados": [2, 0, 0, 1, 1, 0, null, null, null]
+            "dados": [2, 0, 0, 1, 1, 0, null, null, null, 0, 1, 2]
           },
           "FR Volgx7": {
             "logo": "",
-            "dados": [0, 2, 0, null, null, null, 8, 0, 6]
+            "dados": [0, 2, 0, null, null, null, 8, 0, 6, 1, 2, 1]
           },
           "FR MT": {
             "logo": "",
-            "dados": [2, 0, 0, 1, 2, 0, null, null, null]
+            "dados": [2, 0, 0, 1, 2, 0, null, null, null, null, null, null]
           },
           "FR LUCIFER": {
             "logo": "",
-            "dados": [1, 1, 0, 2, 3, 1, 4, 0, 4]
+            "dados": [1, 1, 0, 2, 3, 1, 4, 0, 4, 1, 0, 3]
           },
           "FR Santz": {
             "logo": "",
-            "dados": [null, null, null, 0, 2, 0, 1, 0, 5]
+            "dados": [null, null, null, 0, 2, 0, 1, 0, 5, null, null, null]
           },
           "FR SASORI": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 0, 0, 1]
+            "dados": [null, null, null, null, null, null, 0, 0, 1, null, null, null]
           }
         },
         "ØNE GAMING": {
           "ØNE FR4NÇA!": {
             "logo": "",
-            "dados": [0, 2, 1, null, null, null, null, null, null]
+            "dados": [0, 2, 1, null, null, null, null, null, null, null, null, null]
           },
           "ØNE SÃTÍRØ": {
             "logo": "",
-            "dados": [1, 1, 0, 0, 1, 0, null, null, null]
+            "dados": [1, 1, 0, 0, 1, 0, null, null, null, null, null, null]
           },
           "ØNE ™MVP": {
             "logo": "",
-            "dados": [0, 0, 0, null, null, null, null, null, null]
+            "dados": [0, 0, 0, null, null, null, null, null, null, null, null, null]
           },
           "ØNE RICO": {
             "logo": "",
-            "dados": [2, 2, 2, null, null, null, null, null, null]
+            "dados": [2, 2, 2, null, null, null, null, null, null, null, null, null]
           },
           "ØNE SUÍCIDA X": {
             "logo": "",
-            "dados": [null, null, null, 1, 2, 0, null, null, null]
+            "dados": [null, null, null, 1, 2, 0, null, null, null, null, null, null]
           },
           "ØNE RYUKI": {
             "logo": "",
-            "dados": [null, null, null, 0, 0, 0, null, null, null]
+            "dados": [null, null, null, 0, 0, 0, null, null, null, null, null, null]
           },
           "ØNE_PATRÃO_": {
             "logo": "",
-            "dados": [null, null, null, 0, 0, 0, null, null, null]
+            "dados": [null, null, null, 0, 0, 0, null, null, null, null, null, null]
           },
           "ØNË F 1v4": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 1, 0, 0]
+            "dados": [null, null, null, null, null, null, 1, 0, 0, null, null, null]
           },
           "ØNË PESADELO": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 1, 0, null]
+            "dados": [null, null, null, null, null, null, 1, 0, null, null, null, null]
           },
           "ØNË PANICO": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 0, 0, 0]
+            "dados": [null, null, null, null, null, null, 0, 0, 0, null, null, null]
           },
           "ØNË INSANO": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 0, 1, 0]
+            "dados": [null, null, null, null, null, null, 0, 1, 0, null, null, null]
+          },
+          "ONE BOLADOツ": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 0, 1, null]
           }
         },
         "7VEN GAMING": {
           "7VEN.STRAICK": {
             "logo": "",
-            "dados": [0, 1, 1, null, null, null, null, null, null]
+            "dados": [0, 1, 1, null, null, null, null, null, null, null, null, null]
           },
           "7VEN.KNØPSIA": {
             "logo": "",
-            "dados": [1, 0, null, null, null, null, null, null, null]
+            "dados": [1, 0, null, null, null, null, null, null, null, null, null, null]
           },
           "7VEN.TRUNKS": {
             "logo": "",
-            "dados": [3, 1, 1, null, null, null, null, null, null]
+            "dados": [3, 1, 1, null, null, null, null, null, null, null, null, null]
           },
           "7VEN.JOKER": {
             "logo": "",
-            "dados": [0, 2, 1, null, null, null, null, null, null]
+            "dados": [0, 2, 1, null, null, null, null, null, null, null, null, null]
           },
           "7VĘN.ŠØMЂŘĂ": {
             "logo": "",
-            "dados": [null, null, null, 1, 4, 0, null, 0, 0]
+            "dados": [null, null, null, 1, 4, 0, null, 0, 0, 0, 1, 0]
           },
           "7VEN.MQSZIN7": {
             "logo": "",
-            "dados": [null, null, null, 3, 0, 0, 1, 0, 0]
+            "dados": [null, null, null, 3, 0, 0, 1, 0, 0, 1, 1, 1]
           },
           "7VEN.LEOZIN9": {
             "logo": "",
-            "dados": [null, null, null, 1, 1, 1, 1, 0, 0]
+            "dados": [null, null, null, 1, 1, 1, 1, 0, 0, 1, 2, 0]
           },
           "7VEN.GUSTTA": {
             "logo": "",
-            "dados": [null, null, null, 2, 2, 0, null, null, null]
+            "dados": [null, null, null, 2, 2, 0, null, null, null, 1, 0, 2]
           },
           "7VEN.WEINNY愛": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 0, 1, 0]
+            "dados": [null, null, null, null, null, null, 0, 1, 0, null, null, null]
           },
           "7VEN Alice ꨄ": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 0, null, null]
+            "dados": [null, null, null, null, null, null, 0, null, null, null, null, null]
           }
         },
         "QI 1000": {
           "QI IMPERADOR": {
             "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/QI IMPERADOR.jpg",
-            "dados": [4, 3, 4, 1, 3, 2, 1, 0, 1]
+            "dados": [4, 3, 4, 1, 3, 2, 1, 0, 1, null, null, null]
           },
           "QI realhwk7": {
             "logo": "",
-            "dados": [0, 3, 3, 2, 2, 0, null, null, null]
+            "dados": [0, 3, 3, 2, 2, 0, null, null, null, null, null, null]
           },
           "QI JOKERZIN": {
             "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/QI JOKERZIN.jpg",
-            "dados": [2, 1, 6, 4, 1, 1, 2, 3, 0]
+            "dados": [2, 1, 6, 4, 1, 1, 2, 3, 0, null, 4, 7]
           },
           "QI Nikeboy7": {
             "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/Nikeboy7.jpg",
-            "dados": [1, 0, 2, 9, 3, 0, 5, 4, 1]
+            "dados": [1, 0, 2, 9, 3, 0, 5, 4, 1, null, 2, 5]
           },
           "QI Gaab": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 2, 3, 3]
+            "dados": [null, null, null, null, null, null, 2, 3, 3, null, 7, 8]
+          },
+          "QI dg": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, null, 3, 5]
           }
         },
         "TROPA RUSH": {
           "GO BIGxucru⁷": {
             "logo": "",
-            "dados": [0, 4, 2, null, null, null, null, null, null]
+            "dados": [0, 4, 2, null, null, null, null, null, null, null, null, null]
           },
           "GO 7⁷": {
             "logo": "",
-            "dados": [1, 4, 2, null, null, null, null, null, null]
+            "dados": [1, 4, 2, null, null, null, null, null, null, null, null, null]
           },
           "GO sem sensi": {
             "logo": "",
-            "dados": [0, 5, 2, null, null, null, null, null, null]
+            "dados": [0, 5, 2, null, null, null, null, null, null, null, null, null]
           },
           "GO GREGO7": {
             "logo": "",
-            "dados": [0, 5, 3, null, null, null, null, null, null]
+            "dados": [0, 5, 3, null, null, null, null, null, null, null, null, null]
           },
           "TR.SETSUNA": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 2, 2, 0]
+            "dados": [null, null, null, null, null, null, 2, 2, 0, null, null, null]
           },
           "TR.DK7": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 1, 1, 0]
+            "dados": [null, null, null, null, null, null, 1, 1, 0, null, null, null]
           },
           "TR.Luigi": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 0, 1, 0]
+            "dados": [null, null, null, null, null, null, 0, 1, 0, null, null, null]
           },
           "TR.Aluno⁷": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 4, 1, 0]
+            "dados": [null, null, null, null, null, null, 4, 1, 0, null, null, null]
+          },
+          "TR.DARK": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 3, 0, 3]
+          },
+          "TR.STORMX": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 1, 0, 1]
+          },
+          "TR.ZEUS": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 1, 0, 1]
+          },
+          "TR.LORIN": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 0, 0, 1]
           }
         },
         "O LEGADO": {
           "《ŁÐ》 whiter$": {
             "logo": "",
-            "dados": [0, 1, 0, 0, 1, 1, null, null, null]
+            "dados": [0, 1, 0, 0, 1, 1, null, null, null, null, null, null]
           },
           "《LD》 YURI..": {
             "logo": "",
-            "dados": [3, 0, 1, 1, 0, 1, 5, 2, 4]
+            "dados": [3, 0, 1, 1, 0, 1, 5, 2, 4, 4, 6, 3]
           },
           "《ŁÐ》 PATOLINO": {
             "logo": "",
-            "dados": [1, 0, 2, null, null, null, null, null, null]
+            "dados": [1, 0, 2, null, null, null, null, null, null, null, null, null]
           },
           ":D》 A N J O'★": {
             "logo": "",
-            "dados": [1, 0, 1, null, null, null, null, null, null]
+            "dados": [1, 0, 1, null, null, null, null, null, null, null, null, null]
           },
           "《ŁÐ》 Hsapela": {
             "logo": "",
-            "dados": [null, null, null, 2, 0, 1, 0, 1, 0]
+            "dados": [null, null, null, 2, 0, 1, 0, 1, 0, null, null, null]
           },
           "《ŁÐ》 !Bn.op益": {
             "logo": "",
-            "dados": [null, null, null, 0, 1, 0, null, null, null]
+            "dados": [null, null, null, 0, 1, 0, null, null, null, null, null, null]
           },
           "《ŁÐ》 LORRAN": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 6, 1, 4]
+            "dados": [null, null, null, null, null, null, 6, 1, 4, 1, 2, 0]
           },
           "《ŁÐ》 YESHUA": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 2, 0, 6]
+            "dados": [null, null, null, null, null, null, 2, 0, 6, 1, 3, 0]
+          },
+          "《ŁÐ》 N7 BYE 9": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 0, 2, 0]
           }
         },
         "EVOS-SPORTING": {
           "EVOS MACABRO": {
             "logo": "",
-            "dados": [1, 1, 2, 2, null, null, null, null, null]
+            "dados": [1, 1, 2, 2, null, null, null, null, null, 0, 1, 0]
           },
           "EVOS.xitt⁰⁰⁷": {
             "logo": "",
-            "dados": [0, 2, 2, 0, 5, 0, null, null, null]
+            "dados": [0, 2, 2, 0, 5, 0, null, null, null, null, null, null]
           },
           "EVOS.SOUZAXS": {
             "logo": "",
-            "dados": [0, 0, 1, 1, 4, 0, 0, 0, 0]
+            "dados": [0, 0, 1, 1, 4, 0, 0, 0, 0, 2, 2, 1]
           },
           "EVOS-MUTANO": {
             "logo": "",
-            "dados": [0, 0, 0, null, null, null, null, null, null]
+            "dados": [0, 0, 0, null, null, null, null, null, null, 1, 3, 4]
           },
           "Evos Blxck7!": {
             "logo": "",
-            "dados": [null, null, null, 1, 5, 1, 1, 1, 0]
+            "dados": [null, null, null, 1, 5, 1, 1, 1, 0, null, null, null]
           },
           "EVOS Hadez ⁂": {
             "logo": "",
-            "dados": [null, null, null, null, 4, 2, null, null, null]
+            "dados": [null, null, null, null, 4, 2, null, null, null, null, null, null]
           },
           "Evos.Sadx ツ": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 1, 0, 2]
+            "dados": [null, null, null, null, null, null, 1, 0, 2, null, null, null]
           },
           "EVOS KUKALA⁷": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, 1, 0, 2]
+            "dados": [null, null, null, null, null, null, 1, 0, 2, null, null, null]
+          },
+          "EVOS#BAIANO": {
+            "logo": "",
+            "dados": [null, null, null, null, null, null, null, null, null, 2, 1, 1]
           }
         },
         "SS GAMING": {
           "SS.BEDYBOY": {
             "logo": "",
-            "dados": [0, 0, 1, null, null, null, null, null, null]
+            "dados": [0, 0, 1, null, null, null, null, null, null, 2, 3, 1]
           },
           "SS Darach☂": {
             "logo": "",
-            "dados": [0, 0, 1, null, null, null, null, null, null]
+            "dados": [0, 0, 1, null, null, null, null, null, null, null, null, null]
           },
           "SS.DUQUE": {
             "logo": "",
-            "dados": [0, 0, 0, 1, 0, 4, null, 1, 1]
+            "dados": [0, 0, 0, 1, 0, 4, null, 1, 1, 4, 2, 2]
           },
           "SS.SAGAZZmvp": {
             "logo": "",
-            "dados": [null, 0, 3, null, null, null, null, null, 0]
+            "dados": [null, 0, 3, null, null, null, null, null, 0, 2, 2, 0]
           },
           "SS VINNI.": {
             "logo": "",
-            "dados": [null, null, null, 3, 0, 4, null, null, null]
+            "dados": [null, null, null, 3, 0, 4, null, null, null, 1, 0, 4]
           },
           "SS.SHEIK11": {
             "logo": "",
-            "dados": [null, null, null, 1, 0, 7, null, null, null]
+            "dados": [null, null, null, 1, 0, 7, null, null, null, null, null, null]
           },
           "SS.DAVI.22.ⓥ": {
             "logo": "",
-            "dados": [null, null, null, null, 0, 0, null, null, null]
+            "dados": [null, null, null, null, 0, 0, null, null, null, null, null, null]
           },
           "SS.BUTZIM": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, null, 1, null]
+            "dados": [null, null, null, null, null, null, null, 1, null, null, null, null]
           },
           "ss noia⁴⁴⁴": {
             "logo": "",
-            "dados": [null, null, null, null, null, null, null, 0, null]
+            "dados": [null, null, null, null, null, null, null, 0, null, null, null, null]
           }
         }
       }
     }
+  
+
   
   
 
