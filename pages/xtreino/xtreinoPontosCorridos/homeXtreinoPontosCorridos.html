@@ -4,45 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"> -->
     <title>X-Treinos Pontos Corridos</title>
     <link rel="stylesheet" href="../../../assets/css/css/homeXtreinoPontosCorridos.css">
     <link rel="stylesheet" href="../../../assets/css/scss/homeXtreinoPontosCorridos.scss">
 
-    <!--FONTE-->
+    <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!--FONTE-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
 
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7Q9LH3LR"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-SW7Q9LH3LR');
-    </script>
-    <!-- Google tag (gtag.js) -->
-
-    <!--Incon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!--Incon-->
-
-
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
     <header class="header">
         <nav class="header_nav largura-definida">
-            <!-- Substituído o "<" manual por uma seta elegante e um span para acessibilidade/estilo -->
             <a href="../homeTreinos.html" class="voltar">
                 <span class="seta">&larr;</span> Voltar
             </a>
             <figure class="logo-container">
-                <a href="./xtreinoJunhoHome.html">
+                <a href="../homeTreinos.html">
                     <img src="../../../assets/img/logo-xtreino.jpg" alt="Logo X-Treino" class="img">
                 </a>
             </figure>
@@ -51,71 +34,325 @@
 
     <main>
         <section class="container largura-definida">
-            <h2>Selecione a season</h2>
-            <p>Escolha a season para visualizar os treinos realizados</p>
+            <div class="main_historico">
+                <span class="badge-category"><i class="fa-solid fa-trophy"></i> Histórico de Competições</span>
+                <h1 class="page-title">Selecione a Temporada</h1>
+                <p class="page-subtitle">Escolha uma das seasons abaixo para acompanhar a tabela de classificação, estatísticas de jogadores e os grandes destaques.</p>
+            </div>
 
             <div class="container_divsDates">
 
-                <!-- <div class="container_divsDates_divDate">
-                    
-                    <div class="container_divsDates_divDate_icon">
-                        <i class="fa-regular fa-calendar-check"></i>
-
+                <!-- ==================== SEASON 01 ==================== -->
+                <article class="container_divsDates_divDate season-card finished season-01-card">
+                    <!-- Efeitos de fundo (Luzes aurora e faíscas sutis) -->
+                    <div class="card-bg-effects">
+                        <div class="aurora-glow"></div>
+                        <div class="sparks">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
                     </div>
-                    <p>Dia 28/07</p>
-                    <p>Ver dias de treino</p>
-                    <a href="../../xtreino/xtreino-Julho/xtreinoJulho28.html" data-diaMesAno="28/07/2026">Acessar
-                        <span>></span></a>
-                </div> -->
 
-
-                <div class="container_divsDates_divDate">
-                    <div class="container_divsDates_divDate_icon">
-                        <i class="fa-regular fa-calendar-check"></i>
-
+                    <div class="card-header">
+                        <span class="status-badge">
+                            <span class="status-dot"></span> Finalizado
+                        </span>
+                        <span class="date-badge">Início: 05/08</span>
                     </div>
-                    <p>Season 1</p>
-                    <p>Ver tabela</p>
-                    <a href="xtreinoPontosCorridos1.html" data-season="season1">Acessar
-                        <span>></span></a>
-                </div>
 
-                <div class="container_divsDates_divDate">
-                    <div class="container_divsDates_divDate_icon">
-                        <i class="fa-regular fa-calendar-check"></i>
+                    <div class="card-body">
+                        <h2 class="season-title">SEASON 01</h2>
+                        <p class="season-desc">A temporada oficial de pontos corridos realizada pela organização O Legado.</p>
 
+                        <div class="season-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Equipes</span>
+                                <span class="stat-value">12 Orgs</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Modo</span>
+                                <span class="stat-value">Squad</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Formato</span>
+                                <span class="stat-value">Pontos Corridos</span>
+                            </div>
+                        </div>
+
+                        <!-- HALL DA FAMA INTERNO: EXCLUSIVAMENTE CAMPEÃO E MVP -->
+                        <div class="podium-rewards">
+                            <!-- 🏆 CAMPEÃO (1º Lugar) -->
+                            <div class="podium-item top-1">
+                                <span class="podium-label">1º Lugar</span>
+                                <div class="team-info">
+                                    <div class="crown-badge gold">👑</div>
+                                    <div class="logo-box">
+                                        <img src="../../../assets/img/xtreinoPontosCorridos/RXT E-SPORTs.jpg" alt="RXT E-SPORTS" class="team-logo">
+                                    </div>
+                                    <span class="team-name" title="RXT E-SPORTS">RXT E-SPORTS</span>
+                                </div>
+
+                                <!-- Estatísticas do Campeão -->
+                                <div class="podium-stats-grid gold-grid">
+                                    <div class="p-stat">
+                                        <span class="p-val">204</span>
+                                        <span class="p-lbl">PTS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">112</span>
+                                        <span class="p-lbl">KILLS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">2</span>
+                                        <span class="p-lbl">BOOYAH</span>
+                                    </div>
+                                </div>
+                                <span class="podium-subtag gold-subtag">Média: 17.0 pts/queda</span>
+                            </div>
+
+                            <!-- ⭐ MVP DA TEMPORADA -->
+                            <div class="podium-item top-mvp">
+                                <span class="podium-label mvp-label">MVP Temporada</span>
+                                <div class="team-info">
+                                    <div class="crown-badge mvp-badge">⭐</div>
+                                    <div class="logo-box mvp-box">
+                                        <img src="../../../assets/img/xtreinoPontosCorridos/mvp/777 SNOWego愛.jpg" alt="777 SNOWego愛" class="team-logo">
+                                    </div>
+                                    <span class="team-name" title="777 SNOWego愛">777 SNOWego愛</span>
+                                </div>
+
+                                <!-- Estatísticas do MVP -->
+                                <div class="podium-stats-grid mvp-grid">
+                                    <div class="p-stat">
+                                        <span class="p-val kills-glow">34</span>
+                                        <span class="p-lbl">KILLS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">2.8</span>
+                                        <span class="p-lbl">MÉD/Q</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">9</span>
+                                        <span class="p-lbl">MAX</span>
+                                    </div>
+                                </div>
+                                <span class="podium-subtag mvp-subtag">GAMING XP • Líder Kills</span>
+                            </div>
+                        </div>
                     </div>
-                    <p>Season 2</p>
-                    <p>Ver tabela</p>
-                    <a href="xtreinoPontosCorridos2.html" data-season="season2">Acessar
-                        <span>></span></a>
-                </div>
 
-                <div class="container_divsDates_divDate">
-                    <div class="container_divsDates_divDate_icon">
-                        <i class="fa-regular fa-calendar-check"></i>
+                    <a href="xtreinoPontosCorridos1.html" data-season="season1" class="card-btn btn-primary">
+                        Acessar <span>&rarr;</span>
+                    </a>
+                </article>
 
+                <!-- ==================== SEASON 02 ==================== -->
+                <article class="container_divsDates_divDate season-card finished season-02-card">
+                    <div class="card-bg-effects">
+                        <div class="aurora-glow"></div>
+                        <div class="sparks">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
                     </div>
-                    <p>Season 3</p>
-                    <p>Ver tabela</p>
-                    <a href="xtreinoPontosCorridos3.html" data-season="season3">Acessar
-                        <span>></span></a>
-                </div>
 
-                
-                
-                
+                    <div class="card-header">
+                        <span class="status-badge">
+                            <span class="status-dot"></span> Finalizado
+                        </span>
+                        <span class="date-badge">Início: 02/09</span>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="season-title">SEASON 02</h2>
+                        <p class="season-desc">A temporada oficial de pontos corridos realizada pela organização O Legado.</p>
+
+                        <div class="season-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Equipes</span>
+                                <span class="stat-value">12 Orgs</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Modo</span>
+                                <span class="stat-value">Squad</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Formato</span>
+                                <span class="stat-value">Pontos Corridos</span>
+                            </div>
+                        </div>
+
+                        <!-- HALL DA FAMA INTERNO: EXCLUSIVAMENTE CAMPEÃO E MVP -->
+                        <div class="podium-rewards">
+                            <!-- 🏆 CAMPEÃO (1º Lugar) -->
+                            <div class="podium-item top-1">
+                                <span class="podium-label">1º Lugar</span>
+                                <div class="team-info">
+                                    <div class="crown-badge gold">👑</div>
+                                    <div class="logo-box">
+                                        <img src="../../../assets/img/xtreinoPontosCorridos/RXT E-SPORTs.jpg" alt="RXT E-SPORTS" class="team-logo">
+                                    </div>
+                                    <span class="team-name" title="RXT E-SPORTS">RXT E-SPORTS</span>
+                                </div>
+
+                                <!-- Estatísticas do Campeão -->
+                                <div class="podium-stats-grid gold-grid">
+                                    <div class="p-stat">
+                                        <span class="p-val">259</span>
+                                        <span class="p-lbl">PTS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">138</span>
+                                        <span class="p-lbl">KILLS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">7</span>
+                                        <span class="p-lbl">BOOYAH</span>
+                                    </div>
+                                </div>
+                                <span class="podium-subtag gold-subtag">Média: 17.3 pts/queda</span>
+                            </div>
+
+                            <!-- ⭐ MVP DA TEMPORADA -->
+                            <div class="podium-item top-mvp">
+                                <span class="podium-label mvp-label">MVP Temporada</span>
+                                <div class="team-info">
+                                    <div class="crown-badge mvp-badge">⭐</div>
+                                    <div class="logo-box mvp-box">
+                                        <img src="../../../assets/img/xtreinoPontosCorridos/mvp/777 SNOWego愛.jpg" alt="777 SNOWego愛" class="team-logo">
+                                    </div>
+                                    <span class="team-name" title="777 SNOWego愛">777 SNOWego愛</span>
+                                </div>
+
+                                <!-- Estatísticas do MVP -->
+                                <div class="podium-stats-grid mvp-grid">
+                                    <div class="p-stat">
+                                        <span class="p-val kills-glow">43</span>
+                                        <span class="p-lbl">KILLS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">2.9</span>
+                                        <span class="p-lbl">MÉD/Q</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">7</span>
+                                        <span class="p-lbl">MAX</span>
+                                    </div>
+                                </div>
+                                <span class="podium-subtag mvp-subtag">777 GAMING • Líder Kills</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="xtreinoPontosCorridos2.html" data-season="season2" class="card-btn btn-primary">
+                        Acessar <span>&rarr;</span>
+                    </a>
+                </article>
+
+                <!-- ==================== SEASON 03 ==================== -->
+                <article class="container_divsDates_divDate season-card finished season-03-card">
+                    <div class="card-bg-effects">
+                        <div class="aurora-glow"></div>
+                        <div class="sparks">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="card-header">
+                        <span class="status-badge">
+                            <span class="status-dot"></span> Finalizado
+                        </span>
+                        <span class="date-badge">Início: 07/10</span>
+                    </div>
+
+                    <div class="card-body">
+                        <h2 class="season-title">SEASON 03</h2>
+                        <p class="season-desc">A temporada oficial de pontos corridos realizada pela organização O Legado.</p>
+
+                        <div class="season-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Equipes</span>
+                                <span class="stat-value">12 Orgs</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Modo</span>
+                                <span class="stat-value">Squad</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Formato</span>
+                                <span class="stat-value">Pontos Corridos</span>
+                            </div>
+                        </div>
+
+                        <!-- HALL DA FAMA INTERNO: EXCLUSIVAMENTE CAMPEÃO E MVP -->
+                        <div class="podium-rewards">
+                            <!-- 🏆 CAMPEÃO (1º Lugar) -->
+                            <div class="podium-item top-1">
+                                <span class="podium-label">1º Lugar</span>
+                                <div class="team-info">
+                                    <div class="crown-badge gold">👑</div>
+                                    <div class="logo-box">
+                                        <img src="../../../assets/img/xtreinoPontosCorridos/Ql  1000.jpg" alt="QI 1000" class="team-logo">
+                                    </div>
+                                    <span class="team-name" title="QI 1000">QI 1000</span>
+                                </div>
+
+                                <!-- Estatísticas do Campeão -->
+                                <div class="podium-stats-grid gold-grid">
+                                    <div class="p-stat">
+                                        <span class="p-val">200</span>
+                                        <span class="p-lbl">PTS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">123</span>
+                                        <span class="p-lbl">KILLS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">1</span>
+                                        <span class="p-lbl">BOOYAH</span>
+                                    </div>
+                                </div>
+                                <span class="podium-subtag gold-subtag">Média: 16.7 pts/queda</span>
+                            </div>
+
+                            <!-- ⭐ MVP DA TEMPORADA -->
+                            <div class="podium-item top-mvp">
+                                <span class="podium-label mvp-label">MVP Temporada</span>
+                                <div class="team-info">
+                                    <div class="crown-badge mvp-badge">⭐</div>
+                                    <div class="logo-box mvp-box">
+                                        <img src="../../../assets/img/logosXtreinoEquipes/outubro/mvp/(4.3)SPT PEPEU.jpg" alt="SPT PEPEU" class="team-logo">
+                                    </div>
+                                    <span class="team-name" title="SPT PEPEU">SPT PEPEU</span>
+                                </div>
+
+                                <!-- Estatísticas do MVP -->
+                                <div class="podium-stats-grid mvp-grid">
+                                    <div class="p-stat">
+                                        <span class="p-val kills-glow">50</span>
+                                        <span class="p-lbl">KILLS</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">4.2</span>
+                                        <span class="p-lbl">MÉD/Q</span>
+                                    </div>
+                                    <div class="p-stat">
+                                        <span class="p-val">11</span>
+                                        <span class="p-lbl">MAX</span>
+                                    </div>
+                                </div>
+                                <span class="podium-subtag mvp-subtag">ESPARTANS • Líder Kills</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="xtreinoPontosCorridos3.html" data-season="season3" class="card-btn btn-primary">
+                        Acessar <span>&rarr;</span>
+                    </a>
+                </article>
 
             </div>
 
         </section>
-
     </main>
-
-
-
-    
-
 
     <script src="../../../assets/js/xtreino/xtreinoPontosCorridos/SalvarSeasonStore.js" type="module"></script>
 </body>
