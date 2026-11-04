@@ -5416,5 +5416,218 @@
         }
       }
     }
+  }, 
+
+  "novembro":{
+    
+  "treino1": {
+    "data": "03/11/2026",
+    "equipes": {
+      "6 LEGADOS": {
+        "《ŁĐ》 coronel¥": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        },
+        "🌱爪卂千丨口丂卂♡": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁĐ》 N7 BYE 9": {
+          "logo": "",
+          "dados": [0, 3, 0]
+        },
+        "《ŁĐ》 Biel48": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "ALCATÉIA": {
+        "RV ITACHI²": {
+          "logo": "",
+          "dados": [2, 3, 0]
+        },
+        "RV megume炎": {
+          "logo": "",
+          "dados": [5, 1, 1]
+        },
+        "RV MADARA": {
+          "logo": "",
+          "dados": [1, 1, 2]
+        },
+        "RV PAiN亗": {
+          "logo": "",
+          "dados": [1, 1, 0]
+        }
+      },
+      "NOVA ERA": {
+        "愛 SASUKE⬆": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁĐ》 G R I N G O † ⚜": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁĐ》 Hsapela": {
+          "logo": "",
+          "dados": [null, 2, 0]
+        },
+        "《ŁĐ》 DG777": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        }
+      },
+      "APOSENTADOS": {
+        "WAY NEYMAR11": {
+          "logo": "",
+          "dados": [11, 12, 1]
+        },
+        "WAY MESSI10": {
+          "logo": "",
+          "dados": [1, 2, 0]
+        },
+        "WAY GP7 rs!": {
+          "logo": "",
+          "dados": [10, 6, 1]
+        },
+        "WAY BECKHAM7": {
+          "logo": "",
+          "dados": [2, 9, 0]
+        }
+      },
+      "Ql 1000": {
+        "QI GALEGO": {
+          "logo": "",
+          "dados": [null, 1, 3]
+        },
+        "zagaco VENC": {
+          "logo": "",
+          "dados": [null, 0, 2]
+        },
+        "QI dg": {
+          "logo": "",
+          "dados": [null, 0, 5]
+        },
+        "QI Gaab": {
+          "logo": "",
+          "dados": [null, 0, 6]
+        }
+      },
+      "LEGACY⁰¹": {
+        "《ŁĐ》 A N J O ' ★": {
+          "logo": "",
+          "dados": [1, 1, 5]
+        },
+        "TS LUANNtj": {
+          "logo": "",
+          "dados": [0, 2, 1]
+        },
+        "《ŁĐ》 亗PEDROツ⁷": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁĐ》 whiter$": {
+          "logo": "",
+          "dados": [4, 1, 1]
+        }
+      },
+      "ALPHA SQUAD": {
+        "AQSelanvolta": {
+          "logo": "",
+          "dados": [0, 1, 3]
+        },
+        "unknown'": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "AQS|⚡H E ◊ K I N G": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "mira vesga支么": {
+          "logo": "",
+          "dados": [0, 0, 2]
+        }
+      },
+      "BW PSCATT": {},
+      "WOLFS": {
+        "WØF DOCINHØ": {
+          "logo": "",
+          "dados": [4, 0, 2]
+        },
+        "WØF Lord ⁰⁰⁷": {
+          "logo": "",
+          "dados": [null, 1, 2]
+        },
+        "ORD MA 🩵": {
+          "logo": "",
+          "dados": [1, 0, 3]
+        },
+        "MDM L7ZIM": {
+          "logo": "",
+          "dados": [null, 0, 4]
+        }
+      },
+      "IMPÉRIO": {
+        "ML Dinpoll": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "ML JF²²": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "ML RICK": {
+          "logo": "",
+          "dados": [null, 1, 1]
+        },
+        "ML PAULO RLQ": {
+          "logo": "",
+          "dados": [0, 3, 0]
+        },
+        "⁰⁰⁷ •!STEIKE": {
+          "logo": "",
+          "dados": [1, null, null]
+        }
+      },
+      "INSANOS": {
+        "SPACE Alex": {
+          "logo": "",
+          "dados": [6, 5, 6]
+        },
+        "EU TO PODI?": {
+          "logo": "",
+          "dados": [0, 0, 2]
+        },
+        "INS Joker10!": {
+          "logo": "",
+          "dados": [1, 1, 1]
+        },
+        "INS Lznxp": {
+          "logo": "",
+          "dados": [3, 10, 3]
+        }
+      },
+      "LF MÁFIA": {
+        "ŁF MÁFIØSØ": {
+          "logo": "",
+          "dados": [0, 4, 4]
+        },
+        "LF 4k": {
+          "logo": "",
+          "dados": [1, 4, 5]
+        },
+        "x7 jn.zxxs †": {
+          "logo": "",
+          "dados": [0, 2, 1]
+        },
+        "LF_KATIAUUU": {
+          "logo": "",
+          "dados": [0, 1, 6]
+        }
+      }
+    }
+  }
+
   }
 }
