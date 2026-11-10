@@ -1,19 +1,9 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-$background: #0b0b0d;
-$surface: #121216;
-$card: #18181d;
-$primary: #ff2b45;
-$primary-hover: #ff4d67;
-$text: #ffffff;
-$text-secondary: #a0a0b0;
-$border: rgba(255, 43, 69, 0.12);
-$border-hover: rgba(255, 43, 69, 0.35);
-$glow: rgba(255, 43, 69, 0.25);
-$glass: rgba(24, 24, 29, 0.7);
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -23,15 +13,54 @@ body {
     min-height: 100dvh;
     background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
-    position: relative
+    position: relative;
 }
-
 
 .largura-definida {
     max-width: 120rem;
     margin: 0 auto;
 }
+
+/* Estado inicial: elemento escondido */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+/* Estado final: elemento visível */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+// Animação de fade do menu mobile
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+//animação de aparecer o texto no hamburguer
+@keyframes aparecerTextHambuguer {
+   0%{
+    opacity: 0;
+    transform: translateX(210px);
+    
+   }
+   
+   100%{
+    opacity: 1;
+    transform: translateX(0px);
+   }
+}
+
+
 
 
 .header {
@@ -145,8 +174,9 @@ body {
                     font-weight: 600;
                     text-decoration: none;
                     letter-spacing: 0.05rem;
-                    transition: all 0.25s ease;
+                    transition: all 0.2s ease;
                     display: inline-block;
+                    animation: aparecerTextHambuguer 0.3s ease-in-out;
 
                     &:hover, &:active {
                         color: #ff2b45;
@@ -216,21 +246,8 @@ body {
         border: 1px solid rgba(255, 43, 69, 0.2);
         transform: translate(60%, -19%);
     }
-
-    
 }
 
-// Animação de fade do menu mobile
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 main {
     /* Background Geral da página (conforme o min-h-screen do React) */
     background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
@@ -268,11 +285,6 @@ main {
             color: #ff0000;
         }
 
-        // .introdução_container h1{
-        //     font-size: 4.8em;
-        //     margin-top: 1rem;
-        //     color: #F35B5B;
-        // }
         .introdução_container h1 {
             font-size: 5.5rem;
             font-weight: 800;
@@ -376,12 +388,6 @@ main {
             flex-direction: column;
             gap: 2rem;
 
-            // .historia_container_content{
-            //     background: linear-gradient(to top left, #05070B, #101725,);
-            //     border: 1px solid rgba(255, 255, 255, 0.253);
-            //     border-radius: 1rem;
-            //     padding: 2rem
-            // }
             .historia_container_content {
                 background: rgba(255, 255, 255, 0.03) !important;
                 border: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -502,7 +508,6 @@ main {
     }
 }
 
-
 .footer {
     background-color: #121216;
     border-top: 1px solid rgba(255, 43, 69, 0.12);
@@ -530,7 +535,7 @@ main {
             width: 8.5rem;
             border-radius: 50%;
             margin-bottom: 1.6rem;
-            border: 1px solid rgba(#ff2b45, 0.2);
+            border: 1px solid rgba(255, 43, 69, 0.2);
         }
 
         p {
@@ -586,8 +591,8 @@ main {
             justify-content: center;
             width: 3.6rem;
             height: 3.6rem;
-            background: rgba(#ffffff, 0.03);
-            border: 1px solid rgba(#ffffff, 0.08);
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 50%;
             color: #a0a0b0;
             font-size: 1.6rem;
@@ -605,19 +610,18 @@ main {
     .footer_bottom {
         margin-top: 4.8rem;
         padding-top: 2.4rem;
-        border-top: 1px solid rgba(#ffffff, 0.05);
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
         text-align: center;
 
         p {
-            color: rgba(#a0a0b0, 0.6);
+            color: rgba(160, 160, 176, 0.6);
             font-size: 1.2rem;
         }
     }
 }
 
 @media (min-width: 768px) {
-
-    header{
+    header {
         #menu-bar {
             display: none !important;
         }
@@ -684,16 +688,10 @@ main {
                             background-color: #ff2b45;
                         }
                     }
-
                 }
             }
         }
     }
-    
-    
-
-
-
 
     .historia_container {
         flex-direction: row !important;
@@ -703,16 +701,4 @@ main {
     .historia_container_content {
         flex: 1 1 calc((100% / 3) - 2rem);
     }
-
-    
-
 }
-
-
-
-
-
-
-
-
-
