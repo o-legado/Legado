@@ -5709,7 +5709,239 @@
         "WØF ZEUS⁷": { "logo": "", "dados": [null, 0, 2] }
       }
     }
+  },
+
+  
+  "treino3": {
+    "data": "11/11/2026",
+    "equipes": {
+      "NOVA ERA": {
+        "《ŁĐ》 LORRAN": {
+          "logo": "",
+          "dados": [3, 1, 2]
+        },
+        "《ŁĐ》 †ⒶⓇⒸⒶⓃⒿⓄ": {
+          "logo": "",
+          "dados": [3, 2, 3]
+        },
+        "《ŁĐ》 Hsapela": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        },
+        "《ŁĐ》 DG777": {
+          "logo": "",
+          "dados": [1, 1, 2]
+        }
+      },
+      "Ql 1000": {
+        "zagaco VENC": {
+          "logo": "",
+          "dados": [0, 1, 8]
+        },
+        "QI SOUZA7": {
+          "logo": "",
+          "dados": [0, 1, 3]
+        },
+        "win&procrime": {
+          "logo": "",
+          "dados": [0, 4, null]
+        },
+        "QI Gaab": {
+          "logo": "",
+          "dados": [0, 1, 11]
+        }
+      },
+      "META GAMING": {
+        "《ŁĐ》 •COYOTE•": {
+          "logo": "",
+          "dados": [3, 2, 0]
+        },
+        "《LD》 YURI..": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "《ŁĐ》 whiter$": {
+          "logo": "",
+          "dados": [4, 5, 0]
+        },
+        "《ŁĐ》 YESHUA": {
+          "logo": "",
+          "dados": [3, 3, 0]
+        }
+      },
+      "R6 IMPERADOR": {
+        "R6.DAVÍ.22Ⓞ": {
+          "logo": "",
+          "dados": [0, 1, 0]
+        },
+        "R6Tutuzinffx": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "⁓R6_CAÇADOR⁓": {
+          "logo": "",
+          "dados": [0, 3, 0]
+        },
+        "Ř6.JAPAⓇ": {
+          "logo": "",
+          "dados": [0, 2, 2]
+        }
+      },
+      "6 LEGADOS": {
+        "《ŁĐ》 coronel¥": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁĐ》 ĞŪŠŤĀVØ": {
+          "logo": "",
+          "dados": [7, 1, 1]
+        },
+        "《ŁĐ》 Biel⁴⁶": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        },
+        "☣爪卂千丨 丨ㄖ丂卂♡": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        }
+      },
+      "GG DO KREVIS": {
+        "XV K7NELAS": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "GG Jotav": {
+          "logo": "",
+          "dados": [1, 0, 1]
+        },
+        "Jordanxhub": {
+          "logo": "",
+          "dados": [1, 1, null]
+        },
+        "GG Lzinn": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "♨ৡdz7 delas!": {
+          "logo": "",
+          "dados": [null, null, 1]
+        }
+      },
+      "STREET ESPORTS": {
+        "STR.AIZEN7": {
+          "logo": "",
+          "dados": [1, 4, 2]
+        },
+        "CTZ.LZN01": {
+          "logo": "",
+          "dados": [2, 4, 3]
+        },
+        "STR.BLAST7": {
+          "logo": "",
+          "dados": [3, 2, 3]
+        },
+        "STR.PEQUENO": {
+          "logo": "",
+          "dados": [6, 3, 2]
+        }
+      },
+      "TEAM GUERREIROS": {
+        "TG RILLARY": {
+          "logo": "",
+          "dados": [1, 0, 3]
+        },
+        "TG DUDA⁷": {
+          "logo": "",
+          "dados": [5, 0, 2]
+        },
+        "TG leczrrx7'": {
+          "logo": "",
+          "dados": [1, 2, 0]
+        },
+        "ONYX AMAPPK": {
+          "logo": "",
+          "dados": [2, 0, 3]
+        }
+      },
+      "IMPÉRIO7Z": {
+        "Vandrix⁷⁷": {
+          "logo": "",
+          "dados": [0, 1, 4]
+        },
+        "VENOM⁷⁷": {
+          "logo": "",
+          "dados": [0, 0, 2]
+        },
+        "I am Layla": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "ŁR.Vinzz⁷⁷": {
+          "logo": "",
+          "dados": [0, 0, 7]
+        },
+        "VOID STARKⓚ": {
+          "logo": "",
+          "dados": [null, 1, 2]
+        }
+      },
+      "INSANOS": {
+        "@INS FREITAS": {
+          "logo": "",
+          "dados": [3, 0, 2]
+        },
+        "Regret out": {
+          "logo": "",
+          "dados": [3, 0, 1]
+        },
+        "TISPANCA": {
+          "logo": "",
+          "dados": [4, 3, 4]
+        },
+        "亗Blacknn227亗": {
+          "logo": "",
+          "dados": [3, 0, 2]
+        }
+      },
+      "TEAM PROCHX": {
+        "PRX kingあ": {
+          "logo": "",
+          "dados": [4, 4, 7]
+        },
+        "77 ムブジー": {
+          "logo": "",
+          "dados": [6, 5, 0]
+        },
+        "mbappé愛☯": {
+          "logo": "",
+          "dados": [4, 8, 0]
+        },
+        "777 SNOWego愛": {
+          "logo": "",
+          "dados": [11, 8, 3]
+        }
+      },
+      "INSANOS ": {
+        "smoney'": {
+          "logo": "",
+          "dados": [3, 0, 0]
+        },
+        "@Heitor°10": {
+          "logo": "",
+          "dados": [0, 2, 2]
+        },
+        "EU TO PODI?": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "DZINN,FX": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        }
+      }
+    }
   }
+
 
 
   }
