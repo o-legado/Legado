@@ -1036,7 +1036,7 @@
         },
         "O LEGADO": {
           "《ŁĐ》whiter$": { "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/ld whiter.jpg", "dados": [11, 3, 1, 6, 4, 5] },
-          "《ŁĐ》YESHUA": { "logo": "", "dados": [3, 5, 1, 5, 9, 10] },
+          "《ŁĐ》YESHUA": { "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/yeusha.jpg", "dados": [3, 5, 1, 5, 9, 10] },
           "《ŁĐ》!Bn.op益": { "logo": "../../../assets/img/xtreinoPontosCorridos/mvp/bn.op.jpg", "dados": [3, 3, 5, null, null, null] },
           "《ŁĐ》N7 BYE 9": { "logo": "", "dados": [2, 2, 4, null, null, null] },
           "《ŁĐ》LORRAN": { "logo": "", "dados": [null, null, null, 2, 1, 2] },
