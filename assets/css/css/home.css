@@ -154,7 +154,7 @@ body {
   letter-spacing: 0.05rem;
   transition: all 0.2s ease;
   display: inline-block;
-  animation: aparecerTextHambuguer 0.3s ease-in-out;
+  animation: aparecerTextHambuguer 0.4s ease-in-out;
 }
 .header #menu .navHamburguer li a:hover, .header #menu .navHamburguer li a:active {
   color: #ff2b45;

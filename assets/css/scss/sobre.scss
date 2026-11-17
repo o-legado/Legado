@@ -16,7 +16,6 @@ body {
     background-color: #000000;
     // background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
     position: relative
 }
 
@@ -26,7 +25,32 @@ body {
     margin: 0 auto;
 }
 
+/* Estado inicial: elemento escondido */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
 
+/* Estado final: elemento visível */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+//animação de aparecer o texto no hamburguer
+@keyframes aparecerTextHambuguer {
+   0%{
+    opacity: 0;
+    transform: translateX(210px);
+    
+   }
+   
+   100%{
+    opacity: 1;
+    transform: translateX(0px);
+   }
+}
 
 
 .header {
@@ -142,6 +166,7 @@ body {
                     letter-spacing: 0.05rem;
                     transition: all 0.25s ease;
                     display: inline-block;
+                    animation: aparecerTextHambuguer 0.4s ease-in-out;
 
                     &:hover, &:active {
                         color: #ff2b45;

@@ -1,7 +1,5 @@
 
 
-
-
 function reveal(){
     // Seleciona todos os elementos com a classe reveal
     const elementos = document.querySelectorAll('.reveal');
@@ -22,7 +20,7 @@ function reveal(){
         });
     
     }, {
-        threshold: 0.2
+        threshold: 0.1
     });
     
     // Observa cada elemento

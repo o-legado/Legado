@@ -13,10 +13,8 @@ body {
   min-height: 100dvh;
   background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
   position: relative
 }
-
 
 .largura-definida {
   max-width: 120rem;
@@ -24,6 +22,32 @@ body {
 }
 
 
+/* Estado inicial: elemento escondido */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+/* Estado final: elemento visível */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+//animação de aparecer o texto no hamburguer
+@keyframes aparecerTextHambuguer {
+   0%{
+    opacity: 0;
+    transform: translateX(210px);
+    
+   }
+   
+   100%{
+    opacity: 1;
+    transform: translateX(0px);
+   }
+}
 
 .header {
   // Fundo translúcido escuro (Glassmorphism) integrado ao tom do site
@@ -53,6 +77,7 @@ body {
       a {
         display: inline-block;
         width: 100%;
+        
       }
 
       .img {
@@ -135,6 +160,7 @@ body {
           letter-spacing: 0.05rem;
           transition: all 0.25s ease;
           display: inline-block;
+          animation: aparecerTextHambuguer 0.4s ease-in-out;
 
           &:hover,
           // Adicione isto junto com as regras do 'a' do mobile

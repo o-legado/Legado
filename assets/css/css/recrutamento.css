@@ -14,7 +14,6 @@ body {
   min-height: 100dvh;
   background: linear-gradient(135deg, #000000 0%, #111827 50%, #000000 100%);
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -23,6 +22,29 @@ body {
   margin: 0 auto;
 }
 
+/* Estado inicial: elemento escondido */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+/* Estado final: elemento visível */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes aparecerTextHambuguer {
+  0% {
+    opacity: 0;
+    transform: translateX(210px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .header {
   background-color: rgba(6, 6, 10, 0.75);
   backdrop-filter: blur(1.2rem);
@@ -119,6 +141,7 @@ body {
   letter-spacing: 0.05rem;
   transition: all 0.25s ease;
   display: inline-block;
+  animation: aparecerTextHambuguer 0.4s ease-in-out;
 }
 .header #menu .navHamburguer li a:hover, .header #menu .navHamburguer li a.active {
   color: #25d366 !important;
