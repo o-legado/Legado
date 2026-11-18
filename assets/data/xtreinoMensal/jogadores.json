@@ -6021,7 +6021,226 @@
         "LB CAIOBA": { "logo": "", "dados": [4, 2, 12] }
       }
     }
+  },
+
+
+  "treino5": {
+  "data": "17/11/2026",
+  "equipes": {
+    "META GAMING": {
+      "《ŁĐ》•COYOTE•": {
+        "logo": "",
+        "dados": [2, 1, 1]
+      },
+      "《ŁĐ》whiter$": {
+        "logo": "",
+        "dados": [3, 5, 0]
+      },
+      "Pelezin.x7": {
+        "logo": "",
+        "dados": [2, 3, 0]
+      },
+      "《ŁĐ》YESHUA": {
+        "logo": "",
+        "dados": [4, 3, 0]
+      }
+    },
+    "ALPHA GG": {
+      "goldey boy'": {
+        "logo": "",
+        "dados": [5, 0, 0]
+      },
+      "DRT STEIKE7": {
+        "logo": "",
+        "dados": [2, 0, 3]
+      },
+      "SX7 00!": {
+        "logo": "",
+        "dados": [0, 0, 2]
+      },
+      "obsessed 10!": {
+        "logo": "",
+        "dados": [null, 0, 3]
+      }
+    },
+    "NOVA ERA": {
+      "《ŁĐ》LORRAN": {
+        "logo": "",
+        "dados": [0, 0, 0]
+      },
+      "《ŁĐ》Hsᵃᵖᵉˡᵃ": {
+        "logo": "",
+        "dados": [0, 0, 3]
+      },
+      "《ŁĐ》DG777": {
+        "logo": "",
+        "dados": [0, 0, 1]
+      },
+      "sofia_n_volt": {
+        "logo": "",
+        "dados": [0, null, null]
+      },
+      "《ŁĐ》ⓘⓡⓞⓝⓘⓐ": {
+        "logo": "",
+        "dados": [null, 0, 1]
+      }
+    },
+    "007 GAME": {
+      "007 LIPE": {
+        "logo": "",
+        "dados": [2, 1, null]
+      },
+      "007 一一〒デ〒一": {
+        "logo": "",
+        "dados": [5, 0, null]
+      },
+      "007 NINO": {
+        "logo": "",
+        "dados": [1, 0, null]
+      }
+    },
+    "6 LEGADOS": {
+      "爪卂千丨ㄖ丂卂♡": {
+        "logo": "",
+        "dados": [1, 0, 0]
+      },
+      "《ŁĐ》ĞÜŠŤĀVØ": {
+        "logo": "",
+        "dados": [0, 4, 0]
+      },
+      "《ŁĐ》Biel⁴⁸": {
+        "logo": "",
+        "dados": [0, 0, 0]
+      }
+    },
+    "IMPÉRIO7Z": {
+      "Vandrix⁷ᶻ": {
+        "logo": "",
+        "dados": [1, 1, 0]
+      },
+      "ᴵ ᵃᵐ Layla": {
+        "logo": "",
+        "dados": [1, 1, 0]
+      },
+      "VOID STARK☯": {
+        "logo": "",
+        "dados": [1, 1, 0]
+      },
+      "VENOM⁷ᶻ": {
+        "logo": "",
+        "dados": [0, 0, 1]
+      }
+    },
+    "LEGACY⁰¹": {
+      "《ŁĐ》A N J O'★": {
+        "logo": "",
+        "dados": [1, 2, 1]
+      },
+      "《ŁĐ》亗PEDROツ⁷": {
+        "logo": "",
+        "dados": [1, 0, 1]
+      },
+      "《ŁĐ》 JOTA ᶠˢ": {
+        "logo": "",
+        "dados": [1, 0, 0]
+      }
+    },
+    "FRANÇA": {
+      "Bielzx sapek": {
+        "logo": "",
+        "dados": [5, 2, 14]
+      },
+      "FR NZZIN™": {
+        "logo": "",
+        "dados": [7, 1, 3]
+      },
+      "YagoZx Sapek": {
+        "logo": "",
+        "dados": [7, 2, 5]
+      },
+      "FR Volgx7": {
+        "logo": "",
+        "dados": [4, 0, 4]
+      }
+    },
+    "BAIXADÃO": {
+      "《LD》BN300st": {
+        "logo": "",
+        "dados": [0, 0, 1]
+      },
+      "TREM_DO.ODIO": {
+        "logo": "",
+        "dados": [2, null, null]
+      },
+      "《ŁĐ》jzin300": {
+        "logo": "",
+        "dados": [0, 0, 0]
+      },
+      "《ŁĐ》LUANXL": {
+        "logo": "",
+        "dados": [1, 0, 2]
+      }
+    },
+    "VGR-E-SPORTS": {
+      "Sensi envied": {
+        "logo": "",
+        "dados": [0, 1, null]
+      },
+      "_Soares§": {
+        "logo": "",
+        "dados": [0, 0, 0]
+      },
+      "༒¹⁵⁷Ƒαη†αςмα": {
+        "logo": "",
+        "dados": [0, 1, 0]
+      },
+      "nanacampos(0": {
+        "logo": "",
+        "dados": [1, 1, 2]
+      }
+    },
+    "IMPÉRION": {
+      "MOB ĐAVIZIN": {
+        "logo": "",
+        "dados": [1, 2, 2]
+      },
+      "@frjootta": {
+        "logo": "",
+        "dados": [3, 0, 0]
+      },
+      "《ŁĐ》VITOR✓_\"": {
+        "logo": "",
+        "dados": [0, 0, 1]
+      },
+      "Kyōraku7.xpz": {
+        "logo": "",
+        "dados": [1, 3, null]
+      },
+      "TL7 GRIM": {
+        "logo": "",
+        "dados": [null, null, 1]
+      }
+    },
+    "LF FÚRIA": {
+      "GD GUSTAVIN⁷": {
+        "logo": "",
+        "dados": [0, 7, 3]
+      },
+      "MONTEIRO⁹⁸": {
+        "logo": "",
+        "dados": [1, 2, 2]
+      },
+      "LF MTZIN": {
+        "logo": "",
+        "dados": [0, 6, 3]
+      },
+      "LF Scottx.op": {
+        "logo": "",
+        "dados": [1, 11, 2]
+      }
+    }
   }
+}
 
 
 
