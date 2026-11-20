@@ -6240,7 +6240,227 @@
       }
     }
   }
-}
+},
+
+
+  "treino6": {
+    "data": "19/11/2026",
+    "equipes": {
+      "META GAMING": {
+        "《ŁÐ》whiter$": {
+          "logo": "",
+          "dados": [5, 2, 5]
+        },
+        "《ŁÐ》YURI..": {
+          "logo": "",
+          "dados": [5, 4, 9]
+        },
+        "《ŁÐ》•COYOTE•": {
+          "logo": "",
+          "dados": [3, 2, 0]
+        },
+        "《ŁÐ》YESHUA": {
+          "logo": "",
+          "dados": [4, 1, 2]
+        }
+      },
+      "SAVAGE ANGELS": {
+        "GO KARINA.": {
+          "logo": "",
+          "dados": [0, 2, 0]
+        },
+        "GO RAVENA ೡ": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "GO !ELO'★": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "GO AYUMI": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        }
+      },
+      "NOVA ERA": {
+        "《ŁÐ》DG777": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁÐ》H₅apela": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "《ŁÐ》†ⓐⓡⓒⓐⓝⓙⓞ": {
+          "logo": "",
+          "dados": [0, 3, null]
+        },
+        "sofia_n_volt": {
+          "logo": "",
+          "dados": [0, 0, null]
+        },
+        "༒JÁ FUI BOM࿐": {
+          "logo": "",
+          "dados": [null, null, 0]
+        },
+        "bbquentão$": {
+          "logo": "",
+          "dados": [null, null, 0]
+        }
+      },
+      "TREM BALA": {
+        "꧁Emp 卂ㄥᵫ几乇兰": {
+          "logo": "",
+          "dados": [1, 0, null]
+        },
+        "FARY MAICONx": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "说ALPHA:NISS说": {
+          "logo": "",
+          "dados": [0, 0, null]
+        }
+      },
+      "6 LEGADOS": {
+        "《ŁÐ》 JOTA ᶠˢ": {
+          "logo": "",
+          "dados": [0, 1, 1]
+        },
+        "《ŁÐ》ĞÜŠŦĀVØ": {
+          "logo": "",
+          "dados": [0, 1, 4]
+        },
+        "TS LUANⁿᵗʲ": {
+          "logo": "",
+          "dados": [0, 0, 7]
+        }
+      },
+      "INFINITI": {
+        "LOS Behling7": {
+          "logo": "",
+          "dados": [5, 3, 2]
+        },
+        "N4T4N7": {
+          "logo": "",
+          "dados": [3, 0, 4]
+        },
+        "ESCANOR": {
+          "logo": "",
+          "dados": [6, 0, 2]
+        },
+        "N99 CHØK¡TØ™": {
+          "logo": "",
+          "dados": [7, 5, 4]
+        }
+      },
+      "LD RENEGADOS": {
+        "《ŁÐ》GRINGO†⚡": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "VIP PROFETA": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "《ŁÐ》ALINE ♡": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "《ŁÐ》BECA_✿": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        }
+      },
+      "FRANCE": {
+        "FR NZZIN™": {
+          "logo": "",
+          "dados": [0, 8, 0]
+        },
+        "YagoZx Sapek": {
+          "logo": "",
+          "dados": [2, 5, 3]
+        },
+        "Bielzx sapek": {
+          "logo": "",
+          "dados": [1, 11, 3]
+        },
+        "༒RUGAL࿐": {
+          "logo": "",
+          "dados": [2, 9, 0]
+        }
+      },
+      "ALPHA GG": {
+        "DRT STEIKE7": {
+          "logo": "",
+          "dados": [0, 0, 0]
+        },
+        "KLD.JNmvp7": {
+          "logo": "",
+          "dados": [0, null, 0]
+        },
+        "goldey boy'": {
+          "logo": "",
+          "dados": [2, 0, 0]
+        },
+        "SX7 00!": {
+          "logo": "",
+          "dados": [1, 2, null]
+        },
+        "skyoffire&": {
+          "logo": "",
+          "dados": [null, 1, 0]
+        }
+      },
+      "R6 IMPERADOR": {
+        "R6.ĐAVĨ.22©": {
+          "logo": "",
+          "dados": [2, 1, null]
+        },
+        "R6CORINGA ☠": {
+          "logo": "",
+          "dados": [2, 1, null]
+        },
+        "꧁R6_CAÇADOR꧂": {
+          "logo": "",
+          "dados": [1, 0, null]
+        }
+      },
+      "IT TITANS": {
+        "TREM DO.ODIO": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "SB'Lorin": {
+          "logo": "",
+          "dados": [0, null, null]
+        },
+        "DL": {
+          "logo": "",
+          "dados": [0, null, null]
+        }
+      },
+      "DEAD BLACK 7": {
+        "Kako ¿!": {
+          "logo": "",
+          "dados": [0, 0, 1]
+        },
+        "anna talent": {
+          "logo": "",
+          "dados": [1, 0, 0]
+        },
+        "gooddays": {
+          "logo": "",
+          "dados": [5, 1, null]
+        },
+        "clt speed あ": {
+          "logo": "",
+          "dados": [null, 0, 1]
+        }
+      }
+    }
+  }
+
 
 
 
